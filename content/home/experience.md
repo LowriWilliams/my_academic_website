@@ -18,27 +18,45 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "CEO"
-  company = "GenCoin"
-  company_url = ""
-  location = "California"
-  date_start = "2017-01-01"
+  title = "PhD"
+  company = "Institue for Particle Physics Phenomenology - Durham University"
+  company_url = "https://www.ippp.dur.ac.uk/"
+  location = "Durham, UK"
+  date_start = "2016-10-01"
   date_end = ""
   description = """
-  Responsibilities include:
+  Research topics:
   
-  * Analysing
-  * Modelling
-  * Deploying
+  * Quantum Chromo Dynamics
+  * Scattering Amplitudes
+  * Relativistic Kinematics
   """
 
 [[experience]]
-  title = "Professor"
-  company = "University X"
-  company_url = ""
-  location = "California"
-  date_start = "2016-01-01"
-  date_end = "2016-12-31"
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  title = "MPhys"
+  company = "University of Oxford"
+  company_url = "http://www.ox.ac.uk/"
+  location = "Oxoford, UK"
+  date_start = "2012-10-01"
+  date_end = "2016-06-01"
+  description = """Bachelor with integrated Master of Physics."""
+
+[[experience]]
+  title = "Summer Term"
+  company = "Harvard University"
+  company_url = "https://www.harvard.edu/"
+  location = "Harvard, Cambridge"
+  date_start = "2011-06-01"
+  date_end = "2011-08-01"
+  description = """Principles of Physics (mark A) """
+
+[[experience]]
+  title = "Summer Term"
+  company = "Stanford University"
+  company_url = "https://www.stanford.edu/"
+  location = "Stanford, California"
+  date_start = "2011-06-01"
+  date_end = "2011-08-01"
+  description = """Calculus (A+) and Introduction to Statistics (A) """
 
 +++
