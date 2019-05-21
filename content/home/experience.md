@@ -55,8 +55,8 @@ date_format = "Jan 2006"
   company = "Stanford University"
   company_url = "https://www.stanford.edu/"
   location = "Stanford, California"
-  date_start = "2011-06-01"
-  date_end = "2011-08-01"
+  date_start = "2010-06-01"
+  date_end = "2010-08-01"
   description = """Calculus (A+) and Introduction to Statistics (A) """
 
 +++
