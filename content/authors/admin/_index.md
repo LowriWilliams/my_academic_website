@@ -77,4 +77,4 @@ user_groups:
 - Visitors
 ---
 
-I have lived in Milano until the end of high school. I then moved to Oxford for my undergraduate and master studies. I am currently studying for a PhD in Durham.
+I lived in Milano until the end of high school. I then moved to Oxford for my undergraduate and master studies. I am currently studying for a PhD in Durham.
