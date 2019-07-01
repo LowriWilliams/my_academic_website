@@ -1,5 +1,5 @@
 +++
-title = "QCDMasterClass2019"
+title = "From numerical to analytical amplitudes"
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
@@ -17,14 +17,14 @@ authors = ["Giuseppe De Laurentis"]
 location = "Saint-Jacut-de-la-Mer"
 
 # Name of event and optional event URL.
-event = ""
-event_url = ""
+event = "QCD Master Class 2019"
+event_url = "https://indico.cern.ch/event/739086/overview"
 
 # Abstract. What's your talk about?
 abstract = "Generalised unitarity and on-shell recursion relations have led to the automation of numerical computations for high multiplicity NLO matrix elements, whereas analytical expression are often still too complicated to be determined. I will present a new method (arXiv:1904.04067) to generate such analytic expressions using numerical evaluations only. We use high precision arithmetic to explore the singularity structure of the coefficients and decompose them into parts of manageable complexity. Each part is isolated by choosing an appropriate region of phase space, and reconstructed by solving a system of linear equations for the coefficients of a generic ansatz. To illustrate the usability of our method I will present sample computations for six-gluon one-loop integral coefficients and rational parts."
 
 # Summary. An optional shortened abstract.
-summary = ""
+summary = "QCD Master Class 2019"
 
 # Is this a featured talk? (true/false)
 featured = false
