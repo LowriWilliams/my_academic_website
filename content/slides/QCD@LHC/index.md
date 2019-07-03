@@ -14,7 +14,7 @@ slides:
 
 ---
 
-{{< slide background-image="DurhamBlue.png" >}}
+{{< slide background-image="Durham.png" >}}
 
 ### Analytical &nbsp; amplitudes &nbsp; from &nbsp; numerical &nbsp; evaluations
 
@@ -118,7 +118,7 @@ $d\hat{σ}\_{n}=\frac{1}{2\hat{s}}dΠ\_{n-2}\;(2π)^4δ^4\big(∑\_{i=1}^n p_i\b
 
 <font size=5>
 
-$$A^{tree}(1^{+}\_{g}2^{+}\_{g}3^{+}\_{g}4^{-}\_{g}5^{-}\_{g}) = \frac{i\,⟨45⟩^{4}}{⟨12⟩⟨23⟩⟨34⟩⟨45⟩⟨51⟩}$$
+$A^{tree}(1^{+}\_{g}2^{+}\_{g}3^{+}\_{g}4^{-}\_{g}5^{-}\_{g}) = \frac{i\,⟨45⟩^{4}}{⟨12⟩⟨23⟩⟨34⟩⟨45⟩⟨51⟩}$
 
 </font size>
 
@@ -167,7 +167,7 @@ $$A^{1-loop}\_{n;1} = \sum\_i d\_i I^i\_{Box} + \sum\_i c\_i I^i\_{Triangle} + \
 | (0,0) | 1 | scalar | $h$ | m |
 | (0,1/2) | 2 | right-handed Weyl spinor | $\chi_{R\,\alpha}$ | $\lambda_\alpha$ |
 | (1/2,0) | 2 | left-handed Weyl spinor | $\chi_L^{\,\dot\alpha}$ | $\bar{\lambda}^{\dot\alpha}$ |
-| (1/2, 1/2) | 4 | rank-two spinor/four vector | $A^\mu/A^{\dot\alpha\alpha}$ | $P^\mu/P^{\dot\alpha\alpha}$ |
+| (1/2,1/2) | 4 | rank-two spinor/four vector | $A^\mu/A^{\dot\alpha\alpha}$ | $P^\mu/P^{\dot\alpha\alpha}$ |
 | (1/2,0)$\oplus$(0,1/2) | 4 | bispinor (Dirac spinor) | $\Psi$ | $u, v$ |
 
 </font size>
@@ -230,38 +230,354 @@ $$
 ---
 
 <section>
-## 2.1 Singular limits
+### 2.1 Singular limits
 
 ---
 
 <font size=5>
 
-Singular limits give us information about the poles of the amplitude:
+Singular limits give us information about the poles of the amplitude.
 
-$⟨ij⟩ \rightarrow ε, \quad \mathcal{f} \rightarrow ε^α \; \Rightarrow \; log(\mathcal{f}) \rightarrow α\cdot log(ε)$
+<br>
 
-$\Rightarrow$ The slope of $log(\mathcal{f})(ε)$ gives us the type of singularity, if any exists.
+We need a set of possible poles of the amplitudes:
 
-Constructing the phase space ("..." in the output below hide all O(~1) spinor variables):
+$r\_i \in \\{ ⟨12⟩, ⟨13⟩, \dots, ⟨1|2+3|4], \dots, s_{123}, \dots \\}$,
+
+and let $\mathbb{f}$ be the function we want to reconstruct.
+
+<br>
+
+$r\_i \rightarrow ε \ll 1, \quad r\_{j \neq i} \sim \mathcal{O}(1), \quad \mathbb{f} \rightarrow ε^α \; \Rightarrow \; log(\mathbb{f}) \rightarrow α\cdot log(ε)$
+
+$\Rightarrow$ The slope of $\mathbb{f}(ε)$ in a log-log plot gives us the type of singularity, if any exists.
 
 </font size>
 
-<font size=7>
-```python
-oParticles = Particles(6)
-oParticles.randomise_all()
-oParticles.set("⟨1|2⟩", 10 ** -30)
-oParticles.phasespace_consistency_check()
-```
+---
 
-```python
-Consistency check:
-The largest momentum violation is 3.10963525161e-308
-The largest on shell violation is 4.58710727171e-308
-⟨1|2⟩ = 1e-30
-...
-```
+<font size=5>
+
+As an example, let us consider following amplitude:
+
+$\mathbb{f} = A^{tree}(1^{+}\_{g}2^{+}\_{g}3^{+}\_{g}4^{-}\_{g}5^{-}\_{g}6^{-}\_{g})$
+
+<table width=100% border="1" frame="void" cellspacing="0" cellpadding="0">
+  <tr class="greenline">
+    <td> <center> $\lim_{⟨12⟩ \rightarrow \epsilon} \mathbb{f} \propto \epsilon^{-1}$ </center> </td>
+    <td> <center> $\lim_{⟨13⟩ \rightarrow \epsilon} \mathbb{f} \propto \epsilon^0$ </center> </td>
+  </tr>
+  <tr>
+    <td> <img src="lim12.png"; style="max-width:450px;float:center;border:none;"> </td>
+    <td> <img src="lim13.png"; style="max-width:450px;float:center;border:none;"> </td>
+  </tr>
+</table>
+
 </font size>
+
+---
+
+<font size=5>Studying the rest of the limits yields the least common denominator for $\mathbb{f}$:</font size>
+
+<font size=6>$\mathbb{f} = \frac{\mathcal{N\_{LCD}}}{\mathcal{D\_{LCD}}} = \frac{\mathcal{N\_{LCD}}}{⟨12⟩⟨16⟩[16]⟨23⟩⟨34⟩[34][45][56]s\_{234}s\_{345}}$.</font size>
+<font size=5>
+
+<br>
+
+The complexity of the numerator depends on two parameters:
+
+1. mass dimension; $\quad \quad \quad$ 2. little group scalings.
+
+<br>
+
+In this case $\mathcal{N\_{LCD}}$ has mass dimension, phase weights: 10, [-1, 0, -1, 1, 0, 1].
+
+The ansatz has 1326 independent terms.
+
+</font size>
+
+</section>
+---
+---
+
+<section>
+### 2.2 Doubly singular limits
+
+---
+
+<font size=5>
+
+Except for the easiest cases, we should really think about $\mathbb{f}$ as:
+
+$\mathbb{f} = \sum\_i \frac{\mathcal{N}_i}{\mathcal{D}_i} = \sum\_i \frac{\mathcal{N}_i}{\mathcal{R}_i\mathcal{S}_i}$,
+
+where $\mathcal{R}\_i$ are products of subsets of $\mathcal{D\_{LCD}}$ (i.e. real poles), <br/> and $\mathcal{s} \in \mathcal{S}\_i$ don't appear in $\mathcal{D_{LCD}}$ (i.e. spurious poles and cancel in the sum).
+
+<br>
+
+This information can be accessed by studying doubly singular limits:
+
+$r\_i \rightarrow ε \ll 1, \quad r\_j \rightarrow ε \ll 1, \quad \mathbb{f} \rightarrow ε^α \; \Rightarrow \; log(\mathbb{f}) \rightarrow α\cdot log(ε)$
+
+Note: now in general we cannot guarantee $\;r\_{k \neq i, j} \sim \mathcal{O}(1)$
+
+</font size>
+
+---
+
+<font size=5>Reconstructing the behaviour in the limit involves again the slope of a log-log plot:</font size>
+
+<font size=4>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>⟨1|2⟩</th>
+      <th>⟨1|6⟩</th>
+      <th>[1|6]</th>
+      <th>⟨2|3⟩</th>
+      <th>⟨3|4⟩</th>
+      <th>[3|4]</th>
+      <th>[4|5]</th>
+      <th>[5|6]</th>
+      <th>s_234</th>
+      <th>s_345</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>⟨1|2⟩</th>
+      <td>1</td>
+      <td>1/30/5</td>
+      <td>1/3/2</td>
+      <td>1/31/4</td>
+      <td>1/2/2</td>
+      <td>2/12/3</td>
+      <td>2/3/2</td>
+      <td>2/10/3</td>
+      <td>1/2/2</td>
+      <td>2/10/3</td>
+    </tr>
+    <tr>
+      <th>⟨1|6⟩</th>
+      <td>1/30/5</td>
+      <td>1</td>
+      <td>1/2/2</td>
+      <td>1/2/2</td>
+      <td>1/10/2</td>
+      <td>2/4/2</td>
+      <td>2/12/3</td>
+      <td>1/3/2</td>
+      <td>2/10/3</td>
+      <td>2/10/3</td>
+    </tr>
+    <tr>
+      <th>[1|6]</th>
+      <td>1/3/2</td>
+      <td>1/2/2</td>
+      <td>1</td>
+      <td>2/12/3</td>
+      <td>2/4/2</td>
+      <td>1/10/2</td>
+      <td>1/2/2</td>
+      <td>1/30/6</td>
+      <td>2/10/3</td>
+      <td>2/10/3</td>
+    </tr>
+    <tr>
+      <th>⟨2|3⟩</th>
+      <td>1/31/4</td>
+      <td>1/2/2</td>
+      <td>2/12/3</td>
+      <td>1</td>
+      <td>1/30/6</td>
+      <td>1/3/2</td>
+      <td>2/12/3</td>
+      <td>2/3/2</td>
+      <td>2/10/3</td>
+      <td>1/2/2</td>
+    </tr>
+    <tr>
+      <td colspan="11"> <center> $\dots$ </center> </td>
+    </tr>
+  </tbody>
+</table>
+
+</font size>
+
+<font size=5>
+The first number if the slope of the log-log plot in the limit.<br/>
+The second number is the degeneracy of the phase space in the limit.<br/>
+The third number is the degeneracy of the 'cleaned' phase space.<br/>
+For instance:<br/>
+$⟨12⟩, ⟨16⟩ \rightarrow \epsilon \quad \Longrightarrow \quad ⟨26⟩, s\_{345}, ⟨2|1+6|5], \dots \rightarrow \epsilon$
+</font size>
+
+---
+
+
+<font size=5>The slope in the doubly singular limit tells us whether two poles should be in the same denominator and/or how to separate them.</font size>
+
+<font size=4>
+
+<style  type="text/css" >
+    #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col0 {
+            background:  tomato;
+            background:  tomato;
+            background:  tomato;
+            background:  tomato;
+            background:  tomato;
+        }    #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col1 {
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+        }    #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col2 {
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+        }    #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col3 {
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+        }    #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col4 {
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+        }    #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col5 {
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+        }    #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col6 {
+            background:  tomato;
+            background:  tomato;
+            background:  tomato;
+            background:  tomato;
+            background:  tomato;
+        }    #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col7 {
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+            background:  skyblue;
+        }    #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col8 {
+            background:  khaki;
+            background:  khaki;
+            background:  khaki;
+            background:  khaki;
+            background:  khaki;
+        }    #T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col9 {
+            background:  tomato;
+            background:  tomato;
+            background:  tomato;
+            background:  tomato;
+            background:  tomato;
+        }</style>  
+<table id="T_67e20e68_9da2_11e9_b9bf_0242a8af999f" ><caption>Green: forced. Red: Forbidden. Blue: optional (at least one). Light blue: optional.</caption> 
+<thead>    <tr> 
+        <th class="blank level0" ></th> 
+        <th class="col_heading level0 col0" >⟨1|2⟩</th> 
+        <th class="col_heading level0 col1" >⟨1|6⟩</th> 
+        <th class="col_heading level0 col2" >[1|6]</th> 
+        <th class="col_heading level0 col3" >⟨2|3⟩</th> 
+        <th class="col_heading level0 col4" >⟨3|4⟩</th> 
+        <th class="col_heading level0 col5" >[3|4]</th> 
+        <th class="col_heading level0 col6" >[4|5]</th> 
+        <th class="col_heading level0 col7" >[5|6]</th> 
+        <th class="col_heading level0 col8" >s_234</th> 
+        <th class="col_heading level0 col9" >s_345</th> 
+    </tr></thead> 
+<tbody>    <tr> 
+        <th id="T_67e20e68_9da2_11e9_b9bf_0242a8af999flevel0_row0" class="row_heading level0 row0" >s_234</th> 
+        <td id="T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col0" class="data row0 col0" >1/2/2</td> 
+        <td id="T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col1" class="data row0 col1" >2/10/3</td> 
+        <td id="T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col2" class="data row0 col2" >2/10/3</td> 
+        <td id="T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col3" class="data row0 col3" >2/10/3</td> 
+        <td id="T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col4" class="data row0 col4" >2/10/3</td> 
+        <td id="T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col5" class="data row0 col5" >2/10/4</td> 
+        <td id="T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col6" class="data row0 col6" >1/2/2</td> 
+        <td id="T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col7" class="data row0 col7" >2/10/3</td> 
+        <td id="T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col8" class="data row0 col8" >1</td> 
+        <td id="T_67e20e68_9da2_11e9_b9bf_0242a8af999frow0_col9" class="data row0 col9" >1/2/2</td> 
+    </tr></tbody> 
+</table>
+
+</font size>
+
+<img src="Graph.gv.svg"; style="max-width:720px;float:center;border:none;">
+
+</section>
+---
+---
+
+<section>
+### 3.1 Partial fraction decomposition
+
+---
+
+<img src="Graph2.gv.svg"; style="max-width:720px;float:center;border:none;">
+
+</section>
+---
+---
+
+<section>
+### 3.2 Fitting of ansatz
+
+---
+
+How big is the ansatz?
+
+---
+
+</section>
+---
+---
+
+<section>
+### 4.1 A real application
+
+---
+
+<font size=5>
+Let us briefly consider the following quantity:
+
+$R^{1-loop}_6(1^{+}\_{g}2^{-}\_{g}3^{+}\_{g}4^{-}\_{g}5^{+}\_{g}6^{-}\_{g})$
+</font size>
+
+<font size=4>
+$\mathcal{D\_{LCD}} =$
+
+$⟨12⟩[12]⟨13⟩^2⟨15⟩^2⟨16⟩[16]⟨23⟩[23][24]^2[26]^2⟨34⟩[34]⟨35⟩^2⟨45⟩[45][46]^2⟨56⟩[56]$
+
+$⟨1|2+3|1]^2⟨1|5+6|1]^2⟨1|3+4|2]^2⟨1|2+3|6]^2⟨2|1+6|2]^2⟨2|3+4|2]^2$
+
+$⟨3|1+6|2]^2⟨3|1+2|3]^2⟨3|4+5|3]^2⟨3|1+2|4]^2⟨4|2+3|4]^2⟨4|5+6|4]^2$
+
+$⟨5|1+6|4]^2⟨5|1+6|5]^2⟨5|3+4|5]^2⟨5|1+2|6]^2⟨6|1+2|6]^2⟨6|4+5|6]^2$
+
+$s\_{123}s\_{234}s\_{345}Δ\_{135}^2Δ\_{624}^2$
+
+</font size>
+
+<font size=5>
+The mass dimension is now MD,<br/>
+which would imply an ansatz with size between X and Y.
+</font size>
+
+---
+
+<iframe src="https://arxiv.org/src/1904.04067v3/anc/AllOneLoop6Gluons/6g_pmpmpm_G/rational.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe>
 
 </section>
 ---
