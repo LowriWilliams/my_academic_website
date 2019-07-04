@@ -35,10 +35,10 @@ url_pdf: https://arxiv.org/abs/1904.04067
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
-image:
-  caption: 'Image credit: [Giuseppe De Laurentis]'
-  focal_point: ""
-  preview_only: false
+# image:
+#   caption: 'Image credit: [Giuseppe De Laurentis]'
+#   focal_point: ""
+#   preview_only: false
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.

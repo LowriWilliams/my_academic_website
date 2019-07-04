@@ -577,6 +577,10 @@ which would imply an ansatz with size between X and Y.
 
 ---
 
+<img src="GraphRational.gv.svg"; style="maxwidth:1000px; float:center; border:none;">
+
+---
+
 <iframe src="https://arxiv.org/src/1904.04067v3/anc/AllOneLoop6Gluons/6g_pmpmpm_G/rational.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe>
 
 </section>
