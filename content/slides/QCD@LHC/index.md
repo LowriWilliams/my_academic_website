@@ -22,6 +22,8 @@ slides:
 
 # Analytical &nbsp; amplitudes &nbsp; from &nbsp; numerical &nbsp; evaluations
 
+[arXiv:1904.04067](https://arxiv.org/pdf/1904.04067.pdf)
+
 <br>
 Giuseppe De Laurentis
 
@@ -118,6 +120,32 @@ Better predictions require both more loops and higher multiplicity.
 
 ---
 
+We can split dynamics from kinematics with the following identities.
+
+<br>
+Color ordering at tree level and one loop []:
+
+<font size=5>$\mathcal{A}^{tree}\_{n}({p_i, λ_i, a_i}) = \; g^{n-2} ∑\_{σ\in S_n/Z_n} \text{Tr}(T^{a_σ(1)}\dots T^{a_σ(n)}) A^{tree}_n(σ(1^{λ_1}),\dots ,σ(n^{λ_n}))$</font size>
+
+<font size=5; style="margin-left:-20px;">
+$\mathcal{A}^{1-loop}\_{n}({p\_i, λ\_i, a\_i}) = \; g^{n} ∑\_{σ\in S\_n/Z\_n} N\_{c} \text{Tr}(T^{a\_σ(1)}\dots T^{a\_σ(n)}) A\_{n;1}(σ(1^{λ\_1}),\dots ,σ(n^{λ\_n}))$
+</font size>
+<font size=5; style="margin-left:-50px;">
+$ + ∑\_{c = 2}^{\lfloor n/2 \rfloor + 1}∑\_{σ\in S\_n/Z\_{n;c}} \text{Tr}(T^{a\_σ(1)}\dots T^{a\_σ(c-1)})\text{Tr}(T^{a\_σ( c)}\dots T^{a\_σ(n)}) A\_{n;c}(σ(1^{λ\_1}),\dots ,σ(n^{λ\_n}))$</font size>
+</font size>
+
+<br>
+Decomposition in terms of basis integrals:
+
+<font size=5>
+$$A^{1-loop}\_{n;1} = \sum\_i d\_i I^i\_{Box} + \sum\_i c\_i I^i\_{Triangle} + \sum\_i b\_i I^i\_{Bubble} + R$$
+
+<nobr>$A^{tree},\, d\_i,\, c\_i,\, b\_i,$ and $R$ are rational functions of kinematic invariants only.</nobr>
+
+</font size>
+
+---
+
 Brute force calculations are a mess:
 
 <img src="Five_gluons_mess.png"; style="max-width:500px;float:center;border:none;margin-top:-5px;">
@@ -132,46 +160,31 @@ $A^{tree}(1^{+}\_{g}2^{+}\_{g}3^{+}\_{g}4^{-}\_{g}5^{-}\_{g}) = \frac{i\,⟨45�
 
 </font size>
 
-{{< speaker_note >}}
-- Can we do the calculation numerically, to bypass the algebraic complexty in the intermediate stages, and directly access the compact analytical final result?
-{{< /speaker_note >}}
+---
+
+*Numerical* calculations bypass any amount of algebraic complexity, see:<br/>
+BlackHat [], CutTools [], MadLoop [], Rocket [], Samurai [], NGluon [], etc...
+
+<br>
+
+But *analytical* results can still be useful, they provide:
+
+$\cdot$ better understanding of the analytical structure<br/>
+$\cdot$ faster computation<br/>
+$\cdot$ better numerical stability<br/>
+$\cdot$ easier to parallelise and distribute<br/>
+$\dots$
+
+<br>
+The use of numerical samples to reconstruct analytical expressions is beginning to find direct applications to scattering amplitude calculations:
+see for example calculations over finite fields [].
 
 </section>
 ---
 ---
 
 <section>
-# 1.2 Color Ordering <br/> <font size=7> and </font size> <br/> master integrals
-
----
-
-Relation to the full amplitude at tree level:
-
-<font size=5>$\mathcal{A}^{tree}\_{n}({p_i, λ_i, a_i}) = \; g^{n-2} ∑\_{σ\in S_n/Z_n} \text{Tr}(T^{a_σ(1)}\dots T^{a_σ(n)}) A^{tree}_n(σ(1^{λ_1}),\dots ,σ(n^{λ_n})).$</font size>
-
-<br>
-Color decomposition at one loop:
-
-<font size=5; style="margin-left:-20px;">
-$\mathcal{A}^{1-loop}\_{n}({p\_i, λ\_i, a\_i}) = \; g^{n} ∑\_{σ\in S\_n/Z\_n} N\_{c} \text{Tr}(T^{a\_σ(1)}\dots T^{a\_σ(n)}) A\_{n;1}(σ(1^{λ\_1}),\dots ,σ(n^{λ\_n}))$
-</font size>
-<font size=5; style="margin-left:-50px;">
-$ + ∑\_{c = 2}^{\lfloor n/2 \rfloor + 1}∑\_{σ\in S\_n/Z\_{n;c}} \text{Tr}(T^{a\_σ(1)}\dots T^{a\_σ(c-1)})\text{Tr}(T^{a\_σ( c)}\dots T^{a\_σ(n)}) A\_{n;c}(σ(1^{λ\_1}),\dots ,σ(n^{λ\_n}))$</font size>
-</font size>
-
-<br>
-Decomposition in terms of basis integrals:
-
-<font size=5>
-$$A^{1-loop}\_{n;1} = \sum\_i d\_i I^i\_{Box} + \sum\_i c\_i I^i\_{Triangle} + \sum\_i b\_i I^i\_{Bubble} + R$$
-</font size>
-
-</section>
----
----
-
-<section>
-# 1.3 Spinor Helicity
+# 1.2 Spinor Helicity
 
 ---
 
@@ -243,6 +256,10 @@ tr_5(ijkl) = tr(\gamma^5 \not P_i \not P_j \not P_k \not P_l) =  [i\,|\,j\,|\,k\
 $$
 
 </font size>
+
+<br>
+In particular, we need complex momenta to be able to lift the degeneracy between the angle and the square brackets.
+
 </section>
 ---
 ---
@@ -266,7 +283,10 @@ and let $\mathbb{f}$ be the function we want to reconstruct.
 
 <font size=5>$r\_i \rightarrow ε \ll 1, \quad r\_{j \neq i} \sim \mathcal{O}(1), \quad \mathbb{f} \rightarrow ε^α \; \Rightarrow \; log(\mathbb{f}) \rightarrow α\cdot log(ε)$</font size>
 
-$\Rightarrow$ The slope of $\mathbb{f}(ε)$ in a log-log plot gives us the type of singularity,<br/> if any exists.
+<nobr>$\Rightarrow$ The slope of $\mathbb{f}(ε)$ in a log-log plot gives us the type of singularity,<br/> if it exists.</nobr>
+
+<br>
+<nobr>Note: the uniqueness of the singular limit is important to avoid ambiguities.</nobr>
 
 ---
 
@@ -292,7 +312,7 @@ $\mathbb{f} = A^{tree}(1^{+}\_{g}2^{+}\_{g}3^{+}\_{g}4^{-}\_{g}5^{-}\_{g}6^{-}\_
 
 ---
 
-Studying the rest of the limits yields the least common denominator for $\mathbb{f}$:
+Studying all the limits yields the least common denominator for $\mathbb{f}$:
 
 $\mathbb{f} = \frac{\mathcal{N\_{LCD}}}{\mathcal{D\_{LCD}}} = \frac{\mathcal{N\_{LCD}}}{⟨12⟩⟨16⟩[16]⟨23⟩⟨34⟩[34][45][56]s\_{234}s\_{345}}$.
 
@@ -307,7 +327,7 @@ The complexity of the numerator depends on two parameters:
 
 <br>
 
-<nobr> In this case $\mathcal{N\_{LCD}}$ has mass dimension, phase weights: 10, [-1, 0, -1, 1, 0, 1].</nobr>
+<nobr> In this case $\mathcal{N\_{LCD}}$ has mass dimension 10, and phase weights [-1, 0, -1, 1, 0, 1].</nobr>
 
 The ansatz has 1326 independent terms.
 
@@ -334,7 +354,7 @@ This information can be accessed by studying doubly singular limits:
 
 $r\_i \rightarrow ε \ll 1, \quad r\_j \rightarrow ε \ll 1, \quad \mathbb{f} \rightarrow ε^α \; \Rightarrow \; log(\mathbb{f}) \rightarrow α\cdot log(ε)$
 
-Note: now in general we cannot guarantee $\;r\_{k \neq i, j} \sim \mathcal{O}(1)$
+Note: now in general we cannot guarantee uniqueness,<br/> i.e. that $\;r\_{k \neq i, j} \sim \mathcal{O}(1)$.
 
 
 ---
@@ -420,12 +440,13 @@ Information from taking the doubly singular limits:
 
 </font size>
 
-The first number if the slope of the log-log plot in the limit, <br/> the second number is the degeneracy of the phase space in the limit.
+The first number is the slope of the log-log plot in the limit, <br/> the second number is the degeneracy of the phase space in the limit.
 
-<br>
-Eg: $\\{r_i | ⟨12⟩ \rightarrow \epsilon \, \wedge \, ⟨16⟩ \rightarrow \epsilon \, \wedge \, r_i \rightarrow \epsilon \\}$
+<font size=5>E.g.:  $⟨12⟩,\,⟨16⟩ \rightarrow \epsilon \;$ implies also $\; ⟨26⟩, s\_{345}, ⟨2|1+6|5], \dots \rightarrow \epsilon$</font size>
 
-yields: $\\{ ⟨12⟩, ⟨16⟩, ⟨26⟩, s\_{345}, ⟨2|1+6|5], \dots \text{25 more} \dots \\}$
+<font size=5>More mathematically:<br/>$\\{a, b\\}\_\epsilon \equiv \\{r_i | a \rightarrow \epsilon \, \wedge \, b \rightarrow \epsilon \Rightarrow r_i \rightarrow \epsilon \\}$</font size>
+
+<font size=5>$\\{⟨12⟩,\,⟨16⟩\\}\_\epsilon = \\{ ⟨12⟩, ⟨16⟩, ⟨26⟩, s\_{345}, ⟨2|1+6|5], \dots \text{25 more} \dots \\}$</font size>
 
 ---
 
@@ -704,11 +725,12 @@ Note that the $s_{ijk}$ appear in the same denominator, although the doubly sing
 
 Let's consider the first representation:
 
+$\mathbb{f}=$
 $\frac{\mathcal{N\_1}}{[16]⟨23⟩⟨34⟩[56]⟨2|1+6|5]s\_{234}}+$
 $\frac{\mathcal{N\_2}}{⟨12⟩⟨16⟩[34][45]⟨2|1+6|5]s\_{345}}$
 
 <br>
-$\mathcal{N\_1}$ has mass dimension: 10, and phase weights: [-3, 0, 0, 3, 0, 0].<br/>
+$\mathcal{N\_1}$ has mass dimension: 6, and phase weights: [-3, 0, 0, 3, 0, 0].<br/>
 We generate all possible products of spinor products compatible with this infomation. The ansatz has size 10:
 
 $[⟨24⟩⟨24⟩⟨24⟩[12][12][12],$
@@ -726,10 +748,13 @@ much smaller than the one for $\mathcal{N_{LCD}}$<br/> which had more than 1000 
 
 ---
 
+We want to isolate the first term in
+
+$\mathbb{f}=$
 $\frac{\mathcal{N\_1}}{[16]⟨23⟩⟨34⟩[56]⟨2|1+6|5]s\_{234}}+$
 $\frac{\mathcal{N\_2}}{⟨12⟩⟨16⟩[34][45]⟨2|1+6|5]s\_{345}}$
 
-We can isolate the first term by generating phase space points <br/> in the limit of, say, $s_{234} \rightarrow \epsilon$.
+this can be done by generating phase space points <br/> in the limit of, say, $s_{234} \rightarrow \epsilon$.
 
 
 
@@ -790,3 +815,10 @@ which would imply an ansatz with size roughly $10^{10}$
 
 </section>
 ---
+---
+
+# Conclusions
+
+---
+
+to be added
