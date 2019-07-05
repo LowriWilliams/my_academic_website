@@ -145,7 +145,7 @@ $A^{tree}(1^{+}\_{g}2^{+}\_{g}3^{+}\_{g}4^{-}\_{g}5^{-}\_{g}) = \frac{i\,⟨45�
 
 ---
 
-Relation to the full amplitude @ tree level:
+Relation to the full amplitude at tree level:
 
 <font size=5>$\mathcal{A}^{tree}\_{n}({p_i, λ_i, a_i}) = \; g^{n-2} ∑\_{σ\in S_n/Z_n} \text{Tr}(T^{a_σ(1)}\dots T^{a_σ(n)}) A^{tree}_n(σ(1^{λ_1}),\dots ,σ(n^{λ_n})).$</font size>
 
@@ -423,9 +423,9 @@ Information from taking the doubly singular limits:
 The first number if the slope of the log-log plot in the limit, <br/> the second number is the degeneracy of the phase space in the limit.
 
 <br>
-For instance:
+Eg: $\\{r_i | ⟨12⟩ \rightarrow \epsilon \, \wedge \, ⟨16⟩ \rightarrow \epsilon \, \wedge \, r_i \rightarrow \epsilon \\}$
 
-$⟨12⟩, ⟨16⟩ \rightarrow \epsilon \quad \Longrightarrow \quad ⟨26⟩, s\_{345}, ⟨2|1+6|5], \dots \rightarrow \epsilon$
+yields: $\\{ ⟨12⟩, ⟨16⟩, ⟨26⟩, s\_{345}, ⟨2|1+6|5], \dots \text{25 more} \dots \\}$
 
 ---
 
@@ -625,13 +625,73 @@ In some limits $\Delta$ behaves like the square of some quantity
 
 ---
 
-Going back to our tree level example,<br/> let's see how we can group together the pols of the amplitude:
+Going back to our tree level example,<br/> let's see how we can group together the poles of the amplitude.
 
-<img src="Graph2.gv.svg"; style="max-width:720px;float:center;border:none;">
+<table width=100% border="1" frame="void" cellspacing="0" cellpadding="0">
+  <tr class="greenline">
+    <td> <center> <img src="Graph2.gv.svg"; style="max-width:540px;float:center;border:none;"> </center> </td>
+    <td>
+      <center>
+        <font size=6>
+	  $\frac{\mathcal{N_1}}{[16]⟨23⟩⟨34⟩[56]⟨2|1+6|5]s_{234}}+\\
+	    \frac{\mathcal{N_2}}{⟨12⟩⟨16⟩[34][45]⟨2|1+6|5]s_{345}}\phantom{+}$
+        </font size>
+      </center>
+    </td>
+  </tr>
+</table>
+
+<font size=5>(Spoiler: $ \quad \small \mathcal{N_1} = 1i⟨4|2+3|1]^3, \quad \mathcal{N_2} = -1i⟨6|1+2|3]^3$)</font size>
+
+Where does <font size=5> $⟨2|1+6|5]$ </font size> come from?
+
+<font size=5>$\\{⟨12⟩, [56]\\}\_{\epsilon} \, \cap \, \\{⟨16⟩, s\_{234}\\}\_{\epsilon} \, \cap \, \\{⟨23⟩, [45]\\}\_{\epsilon} \, \cap \, \\{[34], s\_{234}\\}\_{\epsilon} \, \dots$ </font size>
 
 ---
 
-<img src="Graph3.gv.svg"; style="max-width:720px;float:center;border:none;">
+<table width=100% border="1" frame="void" cellspacing="0" cellpadding="0">
+  <tr class="greenline">
+    <td> <center> <img src="Graph3.gv.svg"; style="max-width:540px;float:center;border:none;"> </center> </td>
+    <td>
+      <center>
+        <font size=6>
+	  $\frac{\mathcal{N_1}}{⟨16⟩[34]⟨1|2+3|4]⟨5|1+6|2]s_{234}}+\\$
+	  $\frac{\mathcal{N_2}}{[16]⟨34⟩⟨3|1+2|6]⟨5|1+6|2]s_{345}}+\\$
+	  $\frac{\mathcal{N_3}}{⟨12⟩⟨23⟩[45][56]⟨1|2+3|4]⟨3|1+2|6]}$
+        </font size>
+      </center>
+    </td>
+  </tr>
+</table>
+
+<font size=5>(Spoiler: $ \quad \small \mathcal{N_1} = 1i[23]^3⟨56⟩^3, \quad \mathcal{N_2} = -1i[12]^3⟨45⟩^3, \quad \mathcal{N_3} = 1is\_{123}^3 $)</font size>
+
+<br>
+Both of these partial fractions correspond to some BCFW shift,<br/> but we are not limited to these representations.
+
+---
+
+<table width=100% border="1" frame="void" cellspacing="0" cellpadding="0">
+  <tr class="greenline">
+    <td> <center> <img src="Graph.gv.svg"; style="max-width:540px;float:center;border:none;"> </center> </td>
+    <td>
+      <center>
+        <font size=6>
+	  $\frac{\mathcal{N_1}}{[16]⟨23⟩⟨34⟩[56]s_{234}s_{345}}+\\$
+	  $\frac{\mathcal{N_2}}{⟨12⟩⟨16⟩[34][45]s_{234}s_{345}}+\\$
+	  $\frac{\mathcal{N_3}}{⟨12⟩⟨23⟩[45][56]s_{234}s_{345}}$
+        </font size>
+      </center>
+    </td>
+  </tr>
+</table>
+
+<font size=5> <nobr> ($\small \mathcal{N_1} = 1i[12]⟨45⟩⟨4|2+3|1]^2, \, \mathcal{N_2} = 1i[23]⟨56⟩⟨6|1+2|3]^2, \, \mathcal{N_3} = 1i⟨4|2+3|1]⟨6|1+2|3]s\_{123}$) </nobr> </font size>
+
+We now have overlap between the different partial fractions, <br/>
+but no spurious poles.
+
+Note that the $s_{ijk}$ appear in the same denominator, although the doubly singular limit suggests they shouldn't.
 
 </section>
 ---
@@ -639,6 +699,45 @@ Going back to our tree level example,<br/> let's see how we can group together t
 
 <section>
 # 3.2 Fitting of ansatz
+
+---
+
+Let's consider the first representation:
+
+$\frac{\mathcal{N\_1}}{[16]⟨23⟩⟨34⟩[56]⟨2|1+6|5]s\_{234}}+$
+$\frac{\mathcal{N\_2}}{⟨12⟩⟨16⟩[34][45]⟨2|1+6|5]s\_{345}}$
+
+<br>
+$\mathcal{N\_1}$ has mass dimension: 10, and phase weights: [-3, 0, 0, 3, 0, 0].<br/>
+We generate all possible products of spinor products compatible with this infomation. The ansatz has size 10:
+
+$[⟨24⟩⟨24⟩⟨24⟩[12][12][12],$
+$⟨24⟩⟨24⟩⟨34⟩[12][12][13],$
+$⟨24⟩⟨24⟩⟨45⟩[12][12][15],$
+$⟨24⟩⟨34⟩⟨34⟩[12][13][13],$
+$⟨24⟩⟨34⟩⟨45⟩[12][13][15],$
+$⟨24⟩⟨45⟩⟨45⟩[12][15][15],$
+$⟨34⟩⟨34⟩⟨34⟩[13][13][13],$
+$⟨34⟩⟨34⟩⟨45⟩[13][13][15],$
+$⟨34⟩⟨45⟩⟨45⟩[13][15][15],$
+$⟨45⟩⟨45⟩⟨45⟩[15][15][15]]$,
+
+much smaller than the one for $\mathcal{N_{LCD}}$<br/> which had more than 1000 terms!
+
+---
+
+$\frac{\mathcal{N\_1}}{[16]⟨23⟩⟨34⟩[56]⟨2|1+6|5]s\_{234}}+$
+$\frac{\mathcal{N\_2}}{⟨12⟩⟨16⟩[34][45]⟨2|1+6|5]s\_{345}}$
+
+We can isolate the first term by generating phase space points <br/> in the limit of, say, $s_{234} \rightarrow \epsilon$.
+
+
+
+
+$⟨24⟩⟨24⟩⟨24⟩[12][12][12]: 1i$<br/>
+$⟨24⟩⟨24⟩⟨34⟩[12][12][13]: 3i$<br/>
+$⟨24⟩⟨34⟩⟨34⟩[12][13][13]: 3i$<br/>
+$⟨34⟩⟨34⟩⟨34⟩[13][13][13]: 1i$
 
 ---
 
