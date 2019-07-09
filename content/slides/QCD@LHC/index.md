@@ -44,7 +44,7 @@ IPPP - Durham University
 
 ---
 
-# Table of Contents
+# Table &nbsp;of &nbsp;Contents
 
 <br>
 
@@ -60,7 +60,7 @@ IPPP - Durham University
 
 <section>
 
-# 1.1 Motivation
+# 1.1 &nbsp;Motivation
 
 ---
 
@@ -167,12 +167,24 @@ $A^{tree}(1^{+}\_{g}2^{+}\_{g}3^{+}\_{g}4^{-}\_{g}5^{-}\_{g}) = \frac{i\,⟨45�
 
 <br>
 But *analytical* results can still be useful, they can provide:
-
-$\cdot$ better understanding of the analytical structure<br/>
-$\cdot$ faster computation<br/>
-$\cdot$ better numerical stability<br/>
-$\cdot$ easier to parallelise and distribute<br/>
-$\dots$
+<table width=100% border="1" frame="void" cellspacing="0" cellpadding="0">
+  <tr>
+      <td>
+	<font size=5>
+	$\cdot$ faster computation<br/>
+    	$\cdot$ better numerical stability<br/>
+    	$\cdot$ easier to distribute than a program<br/>
+	</font size>
+      </td>
+      <td>
+      <font size=5>
+    	$\cdot$ possible to compile on a GPU<br/>
+    	$\cdot$ explicit analytical structure<br/>
+    	$...$
+      </font size>
+      </td>
+  </tr>
+</table>
 
 <br>
 How can we access a (relatively) compact analytical final expression from numerical evaluations?
@@ -182,7 +194,7 @@ How can we access a (relatively) compact analytical final expression from numeri
 ---
 
 <section>
-# 1.2 Spinor Helicity
+# 1.2 &nbsp;Spinor &nbsp;Helicity
 
 ---
 
@@ -213,16 +225,14 @@ Weyl spinors are sufficient for massless particles:
 <br>
 In terms of 4-momentum components we have:
 
-<font size=5>
+<font size=5>$$
+\lambda\_\alpha=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^0+p^3 \\\ p^1+ip^2\end{pmatrix} \, , \;\;\; \lambda^\alpha=\epsilon^{\alpha\beta} \lambda_\beta =\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^1+ip^2 \\\ -p^0+p^3\end{pmatrix}
+$$</font size>
 
-$$
-\lambda\_\alpha=\begin{pmatrix}\sqrt{p^0+p^3} \\\ \frac{p^1+ip^2}{\sqrt{p^0+p^3}}\end{pmatrix} \, , \;\;\; \lambda^\alpha=\epsilon^{\alpha\beta} \lambda_\beta =\begin{pmatrix}\frac{p^1+ip^2}{\sqrt{p^0+p^3}} \\\ -\sqrt{p^0+p^3}\end{pmatrix}
-$$
+<font size=5>$\bar\lambda\_{\dot\alpha}=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^0+p^3 \\\ p^1-ip^2\end{pmatrix} \, , \;\;\; \bar\lambda^{\dot\alpha}=\epsilon^{\dot\alpha\dot\beta}\bar\lambda_{\dot\beta}=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^1-ip^2 \\\ \-p^0+p^3\end{pmatrix}$</font size>
 
-$\bar\lambda\_{\dot\alpha}=\begin{pmatrix}\sqrt{p^0+p^3} \\\ \frac{p^1-ip^2}{\sqrt{p^0+p^3}}\end{pmatrix} \, , \;\;\; \bar\lambda^{\dot\alpha}=\epsilon^{\dot\alpha\dot\beta}\bar\lambda_{\dot\beta}=\begin{pmatrix}\frac{p^1-ip^2}{\sqrt{p^0+p^3}} \\\ \-\sqrt{p^0+p^3}\end{pmatrix}$
-
-$ \bar\lambda\_{\dot\alpha} = (\lambda\_\alpha)^\dagger \;\;\; if \;\;\; p^i \in \mathbb{R}$
-</font size>
+<br>
+The left and right Weyl spinors are related by complex conjugation in the case of real momenta, but are independent for complex momenta.
 
 ---
 
@@ -255,15 +265,12 @@ $$
 
 </font size>
 
-<br>
-In particular, we need complex momenta to be able to lift the degeneracy between the angle and the square brackets.
-
 </section>
 ---
 ---
 
 <section>
-# 2.1 Singular limits
+# 2.1 &nbsp;Singular &nbsp;limits
 
 ---
 
@@ -275,27 +282,31 @@ We need a set of possible poles of the amplitudes:
 
 <font size=5>$r\_i \in \\{ ⟨12⟩, ⟨13⟩, \dots, ⟨1|2+3|4], \dots, s_{123}, \dots \\}$,</font size>
 
-and let $\mathbb{f}$ be the function we want to reconstruct.
+and let $\, \mathbb{f} \,$ be the function we want to reconstruct.
 
 <br>
 
-<font size=5>$r\_i \rightarrow ε \ll 1, \quad r\_{j \neq i} \sim \mathcal{O}(1), \quad \mathbb{f} \rightarrow ε^α \; \Rightarrow \; log(\mathbb{f}) \rightarrow α\cdot log(ε)$</font size>
+<nobr> We want to build phase space points where <u style="text-decoration: underline;
+  text-decoration-color: red;"> a single invariant vanishes</u>: </nobr>
 
-<nobr>$\Rightarrow$ The slope of $\mathbb{f}(ε)$ in a log-log plot gives us the type of singularity,<br/> if it exists.</nobr>
+<font size=5> $r\_i \rightarrow ε \ll 1, \quad r\_{j \neq i} \sim \mathcal{O}(1), \quad \mathbb{f} \rightarrow ε^α \; \Rightarrow \; log(\mathbb{f}) \rightarrow α\cdot log(ε)$</font size>
+
+<nobr>$\Rightarrow$ The slope of the log-log plot gives us the type of singularity, if it exists.</nobr>
 
 <br>
-<nobr>Note: the uniqueness of the singular limit is important to avoid ambiguities.</nobr>
+<nobr>The uniqueness of the singular limit is important to avoid ambiguities,</nobr>
+and it can be guaranteed only with complex momenta.
 
 ---
 
 
-As an example, let us consider following amplitude:
+As an example, let us consider the following amplitude:
 
 <font size=5>
 
 $\mathbb{f} = A^{tree}(1^{+}\_{g}2^{+}\_{g}3^{+}\_{g}4^{-}\_{g}5^{-}\_{g}6^{-}\_{g})$
 
-<table width=100% border="1" frame="void" cellspacing="0" cellpadding="0">
+<table width=100% border="1" frame="void" cellspacing="0" cellpadding="0" style="margin-bottom:-20px">
   <tr class="greenline">
     <td> <center> $\lim_{⟨12⟩ \rightarrow \epsilon} \mathbb{f} \propto \epsilon^{-1}$ </center> </td>
     <td> <center> $\lim_{⟨13⟩ \rightarrow \epsilon} \mathbb{f} \propto \epsilon^0$ </center> </td>
@@ -307,6 +318,8 @@ $\mathbb{f} = A^{tree}(1^{+}\_{g}2^{+}\_{g}3^{+}\_{g}4^{-}\_{g}5^{-}\_{g}6^{-}\_
 </table>
 
 </font size>
+
+<font size=5> Note: the invariant on the x-axis gets smaller from left to right.</font size>
 
 ---
 
@@ -336,7 +349,7 @@ The ansatz has 1326 independent terms.
 ---
 
 <section>
-# 2.2 Doubly singular limits
+# 2.2 &nbsp;Doubly &nbsp;singular &nbsp;limits
 
 ---
 
@@ -348,11 +361,14 @@ where $\mathcal{R}\_i$ are products of subsets of $\mathcal{D\_{LCD}}$ (i.e. rea
 
 <br>
 
-This information can be accessed by studying doubly singular limits:
+This information can be accessed by studying doubly singular limits.
+
+We now want phase space points where <u style="text-decoration: underline;
+  text-decoration-color: red;"> two invariants vanish</u>:
 
 $r\_i \rightarrow ε \ll 1, \quad r\_j \rightarrow ε \ll 1, \quad \mathbb{f} \rightarrow ε^α \; \Rightarrow \; log(\mathbb{f}) \rightarrow α\cdot log(ε)$
 
-Note: now in general we cannot guarantee uniqueness,<br/> i.e. that $\;r\_{k \neq i, j} \sim \mathcal{O}(1)$.
+In general we cannot guarantee uniqueness anymore,<br/> even with complex momenta.<br/> $\exists \;r\_{k \neq i, j} \sim \epsilon$.
 
 
 ---
@@ -405,33 +421,33 @@ Information from taking the doubly singular limits:
       <td>2/10</td>
     </tr>
     <tr>
-      <th>[1|6]</th>
-      <td>1/3</td>
-      <td>1/2</td>
-      <td>1</td>
-      <td>2/12</td>
-      <td>2/4</td>
-      <td>1/10</td>
-      <td>1/2</td>
-      <td>1/30</td>
-      <td>2/10</td>
-      <td>2/10</td>
-    </tr>
-    <tr>
-      <th>⟨2|3⟩</th>
-      <td>1/31</td>
-      <td>1/2</td>
-      <td>2/12</td>
-      <td>1</td>
-      <td>1/30</td>
-      <td>1/3</td>
-      <td>2/12</td>
-      <td>2/3</td>
-      <td>2/10</td>
-      <td>1/2</td>
-    </tr>
-    <tr>
       <td colspan="11"> <center> $\dots$ </center> </td>
+    </tr>
+    <tr>
+      <th>s_234</th>
+      <td>1/2</td>
+      <td>2/10</td>
+      <td>2/10</td>
+      <td>2/10</td>
+      <td>2/10</td>
+      <td>2/10</td>
+      <td>1/2</td>
+      <td>2/10</td>
+      <td>1</td>
+      <td>1/2</td>
+    </tr>
+    <tr>
+      <th>s_345</th>
+      <td>2/10</td>
+      <td>2/10</td>
+      <td>2/10</td>
+      <td>1/2</td>
+      <td>2/10</td>
+      <td>2/10</td>
+      <td>2/10</td>
+      <td>1/2</td>
+      <td>1/2</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
@@ -440,10 +456,9 @@ Information from taking the doubly singular limits:
 
 The first number is the slope of the log-log plot in the limit, <br/> the second number is the degeneracy of the phase space in the limit.
 
-<font size=5>E.g.:  $⟨12⟩,\,⟨16⟩ \rightarrow \epsilon \;$ implies also $\; ⟨26⟩, s\_{345}, ⟨2|1+6|5], \dots \rightarrow \epsilon$</font size>
-
-<font size=5>More mathematically:<br/>$\\{a, b\\}\_\epsilon \equiv \\{r_i | a \rightarrow \epsilon \, \wedge \, b \rightarrow \epsilon \Rightarrow r_i \rightarrow \epsilon \\}$</font size>
-
+<br>
+Let's introduce the following notation, which we'll need later: $\\{a, b\\}\_\epsilon$.<br/>
+It represents the set of all invariants that vanish when $a$ and $b$ vanish.<br/> For example:<br/>
 <font size=5>$\\{⟨12⟩,\,⟨16⟩\\}\_\epsilon = \\{ ⟨12⟩, ⟨16⟩, ⟨26⟩, s\_{345}, ⟨2|1+6|5], \dots \text{25 more} \dots \\}$</font size>
 
 ---
@@ -451,6 +466,7 @@ The first number is the slope of the log-log plot in the limit, <br/> the second
 
 The slope in the doubly singular limit tells us whether two poles should be in the same denominator and the degeneracy how to separate them.
 
+The following is single line of the table in the previous slide:
 <font size=5>
 
 <style type="text/css">
@@ -515,7 +531,7 @@ The slope in the doubly singular limit tells us whether two poles should be in t
             background:  tomato;
             background:  tomato;
         }</style>  
-<table id="T_67e20e68_9da2_11e9_b9bf_0242a8af999f" style="margin-top:-30px;" ><caption>Green: forced. Red: forbidden. Blue: optional (at least one). Light blue: optional.</caption> 
+<table id="T_67e20e68_9da2_11e9_b9bf_0242a8af999f" style="margin-top:-70px;" ><caption align="bottom">Green: forced. Red: forbidden. Blue: optional (at least one). Light blue: optional.</caption> 
 <thead>    <tr> 
         <th class="blank level0" ></th> 
         <th class="col_heading level0 col0" >⟨1|2⟩</th> 
@@ -640,7 +656,7 @@ In some limits $\Delta$ behaves like the square of some quantity
 ---
 
 <section>
-# 3.1 Partial fraction decomposition
+# 3.1 &nbsp;Partial &nbsp;fraction &nbsp;decomposition
 
 ---
 
@@ -720,7 +736,7 @@ Different representations can be exploited to ensure numerical stability.
 ---
 
 <section>
-# 3.2 Fitting of ansatz
+# 3.2 &nbsp;Fitting &nbsp;of &nbsp;ansatz
 
 ---
 
@@ -772,7 +788,7 @@ $⟨24⟩⟨34⟩⟨34⟩[12][13][13]: 3i$,  $⟨34⟩⟨34⟩⟨34⟩[13][13][1
 
 ---
 
-How big is the ansatz?
+<b> How big is the ansatz? </b>
 
 Easiest to count at constant null phase weights;<br/> the size of the ansatz is a function of:<br/><br/>1. its mass dimension ($d$) $\quad\quad$ 2.  multiplicity of phase space ($m$).
 
@@ -781,7 +797,7 @@ If we allow only for a polynomial in the numerator, then:
 
 $|s\_{ij}| = \frac{m(m-3)}{2}$ $\quad\quad$ $|tr\_5| = {m-1 \choose 4}$
 
-$\left(\mkern -9mu \binom{\, |s\_{ij}| \,}{\, d/2 \,} \mkern -9mu \right) \leq$ ansatz size $\leq \left(\mkern -9mu \binom{\, |s\_{ij}| \,}{\, d/2 \,} \mkern -9mu \right) + |tr_5| \left(\mkern -9mu \binom{\, |s\_{ij}| \,}{\, (d-4)/2 \,} \mkern -9mu \right)$
+$\left(\mkern -9mu \begin{pmatrix}\, |s\_{ij}| \, \\\ \, d/2 \, \end{pmatrix} \mkern -9mu \right) \leq$ ansatz size $\leq \left(\mkern -9mu  \begin{pmatrix} \, |s\_{ij}| \, \\\ \, d/2 \, \end{pmatrix} \mkern -9mu \right) + |tr_5| \left(\mkern -9mu  \begin{pmatrix} \, |s\_{ij}| \, \\\ \, (d-4)/2 \, \end{pmatrix} \mkern -9mu \right)$
 
 The upper bound is saturated for $(\forall m \wedge d \leq 4)$ and for $(\forall d \wedge m \leq 5)$.<br/>
 Otherwise it is an overcounting due to Schouten identity for 4-momenta:
@@ -792,7 +808,7 @@ Otherwise it is an overcounting due to Schouten identity for 4-momenta:
 ---
 
 <section>
-# 4.1 Application and Results
+# 4.1 &nbsp;Application &nbsp;and &nbsp;Results
 
 ---
 
@@ -878,7 +894,7 @@ The pole structure is a bit of a mess:
 ---
 <section>
 
-# Conclusions
+# 4.2 &nbsp;Conclusions
 
 ---
 
@@ -889,7 +905,7 @@ We discussed a general framework to perform these operations, <br/>
 and strategies to tame the complexity of the problem.
 
 <br>
-We hope the application given as an example, although already considered in the litterature, demonstrates the viability of this approach.
+The application given as an example is representative of the complexity of high multiplicity processes and demonstrates the viability of this approach.
 
 <br>
 Outlook:<br/>
