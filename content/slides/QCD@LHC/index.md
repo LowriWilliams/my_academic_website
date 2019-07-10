@@ -162,7 +162,7 @@ $A^{tree}(1^{+}\_{g}2^{+}\_{g}3^{+}\_{g}4^{-}\_{g}5^{-}\_{g}) = \frac{i\,‚ü®45‚ü
 
 ---
 
-*Numerical* calculations bypass any amount of algebraic complexity, see:<br/>
+*Numerical* calculations efficiently bypass algebraic complexity, see:<br/>
 <font size=4> <nobr> BlackHat \[[8](https://arxiv.org/abs/0803.4180)\], CutTools [[9](https://arxiv.org/abs/0711.3596)], MadGraph [[10](https://arxiv.org/abs/1106.0522)], Rocket [[11](https://arxiv.org/abs/0805.2152)], Samurai [[12](https://arxiv.org/abs/1006.0710)], NGluon [[13](https://arxiv.org/abs/1011.2900)], OpenLoops [[14](https://arxiv.org/pdf/1111.5206.pdf)]... </nobr> </font size>
 
 <br>
