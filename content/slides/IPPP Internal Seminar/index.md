@@ -936,6 +936,8 @@ The pole structure is a bit of a mess:
 
 ---
 
+<b> Hidden relations ... </b>
+
 Relations between amplitudes in different theories are often hidden in a standard Lagrangian quantum field theory formulation.
 
 <br>
@@ -951,6 +953,8 @@ $\mathcal{L\_{Biadjoint Scalar}} = 2∂^µΦ^{aa′}∂_µΦ^{aa′}+\frac{y}{3}
 E.g. the above are related by the KLT relations [[19](https://www.sciencedirect.com/science/article/pii/0550321386903627?via%3Dihub)], <br> more generally known as double copy relations.
 
 ---
+
+<b> .. are made explicit </b>
 
 By comparison in the CHY formalism [[20](https://arxiv.org/abs/1307.2199), [21](https://arxiv.org/abs/1309.0885), [22](https://arxiv.org/abs/1306.2962)] these relations are made explicit in the structure of the CHY-Integrands:
 
@@ -970,6 +974,24 @@ Loosely speaking we have [[23](https://arxiv.org/abs/1306.6575)]:
 
 $A = \int I\_{CHY} \quad$ and $\quad A\_{EG} = A\_{YM} \tilde A\_{YM} / A\_{BS}$ 
 
+---
+
+<b> Independent formulation </b>
+
+<br>
+
+<font size=5>
+
+$\circ$ it does not rely on the Lagrangian or Feynman diagrams;
+
+$\circ$ it is more efficient than a brute-force computation;
+
+$\circ$ it is less efficient than recursion relations;
+
+$\circ$ but the latter in some cases are not available.
+
+</font size>
+
 </section>
 ---
 ---
@@ -979,8 +1001,9 @@ $A = \int I\_{CHY} \quad$ and $\quad A\_{EG} = A\_{YM} \tilde A\_{YM} / A\_{BS}$
 
 ---
 
-The backbone of the CHY formalism are the scattering equations:
+<b> Scattering equations and Riemann sphere </b>
 
+The backbone of the CHY formalism are the scattering equations:
 
 <font size=5>
 $f\_a (z, k) \equiv \sum\limits_{b \in A \backslash \\{a\\}} \frac{k\_a \cdot k\_b}{z\_a - z\_b} = 0, \qquad \forall a \in A = \\{1, \dots, n\\}$
@@ -988,9 +1011,14 @@ $f\_a (z, k) \equiv \sum\limits_{b \in A \backslash \\{a\\}} \frac{k\_a \cdot k\
 
 The $k$'s are the momenta, and the $z$'s live on the Riemann sphere.
 
-<img src="StereographicProjection.jpg"; style="max-width:480px;float:center;border:none;">
+<figure>
+	<img src="StereographicProjection.jpg"; style="max-width:480px;float:center;border:none;">
+	<figcaption><font size=4>Figure: Stereographic projection from complex plane to Riemann sphere</font size></figcaption>
+</figure>
 
 ---
+
+<b> Möbius invariance or redundancy </b>
 
 The scattering equations $f\_a$ are invariant under Möbius transformations:
 
@@ -1019,6 +1047,8 @@ $z_1 = \infty, \quad z_2 = 1, \quad z_n = 0 \;$
 
 ---
 
+<b> Amplitudes from integrals </b>
+
 The scattering amplitudes $\textit{A}\_n$ are given by:
 
 <font size=5>
@@ -1044,6 +1074,8 @@ $\prod'\_{a \in A} = (z\_i-z\_j)(z\_j-z\_k)(z\_k-z\_i)\prod_{a \in A \backslash 
 which make $\textit{A}\_n$ independent of the choice of <font size=5>$\\{i, j, k\\}$ and $\\{r, s, t\\}$</font size>.
 
 ---
+
+<b> Amplitudes from sums </b>
 
 In practice we want an algebraic equation of the amplitudes.
 
@@ -1072,6 +1104,8 @@ $\textit{A}\_n \, = \, z\_1^4 \cdot i \sum\_{j = 1}^{(n-3)!} \frac{I\_{\scriptsc
 
 ---
 
+<b> The original scattering equations </b>
+
 This part of the computation depends only on the scattering multiplicity!<br>
 No information about the thoery is required.
 
@@ -1087,7 +1121,9 @@ If we simply take the common denominator we obtain a polynomial of much higher d
 
 ---
 
-Instead we are going to consider the polynomial SE <font size=5>$h\_{m}$</font size>: [[24](https://arxiv.org/abs/1402.7374)] 
+<b> The polynomial scattering equations </b>
+
+Instead we are going to consider the polynomial SE <font size=5>$h\_{m}$</font size> from [[24](https://arxiv.org/abs/1402.7374)] 
 
 <font size=5>
 $h\_{m} = \sum\_{S \subset A',\, |S| = m} k^2\_{S\_1}z\_S=0 \, , \quad \text{with} \quad 1 \leq m \leq n - 3 \, ,$
@@ -1170,6 +1206,8 @@ $$</font size>
 
 ---
 
+<b> Five-point solutions </b>
+
 Now taking the determinant of the matrix form of the SE we get:
 
 <font size=5>
@@ -1179,34 +1217,142 @@ $$
 		H & H^{z\_2} \\\\\\
 		\\end{array}
 		\\right)|\_{z\_2=0} = 0
-$$</font size>
+$$
+</font size>
 
 <font size=5>
 $$
 z\_3^2 s\_{13} s\_{123} + z\_4 z\_3 ( s\_{14}  s\_{123} + s\_{13} s\_{124} - s\_{12} s\_{134} ) + z\_4^2 s\_{14} s\_{124} = 0 \; ,
-$$</font size>
+$$
+</font size>
 
-Which is the needed quadratic equation in the ratio <font size=5> z\_4 / z\_3 </font size> .
+This is the required quadratic in <font size=5>$ z\_4 / z\_3 $</font size> .
 
+<br>
+
+By reintroducing $z\_2$ and setting it to 1 we can then solve for $z\_4$ and $z\_3$:
+
+<font size=3>
+$$
+z\_3 = \frac{-s\_{12} s\_{134} + s\_{123} s\_{14} - s\_{124} s\_{13} \pm
+\sqrt{s\_{12}^2 s\_{134}^2 - 2 s\_{12} s\_{123} s\_{134} s\_{14} - 2 s\_{12} s\_{124} s\_{13} s\_{134} + s\_{123}^2 s\_{14}^2 - 2 s\_{123} s\_{124} s\_{13} s\_{14} + s\_{124}^2 s\_{13}^2}}{2 s\_{13} s\_{134}}
+$$
+$$
+z\_4 = \frac{-s\_{12} s\_{134} - s\_{123} s\_{14} + s\_{124} s\_{13} \mp
+\sqrt{s\_{12}^2 s\_{134}^2 - 2 s\_{12} s\_{123} s\_{134} s\_{14} - 2 s\_{12} s\_{124} s\_{13} s\_{134} + s\_{123}^2 s\_{14}^2 - 2 s\_{123} s\_{124} s\_{13} s\_{14} + s\_{124}^2 s\_{13}^2}}{2 s\_{14} s\_{134}}
+$$
+</font size>
 
 ---
 
-For example:
+<b> What happens at six point? </b>
 
-```python
->>> hms(5)
-⎡      s₁₂⋅z₂ + s₁₃⋅z₃ + s₁₄⋅z₄      ⎤
-⎢                                    ⎥
-⎣s₁₂₃⋅z₂⋅z₃ + s₁₂₄⋅z₂⋅z₄ + s₁₃₄⋅z₃⋅z₄⎦
-```
+Now we have three polynomial scattering equations:
+
+<font size=5>
+$$
+\mkern-30mu H = \\left(
+		\\begin{array}{c}
+		h\_1 \\\\\\
+		h\_2 \\\\\\
+		h\_3 \\\\\\
+		\\end{array}
+		\\right) = 
+\left[\begin{matrix}s\_{12} z\_{2} + s\_{13} z\_{3} + s\_{14} z\_{4} + s\_{15} z\_{5} \\\\ s\_{123} z\_{2} z\_{3} + s\_{124} z\_{2} z\_{4} + s\_{125} z\_{2} z\_{5} + s\_{134} z\_{3} z\_{4} + s\_{135} z\_{3} z\_{5} + s\_{145} z\_{4} z\_{5} \\\\ s\_{1234} z\_{2} z\_{3} z\_{4} + s\_{1235} z\_{2} z\_{3} z\_{5} + s\_{1245} z\_{2} z\_{4} z\_{5} + s\_{1345} z\_{3} z\_{4} z\_{5}\end{matrix}\right]
+$$
+</font size>
+
+We want to eliminate 4 variables:
+<font size=5>
+$$
+\\{1, z\_2\\} \otimes \\{1, z\_3\\} = \\{1, z\_2, z\_3, z\_2 z\_3\\}
+$$
+</font size>
+
+But we only have 3 equations:
+
+<font size=5>
+$$
+\\{h\_1, h\_2, h\_3\\}
+$$
+</font size>
+
+---
+
+<b> Completing the system of equations </b>
+
+The solution is to introduce new variables and new equations:
+
+<font size=5>
+$$
+\\{1, z\_3\\} \otimes \\{1, z\_2, z\_3, z\_2 z\_3\\} = \\{1, z\_2, z\_3, z\_2 z\_3, z\_3^2, z\_2 z\_3^2\\}
+$$
+</font size>
+
+<font size=5>
+$$
+\\{1, z\_3\\} \otimes \\{h\_1, h\_2, h\_3\\} = \\{h\_1, h\_2, h\_3, z\_3 h\_1, z\_3 h\_2, z\_3 h\_3\\}
+$$
+</font size>
+
+Now we have the same number of equations and variables, write:
+
+<font size=5>
+$$
+\\det \left(
+		\\begin{array}{cc}
+		H & H^{z\_2} & H^{z\_3} & H^{z\_2z\_3} & 0 & 0 \\\\\\
+		0 & 0 & H & H^{z\_2} & H^{z\_3} & H^{z\_2z\_3} \\\\\\
+		\\end{array}
+		\\right)\Big|\_{z\_2=0, z\_3=0} \cdot
+		\\left(\\begin{array}{c}
+		1\\\\\\
+		{z\_2}\\\\\\
+		{z\_3}\\\\\\
+		{z\_2 z\_3}\\\\\\
+		{z\_3^2}\\\\\\
+		{z\_2 z\_3^2}\\\\\\
+		\\end{array}
+		\\right) = 0
+$$
+</font size>
+
+---
+
+<b> Problem: the determinant is sextic </b>
+
+<img src="det6.png"; style="max-width:1020px;float:center;border:none;">
+
+Abel–Ruffini theorem: no algebraic solution for order higher than 4.
+
+In general: $\;$ order det $\;\sim\;$ # of SE solutions $\;\sim\;$ $(n-3)!$
+
+---
+
+<b> Solution: use a numerical root-finding algorithm </b>
+
+Two open source packages: [seampy](https://github.com/GDeLaurentis/seampy), [lips](https://github.com/GDeLaurentis/lips)
 
 ```python
 >>> hms(6)
 ⎡                     s₁₂⋅z₂ + s₁₃⋅z₃ + s₁₄⋅z₄ + s₁₅⋅z₅                     ⎤
-⎢                                                                           ⎥
 ⎢s₁₂₃⋅z₂⋅z₃ + s₁₂₄⋅z₂⋅z₄ + s₁₂₅⋅z₂⋅z₅ + s₁₃₄⋅z₃⋅z₄ + s₁₃₅⋅z₃⋅z₅ + s₁₄₅⋅z₄⋅z₅⎥
-⎢                                                                           ⎥
 ⎣     s₁₂₃₄⋅z₂⋅z₃⋅z₄ + s₁₂₃₅⋅z₂⋅z₃⋅z₅ + s₁₂₄₅⋅z₂⋅z₄⋅z₅ + s₁₃₄₅⋅z₃⋅z₄⋅z₅     ⎦
+```
+
+```python
+>>> oParticles = Particles(6)
+>>> num_ss = {str(s): oPs.compute(str(s)) for s in mandelstams(6)}
+```
+
+```python
+>>> sols = solve_scattering_equations(6, num_ss)
+>>> len(sols)
+6
+>>> sols[0]
+{'z3': mpc(real='#nbr', imag='#nbr'),
+ 'z4': mpc(real='#nbr', imag='#nbr'),
+ 'z5': mpc(real='#nbr', imag='#nbr')}
 ```
 
 </section>
