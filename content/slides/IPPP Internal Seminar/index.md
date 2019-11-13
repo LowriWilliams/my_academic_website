@@ -49,13 +49,13 @@ IPPP - Internal Seminar
 
 **A. &nbsp; Reconstruction of analytical spinor-helicity amplitudes**
 
-*1. Motivation* &nbsp; &nbsp; *2. Method* &nbsp; &nbsp; *3. Results in QCD*
+*1. Motivation* &nbsp; &nbsp; *2. Method* &nbsp; &nbsp; *3. Rational coefficients in QCD*
 
 <br>
 
 **B. &nbsp; Tree amplitudes from the CHY formalism**
 
-*1. Motivation* &nbsp; &nbsp; *2. The scattering equations* &nbsp; &nbsp; *3. CHY-Integrands* &nbsp; &nbsp; *4. Results*
+*1. Motivation* &nbsp; &nbsp; *2. Scattering equations* &nbsp; &nbsp; *3. CHY-Integrands* &nbsp; &nbsp; *4. Amplitudes*
 
 ---
 
@@ -1298,23 +1298,49 @@ $$
 Now we have the same number of equations and variables, write:
 
 <font size=5>
+<p class="fragment">
 $$
-\\det \left(
-		\\begin{array}{cc}
-		H & H^{z\_2} & H^{z\_3} & H^{z\_2z\_3} & 0 & 0 \\\\\\
-		0 & 0 & H & H^{z\_2} & H^{z\_3} & H^{z\_2z\_3} \\\\\\
-		\\end{array}
-		\\right)\Big|\_{z\_2=0, z\_3=0} \cdot
-		\\left(\\begin{array}{c}
-		1\\\\\\
-		{z\_2}\\\\\\
-		{z\_3}\\\\\\
-		{z\_2 z\_3}\\\\\\
-		{z\_3^2}\\\\\\
-		{z\_2 z\_3^2}\\\\\\
-		\\end{array}
-		\\right) = 0
+   	\left(
+	\\begin{array}{cc}
+	H & H^{z\_2} & H^{z\_3} & H^{z\_2z\_3} & 0 & 0 \\\\\\
+	0 & 0 & H & H^{z\_2} & H^{z\_3} & H^{z\_2z\_3} \\\\\\
+	\\end{array}
+	\\right)\Big|\_{z\_2=0, z\_3=0} \cdot
+	\\left(\\begin{array}{c}
+	1\\\\\\
+	{z\_2}\\\\\\
+	{z\_3}\\\\\\
+	{z\_2 z\_3}\\\\\\
+	{z\_3^2}\\\\\\
+	{z\_2 z\_3^2}\\\\\\
+	\\end{array}
+	\\right) = 0
 $$
+</p>
+</font size>
+
+<font size=2>
+<p class="fragment">
+$$
+$$
+$$
+\left(\begin{matrix}s\_{14} z\_{4} + s\_{15} z\_{5} & s\_{12} & s\_{13} & 0 & 0 & 0\\\\\\
+s\_{145} z\_{4} z\_{5} & s\_{124} z\_{4} + s\_{125} z\_{5} & s\_{134} z\_{4} + s\_{135} z\_{5} & s\_{123} & 0 & 0\\\\\\
+0 & s\_{1245} z\_{4} z\_{5} & s\_{1345} z\_{4} z\_{5} & s\_{1234} z\_{4} + s\_{1235} z\_{5} & 0 & 0\\\\\\
+0 & 0 & s\_{14} z\_{4} + s\_{15} z\_{5} & s\_{12} & s\_{13} & 0\\\\\\
+0 & 0 & s\_{145} z\_{4} z\_{5} & s\_{124} z\_{4} + s\_{125} z\_{5} & s\_{134} z\_{4} + s\_{135} z\_{5} & s\_{123}\\\\\\
+0 & 0 & 0 & s\_{1245} z\_{4} z\_{5} & s\_{1345} z\_{4} z\_{5} & s\_{1234} z\_{4} + s\_{1235} z\_{5}\end{matrix}\right) \cdot
+	\\left(\\begin{array}{c}
+	1\\\\\\
+	{z\_2}\\\\\\
+	{z\_3}\\\\\\
+	{z\_2 z\_3}\\\\\\
+	{z\_3^2}\\\\\\
+	{z\_2 z\_3^2}\\\\\\
+	\\end{array}
+	\\right) = 0
+$$
+</p>
 </font size>
 
 ---
@@ -1342,7 +1368,7 @@ Two open source packages: [seampy](https://github.com/GDeLaurentis/seampy), [lip
 
 ```python
 >>> oParticles = Particles(6)
->>> num_ss = {str(s): oPs.compute(str(s)) for s in mandelstams(6)}
+>>> num_ss = {str(s): oParticles.compute(str(s)) for s in mandelstams(6)}
 ```
 
 ```python
@@ -1354,6 +1380,52 @@ Two open source packages: [seampy](https://github.com/GDeLaurentis/seampy), [lip
  'z4': mpc(real='#nbr', imag='#nbr'),
  'z5': mpc(real='#nbr', imag='#nbr')}
 ```
+
+---
+
+<b> Recursion for the elimination theory matrix </b>
+
+<br>
+
+<font size=5>
+$$
+\mkern -24mu M\_i=
+  \left(
+    \begin{array}{ccccccc}
+      M\_{i-1} & M\_{i-1}^{z\_{i-3}} & 0 & \dots & 0 & 0\\\\\\
+      0 & M\_{i-1} & M\_{i-1}^{z\_{i-3}} & \dots & 0 & 0\\\\\\
+      \vdots & \vdots & \vdots & \ddots & \vdots & \vdots\\\\\\
+      0 & 0 & 0 & \dots & M\_{i-1} & M\_{i-1}^{z\_{i-3}}\\\\\\
+    \end{array}
+  \right), \quad
+  M\_4=H, \quad
+  H =
+  \left(
+    \begin{array}{c}
+      h\_1\\\\\\
+      h\_2\\\\\\
+      \vdots\\\\\\
+      h\_{n-3}\\\\\\
+    \end{array}
+  \right)
+$$
+</font size>
+
+<br>
+
+$M\_i$ is of dimensions $(i−4)×(i−3)$ when written in terms of $M\_{i−1}$.
+After a derivative is taken the relevant $z\_i$ is assumed to be set to zero.
+
+</section>
+---
+---
+<section>
+
+# 4.2 &nbsp;CHY-Integrands
+
+---
+
+
 
 </section>
 ---
