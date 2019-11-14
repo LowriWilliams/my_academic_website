@@ -20,14 +20,11 @@ slides:
 
 {{< slide background-image="Durham.png" >}}
 
-## Analytical &nbsp; amplitudes <br> and the CHY formalism
+# Analytical &nbsp; amplitudes <br> and &nbsp; the &nbsp; CHY &nbsp; formalism
 
-based on:
-
-[arXiv:1904.04067](https://arxiv.org/abs/1904.04067) [(JHEP)](https://link.springer.com/article/10.1007/JHEP07(2019)123) &nbsp; and &nbsp; [arXiv:1910.11355](https://arxiv.org/abs/1910.11355)
+[arXiv:1904.04067](https://arxiv.org/abs/1904.04067) [(JHEP)](https://link.springer.com/article/10.1007/JHEP07(2019)123) &nbsp; [arXiv:1910.11355](https://arxiv.org/abs/1910.11355)
 
 <br>
-
 Giuseppe De Laurentis
 
 with Daniel Maître
@@ -49,7 +46,9 @@ IPPP - Internal Seminar
 
 **A. &nbsp; Reconstruction of analytical spinor-helicity amplitudes**
 
-*1. Motivation* &nbsp; &nbsp; *2. Method* &nbsp; &nbsp; *3. Rational coefficients in QCD*
+*1. Motivation* &nbsp; &nbsp; *2. Singular limits* &nbsp; &nbsp; *3. Partial fractions and ansatze* <br>
+
+*4. Rational coefficients in QCD*
 
 <br>
 
@@ -71,7 +70,8 @@ IPPP - Internal Seminar
 
 ---
 
-Cross sections at hadron colliders are given by:
+<b> Cross sections at hadron colliders </b>
+<br>
 
 <font size=5>
 $σ_{2 \rightarrow n - 2} = ∑\_{a,b} ∫ dx_a dx_b f\_{a/h_1}(x_a, μ_F) \, f\_{b/h_2}(x_b, μ_F) \;\hat{σ}\_{ab→n-2}(μ_F, μ_R)$
@@ -80,7 +80,6 @@ $d\hat{σ}\_{n}=\frac{1}{2\hat{s}}dΠ\_{n-2}\;(2π)^4δ^4\big(∑\_{i=1}^n p_i\b
 </font size>
 
 <br>
-
 Better predictions require both more loops and higher multiplicity.
 
 <font size=5>
@@ -127,9 +126,9 @@ Better predictions require both more loops and higher multiplicity.
 
 ---
 
-We can split dynamics from kinematics with the following identities.
-
+<b> Chromo-dynamics and kinematics </b>
 <br>
+
 Color ordering at tree level and one loop \[[1](https://pdf.sciencedirectassets.com/271560/1-s2.0-S0550321300X14241/1-s2.0-0550321387906043/main.pdf?X-Amz-Security-Token=AgoJb3JpZ2luX2VjEAIaCXVzLWVhc3QtMSJGMEQCIGNVZuaBsYoWqvtaF%2BAgxc5mpOVy4bMGH2V9AEodTcd4AiAndJhl3k7SA%2Fe2SXVKYCT1Ul4lUrLqXFWVacr%2B1j4YoyraAwhbEAIaDDA1OTAwMzU0Njg2NSIMZCFFK5U%2BuBvoYbtnKrcDAVoIqqSxnZJyWIxHsBuGbbV8ceVrgQ5eYutSzPdHjcMUaIoJlhOXuu2VWIwI6OyG1X3N8KDE816wZTkqwIJT4sU0I7V60zDOZVuZqwDcIom6o5AOm3gPwFYPUE%2B922vgv%2BJT3XwNiqNtjSC00ZFjbectcM7nJa7YWcWAjkZi3oJkIRPvn5m2oOMWET0jR6ZHWhy2jyM7zyiq1oxrXG4JYKB78hua2lVMc3BPdsSombpNeiebjXU4y2Fl35pz8lYIr3Nyws7P91pJS9%2Fzmqjf9QqVHMhjtMWJvQPsYDx%2BJa3UpXT9jo4r1LIERU5%2BZ%2BmVwpqjUqm3jdmvn1p9A3NaxqjyB%2FxfYp6PxAeFmmFi6hlo3IfqGLVoWsTrz0JfNH3L2ADYZhQW8y8QroshqK97GTQqlYbRORZAQeHEILoSjiVDz%2F%2BvT4UupJjaWpECMUca6%2FmrFA3h9KslrYNS%2BxskX0jxleuKkIfdjwoHcES0VA2nq9ELc%2Bhc9Va5T8Wpix7kANcqwOdZtFT5qQSmFOj4e32hzXfefbtqvC4iVBkWMSnvcE4MP3ulM0ac66RuzXZmFnFFzrIHlDDQnozpBTq1AfOoqS7ORld3jyfBg%2FPRvpifiXb3yYmCI1efBvG1zniZHaUld2etzPTcDEWFMm%2FPPAiA5N3c6cL7qQ4xoNuJu6II%2FCVex8l3pxr1LMZxhjcbu24lIRKPxjmN%2BbnMiCCU8VFhR24vzt8cDyKIyUXFIK7qY3OUqcwGDywoER1Ew1y0QvRwtMY8mCBaLbG5oMNSnj7Uf5fQzeKdXs6Dg6fvv4BtNLCR1wFyNDb1T3oNmpT3JEabGG4%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190708T094930Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYZF2Y5ZNJ%2F20190708%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=e91db2a858f3b014276b08879802905aaa8b6b99a9a2693fb585b8ada55b9148&hash=0a71e9d7ca1ef201e5ba2b048cea87b8566aa5c71a9df0903d2ea6a86c687cdc&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=0550321387906043&tid=spdf-d25eb1ed-dd86-4e45-80cb-1e3c295697ff&sid=5c9de57e2ed3984ef69997d0bb7d4e65ff39gxrqb&type=client), [2](https://pdf.sciencedirectassets.com/271560/1-s2.0-S0550321300X15143/1-s2.0-055032139190567H/main.pdf?X-Amz-Security-Token=AgoJb3JpZ2luX2VjEAIaCXVzLWVhc3QtMSJIMEYCIQD3re8xFPROG2g0iYThs9UNoSNDMKhroRYo0TMSTHZPMwIhAIEVIYT2ghbXJ5W1YvREYQ%2BE8agWUgV1vLbq8nv01II4KtoDCFsQAhoMMDU5MDAzNTQ2ODY1Igysg9ZJldbBrlxNevkqtwOKrvNA%2B8nRTloFiexgu%2FS8oCZHTo4dckrAatSr8SX44XC4V8cbhwOWNQw%2BaUCkYN3vXjUyKd5CUFEAMNKtMKWQL12DhZXgmcLRN7TloRABrIVlY1zx7Q15w0dHkFqBqd%2FaNp4tTbDN5KqTZhiyrgFwU6%2BW7YPlWFqhFqQy215RAsWL4noNHf%2B%2Bq4hA6JXZJJSX%2B%2FLcNRR%2FYyPO%2FBLX%2BD0LYfkSqKz9w7lP29C7%2BWxzQmhyKIXgZOL9hcqp2tEZ55WWSmI6N8wWzXuQYhZ4thP368NFMFd8UN133rnrOhew1xJZcEBIRN50U66TkH7mXduwRFoYB%2BkQqve6I0v9sO4XgEVlSAbhr4LjxZJY%2FlYoFUcIl11EJZDGWkid%2Fm2b%2FB25VT8uvAYSFJ4NM9XUNZmskfeoQ1hGVjRs0hSRsC8PfXFSsS9QumI2MFCKV4w4azjdlkR7N3n8IAGlHQi%2BkZ5T%2B9iUSiTt%2F3znT3pwgg4OCsXTd4oWDNjv6peO50NqGk7k9OxlR0UFhvqTT3nHkzliChGcjrI%2FOo32I%2BAPHcWjsv7qB%2FwPKc4T%2FNlkhPWZKXuJMs5k3xrvMK2ajOkFOrMBkz1BJSpBnB2pM2cVxQZSOVyCbY3SLI8NJBKP7nn3qbav%2Bj%2BqrD1IkW5ZxwaN%2B%2FxGNKrr0YZrOwmZmr7GAoBqLGm17gEFdqfy5%2F6yoMOwFu1upyDVlydHvoxNhRliesqqvxNtoAjNQUF%2FfECJZ1IAhHf7DcnmSTyINrWzVgi%2ByQqiTqSJUQWSQ7%2BJMUy97THP7GuQpNCitwnXIo9PwbNTVixfCiy37rxMAFWwpo%2FLEITtpPs%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190708T095217Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYRUVXQZXE%2F20190708%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=35625627d2cae627f9c59d0ea06ec3cf70419b248446a401b304d94cd91a5fd0&hash=b819decaf33c29230d1b66317b3be006fc68534d24f4f0887c6367e38898d15a&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=055032139190567H&tid=spdf-59fd60cb-6bbb-4016-9779-87c46ad6d585&sid=5c9de57e2ed3984ef69997d0bb7d4e65ff39gxrqb&type=client), ...\]:
 
 <font size=5>$\mathcal{A}^{tree}\_{n}({p_i, λ_i, a_i}) = \; g^{n-2} ∑\_{σ\in S_n/Z_n} \text{Tr}(T^{a_σ(1)}\dots T^{a_σ(n)}) A^{tree}_n(σ(1^{λ_1}),\dots ,σ(n^{λ_n}))$</font size>
@@ -153,6 +152,9 @@ $$A^{1-loop}\_{n;1} = \sum\_i d\_i I^i\_{Box} + \sum\_i c\_i I^i\_{Triangle} + \
 
 ---
 
+<b> Intermediate and final expressions  </b>
+<br>
+
 Brute force calculations are a mess:
 
 <img src="Five_gluons_mess.png"; style="max-width:500px;float:center;border:none;margin-top:-5px;">
@@ -168,6 +170,9 @@ $A^{tree}(1^{+}\_{g}2^{+}\_{g}3^{+}\_{g}4^{-}\_{g}5^{-}\_{g}) = \frac{i\,⟨45�
 </font size>
 
 ---
+
+<b> Numerical and Analytical: pros and cons </b>
+<br>
 
 *Numerical* calculations efficiently bypass algebraic complexity, see:<br/>
 <font size=4> <nobr> BlackHat \[[8](https://arxiv.org/abs/0803.4180)\], CutTools [[9](https://arxiv.org/abs/0711.3596)], MadGraph [[10](https://arxiv.org/abs/1106.0522)], Rocket [[11](https://arxiv.org/abs/0805.2152)], Samurai [[12](https://arxiv.org/abs/1006.0710)], NGluon [[13](https://arxiv.org/abs/1011.2900)], OpenLoops [[14](https://arxiv.org/pdf/1111.5206.pdf)]... </nobr> </font size>
@@ -205,7 +210,8 @@ How can we access a (relatively) compact analytical final expression from numeri
 
 ---
 
-The lowest-laying representations of the Lorentz group are:
+<b> Lowest-laying representations of the Lorentz group </b>
+<br>
 
 <font size=5>
 (Recall: $\mathfrak{so}(1, 3)_\mathbb{C} \sim \mathfrak{su}(2) \times \mathfrak{su}(2)$)
@@ -224,6 +230,9 @@ The lowest-laying representations of the Lorentz group are:
 </font size>
 
 ---
+
+<b> Spinors </b>
+<br>
 
 Weyl spinors are sufficient for massless particles:
 
@@ -246,7 +255,8 @@ $$</font size>
 
 ---
 
-Some definitions:
+<b> Spinor Helicity </b>
+<br>
 
 <font size=5>
 $$
@@ -277,7 +287,7 @@ $$
 
 ---
 
-**Why use complex momenta?**
+<b>Why use complex momenta?</b>
 
 <br>
 
@@ -303,11 +313,10 @@ $$
 
 ---
 
-Singular limits give us information about the poles of the amplitude.
-
+<b>Singular limits $\Rightarrow$ poles of the amplitude</b>
 <br>
 
-We need a set of possible poles of the amplitudes:
+We need a set of Lorentz invariants:
 
 <font size=5>$r\_i \in \\{ ⟨12⟩, ⟨13⟩, \dots, ⟨1|2+3|4], \dots, s_{123}, \dots \\}$,</font size>
 
@@ -328,8 +337,8 @@ and it can be guaranteed only with complex momenta.
 
 ---
 
-
-As an example, let us consider the following amplitude:
+<b>Tree-level example</b>
+<br>
 
 <font size=5>
 
@@ -351,6 +360,9 @@ $\mathbb{f} = A^{tree}(1^{+}\_{g}2^{+}\_{g}3^{+}\_{g}4^{-}\_{g}5^{-}\_{g}6^{-}\_
 <font size=5> Note: the invariant on the x-axis gets smaller from left to right.</font size>
 
 ---
+
+<b>The lest common denominator</b>
+<br>
 
 Studying all the limits yields the least common denominator for $\mathbb{f}$:
 
@@ -382,27 +394,40 @@ The ansatz has 1326 independent terms.
 
 ---
 
-Except for the easiest cases, we should really think about $\mathbb{f}$ as:
-
-$\mathbb{f} = \sum\_i \frac{\mathcal{N}_i}{\mathcal{D}_i} = \sum\_i \frac{\mathcal{N}_i}{\mathcal{R}_i\mathcal{S}_i}$,
-
-where $\mathcal{R}\_i$ are products of subsets of $\mathcal{D\_{LCD}}$ (i.e. real poles), <br/> and $\mathcal{S}\_i$ are products of factors not in $\mathcal{D_{LCD}}$ (i.e. spurious poles).
+<b>Partial fractioning</b>
 
 <br>
 
-This information can be accessed by studying doubly singular limits.
+Except for the easiest cases, we should really think about $\mathbb{f}$ as:
+<br>
+
+$\mathbb{f} = \sum\_i \frac{\mathcal{N}_i}{\mathcal{D}_i} = \sum\_i \frac{\mathcal{N}_i}{\mathcal{R}_i\mathcal{S}_i}$,
+<br>
+
+where $\mathcal{R}\_i$ are products of subsets of $\mathcal{D\_{LCD}}$ (i.e. real poles), <br/> and $\mathcal{S}\_i$ are products of factors not in $\mathcal{D_{LCD}}$ (i.e. spurious poles).
+
+---
+
+<b>Doubly singular limits</b>
+
+<br>
+
+The required information can be accessed from doubly singular limits.
 
 We now want phase space points where <u style="text-decoration: underline;
   text-decoration-color: red;"> two invariants vanish</u>:
 
 $r\_i \rightarrow ε \ll 1, \quad r\_j \rightarrow ε \ll 1, \quad \mathbb{f} \rightarrow ε^α \; \Rightarrow \; log(\mathbb{f}) \rightarrow α\cdot log(ε)$
 
+<br>
+
 In general we cannot guarantee uniqueness anymore,<br/> even with complex momenta.<br/> $\exists \;r\_{k \neq i, j} \sim \epsilon$.
 
 
 ---
 
-Information from taking the doubly singular limits:
+<b>Information from doubly singular limits</b>
+<br>
 
 <font size=5>
 
@@ -492,8 +517,10 @@ It represents the set of all invariants that vanish when $a$ and $b$ vanish.<br/
 
 ---
 
+<b>Which poles share the same denominator?</b>
+<br>
 
-The slope in the doubly singular limit tells us whether two poles should be in the same denominator and the degeneracy how to separate them.
+<!--- The slope in the doubly singular limit tells us whether two poles should be in the same denominator and the degeneracy how to separate them. --->
 
 The following is single line of the table in the previous slide:
 <font size=5>
@@ -604,7 +631,10 @@ The following is single line of the table in the previous slide:
 
 ---
 
-Going back to our tree level example,<br/> let's see how we can group together the poles of the amplitude.
+<b> Partial fraction decomposition #1 </b>
+<br>
+
+<!--- Going back to our tree level example,<br/> let's see how we can group together the poles of the amplitude. --->
 
 <table width=100% border="1" frame="void" cellspacing="0" cellpadding="0">
   <tr class="greenline">
@@ -612,7 +642,8 @@ Going back to our tree level example,<br/> let's see how we can group together t
     <td>
       <center>
         <font size=6>
-	  $\frac{\mathcal{N_1}}{[16]⟨23⟩⟨34⟩[56]⟨2|1+6|5]s_{234}}+\\
+	  ${\small A^{tree}(1^{+}_{g}2^{+}_{g}3^{+}_{g}4^{-}_{g}5^{-}_{g}6^{-}_{g}) = }\\
+	    \frac{\mathcal{N_1}}{[16]⟨23⟩⟨34⟩[56]⟨2|1+6|5]s_{234}}+\\
 	    \frac{\mathcal{N_2}}{⟨12⟩⟨16⟩[34][45]⟨2|1+6|5]s_{345}}\phantom{+}$
         </font size>
       </center>
@@ -627,6 +658,9 @@ Where does <font size=5> $⟨2|1+6|5]$ </font size> come from?
 <font size=5>$\\{⟨12⟩, [56]\\}\_{\epsilon} \, \cap \, \\{⟨16⟩, s\_{234}\\}\_{\epsilon} \, \cap \, \\{⟨23⟩, [45]\\}\_{\epsilon} \, \cap \, \\{[34], s\_{234}\\}\_{\epsilon} \, \dots$ </font size>
 
 ---
+
+<b> Partial fraction decomposition #2 </b>
+<br>
 
 <table width=100% border="1" frame="void" cellspacing="0" cellpadding="0">
   <tr class="greenline">
@@ -651,6 +685,9 @@ Where does <font size=5> $⟨2|1+6|5]$ </font size> come from?
 Both of these partial fractions correspond to some BCFW shift,<br/> but we are not limited to these representations.
 
 ---
+
+<b> Partial fraction decomposition #3 </b>
+<br>
 
 <table width=100% border="1" frame="void" cellspacing="0" cellpadding="0">
   <tr class="greenline">
@@ -684,6 +721,9 @@ Different representations can be exploited to ensure numerical stability.
 
 ---
 
+<b> Spinor ansatz </b>
+<br>
+
 Let's consider the first representation:
 
 $\mathbb{f}=$
@@ -692,7 +732,7 @@ $\frac{\mathcal{N\_2}}{⟨12⟩⟨16⟩[34][45]⟨2|1+6|5]s\_{345}}$
 
 <br>
 $\mathcal{N\_1}$ has mass dimension: 6, and phase weights: [-3, 0, 0, 3, 0, 0].<br/>
-We generate all possible products of spinor products compatible with this infomation. The ansatz has size 10:
+<!--- We generate all possible products of spinor products compatible with this infomation. ---> The ansatz has size 10:
 
 $[⟨24⟩⟨24⟩⟨24⟩[12][12][12],$
 $⟨24⟩⟨24⟩⟨34⟩[12][12][13],$
@@ -709,13 +749,14 @@ much smaller than the one for $\mathcal{N_{LCD}}$<br/> which had more than 1000 
 
 ---
 
-We want to isolate the first term in
+<b> Gaussian elimination </b>
+<br>
 
 $\mathbb{f}=$
 $\frac{\mathcal{N\_1}}{[16]⟨23⟩⟨34⟩[56]⟨2|1+6|5]s\_{234}}+$
 $\frac{\mathcal{N\_2}}{⟨12⟩⟨16⟩[34][45]⟨2|1+6|5]s\_{345}}$
 
-this can be done by generating phase space points <br/> in the limit of, say, $s_{234} \rightarrow \epsilon$.
+Isolate the first term by generating phase space points <br/> in the limit of, say, $s_{234} \rightarrow \epsilon$.
 
 Then we can reconstruct the numerical coefficient of the ansatz entries by Gaussian elimination.
 
@@ -752,33 +793,47 @@ Otherwise it is an overcounting due to Schouten identity for 4-momenta:
 ---
 
 <section>
-# 4.1 &nbsp;Application &nbsp;and &nbsp;Results
+# 4. &nbsp; Rational &nbsp; coefficients &nbsp; in &nbsp; QCD
 
 ---
 
+<b> Six-gluon one-loop rational coefficients </b>
+
+<br>
 As an application we obtained analytical expressions for all parts of the six-gluon amplitude with a gluon in the loop.
 
 <br>
 All independent coefficients are available as anchillary files at: [arXiv:1904.04067](https://arxiv.org/abs/1904.04067).
 
 <br>
-These expression were already present in the litterature, but with different structures. We did not use any information from those papers for the reconstruction.
+Our expressions are manifestly rational and gauge invariant.
 
 <br>
 For a summary of the litterature see Ref.[15](https://arxiv.org/pdf/0901.1202.pdf).
 
 ---
 
-For the three mass triangle mentioned in an earlier section, which was previously obtained in [[16](https://arxiv.org/pdf/hep-ph/0602178.pdf)], the poles are:
+<b> Three mass triangle </b>
+<br>
+
+<img src="three_mass_triangle.svg"; width=25%; height=25%; style="float:center;border:none;margin-bottom:0px;">
 
 <font size=5>$\mathcal{D\_{LCD}} = ⟨12⟩[12]⟨34⟩[34]⟨56⟩[56]⟨1|3+4|2]^4⟨3|1+2|4]^4⟨5|1+2|6]^4Δ_{135}^3$</font size>
 
-<table width=90% border="1" frame="void" cellspacing="0" cellpadding="0">
+An expression was previously obtained in [[16](https://arxiv.org/pdf/hep-ph/0602178.pdf)].
+
+We obtain an explicitly rational expression, like for $\mathcal{N}=1$ SUSY in [[17](https://arxiv.org/pdf/0709.2086.pdf)].
+
+---
+
+<b> Pole structure </b>
+
+<table width=70% border="1" frame="void" cellspacing="0" cellpadding="0">
   <tr class="greenline">
     <td> <center> <img src="Graph5.gv.svg"; style="max-width:360px;float:center;border:none;"> </center> </td>
     <td>
       <center>
-        <font size=5>
+        <font size=4>
 	Symmetries:<br/>
 	  $123456$<br/>
 	  $\overline{216543}$<br/>
@@ -792,17 +847,7 @@ For the three mass triangle mentioned in an earlier section, which was previousl
   </tr>
 </table>
 
-We obtain an explicitly rational expression, like for $\mathcal{N}=1$ SUSY in [[17](https://arxiv.org/pdf/0709.2086.pdf)].
-
----
-
-Let us briefly consider the coefficient of a three mass triangle:
-
-<img src="three_mass_triangle.svg"; width=25%; height=25%; style="float:center;border:none;margin-bottom:0px;">
-
-$\mathcal{D\_{LCD}} = ⟨12⟩[12]⟨34⟩[34]⟨56⟩[56]⟨1|3+4|2]^4⟨3|1+2|4]^4⟨5|1+2|6]^4Δ_{135}^3$
-
-<font size=4>
+<font size=3>
 
 <table border="1" class="dataframe">
   <thead>
@@ -858,9 +903,10 @@ $\mathcal{D\_{LCD}} = ⟨12⟩[12]⟨34⟩[34]⟨56⟩[56]⟨1|3+4|2]^4⟨3|1+2|
 
 </font size>
 
-Do we need square roots of momentum invariants?
-
 ---
+
+<b>Do we need square roots of momentum invariants?</b>
+<br>
 
 All branch cuts should have been taken care of by unitarity cuts.
 
@@ -881,15 +927,50 @@ In some limits $\Delta$ behaves like the square of some quantity
 
 ---
 
-<iframe src="https://arxiv.org/src/1904.04067v3/anc/AllOneLoop6Gluons/6g_pmpmpm_G/triangle_19_.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe>
+<!--- <iframe src="https://arxiv.org/src/1904.04067v3/anc/AllOneLoop6Gluons/6g_pmpmpm_G/triangle_19_.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe> --->
 
+<b> The rational coefficient </b>
+
+$$
+\begin{gathered}
+\scriptscriptstyle \frac{-1/2i⟨23⟩^3[45]^3s\_{123}^2Ω\_{351}}{⟨12⟩[56]⟨1|2+3|4]⟨3|1+2|4]^4⟨3|1+2|6]}+\\\\\\
+\scriptscriptstyle \frac{1/4i[12]⟨23⟩^3[45]^3⟨56⟩⟨4|1+2|3]s\_{123}Π\_{351}}{⟨1|2+3|4]⟨3|1+2|4]^3⟨3|1+2|6]Δ\_{135}}+\\\\\\
+\scriptscriptstyle \frac{2i⟨23⟩^2[45]^2⟨2|1+3|5]s\_{123}Ω\_{351}}{⟨12⟩[56]⟨1|2+3|4]⟨3|1+2|4]^3⟨3|1+2|6]}+\\\\\\
+\scriptscriptstyle \frac{⟨2|3+4|1]⟨6|1+2|5]Ω\_{351}(1i⟨12⟩[12]⟨13⟩[13]\,...⟪4\,\text{terms}⟫...\, -1i⟨23⟩[23]⟨35⟩[35])}{⟨1|3+4|2]⟨3|1+2|4]^2⟨5|1+2|6]Δ\_{135}}+\\\\\\
+\scriptscriptstyle \frac{4i⟨12⟩^3[12]^2[13][15]⟨36⟩\,...⟪65\,\text{terms}⟫...\, -4i[12]⟨23⟩^2[23]⟨26⟩[35]⟨36⟩[36]}{⟨1|3+4|2]⟨3|1+2|4]^2⟨5|1+2|6]}+\\\\\\
+\scriptscriptstyle \frac{[12]⟨23⟩^3[45]^3⟨56⟩⟨4|1+2|3]^2Π\_{351}(1/8is\_{123}+1/16is\_{124})}{⟨1|2+3|4]⟨3|1+2|4]^2⟨3|1+2|6]Δ\_{135}^2}+\\\\\\
+\scriptscriptstyle \frac{-3i⟨23⟩[45]⟨2|1+3|5]^2Ω\_{351}}{⟨12⟩[56]⟨1|2+3|4]⟨3|1+2|4]^2⟨3|1+2|6]}+\\\\\\
+\dots
+\end{gathered}
+$$
+<!---
+$$
+\begin{gathered}
+\scriptscriptstyle \frac{⟨23⟩[45](-4i⟨12⟩^2[12]^2[15]⟨26⟩\,...⟪31\,\text{terms}⟫...\, +4i[12]⟨26⟩^2⟨56⟩[56]^2)}{⟨1|2+3|4]⟨3|1+2|4]^2⟨3|1+2|6]}+\\\\\\
+\scriptscriptstyle \frac{5/32i⟨12⟩[12]⟨34⟩[34]⟨56⟩[56]⟨2|3+4|1]⟨4|1+2|3]⟨6|1+2|5]Π\_{351}}{⟨1|3+4|2]⟨3|1+2|4]⟨5|1+2|6]Δ\_{135}^2}+\\\\\\
+\scriptscriptstyle \frac{⟨2|3+4|1]⟨4|1+2|3]⟨6|1+2|5]⟨1|3+4|1]⟨56⟩[56](-1/4i⟨12⟩[12]⟨23⟩[23]\,...⟪17\,\text{terms}⟫...\, +1/4i⟨24⟩[24]⟨34⟩[34])}{⟨1|3+4|2]⟨3|1+2|4]⟨5|1+2|6]Δ\_{135}^2}+\\\\\\
+\scriptscriptstyle \frac{⟨2|3+4|1]⟨4|1+2|3]⟨6|1+2|5]⟨2|3+4|2]⟨56⟩[56](-1/4i⟨12⟩[12]⟨23⟩[23]\,...⟪7\,\text{terms}⟫...\, +1/2i⟨13⟩[14][35]⟨45⟩)}{⟨1|3+4|2]⟨3|1+2|4]⟨5|1+2|6]Δ\_{135}^2}+\\\\\\
+\scriptscriptstyle \frac{⟨2|3+4|1]⟨6|1+2|5](7/4i⟨12⟩^2[12]^2[13]⟨14⟩\,...⟪47\,\text{terms}⟫...\, +3/2i⟨23⟩[23]^2⟨25⟩⟨34⟩[35])}{⟨1|3+4|2]⟨3|1+2|4]⟨5|1+2|6]Δ\_{135}}+\\\\\\
+\scriptscriptstyle \frac{⟨23⟩^2[45]^2⟨4|1+2|3](5/4i⟨12⟩^2[12]^2[13]⟨14⟩[14]⟨46⟩\,...⟪152\,\text{terms}⟫...\, +5/8i[12]⟨26⟩⟨34⟩[34]⟨36⟩[36]^2⟨46⟩)}{⟨1|2+3|4]⟨3|1+2|4]⟨3|1+2|6]Δ\_{135}^2}+\\\\\\
+\scriptscriptstyle \frac{-2i⟨2|1+3|5]^3s\_{123}}{⟨12⟩[56]⟨1|2+3|4]⟨3|1+2|4]⟨3|1+2|6]}+\\\\\\
+\scriptscriptstyle \frac{3/16i⟨12⟩^2[12]^2⟨14⟩[14][15]⟨24⟩^2[25]⟨26⟩[34]\,...⟪1340\,\text{terms}⟫...\, +3i[13]⟨24⟩^2[24][25]⟨26⟩^4[26]^2[56]}{⟨1|2+3|4]⟨3|1+2|6]Δ\_{135}^2}+\\\\\\
+\scriptscriptstyle \frac{-2i⟨24⟩[35]⟨2|1+3|5]^2}{⟨12⟩[56]⟨1|2+3|4]⟨3|1+2|6]}+\\\\\\
+\scriptscriptstyle (123456\; \rightarrow \; 345612)+\\\\\\
+\scriptscriptstyle (123456\; \rightarrow \; 561234)+\\\\\\
+\scriptscriptstyle \frac{5/128i⟨12⟩[12]⟨34⟩[34]⟨56⟩[56]⟨2|3+4|1]⟨4|1+2|3]⟨6|1+2|5]Π\_{135}Π\_{351}Π\_{513}}{⟨1|3+4|2]⟨3|1+2|4]⟨5|1+2|6]Δ\_{135}^3}+\\\\\\
+\scriptscriptstyle \frac{4i⟨12⟩^4[12]^3⟨13⟩[13][15]\,...⟪680\,\text{terms}⟫...\, +4i⟨23⟩^2[23]^2⟨25⟩⟨34⟩⟨35⟩[35]^2[45]}{⟨1|3+4|2]⟨1|2+3|4]⟨3|1+2|4]⟨3|1+2|6]⟨5|1+2|6]}+\\\\\\
+\scriptscriptstyle \frac{-45i⟨12⟩^3[12]^2⟨13⟩[13]^2[23]⟨34⟩\,...⟪1160\,\text{terms}⟫...\, -4i⟨34⟩^2[34]^2⟨35⟩[35]^2⟨45⟩^2[45]}{⟨1|3+4|2]⟨1|2+3|4]⟨3|1+2|6]⟨5|1+6|2]⟨5|1+2|6]}\phantom{+}
+\end{gathered}
+$$
+--->
 
 ---
 
-Another interesting piece is the rational part:
+<b>A six-gluon one-loop rational part</b>
+<br>
 
 <font size=5>
-$R^{1-loop}_6(1^{+}\_{g}2^{-}\_{g}3^{+}\_{g}4^{-}\_{g}5^{+}\_{g}6^{-}\_{g})$
+$R^{1-loop}\_6(1^{+}\_{g}2^{-}\_{g}3^{+}\_{g}4^{-}\_{g}5^{+}\_{g}6^{-}\_{g})$
 </font size>
 
 <font size=4>
@@ -910,13 +991,45 @@ An analytical expression for this component was previously obtained in [[18](htt
 
 ---
 
-The pole structure is a bit of a mess:
+<b>The pole structure</b>
+<br>
+
+is a bit of a mess:
 
 <img src="GraphRational.gv.svg"; style="maxwidth:1000px; float:center; border:none;">
 
 ---
 
-<iframe src="https://arxiv.org/src/1904.04067v3/anc/AllOneLoop6Gluons/6g_pmpmpm_G/rational.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe>
+<!--- <iframe src="https://arxiv.org/src/1904.04067v3/anc/AllOneLoop6Gluons/6g_pmpmpm_G/rational.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe> --->
+<b> The rational part </b>
+
+<font size=5>
+$$
+\begin{gathered}
+\scriptscriptstyle\frac{2/3i⟨12⟩^3[15]^3[23]s\_{123}}{[45]⟨1|2+3|1]^2⟨1|2+3|4]⟨1|2+3|6]⟨3|1+2|6]}+\\\\\\
+\scriptscriptstyle\frac{-2/3i⟨12⟩^3[15]^3[23]⟨3|1+2|5]}{⟨13⟩[45][56]⟨1|2+3|1]^2⟨1|2+3|4]⟨3|1+2|6]}+\\\\\\
+\scriptscriptstyle\frac{1i⟨12⟩^3[15]^2⟨23⟩[23]^2[56]}{[45]⟨1|2+3|1]⟨1|2+3|4]⟨1|2+3|6]^2⟨3|1+2|6]}+\\\\\\
+\scriptscriptstyle\frac{⟨12⟩^2[15]^2\[23\](-1i⟨12⟩[15]+2i⟨23⟩[35])}{[45]⟨1|2+3|1]⟨1|2+3|4]⟨1|2+3|6]⟨3|1+2|6]}+\\\\\\
+\scriptscriptstyle\frac{1i⟨12⟩^3[15]^2[25]⟨3|1+2|5]}{⟨13⟩^2[45][56]⟨1|2+3|1]⟨1|2+3|4]⟨3|1+2|6]}+\\\\\\
+\scriptscriptstyle\frac{2i⟨12⟩^2[15]^2[35]⟨3|1+2|5]}{⟨13⟩[45][56]⟨1|2+3|1]⟨1|2+3|4]⟨3|1+2|6]}+\\\\\\
+\scriptscriptstyle\frac{-1i⟨12⟩^2[15]⟨23⟩[25]^2⟨2|1+3|5]}{⟨13⟩^2[45][56]⟨1|2+3|4]⟨3|1+2|6]s\_{123}}+\\\\\\
+\scriptscriptstyle\frac{-1i⟨12⟩^2[15]^2[25]⟨2|1+3|5]}{⟨13⟩[45][56]⟨1|2+3|4]⟨3|1+2|6]s\_{123}}+\\\\\\
+\scriptscriptstyle\frac{⟨24⟩^2⟨26⟩^2(-1/6i⟨13⟩^2[13]⟨46⟩\,...⟪2\,\text{terms}⟫...\, +1/3i[12]⟨14⟩⟨16⟩⟨23⟩)}{⟨12⟩⟨16⟩⟨23⟩⟨34⟩⟨45⟩⟨56⟩⟨1|2+3|4]⟨3|1+2|6]}+\\\\\\
+\scriptscriptstyle(123456\; \rightarrow \; \overline{234561})+
+\scriptscriptstyle(123456\; \rightarrow \; 345612)+
+\scriptscriptstyle(123456\; \rightarrow \; \overline{456123})+
+\scriptscriptstyle(123456\; \rightarrow \; 561234)+
+\scriptscriptstyle(123456\; \rightarrow \; \overline{612345})+\\\\\\
+\scriptscriptstyle(123456\; \rightarrow \; \overline{654321})+
+\scriptscriptstyle(123456\; \rightarrow \; 543216)+
+\scriptscriptstyle(123456\; \rightarrow \; \overline{432165})+
+\scriptscriptstyle(123456\; \rightarrow \; 321654)+
+\scriptscriptstyle(123456\; \rightarrow \; \overline{216543})+
+\scriptscriptstyle(123456\; \rightarrow \; 165432)+\\\\\\
+\dots
+\end{gathered}
+$$
+</font size>
 
 </section>
 ---
