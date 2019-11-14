@@ -66,7 +66,7 @@ IPPP - Internal Seminar
 
 <section>
 
-# 1.1 &nbsp; Motivation
+# A&nbsp;1.1 &nbsp; Motivation
 
 ---
 
@@ -206,7 +206,7 @@ How can we access a (relatively) compact analytical final expression from numeri
 ---
 
 <section>
-# 1.2 &nbsp;Spinor &nbsp;Helicity
+# A&nbsp;1.2 &nbsp;Spinor &nbsp;Helicity
 
 ---
 
@@ -309,7 +309,7 @@ $$
 ---
 
 <section>
-# 2.1 &nbsp;Singular &nbsp;limits
+# A&nbsp;2.1 &nbsp;Singular &nbsp;limits
 
 ---
 
@@ -390,7 +390,7 @@ The ansatz has 1326 independent terms.
 ---
 
 <section>
-# 2.2 &nbsp;Doubly &nbsp;singular &nbsp;limits
+# A&nbsp;2.2 &nbsp;Doubly &nbsp;singular &nbsp;limits
 
 ---
 
@@ -627,7 +627,7 @@ The following is single line of the table in the previous slide:
 ---
 
 <section>
-# 3.1 &nbsp;Partial &nbsp;fraction &nbsp;decomposition
+# A&nbsp;3.1 &nbsp;Partial &nbsp;fraction &nbsp;decomposition
 
 ---
 
@@ -717,7 +717,7 @@ Different representations can be exploited to ensure numerical stability.
 ---
 
 <section>
-# 3.2 &nbsp;Fitting &nbsp;of &nbsp;ansatz
+# A&nbsp;3.2 &nbsp;Fitting &nbsp;of &nbsp;ansatz
 
 ---
 
@@ -793,7 +793,7 @@ Otherwise it is an overcounting due to Schouten identity for 4-momenta:
 ---
 
 <section>
-# 4. &nbsp; Rational &nbsp; coefficients &nbsp; in &nbsp; QCD
+# A&nbsp;4.1 &nbsp; Rational &nbsp; coefficients &nbsp; in &nbsp; QCD
 
 ---
 
@@ -929,7 +929,7 @@ In some limits $\Delta$ behaves like the square of some quantity
 
 <!--- <iframe src="https://arxiv.org/src/1904.04067v3/anc/AllOneLoop6Gluons/6g_pmpmpm_G/triangle_19_.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe> --->
 
-<b> The rational coefficient </b>
+<b> The three-mass triangle rational coefficient </b>
 
 <font size=4>
 $$
@@ -1050,7 +1050,7 @@ $$
 ---
 <section>
 
-# 1.1 &nbsp; Motivation
+# B&nbsp;1.1 &nbsp; Motivation
 
 ---
 
@@ -1115,7 +1115,7 @@ $\circ$ but the latter in some cases are not available.
 ---
 <section>
 
-# 1.2 &nbsp; General Introduction
+# B&nbsp;1.2 &nbsp; General Introduction
 
 ---
 
@@ -1218,7 +1218,7 @@ $\textit{A}\_n \, = \, z\_1^4 \cdot i \sum\_{j = 1}^{(n-3)!} \frac{I\_{\scriptsc
 ---
 <section>
 
-# 2.1 &nbsp; The scattering equations
+# B&nbsp;2.1 &nbsp; The scattering equations
 
 ---
 
@@ -1539,11 +1539,84 @@ After a derivative is taken the relevant $z\_i$ is assumed to be set to zero.
 ---
 <section>
 
-# 4.2 &nbsp;CHY-Integrands
+# B&nbsp;2.2 &nbsp;CHY-Integrands
 
 ---
 
+<b> Quick recap </b>
+<br>
 
+Recall the expression for the amplitudes:
+
+$\textit{A}\_n \, = \, z\_1^4 \cdot i \sum\_{j = 1}^{(n-3)!} \frac{I\_{\scriptscriptstyle CHY}(z^{(j)}(k); k; ϵ)}{\det(ϕ\_{rst}^{ijk})(z^{(j)}(k); k)}$
+
+<br>
+So far:
+
+$\circ\mkern -10mu \checkmark$ Theory independent part $z^{(j)}(k)$.
+
+$\circ\mkern -10mu ✗$ Theory dependent part $I\_{\scriptscriptstyle CHY}(z^{(j)}(k); k; ϵ)$.
+
+<br>
+First of all, note that $I\_{\scriptscriptstyle CHY}$ must come with <br> four powers of $z_1=\infty$ in the denominator.
+
+---
+
+<b>Summary of considered theories</b>
+
+<br>
+
+<font size=5>
+
+<table width=50% border="1" cellspacing="0" cellpadding="0" style="margin-bottom:-10px">
+  <tr class="greenline">
+    <td colspan="2", rowspan="2"> <div id="rot90"> <center> <b> $\times $ </b> </center> </div> </td>
+    <td colspan="4"> <center> <b> $I_{\scriptscriptstyle CHY}$ </b> </center> </td>
+  </tr>
+  <tr>
+    <td><b>$Pf'(Ψ)$</b></td>
+    <td><b>$C_n$</b></td>
+    <td><b>$Pf'(A)^2$</b></td>
+    <td><b>$W_1$</b></td>
+  </tr>
+  <tr>
+    <td rowspan="4"> <b> $I_{\scriptscriptstyle CHY}$ </b> </td>
+    <td><b>$Pf'(Ψ)$</b></td>
+    <td>EG</td>
+    <td>YM</td>
+    <td>BI</td>
+    <td>CG</td>
+  </tr>
+  <tr>
+    <td><b>$C_n$</b></td>
+    <td>YM</td>
+    <td>BS</td>
+    <td>NLSM</td>
+    <td>$(DF)^2$</td>
+  </tr>
+  <tr>
+    <td><b>$Pf'(A)^2$</b></td>
+    <td>BI</td>
+    <td>NLSM</td>
+    <td>Galileon</td>
+    <td>?</td>
+  </tr>
+  <tr>
+    <td><b>$W_1$</b></td>
+    <td>CG</td>
+    <td>$(DF)^2$</td>
+    <td>?</td>
+    <td>?</td>
+  </tr>
+</table>
+
+</font size>
+<br>
+
+<font size=5>
+Table: Possible QFTs built out of $Pf'(Ψ)$ , $C\_n$ , $Pf'(A)^2$ and $W\_1$.<br>
+A product is implied between rows and columns, eg: $I\_{\scriptscriptstyle CHY, EG} = Pf'(Ψ) × Pf'(Ψ)$.
+</font size>
 
 </section>
 ---
