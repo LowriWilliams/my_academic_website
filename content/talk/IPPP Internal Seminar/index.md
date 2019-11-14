@@ -1,10 +1,10 @@
 ---
-title: Analytical amplitudes and the CHY formalism
+title: Spinor-helicity amplitudes and the CHY formalism
 event: IPPP Internal Seminar
 event_url: https://conference.ippp.dur.ac.uk/event/851/
 location: Durham, UK
 summary: IPPP Internal Seminar
-abstract: "Abstract"
+abstract: "I will review a technique to obtain analytical spinor-helicity rational coefficients for loop amplitudes from floating-point numerical evaluations, with explicit examples for QCD processes. Afterwards, I will discuss the Cachazo-He-Yuan formalism for massless scattering. I will show how arbitrary-precision numerical solutions of the scattering equations lead to compact analytical tree-level amplitudes in a variety of theories, including the first complete set of five-point $(DF)^2$ amplitudes."
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
@@ -28,11 +28,11 @@ featured: false
 links:
 - icon: arxiv
   icon_pack: ai
-  name: Paper
+  name: arXiv:1904.04067
   url: https://arxiv.org/abs/1904.04067
 - icon: arxiv
   icon_pack: ai
-  name: Paper
+  name: arXiv:1910.11355
   url: https://arxiv.org/abs/1910.11355
 url_code: ""
 url_pdf: ""

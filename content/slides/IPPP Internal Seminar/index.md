@@ -1,5 +1,5 @@
 ---
-title: Analytical amplitudes and the CHY formalism
+title: Spinor-helicity amplitudes and the CHY formalism
 summary: 
 authors: ["Giuseppe De Laurentis"]
 tags: [QCD, Scattering Amplitudes, CHY]
@@ -921,7 +921,7 @@ The culprit is $\Delta$, which first appears in the <br/> three mass triangle mo
 Solution:<br/>
 In some limits $\Delta$ behaves like the square of some quantity
 
-<font size=5 style="margin-left:-50px;">$(\Omega\_{351})^2 \equiv (2s\_{12}s\_{56}-(s\_{12}+s\_{56}-s\_{45})s\_{123})^2 = 4s\_{123}^2\Delta\_{135}-4s\_{12}s\_{56}\langle 4|1+2|3]\langle 3|1+2|4]$</font size>
+<font size=5 style="margin-left:-75px;">$(\Omega\_{351})^2 \equiv (2s\_{12}s\_{56}-(s\_{12}+s\_{56}-s\_{45})s\_{123})^2 = 4s\_{123}^2\Delta\_{135}-4s\_{12}s\_{56}\langle 4|1+2|3]\langle 3|1+2|4]$</font size>
 
 <font size=5>$(\Pi\_{351})^2 \equiv (s\_{123}-s\_{124})^2 = 4\Delta\_{135}-4\langle 4|1+2|3]\langle 3|1+2|4]$</font size>
 
@@ -931,6 +931,7 @@ In some limits $\Delta$ behaves like the square of some quantity
 
 <b> The rational coefficient </b>
 
+<font size=4>
 $$
 \begin{gathered}
 \scriptscriptstyle \frac{-1/2i⟨23⟩^3[45]^3s\_{123}^2Ω\_{351}}{⟨12⟩[56]⟨1|2+3|4]⟨3|1+2|4]^4⟨3|1+2|6]}+\\\\\\
@@ -940,15 +941,19 @@ $$
 \scriptscriptstyle \frac{4i⟨12⟩^3[12]^2[13][15]⟨36⟩\,...⟪65\,\text{terms}⟫...\, -4i[12]⟨23⟩^2[23]⟨26⟩[35]⟨36⟩[36]}{⟨1|3+4|2]⟨3|1+2|4]^2⟨5|1+2|6]}+\\\\\\
 \scriptscriptstyle \frac{[12]⟨23⟩^3[45]^3⟨56⟩⟨4|1+2|3]^2Π\_{351}(1/8is\_{123}+1/16is\_{124})}{⟨1|2+3|4]⟨3|1+2|4]^2⟨3|1+2|6]Δ\_{135}^2}+\\\\\\
 \scriptscriptstyle \frac{-3i⟨23⟩[45]⟨2|1+3|5]^2Ω\_{351}}{⟨12⟩[56]⟨1|2+3|4]⟨3|1+2|4]^2⟨3|1+2|6]}+\\\\\\
+\scriptscriptstyle \frac{⟨23⟩\[45\](-4i⟨12⟩^2[12]^2[15]⟨26⟩\,...⟪31\,\text{terms}⟫...\, +4i[12]⟨26⟩^2⟨56⟩[56]^2)}{⟨1|2+3|4]⟨3|1+2|4]^2⟨3|1+2|6]}+\\\\\\
+\scriptscriptstyle \frac{5/32i⟨12⟩[12]⟨34⟩[34]⟨56⟩[56]⟨2|3+4|1]⟨4|1+2|3]⟨6|1+2|5]Π\_{351}}{⟨1|3+4|2]⟨3|1+2|4]⟨5|1+2|6]Δ\_{135}^2}+\\\\\\
+\scriptscriptstyle \frac{⟨2|3+4|1]⟨4|1+2|3]⟨6|1+2|5]⟨1|3+4|1]⟨56⟩\[56\](-1/4i⟨12⟩[12]⟨23⟩[23]\,...⟪17\,\text{terms}⟫...\, +1/4i⟨24⟩[24]⟨34⟩[34])}{⟨1|3+4|2]⟨3|1+2|4]⟨5|1+2|6]Δ\_{135}^2}+\\\\\\
+\dots\\\\\\
+\scriptscriptstyle (123456\; \rightarrow \; 345612)+\\\\\\
+\scriptscriptstyle (123456\; \rightarrow \; 561234)+\\\\\\
 \dots
 \end{gathered}
 $$
+</font size>
 <!---
 $$
 \begin{gathered}
-\scriptscriptstyle \frac{⟨23⟩[45](-4i⟨12⟩^2[12]^2[15]⟨26⟩\,...⟪31\,\text{terms}⟫...\, +4i[12]⟨26⟩^2⟨56⟩[56]^2)}{⟨1|2+3|4]⟨3|1+2|4]^2⟨3|1+2|6]}+\\\\\\
-\scriptscriptstyle \frac{5/32i⟨12⟩[12]⟨34⟩[34]⟨56⟩[56]⟨2|3+4|1]⟨4|1+2|3]⟨6|1+2|5]Π\_{351}}{⟨1|3+4|2]⟨3|1+2|4]⟨5|1+2|6]Δ\_{135}^2}+\\\\\\
-\scriptscriptstyle \frac{⟨2|3+4|1]⟨4|1+2|3]⟨6|1+2|5]⟨1|3+4|1]⟨56⟩[56](-1/4i⟨12⟩[12]⟨23⟩[23]\,...⟪17\,\text{terms}⟫...\, +1/4i⟨24⟩[24]⟨34⟩[34])}{⟨1|3+4|2]⟨3|1+2|4]⟨5|1+2|6]Δ\_{135}^2}+\\\\\\
 \scriptscriptstyle \frac{⟨2|3+4|1]⟨4|1+2|3]⟨6|1+2|5]⟨2|3+4|2]⟨56⟩[56](-1/4i⟨12⟩[12]⟨23⟩[23]\,...⟪7\,\text{terms}⟫...\, +1/2i⟨13⟩[14][35]⟨45⟩)}{⟨1|3+4|2]⟨3|1+2|4]⟨5|1+2|6]Δ\_{135}^2}+\\\\\\
 \scriptscriptstyle \frac{⟨2|3+4|1]⟨6|1+2|5](7/4i⟨12⟩^2[12]^2[13]⟨14⟩\,...⟪47\,\text{terms}⟫...\, +3/2i⟨23⟩[23]^2⟨25⟩⟨34⟩[35])}{⟨1|3+4|2]⟨3|1+2|4]⟨5|1+2|6]Δ\_{135}}+\\\\\\
 \scriptscriptstyle \frac{⟨23⟩^2[45]^2⟨4|1+2|3](5/4i⟨12⟩^2[12]^2[13]⟨14⟩[14]⟨46⟩\,...⟪152\,\text{terms}⟫...\, +5/8i[12]⟨26⟩⟨34⟩[34]⟨36⟩[36]^2⟨46⟩)}{⟨1|2+3|4]⟨3|1+2|4]⟨3|1+2|6]Δ\_{135}^2}+\\\\\\
