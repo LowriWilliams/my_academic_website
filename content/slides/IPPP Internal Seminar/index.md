@@ -1618,6 +1618,82 @@ Table: Possible QFTs built out of $Pf'(Ψ)$ , $C\_n$ , $Pf'(A)^2$ and $W\_1$.<br
 A product is implied between rows and columns, eg: $I\_{\scriptscriptstyle CHY, EG} = Pf'(Ψ) × Pf'(Ψ)$.
 </font size>
 
+---
+
+<b> Definitions (scalars) </b>
+
+<br>
+
+The Parke-Taylor-like factor $C_n$ is defined as:
+
+<font size=5>
+$
+C_n = \frac{1}{(z_1 - z_2) \dots (z_n - z_1)}
+$
+</font size>
+
+Theories involving this factor are color ordered.
+
+<br>
+
+The $W_1$ factor from [[25](https://arxiv.org/abs/1707.02192)]:
+
+<font size=5>
+$
+W\_1 = ∏\_{i \in A} ω_i \;, \quad \text{with} \quad ω\_i = \sum\limits\_{j \in A \backslash \\{i\\}} \frac{ϵ\_i \cdot k\_j \, (z\_j - z\_r)}{(z\_r - z\_i)(z\_i - z\_j)} \;, \;\; r ≠ i.
+$
+</font size>
+
+---
+
+<b> Definitions (matrices) </b>
+
+<br>
+
+<font size=5>
+$$
+ \Psi\_{2n\times2n}^{\text{anti-sym.}} =
+  \left(
+    \begin{array}{cc}
+      A\_{n\times n} & -C^T\_{n\times n}\\\\\\
+      C\_{n\times n} & B\_{n\times n}
+    \end{array}
+  \right),
+  \quad\quad
+  A_{ab} =
+  \begin{cases}
+    \frac{2 k_a \cdot k_b}{(z_a - z_b)} & a \neq b \; ,\\\\\\
+    0 & a = b \; ,
+  \end{cases}
+$$
+
+<br>
+
+$$
+  B\_{ab} =
+  \begin{cases}
+    \frac{2 ϵ\_a \cdot ϵ\_b}{(z\_a - z\_b)} & a \neq b \; ,\\\\\\
+    0 & a = b \; ,
+  \end{cases} 
+  \quad\quad
+  C_{ab} =
+  \begin{cases}
+    \frac{2 ϵ\_a \cdot k\_b}{(z\_a - z\_b)} & a \neq b \; ,\\\\\\
+    - \sum\limits\_{j \in A \backslash \\{a\\}} \frac{2 ϵ\_a \cdot k\_j}{(z\_a - z\_j)} & a = b \; .
+  \end{cases}
+$$
+</font size>
+
+---
+
+<b> The reduced Pfaffian </b>
+<br>
+
+The determinant of anti-symmetric matrices can be written as the square of a polynomial.
+This polynomial is called the Pfaffian.
+
+Note: non trivial to get the Pfaffian from the determinant, <br> due to sign ambiguity.
+
 </section>
 ---
 ---
