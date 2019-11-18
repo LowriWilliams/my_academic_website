@@ -1218,7 +1218,7 @@ $\textit{A}\_n \, = \, z\_1^4 \cdot i \sum\_{j = 1}^{(n-3)!} \frac{I\_{\scriptsc
 ---
 <section>
 
-# B&nbsp;2.1 &nbsp; The scattering equations
+# B&nbsp;2. &nbsp; The scattering equations
 
 ---
 
@@ -1539,7 +1539,7 @@ After a derivative is taken the relevant $z\_i$ is assumed to be set to zero.
 ---
 <section>
 
-# B&nbsp;2.2 &nbsp;CHY-Integrands
+# B&nbsp;3. &nbsp;CHY-Integrands
 
 ---
 
@@ -1686,22 +1686,108 @@ $$
 
 ---
 
-<b> The reduced Pfaffian </b>
+<b> The Pfaffian </b>
 <br>
 
 The determinant of anti-symmetric matrices can be written as the square of a polynomial.
 This polynomial is called the Pfaffian.
 
+<br>
+
+<font size=5>
+$
+\text{e.g.} \quad A = \left(
+\begin{matrix}
+0 & a \\\\\
+-a & 0
+\end{matrix}
+\right) \, , \quad
+\det(A) = a ^ 2 \, , \quad
+\text{Pf}(A) = a
+$
+</font size>
+
+<br>
+
 Note: non trivial to get the Pfaffian from the determinant, <br> due to sign ambiguity.
+
+---
+
+<b> The reduced Pfaffian </b>
+<br>
+
+The matrices $A$ and $\Psi$ have two null vectors, <br> therefore their determinant and Pfaffian are zero.
+
+<br>
+
+Instead use:
+
+<font size=5>
+$
+\text{Pf'}(\Psi) = \frac{(-1)^{i+j}}{z\_i - z\_j} \text{Pf}(\Psi\_{ij}^{ij}) \; ,
+$
+</font size>
+
+$\Psi_{ij}^{ij}$ denotes deletion of rows and columns $i$ and $j$.
+
+---
+
+<b> An easy identity to spot </b>
+
+Born-Infeld, non linear sigma model and Galileon amplitudes involve the Pfaffian of the <font size=5>$n\times n$</font size> matrix $A$.
+
+<br>
+
+The Pfaffian of an odd-size matrix is zero, <br> meaning in these theories only even point functions are non-vanishing.
+
+<br>
+
+More specifically, for Born-Infeld amplitudes this is a consequence of helicity conservation.
 
 </section>
 ---
 ---
 <section>
 
-# 4.2 &nbsp;Conclusions
+# 4. Amplitudes
 
 ---
+
+<b> Numerical amplitudes </b>
+<br>
+
+We now have all the building blocks to compute amplitudes.
+
+<br>
+
+With the open source packages this is straightforward:
+
+```python
+>>> from seampy import theories, NumericalAmplitude
+>>> from lips import Particles
+
+>>> theories
+[YM, EG, BS, BI, NLSM, Galileon, CG, DF2]
+
+>>> oDF2Amp = NumericalAmplitude(theory="DF2", helconf="+++++")
+>>> oParticles = Particles(5)
+
+>>> oDF2Amp(oParticles)
+mpc(real='#nbr', imag='#nbr')
+```
+
+---
+
+</section>
+---
+---
+<section>
+
+# Summary
+
+---
+
+
 
 The aim of this talk was to show that it is possible to reconstruct an analytical expression from numerical evaluations only.
 
