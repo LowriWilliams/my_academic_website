@@ -1036,6 +1036,35 @@ $$
 $$
 </font size>
 
+---
+
+<b> Five-partons two-loop remainders (preliminary results)</b>
+
+The same strategy can be applied to other rational coefficients, <br>
+e.g. two-loop finite remainders given in [[19](https://arxiv.org/abs/1904.00945)].
+
+<img src="ratios.jpg"; style="max-width:560px;float:center;border:none;">
+
+<font size=5>
+Showing ratio of leaf counts for Mandelstam and spinor-helicity expressions (x-axis) vs. frequency (y-axis). The complexity is significantly reduced.
+</font size>
+
+---
+
+<b> Example: uubggg pmpmp Nf1 #3 </b>
+
+<img src="uubggg_pmpmp_nf1_nb3.png"; style="max-width:1024px;float:center;border:none;">
+
+and
+
+<font size=5>
+$
+-\frac{[32]^3 [41]^3}{2 [31]^3 [42]^3}
+$
+</font size>
+
+are equivalent.
+
 </section>
 ---
 ---
@@ -1068,13 +1097,13 @@ $\mathcal{L\_{Biadjoint Scalar}} = 2∂^µΦ^{aa′}∂_µΦ^{aa′}+\frac{y}{3}
 
 <br>
 
-E.g. the above are related by the KLT relations [[19](https://www.sciencedirect.com/science/article/pii/0550321386903627?via%3Dihub)], <br> more generally known as double copy relations.
+E.g. the above are related by the KLT relations [[20](https://www.sciencedirect.com/science/article/pii/0550321386903627?via%3Dihub)], <br> more generally known as double copy relations.
 
 ---
 
 <b> .. are made explicit </b>
 
-By comparison in the CHY formalism [[20](https://arxiv.org/abs/1307.2199), [21](https://arxiv.org/abs/1309.0885), [22](https://arxiv.org/abs/1306.2962)] these relations are made explicit in the structure of the CHY-Integrands:
+By comparison in the CHY formalism [[21](https://arxiv.org/abs/1307.2199), [22](https://arxiv.org/abs/1309.0885), [23](https://arxiv.org/abs/1306.2962)] these relations are made explicit in the structure of the CHY-Integrands:
 
 <br>
 
@@ -1088,7 +1117,7 @@ $I\_{CHY, Yang Mills} = C_n \; PF'(\Psi) \quad \quad I\_{CHY, Biadjoint Scalar} 
 
 <br>
 
-Loosely speaking we have [[23](https://arxiv.org/abs/1306.6575)]:
+Loosely speaking we have [[24](https://arxiv.org/abs/1306.6575)]:
 
 $A = \int I\_{CHY} \quad$ and $\quad A\_{EG} = A\_{YM} \tilde A\_{YM} / A\_{BS}$ 
 
@@ -1241,7 +1270,7 @@ If we simply take the common denominator we obtain a polynomial of much higher d
 
 <b> The polynomial scattering equations </b>
 
-Instead we are going to consider the polynomial SE <font size=5>$h\_{m}$</font size> from [[24](https://arxiv.org/abs/1402.7374)] 
+Instead we are going to consider the polynomial SE <font size=5>$h\_{m}$</font size> from [[25](https://arxiv.org/abs/1402.7374)] 
 
 <font size=5>
 $h\_{m} = \sum\_{S \subset A',\, |S| = m} k^2\_{S\_1}z\_S=0 \, , \quad \text{with} \quad 1 \leq m \leq n - 3 \, ,$
@@ -1636,7 +1665,7 @@ Theories involving this factor are color ordered.
 
 <br>
 
-The $W_1$ factor from [[25](https://arxiv.org/abs/1707.02192)]:
+The $W_1$ factor from [[29](https://arxiv.org/abs/1707.02192)]:
 
 <font size=5>
 $
@@ -1778,6 +1807,25 @@ mpc(real='#nbr', imag='#nbr')
 
 ---
 
+<b> Analytical reconstruction </b>
+<br>
+
+Using the same strategy previously discussed we can reconstruct analytical expressions. For example:
+
+<font size=4>
+$$
+\begin{gathered}
+    A_{(\text{DF})^2}(1^+,\,2^+,\,3^+,\,4^+,\,5^+) =\\\\\\
+    \frac{i[12]⟨13⟩⟨25⟩[35]^2}{⟨12⟩^2⟨34⟩⟨45⟩}+\frac{i[14][24][35]}{⟨12⟩⟨35⟩}+\\\\\\
+    (12345 → 23451)\,+\,(12345 → 34512)\,+\\\\\\
+    (12345 → 45123)\,+\,(12345 → 51234)\,+\\\\\\
+    \frac{2i[15][23]⟨4|1+2|4]}{⟨12⟩⟨34⟩⟨45⟩}+\\\\\\
+    \frac{2i[12][45]⟨3|1+5|3]}{⟨15⟩⟨23⟩⟨34⟩}+\\\\\\
+    \frac{2i[12][15][34]}{⟨23⟩⟨45⟩}\phantom{+}
+\end{gathered}
+$$
+</font size>
+
 </section>
 ---
 ---
@@ -1786,25 +1834,55 @@ mpc(real='#nbr', imag='#nbr')
 # Summary
 
 ---
+1) Spinor-helicity rational coefficients can be reconstructed using:
 
+$\circ$ singular limits for to the least common denominator;
 
+$\circ$ doubly singular limits for partial fraction decompositions;
 
-The aim of this talk was to show that it is possible to reconstruct an analytical expression from numerical evaluations only.
+$\circ$ generic ansatze in singular limits for numerators;
 
-<br>
-We discussed a general framework to perform these operations, <br/>
-and strategies to tame the complexity of the problem.
-
-<br>
-The application given as an example is representative of the complexity of high multiplicity processes and demonstrates the viability of this approach.
+Applications involve tree-level, one-loop and two-loop expressions alike.
 
 <br>
-Outlook:<br/>
-We have now almost finished reconstructing the six-gluon one-loop amplitude with a fermion loop, and we are considering applications to processes with external quarks and photons, as well as to coefficients of two-loop integrals.
+
+2) Amplitudes in the CHY formalism can be computed via:
+
+$\circ$ the scattering equations, numerically solved via elimination theory;
+
+$\circ$ CHY-Integrads, which make manifest relations between theories;
+
+Analytical expressions are then accessible using the above strategy.
 
 ---
 
-Thank you very much!
+# Outlook
+
+---
+
+Application to the following quantities is well within reach:
+
+$\circ$ six-parton one-loop amplitudes;
+
+$\circ$ five-parton two-loop amplitudes;
+
+for which we have already reconstructed several components.
+
+<br>
+
+Additionally it might be of interest to:
+
+$\circ$ implement analytical expressions on GPGPU for fast evaluations;
+
+$\circ$ reconstruct the seven-gluon one-loop coefficients;
+
+$\circ$ assemble the NNLO three-jets cross-section;
+
+$\circ$ apply the reconstruction technique to double copy structures.
+
+---
+
+Thank you for your attention!
 
 <br>
 <br>
