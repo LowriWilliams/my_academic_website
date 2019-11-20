@@ -1,5 +1,5 @@
 ---
-title: Spinor-helicity amplitudes and the CHY formalism
+title: Reconstruction of analytical amplitudes across loops, legs and theories
 event: IPPP Internal Seminar
 event_url: https://conference.ippp.dur.ac.uk/event/851/
 location: Durham, UK

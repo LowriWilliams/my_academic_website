@@ -1,5 +1,5 @@
 ---
-title: Spinor-helicity amplitudes and the CHY formalism
+title: Reconstruction of analytical amplitudes across loops, legs and theories
 summary: 
 authors: ["Giuseppe De Laurentis"]
 tags: [QCD, Scattering Amplitudes, CHY]
@@ -20,9 +20,9 @@ slides:
 
 {{< slide background-image="Durham.png" >}}
 
-# Analytical &nbsp; amplitudes <br> and &nbsp; the &nbsp; CHY &nbsp; formalism
+### <font face=arial> <b> Reconstruction &nbsp; of &nbsp; analytical &nbsp; amplitudes <br> &nbsp; across &nbsp; loops, &nbsp; legs &nbsp; and &nbsp; theories </b> </font face>
 
-[arXiv:1904.04067](https://arxiv.org/abs/1904.04067) [(JHEP)](https://link.springer.com/article/10.1007/JHEP07(2019)123) &nbsp; [arXiv:1910.11355](https://arxiv.org/abs/1910.11355)
+[arXiv:1904.04067](https://arxiv.org/abs/1904.04067) [(JHEP)](https://link.springer.com/article/10.1007/JHEP07(2019)123) &nbsp; &nbsp; [arXiv:1910.11355](https://arxiv.org/abs/1910.11355)
 
 <br>
 Giuseppe De Laurentis
