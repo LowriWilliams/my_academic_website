@@ -29,7 +29,7 @@ Giuseppe De Laurentis
 
 with Daniel Maître
 
-IPPP - Student Seminar
+IPPP Internal Seminar
 
 <img src="IP3_logo_blue.png"; style="max-width:280px;float:center;border:none;"> <img src="DurhamLogo.svg"; style="max-width:280px;float:center;border:none;">
 
