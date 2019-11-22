@@ -361,7 +361,7 @@ $\mathbb{f} = A^{tree}(1^{+}\_{g}2^{+}\_{g}3^{+}\_{g}4^{-}\_{g}5^{-}\_{g}6^{-}\_
 
 ---
 
-<b>The lest common denominator</b>
+<b>The least common denominator</b>
 <br>
 
 Studying all the limits yields the least common denominator for $\mathbb{f}$:
