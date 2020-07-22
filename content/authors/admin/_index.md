@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: PhD student
+role: PhD
 
 # Organizations/Affiliations
 organizations:
@@ -30,7 +30,7 @@ education:
   courses:
   - course: PhD in High Energy Physics
     institution: Durham University
-    year: 2012 - current
+    year: 2016 - 2020
   - course: First Class MPhys
     institution: University of Oxford
     year: 2012 - 2016
@@ -77,4 +77,4 @@ user_groups:
 - Visitors
 ---
 
-I lived in Milano until the end of high school. I then moved to Oxford for my undergraduate and master studies. I am currently studying for a PhD in Durham.
+I lived in Milano until the end of high school. I then moved to Oxford for my undergraduate and master studies. I did my PhD studies at IPPP in Durham.

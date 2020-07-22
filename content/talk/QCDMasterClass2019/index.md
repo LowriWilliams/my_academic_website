@@ -14,7 +14,7 @@ publishDate = 2019-06-07T17:55:54+01:00
 authors = ["Giuseppe De Laurentis"]
 
 # Location of event.
-location = "Saint-Jacut-de-la-Mer"
+location = "Saint-Jacut-de-la-Mer, France"
 
 # Name of event and optional event URL.
 event = "QCD Master Class 2019"

@@ -1,15 +1,15 @@
 ---
-title: Analytical amplitudes from numerical evaluations
-event: QCD@LHC
-event_url: https://indico.fnal.gov/event/19380/
-location: Buffalo, NY
-summary: QCD@LHC 2019
-abstract: "I will present a new method (https://arxiv.org/abs/1904.04067) to generate analytic expressions for the integral coefficients of loop amplitudes using numerical evaluations only. We use high precision arithmetic to explore the singularity structure of the coefficients and decompose them into parts of manageable complexity. Each part is isolated by choosing an appropriate region of phase space, and reconstructed by solving a system of linear equations for the coefficients of a generic ansatz. To illustrate the usability of our method I will present sample computations for six-gluon one-loop integral coefficients and rational parts."
+title: Analytical Amplitudes from Numerical Exploration
+event: Summer Meeting
+event_url: 
+location: Freiburg, Germany
+summary: Freiburg Summer Meeting
+abstract: "I will review a technique to obtain analytical spinor-helicity rational coefficients for loop amplitudes from floating-point numerical evaluations. I will then show applications to one-loop QCD amplitudes and beyond."
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2019-07-14T13:00:00Z"
-date_end: "2019-07-19T15:00:00Z"
+date: "2020-07-30T17:00:00Z"
+date_end: "2020-07-30T18:00:00Z"
 all_day: false
 
 # Schedule page publish date (NOT talk date).
@@ -30,6 +30,14 @@ links:
   icon_pack: ai
   name: arXiv:1904.04067
   url: https://arxiv.org/abs/1904.04067
+- icon: arxiv
+  icon_pack: ai
+  name: arXiv:1910.11355
+  url: https://arxiv.org/abs/1910.11355
+- icon: arxiv
+  icon_pack: ai
+  name: arXiv:2002.04018
+  url: https://arxiv.org/abs/2002.04018
 url_code: ""
 url_pdf: ""
 url_slides: ""
@@ -40,7 +48,7 @@ url_video: ""
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: QCD@LHC
+slides: Summer Meeting July2020
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.

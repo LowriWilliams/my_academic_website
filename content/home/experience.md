@@ -18,12 +18,20 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
+  title = "Post-Doc"
+  company = "Physikalisches Institut - Albert-Ludwigs-Universität Freiburg"
+  company_url = "https://www.physik.uni-freiburg.de/startdynamic-en?set_language=en"
+  location = "Freiburg, Germany"
+  date_start = "2020-10-01"
+  date_end = ""
+  description = ""
+[[experience]]
   title = "PhD"
   company = "Institue for Particle Physics Phenomenology - Durham University"
   company_url = "https://www.ippp.dur.ac.uk/"
   location = "Durham, UK"
   date_start = "2016-10-01"
-  date_end = ""
+  date_end = "2020-07-15"
   description = """
   Research topics:
   
