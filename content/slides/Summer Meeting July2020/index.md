@@ -38,7 +38,7 @@ PhD supervisor: Daniel Maître
 
 Summer Meeting - Freiburg\
 <p style="line-height: 0.05;"> <img src="IP3_logo_blue.png"; style="max-width:280px;float:center;border:none;"> <img src="DurhamLogo.svg"; style="max-width:280px;float:center;border:none;">\
-<font size=2> These slides at [my github pages](http://https://gdelaurentis.github.io/slides/summer-meeting-july2020/#/) </font size> </p>
+<font size=2> These slides at [gdelaurentis.github.io/slides/summer-meeting-july2020](/https://gdelaurentis.github.io/slides/summer-meeting-july2020/#/) </font size> </p>
 
 {{< speaker_note >}}
 - Only speaker can read these.
@@ -397,6 +397,23 @@ The complexity of the numerator depends on two parameters:
 The ansatz has 1326 independent terms.
 
 </font size>
+
+---
+
+<b> How big is the ansatz? </b>
+
+Easiest to count at constant null phase weights;<br/> the size of the ansatz is a function of:<br/><br/>1. its mass dimension ($d$) $\quad\quad$ 2.  multiplicity of phase space ($m$).
+
+<br>
+If we allow only for a polynomial in the numerator, then:
+
+$|s\_{ij}| = \frac{m(m-3)}{2}$ $\quad\quad$ $|tr\_5| = {m-1 \choose 4}$
+
+$\left(\mkern -9mu \begin{pmatrix}\, |s\_{ij}| \, \\\ \, d/2 \, \end{pmatrix} \mkern -9mu \right) \leq$ ansatz size $\leq \left(\mkern -9mu  \begin{pmatrix} \, |s\_{ij}| \, \\\ \, d/2 \, \end{pmatrix} \mkern -9mu \right) + |tr_5| \left(\mkern -9mu  \begin{pmatrix} \, |s\_{ij}| \, \\\ \, (d-4)/2 \, \end{pmatrix} \mkern -9mu \right)$
+
+The upper bound is saturated for $(\forall m \wedge d \leq 4)$ and for $(\forall d \wedge m \leq 5)$.<br/>
+Otherwise it is an overcounting due to Schouten identity for 4-momenta:
+<font size=5>$tr\_5(2345)1\_\mu - tr\_5(1345)2\_\mu + tr\_5(1245)3\_\mu - tr\_5(1235)4\_\mu + tr\_5(1234)5\_\mu = 0$</font size>
 
 </section>
 ---
@@ -784,23 +801,6 @@ $⟨24⟩⟨24⟩⟨24⟩[12][12][12]: 1i$,  $⟨24⟩⟨24⟩⟨34⟩[12][12][1
 $⟨24⟩⟨34⟩⟨34⟩[12][13][13]: 3i$,  $⟨34⟩⟨34⟩⟨34⟩[13][13][13]: 1i$
 </font size>
 
----
-
-<b> How big is the ansatz? </b>
-
-Easiest to count at constant null phase weights;<br/> the size of the ansatz is a function of:<br/><br/>1. its mass dimension ($d$) $\quad\quad$ 2.  multiplicity of phase space ($m$).
-
-<br>
-If we allow only for a polynomial in the numerator, then:
-
-$|s\_{ij}| = \frac{m(m-3)}{2}$ $\quad\quad$ $|tr\_5| = {m-1 \choose 4}$
-
-$\left(\mkern -9mu \begin{pmatrix}\, |s\_{ij}| \, \\\ \, d/2 \, \end{pmatrix} \mkern -9mu \right) \leq$ ansatz size $\leq \left(\mkern -9mu  \begin{pmatrix} \, |s\_{ij}| \, \\\ \, d/2 \, \end{pmatrix} \mkern -9mu \right) + |tr_5| \left(\mkern -9mu  \begin{pmatrix} \, |s\_{ij}| \, \\\ \, (d-4)/2 \, \end{pmatrix} \mkern -9mu \right)$
-
-The upper bound is saturated for $(\forall m \wedge d \leq 4)$ and for $(\forall d \wedge m \leq 5)$.<br/>
-Otherwise it is an overcounting due to Schouten identity for 4-momenta:
-<font size=5>$tr\_5(2345)1\_\mu - tr\_5(1345)2\_\mu + tr\_5(1245)3\_\mu - tr\_5(1235)4\_\mu + tr\_5(1234)5\_\mu = 0$</font size>
-
 </section>
 ---
 ---
@@ -1064,15 +1064,21 @@ $$
 <section>
 # 2. Five-Parton Two-Loop <br> Finite Remainders
 
+<br>
+
+Preview of refitted results into spinor helicity of <br> <font size=4> [[S. Abreu, J. Dormans, F. Febres Cordero, H. Ita, B. Page, V. Sotnikov](https://arxiv.org/abs/1904.00945)] </font size>
+
 ---
 
-The same strategy can be applied to other rational coefficients, <br>
-e.g. two-loop finite remainders given in [[19](https://arxiv.org/abs/1904.00945)].
+<b> Expression complexity </b>
 
-<img src="ratios.jpg"; style="max-width:560px;float:center;border:none;">
+Using the Mandelstam expressions as numerical input, <br> we reconstruct them in spinor helicity.
+
+<img src="LeafCountRatios.png"; style="max-width:560px;float:center;border:none;">
 
 <font size=5>
-Showing ratio of leaf counts for Mandelstam and spinor-helicity expressions (x-axis) vs. frequency (y-axis). The complexity is significantly reduced.
+Showing ratio of leaf counts for Mandelstam and spinor-helicity expressions (x-axis) vs. frequency (y-axis). The complexity is significantly reduced (total leaf count: 4176128 down from 9162373).
+.
 </font size>
 
 ---
@@ -1090,6 +1096,17 @@ $
 </font size>
 
 are equivalent.
+
+---
+
+<b> Biggest linear systems to solve </b>
+
+Recall that size of the linear system is directly related <br> to the mass dimension of the numerators by [this formula](https://gdelaurentis.github.io/slides/summer-meeting-july2020/#/5/4)
+
+<img src="MaximumMassDimensionComparison.png"; style="max-width:560px;float:center;border:none;">
+
+By performing the partial fraction decomposition before fitting the numerators the size of the biggest systems to solve is significantly reduced.
+
 
 </section>
 ---
