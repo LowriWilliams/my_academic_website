@@ -85,17 +85,13 @@ Summer Meeting - Freiburg\
 $$σ_{2 \rightarrow n - 2} = ∑\_{a,b} ∫ dx_a dx_b f\_{a/h_1}(x_a, μ_F) \, f\_{b/h_2}(x_b, μ_F) \;\hat{σ}\_{ab→n-2}(μ_F, μ_R)$$
 
 $$d\hat{σ}\_{n}=\frac{1}{2\hat{s}}dΠ\_{n-2}\;(2π)^4δ^4\big(∑\_{i=1}^n p_i\big)\;|\overline{\mathcal{A}(p_i,μ_F, μ_R)}|^2$$
-</font size>
 
-<br>
 Better predictions require both more loops and higher multiplicity.
-
-<font size=5>
 
 <table width=50% border="1" cellspacing="0" cellpadding="0" style="margin-bottom:-10px">
   <tr class="greenline">
-    <td colspan="2", rowspan="2"> <div id="rot90"> <center> <b> $\mathcal{A}_{mult.}^{loops} \propto g_s^n $ </b> </center> </div> </td>
-    <td colspan="4"> <center> <b> multiplicity </b> </center> </td>
+    <td colspan="2", rowspan="2"> <div id="rot90"> <center> <b> $\mathcal{A}_{n-gluons}^{l-loops} \propto g_s^n $ </b> </center> </div> </td>
+    <td colspan="4"> <center> multiplicity (n) </center> </td>
   </tr>
   <tr>
     <td><b>4</b></td>
@@ -104,7 +100,7 @@ Better predictions require both more loops and higher multiplicity.
     <td><b>7</b></td>
   </tr>
   <tr>
-    <td rowspan="3"> <b> loops </b> </td>
+    <td rowspan="3"> <center> loops (l) </center> </td>
     <td><b>0</b></td>
     <td>2</td>
     <td>3</td>
@@ -127,12 +123,13 @@ Better predictions require both more loops and higher multiplicity.
   </tr>
 </table>
 
-</font size>
-
 <!--- <font size=5>Powers of coupling in pure gluon scattering.</font size>  --->
 
-<font size=5>IR singularities have to be cancelled between real and virtual corrections.</font size>
- 
+IR singularities have to be cancelled between real and virtual corrections.
+
+More loops $\rightarrow$ analytical complexity; more legs $\rightarrow$ <u> algebraic complexity </u>
+
+</font size>
 
 ---
 
@@ -187,7 +184,7 @@ $A^{tree}(1^{+}\_{g}2^{+}\_{g}3^{+}\_{g}4^{-}\_{g}5^{-}\_{g}) = \frac{i\,⟨45�
 <b> Numerical and Analytical: pros and cons </b>
 <br>
 
-*Numerical* calculations efficiently bypass algebraic complexity, see:<br/>
+*Numerical* calculations efficiently bypass algebraic complexity<br/>
 <font size=4> <nobr> BlackHat [[C.F.Berger et al.](https://arxiv.org/abs/0803.4180)], CutTools [[G.Ossola et al.](https://arxiv.org/abs/0711.3596)], MadGraph [[J.Alwall et al.](https://arxiv.org/abs/1106.0522)], Rocket [[W.T.Giele, G.Zanderighi](https://arxiv.org/abs/0805.2152)], <br> Samurai [[P.Mastrolia et al.](https://arxiv.org/abs/1006.0710)], NGluon [[S.Badger et al.](https://arxiv.org/abs/1011.2900)], OpenLoops [[F.Cascioli et al.](https://arxiv.org/abs/1111.5206)], ... </nobr> </font size>
 
 <br>
@@ -212,7 +209,7 @@ But *analytical* results can still be useful, they can provide:
 </table>
 
 <br>
-How can we access a (relatively) compact analytical final expression from numerical evaluations?
+How can we access compact analytical final expressions from numerical evaluations?
 
 </section>
 ---
@@ -244,7 +241,7 @@ How can we access a (relatively) compact analytical final expression from numeri
 
 ---
 
-<b> Spinors </b>
+<b> Spinor Covariants </b>
 <br>
 
 Weyl spinors are sufficient for massless particles:
@@ -268,7 +265,7 @@ $$</font size>
 
 ---
 
-<b> Spinor Helicity </b>
+<b> Spinor Helicity Invariants </b>
 <br>
 
 <font size=5>
@@ -329,7 +326,7 @@ $$
 <b>Singular limits $\Rightarrow$ poles of the amplitude</b>
 <br>
 
-We need a set of Lorentz invariants:
+Let $\\{r\\}$ be a set of Lorentz invariants
 
 <font size=5>$r\_i \in \\{ ⟨12⟩, ⟨13⟩, \dots, ⟨1|2+3|4], \dots, s_{123}, \dots \\}$,</font size>
 
@@ -338,14 +335,14 @@ and let $\, \mathbb{f} \,$ be the function we want to reconstruct.
 <br>
 
 <nobr> We want to build phase space points where <u style="text-decoration: underline;
-  text-decoration-color: red;"> a single invariant vanishes</u>: </nobr>
+  text-decoration-color: red;"> a single invariant</u> </nobr> from $\\{r\\}$ vanishes:
 
 <font size=5> $r\_i \rightarrow ε \ll 1, \quad r\_{j \neq i} \sim \mathcal{O}(1), \quad \mathbb{f} \rightarrow ε^α \; \Rightarrow \; log(\mathbb{f}) \rightarrow α\cdot log(ε)$</font size>
 
 <nobr>$\Rightarrow$ The slope of the log-log plot gives us the type of singularity, if it exists.</nobr>
 
 <br>
-<nobr>The uniqueness of the singular limit is important to avoid ambiguities,</nobr>
+<nobr>The uniqueness of the singular limit is important to avoid ambiguities,</nobr> <br>
 and it can be guaranteed only with complex momenta.
 
 ---
@@ -445,7 +442,7 @@ where $\mathcal{R}\_i$ are products of subsets of $\mathcal{D\_{LCD}}$ (i.e. rea
 The required information can be accessed from doubly singular limits.
 
 We now want phase space points where <u style="text-decoration: underline;
-  text-decoration-color: red;"> two invariants vanish</u>:
+  text-decoration-color: red;"> two invariants </u> vanish:
 
 $r\_i \rightarrow ε \ll 1, \quad r\_j \rightarrow ε \ll 1, \quad \mathbb{f} \rightarrow ε^α \; \Rightarrow \; log(\mathbb{f}) \rightarrow α\cdot log(ε)$
 
@@ -657,7 +654,7 @@ The following is single line of the table in the previous slide:
 ---
 
 <section>
-# A&nbsp;3.1 &nbsp;Partial &nbsp;fraction &nbsp;decomposition
+# A&nbsp;3.1 &nbsp;Partial &nbsp;fraction &nbsp;decompositions
 
 ---
 
@@ -716,8 +713,11 @@ Both of these partial fractions correspond to some BCFW shift,<br/> but we are n
 
 ---
 
+<p style="line-height: 0.75;" >
 <b> Partial fraction decomposition #3 </b>
 <br>
+<font size=4> New? More similar to <a href="https://inspirehep.net/literature/22012">A.Berends, W.Giele</a> than BCFW </font size>
+</p>
 
 <table width=100% border="1" frame="void" cellspacing="0" cellpadding="0">
   <tr class="greenline">
@@ -813,17 +813,30 @@ $⟨24⟩⟨34⟩⟨34⟩[12][13][13]: 3i$,  $⟨34⟩⟨34⟩⟨34⟩[13][13][1
 </section>
 ---
 ---
-
 <section>
 # 1. Six-Gluon One-Loop Amplitude
 
 ---
 
-<b> Six-gluon one-loop rational coefficients </b>
+<b> Brief litterature review </b>
 
-<br>
-As an application we obtained analytical expressions for all parts of the six-gluon amplitude with a gluon in the loop.
+First complete numerical calculation <br>
+<font size=5> [R.K.Ellis, W.T.Giele, G.Zanderighi](https://arxiv.org/abs/hep-ph/0602185) </font size>
 
+Pheno applications to 4-jet production <br>
+<font size=5> [Z.Bern, G.Diana, L.J.Dixon, F.FebresCordero, S.Hoeche, D.A.Kosower, H.Ita, D.Maitre, K.Ozeren](https://arxiv.org/abs/1112.3940) </font size> <br>
+<font size=5> [S.Badger, B.Biedermann, P.Uwer, V.Yundin](https://arxiv.org/abs/1209.0098) </font size>
+
+NMHV analytical cut constructible part <br>
+<font size=5> [R.Britto, B.Feng, P.Mastrolia](https://arxiv.org/abs/hep-ph/0602178) </font size>
+
+NMHV analytical rational part <br>
+<font size=5> [Z.Xiao, G.Yang, C.Zhu](https://arxiv.org/abs/hep-ph/0607017) </font size>
+
+More litterature info <br>
+<font size=5> [David C. Dunbar](https://arxiv.org/abs/0901.1202) </font size>
+
+<!---
 <br>
 All independent coefficients are available as anchillary files at: [arXiv:1904.04067](https://arxiv.org/abs/1904.04067).
 
@@ -831,7 +844,19 @@ All independent coefficients are available as anchillary files at: [arXiv:1904.0
 Our expressions are manifestly rational and gauge invariant.
 
 <br>
-For a summary of the litterature see Ref.[15](https://arxiv.org/pdf/0901.1202.pdf).
+For a summary of the litterature see Ref.[15](https://arxiv.org/pdf/0901.1202.pdf). --->
+---
+<b> Our results </b>
+
+First complete analytical results presented with a single notation.
+
+All expressions are manifestely gauge invariant and rational (no square roots).
+
+Best speed up is a factor of ~75 in the split NMHV configuration <br> (compared to numerical computations in BlackHat).
+
+Worst one is a factor of ~2 in the alternated NMHV configuration.
+
+Bottleneck: numerators of subleading poles.
 
 ---
 
@@ -842,13 +867,13 @@ For a summary of the litterature see Ref.[15](https://arxiv.org/pdf/0901.1202.pd
 
 <font size=5>$\mathcal{D\_{LCD}} = ⟨12⟩[12]⟨34⟩[34]⟨56⟩[56]⟨1|3+4|2]^4⟨3|1+2|4]^4⟨5|1+2|6]^4Δ_{135}^3$</font size>
 
-An expression was previously obtained in [[16](https://arxiv.org/pdf/hep-ph/0602178.pdf)].
+<!--- An expression was previously obtained in [[16](https://arxiv.org/pdf/hep-ph/0602178.pdf)]. --->
 
-We obtain an explicitly rational expression, like for $\mathcal{N}=1$ SUSY in [[17](https://arxiv.org/pdf/0709.2086.pdf)].
+We obtain an explicitly rational expression, like for $\mathcal{N}=1$ SUSY by <br> <font size=5> [N.E.J.Bjerrum-Bohr, D.C.Dunbar, W.B.Perkins](https://arxiv.org/abs/0709.2086). </font size>
 
 ---
 
-<b> Pole structure </b>
+<b> Pole structure: are there radicals? </b>
 
 <table width=70% border="1" frame="void" cellspacing="0" cellpadding="0">
   <tr class="greenline">
@@ -927,7 +952,7 @@ We obtain an explicitly rational expression, like for $\mathcal{N}=1$ SUSY in [[
 
 ---
 
-<b>Do we need square roots of momentum invariants?</b>
+<b>How to avoid square roots</b>
 <br>
 
 All branch cuts should have been taken care of by unitarity cuts.
@@ -953,25 +978,25 @@ In some limits $\Delta$ behaves like the square of some quantity
 
 <b> The three-mass triangle rational coefficient </b>
 
-<font size=4>
+<font size=6>
 $$
 \begin{gathered}
 \scriptscriptstyle \frac{-1/2i⟨23⟩^3[45]^3s\_{123}^2Ω\_{351}}{⟨12⟩[56]⟨1|2+3|4]⟨3|1+2|4]^4⟨3|1+2|6]}+\\\\\\
 \scriptscriptstyle \frac{1/4i[12]⟨23⟩^3[45]^3⟨56⟩⟨4|1+2|3]s\_{123}Π\_{351}}{⟨1|2+3|4]⟨3|1+2|4]^3⟨3|1+2|6]Δ\_{135}}+\\\\\\
 \scriptscriptstyle \frac{2i⟨23⟩^2[45]^2⟨2|1+3|5]s\_{123}Ω\_{351}}{⟨12⟩[56]⟨1|2+3|4]⟨3|1+2|4]^3⟨3|1+2|6]}+\\\\\\
-\scriptscriptstyle \frac{⟨2|3+4|1]⟨6|1+2|5]Ω\_{351}(1i⟨12⟩[12]⟨13⟩[13]\,...⟪4\,\text{terms}⟫...\, -1i⟨23⟩[23]⟨35⟩[35])}{⟨1|3+4|2]⟨3|1+2|4]^2⟨5|1+2|6]Δ\_{135}}+\\\\\\
-\scriptscriptstyle \frac{4i⟨12⟩^3[12]^2[13][15]⟨36⟩\,...⟪65\,\text{terms}⟫...\, -4i[12]⟨23⟩^2[23]⟨26⟩[35]⟨36⟩[36]}{⟨1|3+4|2]⟨3|1+2|4]^2⟨5|1+2|6]}+\\\\\\
-\scriptscriptstyle \frac{[12]⟨23⟩^3[45]^3⟨56⟩⟨4|1+2|3]^2Π\_{351}(1/8is\_{123}+1/16is\_{124})}{⟨1|2+3|4]⟨3|1+2|4]^2⟨3|1+2|6]Δ\_{135}^2}+\\\\\\
-\scriptscriptstyle \frac{-3i⟨23⟩[45]⟨2|1+3|5]^2Ω\_{351}}{⟨12⟩[56]⟨1|2+3|4]⟨3|1+2|4]^2⟨3|1+2|6]}+\\\\\\
-\scriptscriptstyle \frac{⟨23⟩\[45\](-4i⟨12⟩^2[12]^2[15]⟨26⟩\,...⟪31\,\text{terms}⟫...\, +4i[12]⟨26⟩^2⟨56⟩[56]^2)}{⟨1|2+3|4]⟨3|1+2|4]^2⟨3|1+2|6]}+\\\\\\
-\scriptscriptstyle \frac{5/32i⟨12⟩[12]⟨34⟩[34]⟨56⟩[56]⟨2|3+4|1]⟨4|1+2|3]⟨6|1+2|5]Π\_{351}}{⟨1|3+4|2]⟨3|1+2|4]⟨5|1+2|6]Δ\_{135}^2}+\\\\\\
-\scriptscriptstyle \frac{⟨2|3+4|1]⟨4|1+2|3]⟨6|1+2|5]⟨1|3+4|1]⟨56⟩\[56\](-1/4i⟨12⟩[12]⟨23⟩[23]\,...⟪17\,\text{terms}⟫...\, +1/4i⟨24⟩[24]⟨34⟩[34])}{⟨1|3+4|2]⟨3|1+2|4]⟨5|1+2|6]Δ\_{135}^2}+\\\\\\
 \dots\\\\\\
 \scriptscriptstyle (123456\; \rightarrow \; 345612)+\\\\\\
 \scriptscriptstyle (123456\; \rightarrow \; 561234)+\\\\\\
 \dots
 \end{gathered}
 $$
+<!-- \scriptscriptstyle \frac{⟨2|3+4|1]⟨6|1+2|5]Ω\_{351}(1i⟨12⟩[12]⟨13⟩[13]\,...⟪4\,\text{terms}⟫...\, -1i⟨23⟩[23]⟨35⟩[35])}{⟨1|3+4|2]⟨3|1+2|4]^2⟨5|1+2|6]Δ\_{135}}+\\\\\\
+\scriptscriptstyle \frac{4i⟨12⟩^3[12]^2[13][15]⟨36⟩\,...⟪65\,\text{terms}⟫...\, -4i[12]⟨23⟩^2[23]⟨26⟩[35]⟨36⟩[36]}{⟨1|3+4|2]⟨3|1+2|4]^2⟨5|1+2|6]}+\\\\\\
+\scriptscriptstyle \frac{[12]⟨23⟩^3[45]^3⟨56⟩⟨4|1+2|3]^2Π\_{351}(1/8is\_{123}+1/16is\_{124})}{⟨1|2+3|4]⟨3|1+2|4]^2⟨3|1+2|6]Δ\_{135}^2}+\\\\\\
+\scriptscriptstyle \frac{-3i⟨23⟩[45]⟨2|1+3|5]^2Ω\_{351}}{⟨12⟩[56]⟨1|2+3|4]⟨3|1+2|4]^2⟨3|1+2|6]}+\\\\\\
+\scriptscriptstyle \frac{⟨23⟩\[45\](-4i⟨12⟩^2[12]^2[15]⟨26⟩\,...⟪31\,\text{terms}⟫...\, +4i[12]⟨26⟩^2⟨56⟩[56]^2)}{⟨1|2+3|4]⟨3|1+2|4]^2⟨3|1+2|6]}+\\\\\\
+\scriptscriptstyle \frac{5/32i⟨12⟩[12]⟨34⟩[34]⟨56⟩[56]⟨2|3+4|1]⟨4|1+2|3]⟨6|1+2|5]Π\_{351}}{⟨1|3+4|2]⟨3|1+2|4]⟨5|1+2|6]Δ\_{135}^2}+\\\\\\
+\scriptscriptstyle \frac{⟨2|3+4|1]⟨4|1+2|3]⟨6|1+2|5]⟨1|3+4|1]⟨56⟩\[56\](-1/4i⟨12⟩[12]⟨23⟩[23]\,...⟪17\,\text{terms}⟫...\, +1/4i⟨24⟩[24]⟨34⟩[34])}{⟨1|3+4|2]⟨3|1+2|4]⟨5|1+2|6]Δ\_{135}^2}+\\\\\\ --->
 </font size>
 <!---
 $$
@@ -1113,6 +1138,19 @@ By performing the partial fraction decomposition before fitting the numerators t
 ---
 <section>
 # 3. Higgs + 4-Parton Amplitude <br> (@ finite top-mass) 
+
+
+---
+
+<b> Example of cut diagram </b>
+
+<img src="HiggsBox.png"; style="max-width:300px;float:center;border:none;">
+
+Onlt singularity involving $m_{top}$ (from pentagon contributions)
+
+$16 |S\_{1×2×3×4}| = −s\_{12} \, s\_{23} \, s\_{34} \, \langle 1 |2 + 3|4] \, \langle 4|2 + 3|1] + m^2\_{top} \, tr_5(1234)^2$
+
+
 
 </section>
 ---
