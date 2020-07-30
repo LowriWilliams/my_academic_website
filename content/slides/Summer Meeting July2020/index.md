@@ -38,7 +38,7 @@ PhD supervisor: Daniel Maître
 
 Summer Meeting - Freiburg\
 <p style="line-height: 0.05;"> <img src="IP3_logo_blue.png"; style="max-width:280px;float:center;border:none;"> <img src="DurhamLogo.svg"; style="max-width:280px;float:center;border:none;">\
-<font size=2> These slides at [gdelaurentis.github.io/slides/summer-meeting-july2020](/https://gdelaurentis.github.io/slides/summer-meeting-july2020/#/) </font size> </p>
+<font size=2> These slides at [gdelaurentis.github.io/slides/summer-meeting-july2020](/slides/summer-meeting-july2020/#/) </font size> </p>
 
 {{< speaker_note >}}
 - Only speaker can read these.
@@ -1016,6 +1016,8 @@ $$
 $$
 --->
 
+<font size=5> (Showing ⟨1|3+4|2], ⟨3|1+2|4] and ⟨5|1+2|6] quadruple and triple poles) </font size>
+
 ---
 
 <b>A six-gluon one-loop rational part</b>
@@ -1038,7 +1040,7 @@ $s\_{123}s\_{234}s\_{345}Δ\_{135}^2Δ\_{624}^2$
 The mass dimension is now 116,<br/>
 which would imply an ansatz with size roughly $10^{10}$.
 
-An analytical expression for this component was previously obtained in [[18](https://arxiv.org/pdf/hep-ph/0607017.pdf)] from Feynman diagrams.
+<!--- An analytical expression for this component was previously obtained in [[18](https://arxiv.org/pdf/hep-ph/0607017.pdf)] from Feynman diagrams. --->
 </font size>
 
 ---
@@ -1055,18 +1057,12 @@ is a bit of a mess:
 <!--- <iframe src="https://arxiv.org/src/1904.04067v3/anc/AllOneLoop6Gluons/6g_pmpmpm_G/rational.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe> --->
 <b> The rational part </b>
 
-<font size=5>
+<font size=6>
 $$
 \begin{gathered}
 \scriptscriptstyle\frac{2/3i⟨12⟩^3[15]^3[23]s\_{123}}{[45]⟨1|2+3|1]^2⟨1|2+3|4]⟨1|2+3|6]⟨3|1+2|6]}+\\\\\\
 \scriptscriptstyle\frac{-2/3i⟨12⟩^3[15]^3[23]⟨3|1+2|5]}{⟨13⟩[45][56]⟨1|2+3|1]^2⟨1|2+3|4]⟨3|1+2|6]}+\\\\\\
 \scriptscriptstyle\frac{1i⟨12⟩^3[15]^2⟨23⟩[23]^2[56]}{[45]⟨1|2+3|1]⟨1|2+3|4]⟨1|2+3|6]^2⟨3|1+2|6]}+\\\\\\
-\scriptscriptstyle\frac{⟨12⟩^2[15]^2\[23\](-1i⟨12⟩[15]+2i⟨23⟩[35])}{[45]⟨1|2+3|1]⟨1|2+3|4]⟨1|2+3|6]⟨3|1+2|6]}+\\\\\\
-\scriptscriptstyle\frac{1i⟨12⟩^3[15]^2[25]⟨3|1+2|5]}{⟨13⟩^2[45][56]⟨1|2+3|1]⟨1|2+3|4]⟨3|1+2|6]}+\\\\\\
-\scriptscriptstyle\frac{2i⟨12⟩^2[15]^2[35]⟨3|1+2|5]}{⟨13⟩[45][56]⟨1|2+3|1]⟨1|2+3|4]⟨3|1+2|6]}+\\\\\\
-\scriptscriptstyle\frac{-1i⟨12⟩^2[15]⟨23⟩[25]^2⟨2|1+3|5]}{⟨13⟩^2[45][56]⟨1|2+3|4]⟨3|1+2|6]s\_{123}}+\\\\\\
-\scriptscriptstyle\frac{-1i⟨12⟩^2[15]^2[25]⟨2|1+3|5]}{⟨13⟩[45][56]⟨1|2+3|4]⟨3|1+2|6]s\_{123}}+\\\\\\
-\scriptscriptstyle\frac{⟨24⟩^2⟨26⟩^2(-1/6i⟨13⟩^2[13]⟨46⟩\,...⟪2\,\text{terms}⟫...\, +1/3i[12]⟨14⟩⟨16⟩⟨23⟩)}{⟨12⟩⟨16⟩⟨23⟩⟨34⟩⟨45⟩⟨56⟩⟨1|2+3|4]⟨3|1+2|6]}+\\\\\\
 \scriptscriptstyle(123456\; \rightarrow \; \overline{234561})+
 \scriptscriptstyle(123456\; \rightarrow \; 345612)+
 \scriptscriptstyle(123456\; \rightarrow \; \overline{456123})+
@@ -1082,6 +1078,16 @@ $$
 \end{gathered}
 $$
 </font size>
+
+<!--- 
+\scriptscriptstyle\frac{⟨12⟩^2[15]^2\[23\](-1i⟨12⟩[15]+2i⟨23⟩[35])}{[45]⟨1|2+3|1]⟨1|2+3|4]⟨1|2+3|6]⟨3|1+2|6]}+\\\\\\
+\scriptscriptstyle\frac{1i⟨12⟩^3[15]^2[25]⟨3|1+2|5]}{⟨13⟩^2[45][56]⟨1|2+3|1]⟨1|2+3|4]⟨3|1+2|6]}+\\\\\\
+\scriptscriptstyle\frac{2i⟨12⟩^2[15]^2[35]⟨3|1+2|5]}{⟨13⟩[45][56]⟨1|2+3|1]⟨1|2+3|4]⟨3|1+2|6]}+\\\\\\
+\scriptscriptstyle\frac{-1i⟨12⟩^2[15]⟨23⟩[25]^2⟨2|1+3|5]}{⟨13⟩^2[45][56]⟨1|2+3|4]⟨3|1+2|6]s\_{123}}+\\\\\\
+\scriptscriptstyle\frac{-1i⟨12⟩^2[15]^2[25]⟨2|1+3|5]}{⟨13⟩[45][56]⟨1|2+3|4]⟨3|1+2|6]s\_{123}}+\\\\\\
+\scriptscriptstyle\frac{⟨24⟩^2⟨26⟩^2(-1/6i⟨13⟩^2[13]⟨46⟩\,...⟪2\,\text{terms}⟫...\, +1/3i[12]⟨14⟩⟨16⟩⟨23⟩)}{⟨12⟩⟨16⟩⟨23⟩⟨34⟩⟨45⟩⟨56⟩⟨1|2+3|4]⟨3|1+2|6]}+\\\\\\ --->
+
+<font size=5> (Showing ⟨1|2+3|1], ⟨1|2+3|6] and symmetric poles)  </font size>
 
 </section>
 ---
@@ -1132,6 +1138,14 @@ Recall that size of the linear system is directly related <br> to the mass dimen
 
 By performing the partial fraction decomposition before fitting the numerators the size of the biggest systems to solve is significantly reduced.
 
+---
+
+<b> Numerical stability </b>
+
+<img src="RelativeError.png"; style="max-width:700px;float:center;border:none;">
+<img src="RelativeErrorTailLogY.png"; style="max-width:700px;float:center;border:none;">
+
+Errors made by double-precision evaluations over $1k$ $collider$ phase space points.
 
 </section>
 ---
@@ -1146,12 +1160,24 @@ By performing the partial fraction decomposition before fitting the numerators t
 
 <img src="HiggsBox.png"; style="max-width:300px;float:center;border:none;">
 
-Onlt singularity involving $m_{top}$ (from pentagon contributions)
+Only singularity involving $m_{top}$ (from pentagon contributions)
 
 $16 |S\_{1×2×3×4}| = −s\_{12} \, s\_{23} \, s\_{34} \, \langle 1 |2 + 3|4] \, \langle 4|2 + 3|1] + m^2\_{top} \, tr_5(1234)^2$
 
+We can generate point near this singularity in a similar fashion.
 
+---
 
+<b> Structure of the coefficients </b>
+
+The massive external leg (the Higgs) is easily accomodated by considering it as a pair of massless particles (think decay products). <br>
+In the end all dependance on $P_{Higgs}$ is removed by using momentum conservation.
+
+The coefficients are Taylor expasions in $m_{top}$:
+
+$C^{(0)} + m^2_{top} C^{(2)}$.
+
+with $C^{(0)}$ and $C^{(2)}$ resabling the six-gluon coefficients.
 </section>
 ---
 ---
@@ -1161,14 +1187,43 @@ $16 |S\_{1×2×3×4}| = −s\_{12} \, s\_{23} \, s\_{34} \, \langle 1 |2 + 3|4] 
 
 ---
 
-<b> Numerical amplitudes </b>
-<br>
+<b> Brief overview </b>
 
-We now have all the building blocks to compute amplitudes.
+Massless $n-$point tree amplitudes are given by
 
-<br>
+$\textit{A}\_n \, = \, z\_1^4 \cdot i \sum\_{j = 1}^{(n-3)!} \frac{I\_{\scriptscriptstyle CHY}(z^{(j)}(k); k; ϵ)}{\det(ϕ\_{rst}^{ijk})(z^{(j)}(k); k)}$
 
-With the open source packages this is straightforward:
+The $z's$ are related to the momenta through the scattering equations.
+
+The only process dependant part is $I_{CHY}$, the rest depends only on multiplicity. <br>
+
+For instance:
+
+<font size=5>
+$I_{CHY, Einstein Gravity} = PF'(\Psi) \; PF'(\tilde\Psi)$
+</font size>
+
+<font size=5>
+$I\_{CHY, Yang Mills} = C_n \; PF'(\Psi) \quad \quad I\_{CHY, Biadjoint Scalar} = C_n \; C_n$
+</font size>
+
+(See backup slides for specific definitions of functions)
+
+---
+
+<b> Numerical amplitudes</b>
+
+Developed two python packages:
+
+```python
+>>> pip install seampy
+>>> pip install lips
+```
+
+seampy from Scatterin Equations and AMplitudes with PYthon<br>
+lips from Lorentz Invarinat Phase Space
+
+Arbitrary-precision floating-point amplitudes with a couple of lines of code
 
 ```python
 >>> from seampy import theories, NumericalAmplitude
@@ -1187,9 +1242,9 @@ mpc(real='#nbr', imag='#nbr')
 ---
 
 <b> Analytical reconstruction </b>
-<br>
 
-Using the same strategy previously discussed we can reconstruct analytical expressions. For example:
+<font size=5> First complete analytical expressions for $(DF)^2$ theory at five point and more.<br>
+For example: </font size>
 
 <font size=4>
 $$
@@ -1205,6 +1260,10 @@ $$
 $$
 </font size>
 
+<font size=5> $(DF)^2$ double copies into conformal gravity. </font size>
+
+<font size=4> (CG is the zero-mass limit of a mass deformed theory which reproduces EG at infinite mass) </font size>
+
 </section>
 ---
 ---
@@ -1213,7 +1272,7 @@ $$
 # Summary
 
 ---
-1) Spinor-helicity rational coefficients can be reconstructed using:
+Spinor-helicity rational coefficients can be reconstructed using:
 
 $\circ$ singular limits for to the least common denominator;
 
@@ -1221,7 +1280,13 @@ $\circ$ doubly singular limits for partial fraction decompositions;
 
 $\circ$ generic ansatze in singular limits for numerators;
 
+<br>
+
 Applications involve tree-level, one-loop and two-loop expressions alike.
+
+It is possible to accomodate masses (both internal/external).
+
+<!---
 
 <br>
 
@@ -1259,13 +1324,11 @@ $\circ$ assemble the NNLO three-jets cross-section;
 
 $\circ$ apply the reconstruction technique to double copy structures.
 
+--->
+
 ---
 
 Thank you for your attention!
-
-<br>
-<br>
-Questions?
 
 </section>
 ---
