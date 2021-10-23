@@ -10,12 +10,14 @@ authors:
 superuser: true
 
 # Role/position
-role: PhD
+role: PostDoc
 
 # Organizations/Affiliations
 organizations:
-- name: Institute for Particle Physics Phenomenology - Durham University
-  url: "https://www.ippp.dur.ac.uk/"
+- name: Physikalisches Institut - Albert-Ludwigs-Universität Freiburg
+  url:
+# - name: Institute for Particle Physics Phenomenology - Durham University
+#   url: "https://www.ippp.dur.ac.uk/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: Counting quarks and gluons
