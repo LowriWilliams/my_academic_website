@@ -26,7 +26,7 @@ interests:
 - Scattering Amplitudes
 - Quantum Field Theories
 - Scientific Computing
-- Medieval and Classical History
+- Algebraic Geometry
 
 education:
   courses:

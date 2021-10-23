@@ -1,7 +1,11 @@
 ---
 title: "The one-loop amplitudes for Higgs + 4 partons with full mass effects"
 authors:
-- Lucy Budge, John M. Campbell, Giuseppe De Laurentis, R. Keith Ellis, Satyajit Seth
+- Lucy Budge
+- John M. Campbell
+- admin
+- R. Keith Ellis
+- Satyajit Seth
 date: "2020-02-27"
 doi: ""
 
