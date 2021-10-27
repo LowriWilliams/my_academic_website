@@ -50,7 +50,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:giuseppe.de-laurentis@durham.ac.uk'  # For a direct email link, use "mailto:test@example.org".
+  link: 'mailto:giuseppe.de.laurentis@physik.uni-freiburg.de'  # For a direct email link, use "mailto:test@example.org".
 - icon: arxiv
   icon_pack: ai
   link: https://arxiv.org/search/hep-ph?searchtype=author&query=De+Laurentis%2C+G
@@ -79,4 +79,4 @@ user_groups:
 - Visitors
 ---
 
-I lived in Milano until the end of high school. I then moved to Oxford for my undergraduate and master studies. I did my PhD studies at IPPP in Durham.
+Hi there! I'm a postdoc at Uni Freiburg working on high energy physics theory and phenomenology. I did my PhD studies at the IPPP in Durham and my undergrand and master studies in Oxford.

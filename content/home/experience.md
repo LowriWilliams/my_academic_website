@@ -24,7 +24,13 @@ date_format = "Jan 2006"
   location = "Freiburg, Germany"
   date_start = "2020-10-01"
   date_end = ""
-  description = ""
+  description = """
+  Research topics:
+  
+  * Quantum Chromo Dynamics
+  * Multi-Loop Scattering Amplitudes
+  * Physical applications of algebraic-geometry
+  """
 [[experience]]
   title = "PhD"
   company = "Institue for Particle Physics Phenomenology - Durham University"
@@ -36,8 +42,8 @@ date_format = "Jan 2006"
   Research topics:
   
   * Quantum Chromo Dynamics
-  * Scattering Amplitudes
-  * Relativistic Kinematics
+  * One-Loop Scattering Amplitudes
+  * Relativistic Kinematics & Lorentz Phase Space
   """
 
 [[experience]]
