@@ -50,10 +50,10 @@ date_format = "Jan 2006"
   title = "MPhys"
   company = "University of Oxford"
   company_url = "http://www.ox.ac.uk/"
-  location = "Oxoford, UK"
+  location = "Oxford, UK"
   date_start = "2012-10-01"
   date_end = "2016-06-01"
-  description = """Bachelor with integrated Master of Physics."""
+  description = """Bachelor with integrated Master of Physics (First-Class Honours)."""
 
 [[experience]]
   title = "Summer Term"
@@ -62,7 +62,7 @@ date_format = "Jan 2006"
   location = "Harvard, Cambridge"
   date_start = "2011-06-01"
   date_end = "2011-08-01"
-  description = """Principles of Physics (mark A) """
+  description = """Principles of Physics (A) """
 
 [[experience]]
   title = "Summer Term"

@@ -14,8 +14,10 @@ role: PostDoc
 
 # Organizations/Affiliations
 organizations:
-- name: Physikalisches Institut - Albert-Ludwigs-Universität Freiburg
-  url:
+- name: Paul Scherrer Institut (PSI)
+  url: "https://www.psi.ch/en" 
+# - name: Physikalisches Institut - Albert-Ludwigs-Universität Freiburg
+#   url:
 # - name: Institute for Particle Physics Phenomenology - Durham University
 #   url: "https://www.ippp.dur.ac.uk/"
 
@@ -50,7 +52,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:giuseppe.de.laurentis@physik.uni-freiburg.de'  # For a direct email link, use "mailto:test@example.org".
+  link: 'mailto:giuseppe.de-laurentis@psi.ch'  # For a direct email link, use "mailto:test@example.org".
 - icon: arxiv
   icon_pack: ai
   link: https://arxiv.org/search/hep-ph?searchtype=author&query=De+Laurentis%2C+G
@@ -79,4 +81,4 @@ user_groups:
 - Visitors
 ---
 
-Hi there! I'm a postdoc at Uni Freiburg working on high energy physics theory and phenomenology. I did my PhD studies at the IPPP in Durham and my undergrand and master studies in Oxford.
+I'm a postdoctoral researcher at PSI, working on high energy physics theory and phenomenology.

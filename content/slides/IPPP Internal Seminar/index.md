@@ -5,6 +5,7 @@ authors: ["Giuseppe De Laurentis"]
 tags: [QCD, Scattering Amplitudes, CHY]
 categories: []
 date: "2019-11-08T00:00:00Z"
+markup: blackfriday
 slides:
   # Choose a theme from https://github.com/hakimel/reveal.js#theming
   theme: sky
