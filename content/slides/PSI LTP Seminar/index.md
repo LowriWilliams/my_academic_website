@@ -44,15 +44,17 @@ LTP Seminar \
 ---
 
 <section>
-# What are Scattering Amplitudes?
+
+{{< slide background-image="LHCXSection.jpg" >}}
+
+# What are <br> Scattering Amplitudes?
 
 ---
 
 <b> S-Matrix and Correlation Functions  </b>
 
-Very conctretly, the LSZ-reduction formula tells us to keep all:
 
-fully-connected, amptuated Feynman diagrams
+Fully-connected, amputated Feynman diagrams (LSZ reduction)
 
 <img src="ScatteringAmplitudeFeynmanDiagramTransparent.png"; style="max-width:300px;float:center;border:none;margin-top:-5px;">
 
@@ -65,6 +67,10 @@ fully-connected, amptuated Feynman diagrams
 $$σ_{2 \rightarrow n - 2} = ∑\_{a,b} ∫ dx_a dx_b f\_{a/h_1}(x_a, μ_F) \, f\_{b/h_2}(x_b, μ_F) \;\hat{σ}\_{ab→n-2}(μ_F, μ_R)$$
 
 $$d\hat{σ}\_{n}=\frac{1}{2\hat{s}}dΠ\_{n-2}\;(2π)^4δ^4\big(∑\_{i=1}^n p_i\big)\;|\overline{\mathcal{A}(p_i,μ_F, μ_R)}|^2$$
+
+<img src="HiggsDiscoveryPlotTransparent.png"; style="max-width:500px;float:center;border:none;margin-top:-5px;">
+
+---
 
 Better predictions require both more loops and higher multiplicity.
 
@@ -128,7 +134,8 @@ $\mathcal{A}^{1-loop}\_{n}({p\_i, λ\_i, a\_i}) = \; g^{n} ∑\_{σ\in S\_n/Z\_n
 $ + ∑\_{c = 2}^{\lfloor n/2 \rfloor + 1}∑\_{σ\in S\_n/Z\_{n;c}} \text{Tr}(T^{a\_σ(1)}\dots T^{a\_σ(c-1)})\text{Tr}(T^{a\_σ( c)}\dots T^{a\_σ(n)}) A\_{n;c}(σ(1^{λ\_1}),\dots ,σ(n^{λ\_n}))$</font size>
 </font size>
 
-<br>
+---
+
 Decomposition in terms of basis integrals <br>
 <font size=4> [G.'t Hooft, M.Veltman](https://pdf.sciencedirectassets.com/271560/1-s2.0-S0550321300X15684/1-s2.0-0550321379906059/main.pdf?X-Amz-Security-Token=AgoJb3JpZ2luX2VjEAIaCXVzLWVhc3QtMSJGMEQCIGNVZuaBsYoWqvtaF%2BAgxc5mpOVy4bMGH2V9AEodTcd4AiAndJhl3k7SA%2Fe2SXVKYCT1Ul4lUrLqXFWVacr%2B1j4YoyraAwhbEAIaDDA1OTAwMzU0Njg2NSIMZCFFK5U%2BuBvoYbtnKrcDAVoIqqSxnZJyWIxHsBuGbbV8ceVrgQ5eYutSzPdHjcMUaIoJlhOXuu2VWIwI6OyG1X3N8KDE816wZTkqwIJT4sU0I7V60zDOZVuZqwDcIom6o5AOm3gPwFYPUE%2B922vgv%2BJT3XwNiqNtjSC00ZFjbectcM7nJa7YWcWAjkZi3oJkIRPvn5m2oOMWET0jR6ZHWhy2jyM7zyiq1oxrXG4JYKB78hua2lVMc3BPdsSombpNeiebjXU4y2Fl35pz8lYIr3Nyws7P91pJS9%2Fzmqjf9QqVHMhjtMWJvQPsYDx%2BJa3UpXT9jo4r1LIERU5%2BZ%2BmVwpqjUqm3jdmvn1p9A3NaxqjyB%2FxfYp6PxAeFmmFi6hlo3IfqGLVoWsTrz0JfNH3L2ADYZhQW8y8QroshqK97GTQqlYbRORZAQeHEILoSjiVDz%2F%2BvT4UupJjaWpECMUca6%2FmrFA3h9KslrYNS%2BxskX0jxleuKkIfdjwoHcES0VA2nq9ELc%2Bhc9Va5T8Wpix7kANcqwOdZtFT5qQSmFOj4e32hzXfefbtqvC4iVBkWMSnvcE4MP3ulM0ac66RuzXZmFnFFzrIHlDDQnozpBTq1AfOoqS7ORld3jyfBg%2FPRvpifiXb3yYmCI1efBvG1zniZHaUld2etzPTcDEWFMm%2FPPAiA5N3c6cL7qQ4xoNuJu6II%2FCVex8l3pxr1LMZxhjcbu24lIRKPxjmN%2BbnMiCCU8VFhR24vzt8cDyKIyUXFIK7qY3OUqcwGDywoER1Ew1y0QvRwtMY8mCBaLbG5oMNSnj7Uf5fQzeKdXs6Dg6fvv4BtNLCR1wFyNDb1T3oNmpT3JEabGG4%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190708T100628Z&X-Amz-SignedHeaders=host&X-Amz-Expires=299&X-Amz-Credential=ASIAQ3PHCVTYZF2Y5ZNJ%2F20190708%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=d919ed9ae7a1959e538a14b0201a53f55ff2d050c159575173ea8c207d452dc2&hash=566c1a9bb320be2e7a96e7b9501740e9f7a65fb676b3ea2ba759c1154fa6e5c5&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=0550321379906059&tid=spdf-de178cac-e602-4007-a06a-590f35e6031e&sid=5c9de57e2ed3984ef69997d0bb7d4e65ff39gxrqb&type=client), [Z.Bern, L.Dixon, D.A.Kosower](https://arxiv.org/pdf/hep-ph/9212308.pdf), [R.K.Ellis, G.Zanderighi](https://arxiv.org/pdf/0712.1851.pdf), ... </font size>
 
@@ -164,20 +171,35 @@ $A^{tree}(1^{+}\_{g}2^{+}\_{g}3^{+}\_{g}4^{-}\_{g}5^{-}\_{g}) = \frac{i\,⟨45�
 ---
 
 <section>
+
+{{< slide background-image="ComputingClusterImage.jpg" >}}
+
 # How do we compute Scattering Amplitudes efficiently?
 
 ---
 
 <b> Recursion Relations </b>
 
-test
+- Off-Shell (Berends-Giele)
 
+
+- On-Shell (BCFW)
 
 ---
 
 <b> Loops from Trees </b>
 
-test
+- Generalized Unitarity
+
+---
+
+<b> Reduction to Master-Integrals </b>
+
+Integration-by-parts identities
+
+- Laporta algorithm ($\longrightarrow$ *very* large, sparse systems)
+
+- Master-Surface decomposition ($\longrightarrow$ moderate size, dense systems)
 
 </section>
 ---
@@ -188,7 +210,39 @@ test
 
 ---
 
-test
+<b> Why not just do everyting numeric? </b>
+
+Finite fields
+
+---
+
+Algebraic Geomtry
+
+---
+
+OR-Tools
+
+CUDA
+
+</section>
+---
+---
+<section>
+
+# Outlook
+
+---
+
+
+---
+
+<font size=10>
+<b> Thank you! </b>
+</font size> 
+
+<br>
+
+<b> Questions? </b>
 
 </section>
 ---
@@ -297,15 +351,6 @@ $$
 ---
 ---
 
-<section>
-
-<font size=9>
-**B. Applications**
-</font size>
-
-</section>
----
----
 <section>
 # 1. Six-Gluon One-Loop Amplitude
 
@@ -777,72 +822,6 @@ $$
 <font size=5> $(DF)^2$ double copies into conformal gravity. </font size>
 
 <font size=4> (CG is the zero-mass limit of a mass deformed theory which reproduces EG at infinite mass) </font size>
-
-</section>
----
----
-<section>
-
-# Summary
-
----
-Spinor-helicity rational coefficients can be reconstructed using:
-
-$\circ$ singular limits for to the least common denominator;
-
-$\circ$ doubly singular limits for partial fraction decompositions;
-
-$\circ$ generic ansatze in singular limits for numerators;
-
-<br>
-
-Applications involve tree-level, one-loop and two-loop expressions alike.
-
-It is possible to accomodate masses (both internal/external).
-
-<!---
-
-<br>
-
-2) Amplitudes in the CHY formalism can be computed via:
-
-$\circ$ the scattering equations, numerically solved via elimination theory;
-
-$\circ$ CHY-Integrads, which make manifest relations between theories;
-
-Analytical expressions are then accessible using the above strategy.
-
----
-
-# Outlook
-
----
-
-Application to the following quantities is well within reach:
-
-$\circ$ six-parton one-loop amplitudes;
-
-$\circ$ five-parton two-loop amplitudes;
-
-for which we have already reconstructed several components.
-
-<br>
-
-Additionally it might be of interest to:
-
-$\circ$ implement analytical expressions on GPGPU for fast evaluations;
-
-$\circ$ reconstruct the seven-gluon one-loop coefficients;
-
-$\circ$ assemble the NNLO three-jets cross-section;
-
-$\circ$ apply the reconstruction technique to double copy structures.
-
---->
-
----
-
-Thank you for your attention!
 
 </section>
 ---

@@ -81,4 +81,5 @@ user_groups:
 - Visitors
 ---
 
-I'm a postdoctoral researcher at PSI, working on high energy physics theory and phenomenology.
+Hello! I am a postdoctoral researcher at PSI, working on high energy
+physics theory and phenomenology.
