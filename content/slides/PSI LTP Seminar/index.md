@@ -55,7 +55,7 @@ LTP Seminar \
 
 
 <div style="font-size: x-large">
-$$\langle \text{final state} | S | \text{initial state} \rangle = \underbrace{\delta_{fi}}_{\text{no scattering}} + \underbrace{i(2\pi)^4\delta(p_f-p_i)}_{\text{momentum conservation}} \quad \times \; \underbrace{\mathcal{A}_{fi}}_{\text{scattering amplitude}}$$
+$$\langle \text{final state} | S | \text{initial state} \rangle = \underbrace{\delta_{fi}}_{\text{no scattering}} + \underbrace{i(2\pi)^4\delta(p_f-p_i)}_{\text{4-momentum conservation}} \quad \times \; \underbrace{\mathcal{A}_{fi}}_{\text{scattering amplitude}}$$
 
 Or simply: $\; S = 1 + i \, T$<br><br>
 
@@ -82,8 +82,9 @@ $$d\hat{σ}_{n}=\frac{1}{2\hat{s}}dΠ_{n-2}\;(2π)^4δ^4\big(∑_{i=1}^n p_i\big
        <img src="HiggsDiscoveryPlotTransparent.png"; style="max-width:470px;float:center;border:none;margin-top:-5px;">
   </div>
   <div style="width:50%; float: center; display: inline-block; font-size: x-large;">
-       $$\\[2mm]\mathcal{A}_{pp\rightarrow h \rightarrow \gamma\gamma} \sim \frac{1}{s - m^2_h + i m_h \Gamma_h}$$
-       i.e.&nbspthe square-root a Breit–Wigner distribution
+       <img src="HiggsDiagramTransparent.png"; style="max-width:200px;float:center;border:none;margin-top:5mm;margin-bottom:0mm">
+       $$\mathcal{A}_{pp\rightarrow h \rightarrow \gamma\gamma} \sim \frac{1}{s - m^2_h + i m_h \Gamma_h}$$
+       $$\Rightarrow\; \text{Breit–Wigner distribution}$$
   </div>
 </div>
 
@@ -99,7 +100,7 @@ Better predictions require both <span style="background-color: #FFFF007F">more l
 
 <table width=50% border="1" cellspacing="0" cellpadding="0" style="margin-bottom: 8mm; margin-top: 8mm">
   <tr class="greenline">
-    <td colspan="2", rowspan="2"> <div id="rot90"> <center> <b> $\mathcal{A}_{n-gluons}^{\ell-loops} \propto g_s^{n-2} $ </b> </center> </div> </td>
+    <td colspan="2", rowspan="2"> <div id="rot90"> <center> <b> $\mathcal{A}_{n-gluons}^{\ell-loops} \propto g_s^{n-2+2\ell} $ </b> </center> </div> </td>
     <td colspan="4"> <center> multiplicity $(n)$ </center> </td>
   </tr>
   <tr>
@@ -136,7 +137,7 @@ IR singularities have to be cancelled between real and virtual corrections.
 </div>
 
 <div style="text-align: center; font-size: x-large; margin-top: 8mm;">
-More loops $\rightarrow$ analytical complexity; &nbsp more legs $\rightarrow$ algebraic complexity
+More loops $\rightarrow$ analytical complexity; &nbsp more legs $\rightarrow$ algebraic complexity.
 </div>
 
 </section>
@@ -172,15 +173,34 @@ $$ + ∑_{c = 2}^{\lfloor n/2 \rfloor + 1}∑_{σ\in S_n/Z_{n;c}} \color{green}{
 
 ---
 
-<b style="font-size: xx-large; margin-bottom: 25mm;"> Splitting <span style="color: green">Transcendental</span> and <span style="color: red">Rational</span> parts</b>
+<b style="font-size: xx-large; margin-bottom: 20mm;"> Splitting <span style="color: orange">Rational</span> and <span style="color: red">Transcendental</span> parts</b>
 
-Decomposition in terms of basis integrals <br>
-<font size=4> [G.'t Hooft, M.Veltman](https://pdf.sciencedirectassets.com/271560/1-s2.0-S0550321300X15684/1-s2.0-0550321379906059/main.pdf?X-Amz-Security-Token=AgoJb3JpZ2luX2VjEAIaCXVzLWVhc3QtMSJGMEQCIGNVZuaBsYoWqvtaF%2BAgxc5mpOVy4bMGH2V9AEodTcd4AiAndJhl3k7SA%2Fe2SXVKYCT1Ul4lUrLqXFWVacr%2B1j4YoyraAwhbEAIaDDA1OTAwMzU0Njg2NSIMZCFFK5U%2BuBvoYbtnKrcDAVoIqqSxnZJyWIxHsBuGbbV8ceVrgQ5eYutSzPdHjcMUaIoJlhOXuu2VWIwI6OyG1X3N8KDE816wZTkqwIJT4sU0I7V60zDOZVuZqwDcIom6o5AOm3gPwFYPUE%2B922vgv%2BJT3XwNiqNtjSC00ZFjbectcM7nJa7YWcWAjkZi3oJkIRPvn5m2oOMWET0jR6ZHWhy2jyM7zyiq1oxrXG4JYKB78hua2lVMc3BPdsSombpNeiebjXU4y2Fl35pz8lYIr3Nyws7P91pJS9%2Fzmqjf9QqVHMhjtMWJvQPsYDx%2BJa3UpXT9jo4r1LIERU5%2BZ%2BmVwpqjUqm3jdmvn1p9A3NaxqjyB%2FxfYp6PxAeFmmFi6hlo3IfqGLVoWsTrz0JfNH3L2ADYZhQW8y8QroshqK97GTQqlYbRORZAQeHEILoSjiVDz%2F%2BvT4UupJjaWpECMUca6%2FmrFA3h9KslrYNS%2BxskX0jxleuKkIfdjwoHcES0VA2nq9ELc%2Bhc9Va5T8Wpix7kANcqwOdZtFT5qQSmFOj4e32hzXfefbtqvC4iVBkWMSnvcE4MP3ulM0ac66RuzXZmFnFFzrIHlDDQnozpBTq1AfOoqS7ORld3jyfBg%2FPRvpifiXb3yYmCI1efBvG1zniZHaUld2etzPTcDEWFMm%2FPPAiA5N3c6cL7qQ4xoNuJu6II%2FCVex8l3pxr1LMZxhjcbu24lIRKPxjmN%2BbnMiCCU8VFhR24vzt8cDyKIyUXFIK7qY3OUqcwGDywoER1Ew1y0QvRwtMY8mCBaLbG5oMNSnj7Uf5fQzeKdXs6Dg6fvv4BtNLCR1wFyNDb1T3oNmpT3JEabGG4%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190708T100628Z&X-Amz-SignedHeaders=host&X-Amz-Expires=299&X-Amz-Credential=ASIAQ3PHCVTYZF2Y5ZNJ%2F20190708%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=d919ed9ae7a1959e538a14b0201a53f55ff2d050c159575173ea8c207d452dc2&hash=566c1a9bb320be2e7a96e7b9501740e9f7a65fb676b3ea2ba759c1154fa6e5c5&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=0550321379906059&tid=spdf-de178cac-e602-4007-a06a-590f35e6031e&sid=5c9de57e2ed3984ef69997d0bb7d4e65ff39gxrqb&type=client), [Z.Bern, L.Dixon, D.A.Kosower](https://arxiv.org/pdf/hep-ph/9212308.pdf), [R.K.Ellis, G.Zanderighi](https://arxiv.org/pdf/0712.1851.pdf), ... </font size>
+<div style="text-align: left; font-size: x-large; float: left; margin-bottom: 10mm; margin-top: 10mm">Decomposition in terms of master integrals</div>
+<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 10mm" href=https://arxiv.org/abs/0712.1851>Ellis, Zanderighi</a>
+<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 10mm" href=https://arxiv.org/abs/hep-ph/9212308>Bern, Dixon, Kosower;&nbsp</a>
+<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 10mm" href=https://www.sciencedirect.com/science/article/pii/0550321379906059?ref=pdf_download&fr=RR-2&rr=7c4afcac1f343b58>'t Hooft, Veltman;&nbsp</a>
 
-<font size=5>
-$$A^{1-\text{loop}}\_{n;1} = \sum\_i d\_i I^i\_{Box} + \sum\_i c\_i I^i\_{Triangle} + \sum\_i b\_i I^i\_{Bubble} + R$$
+<div style="font-size: x-large; margin-top: 10mm;">
+$$A^{1-\text{loop}}_{n} = \sum_i \color{orange}{d_i} \color{red}{I^i_{Box}} + \sum_i \color{orange}{c_i} \color{red}{I^i_{Triangle}} + \sum_i \color{orange}{b_i} \color{red}{I^i_{Bubble}} + \sum_i \color{orange}{a_i} \color{red}{I^i_{Tadpoles}} + \color{orange}{R}$$
+</div>
 
-<nobr>$A^{\text{tree}},\, d\_i,\, c\_i,\, b\_i,$ and $R$ are rational functions of kinematic invariants only.</nobr>
+<div style="width:90%; float: center; display: inline-block;">
+       <img src="one-loop-decomposition-transparent.png"; style="max-width:750px;float:center;border:none;margin-top:-5px;">
+  </div>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-bottom: 10mm;">In general, in $D= 4- 2 \epsilon$, for a suitable choice of master integrals</div>
+
+<div style="font-size: x-large; margin-top: 10mm; margin-bottom:10mm">
+$$A^{\ell-loop}_n = \sum_{i \in \text{masters}} \frac{\color{orange}{c_i}(\vec p, \vec \lambda, \epsilon) \, \color{red}{I_i}(\vec p, \epsilon)}{\prod_j (\epsilon - a_{ij})}\;, \quad \text{with} \quad a_{ij} \in \mathbb{Q}$$
+</div>
+
+<!---
+<div style="text-align: left; font-size: x-large; float: left; margin-bottom: 10mm;">
+    $\kern30mm \cdot$ the coefficients $c_i$ are <span style="color: orange">rational</span> in $p_i$ and polynomial in $\epsilon$, <br>
+    $\kern30mm \cdot$ the master integrals $I_i$ are <span style="color: red">transcendental</span>, <br>
+    $\kern30mm \cdot$ the $a_{ij}$ are rational numbers ($a_{ij} \in \mathbb{Q}$)
+</div>
+--->
 
 </font size>
 
@@ -189,9 +209,9 @@ $$A^{1-\text{loop}}\_{n;1} = \sum\_i d\_i I^i\_{Box} + \sum\_i c\_i I^i\_{Triang
 <b style="font-size: xx-large"> The Feynman diagram by Feynman diagram approach  </b>
 <br>
 
-Brute force calculations are a mess:
+Even at tree level, brute force calculations are a mess:
 
-<img src="Five_gluons_mess.png"; style="max-width:500px;float:center;border:none;margin-top:-5px;">
+<img src="Five_gluons_mess-transparent.png"; style="max-width:500px;float:center;border:none;margin-top:-5px;">
 
 Results are often much easier <br>
 <font size=4> [S.J.Parke, T.R.Taylor](https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.56.2459),
@@ -264,6 +284,7 @@ CUDA
 
 </section>
 ---
+
 ---
 <section>
 
@@ -271,6 +292,7 @@ CUDA
 
 ---
 
+$\circ $ test
 
 ---
 
@@ -284,10 +306,18 @@ CUDA
 
 </section>
 ---
+
+---
+<section>
+
+# Backup Slides
+
+</section>
 ---
 
+---
 <section>
-# A&nbsp;1.2 &nbsp;Spinor &nbsp;Helicity
+# Spinor &nbsp;Helicity
 
 ---
 
@@ -371,7 +401,7 @@ $$
 
 ---
 <section>
-# 2. Five-Parton Two-Loop <br> Finite Remainders
+# Five-Parton Two-Loop <br> Finite Remainders
 
 <br>
 
@@ -448,10 +478,10 @@ Errors made by double-precision evaluations over $1k$ $collider$ phase space poi
 
 </section>
 ---
+
 ---
 <section>
-# 3. Higgs + 4-Parton Amplitude <br> (@ finite top-mass) 
-
+# Higgs + 4-Parton Amplitude <br> (@ finite top-mass) 
 
 ---
 
@@ -477,91 +507,5 @@ The coefficients are Taylor expasions in $m_{top}$:
 $C^{(0)} + m^2_{top} C^{(2)}$.
 
 with $C^{(0)}$ and $C^{(2)}$ resabling the six-gluon coefficients.
-</section>
----
----
-<section>
-
-# 4. Tree Amplitudes from CHY formalism
-
----
-
-<b> Brief overview </b>
-
-Massless $n-$point tree amplitudes are given by
-
-$\textit{A}\_n \, = \, z\_1^4 \cdot i \sum\_{j = 1}^{(n-3)!} \frac{I\_{\scriptscriptstyle CHY}(z^{(j)}(k); k; ϵ)}{\det(ϕ\_{rst}^{ijk})(z^{(j)}(k); k)}$
-
-The $z's$ are related to the momenta through the scattering equations.
-
-The only process dependant part is $I_{CHY}$, the rest depends only on multiplicity. <br>
-
-For instance:
-
-<font size=5>
-$I_{CHY, Einstein Gravity} = PF'(\Psi) \; PF'(\tilde\Psi)$
-</font size>
-
-<font size=5>
-$I\_{CHY, Yang Mills} = C_n \; PF'(\Psi) \quad \quad I\_{CHY, Biadjoint Scalar} = C_n \; C_n$
-</font size>
-
-(See backup slides for specific definitions of functions)
-
----
-
-<b> Numerical amplitudes</b>
-
-Developed two python packages:
-
-```python
->>> pip install seampy
->>> pip install lips
-```
-
-seampy from Scatterin Equations and AMplitudes with PYthon<br>
-lips from Lorentz Invarinat Phase Space
-
-Arbitrary-precision floating-point amplitudes with a couple of lines of code
-
-```python
->>> from seampy import theories, NumericalAmplitude
->>> from lips import Particles
-
->>> theories
-[YM, EG, BS, BI, NLSM, Galileon, CG, DF2]
-
->>> oDF2Amp = NumericalAmplitude(theory="DF2", helconf="+++++")
->>> oParticles = Particles(5)
-
->>> oDF2Amp(oParticles)
-mpc(real='#nbr', imag='#nbr')
-```
-
----
-
-<b> Analytical reconstruction </b>
-
-<font size=5> First complete analytical expressions for $(DF)^2$ theory at five point and more.<br>
-For example: </font size>
-
-<font size=4>
-$$
-\begin{gathered}
-    A_{(\text{DF})^2}(1^+,\,2^+,\,3^+,\,4^+,\,5^+) =\\\\\\
-    \frac{i[12]⟨13⟩⟨25⟩[35]^2}{⟨12⟩^2⟨34⟩⟨45⟩}+\frac{i[14][24][35]}{⟨12⟩⟨35⟩}+\\\\\\
-    (12345 → 23451)\,+\,(12345 → 34512)\,+\\\\\\
-    (12345 → 45123)\,+\,(12345 → 51234)\,+\\\\\\
-    \frac{2i[15][23]⟨4|1+2|4]}{⟨12⟩⟨34⟩⟨45⟩}+\\\\\\
-    \frac{2i[12][45]⟨3|1+5|3]}{⟨15⟩⟨23⟩⟨34⟩}+\\\\\\
-    \frac{2i[12][15][34]}{⟨23⟩⟨45⟩}\phantom{+}
-\end{gathered}
-$$
-</font size>
-
-<font size=5> $(DF)^2$ double copies into conformal gravity. </font size>
-
-<font size=4> (CG is the zero-mass limit of a mass deformed theory which reproduces EG at infinite mass) </font size>
-
 </section>
 ---
