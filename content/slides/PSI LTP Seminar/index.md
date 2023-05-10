@@ -51,7 +51,7 @@ LTP Seminar \
 
 ---
 
-<b style="font-size: xx-large"> Correlation Functions and the $\boldsymbol{S}$-Matrix </b>
+<b style="font-size: xx-large"> Amplitudes and the $\boldsymbol{S}$-Matrix </b>
 
 
 <div style="font-size: x-large">
@@ -66,7 +66,7 @@ In practice, we want <span style="background-color: #FFFF007F">fully-connected, 
 
 ---
 
-<b style="font-size: xx-large"> The ''$\sqrt{\textbf{Probability}}$'' of Scattering </b>
+<b style="font-size: xx-large"> Amplitudes and Cross Sections </b>
 <br>
 
 <div style="text-align: left; font-size: x-large">
@@ -91,7 +91,7 @@ $$d\hat{σ}_{n}=\frac{1}{2\hat{s}}dΠ_{n-2}\;(2π)^4δ^4\big(∑_{i=1}^n p_i\big
 
 ---
 
-<b style="font-size: xx-large"> Perturbative Quantum Field Theory </b>
+<b style="font-size: xx-large"> The Perturbative Expansion </b>
 
 <div style="text-align: left; font-size: x-large">
 $$\mathcal{A}_n = \underbrace{\mathcal{A}_n^{\text{tree}}}_{\kern-40mm \text{comulative error:} \quad \sim 30\%} + \left(\frac{\alpha_S}{2\pi}\right) \underbrace{\mathcal{A}_n^{1-\text{loop}}}_{\sim 10\%} + \left(\frac{\alpha_S}{2\pi}\right)^2 \underbrace{\mathcal{A}_n^{2-\text{loop}}}_{\sim 1\%} + \dots$$
@@ -140,6 +140,12 @@ IR singularities have to be cancelled between real and virtual corrections.
 More loops $\rightarrow$ analytical complexity; &nbsp more legs $\rightarrow$ algebraic complexity.
 </div>
 
+---
+
+
+<b style="font-size: xx-large; margin-bottom: 25mm;"> The State-of-the-Art </b>
+
+
 </section>
 ---
 
@@ -152,21 +158,21 @@ More loops $\rightarrow$ analytical complexity; &nbsp more legs $\rightarrow$ al
 
 ---
 
-<b style="font-size: xx-large; margin-bottom: 25mm;"> Factorizing <span style="color: green">Dynamics</span> and <span style="color: red">Kinematics</span> </b>
+<b style="font-size: xx-large; margin-bottom: 30mm;"> Factorizing <span style="color: green">Dynamics</span> and <span style="color: red">Kinematics</span> </b>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-bottom: 10mm;">Color ordering at tree level</div>
-<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm;" href=https://www.sciencedirect.com/science/article/pii/0550321387906043?ref=pdf_download&fr=RR-2&rr=7c49373aad8e3b51>F.A.Berends, W.Giele ('80s)</a>
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 10mm;">Color ordering at tree level</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: 5mm; margin-bottom: 5mm;" href=https://www.sciencedirect.com/science/article/pii/0550321387906043?ref=pdf_download&fr=RR-2&rr=7c49373aad8e3b51>F.A.Berends, W.Giele ('80s)</a>
 
 <div style="font-size: x-large; margin-top: 10mm;">
-$$\mathcal{A}^{tree}_{n}({p_i, λ_i, a_i}) = \; g^{n-2} ∑_{σ\in S_n/Z_n} \color{green}{\text{Tr}(T^{a_σ(1)}\dots T^{a_σ(n)})} \; \color{red}{A^{tree}_n(σ(1^{λ_1}),\dots ,σ(n^{λ_n}))}\\[8mm]$$
+$$\displaystyle \mathcal{A}^{tree}_{n}({p_i, λ_i, a_i}) = \; g^{n-2} \sum_{σ\in S_n/Z_n} \color{green}{\text{Tr}(T^{a_σ(1)}\dots T^{a_σ(n)})} \; \color{red}{A^{tree}_n(σ(p_1^{λ_1}),\dots ,σ(p_n^{λ_n}))}\\[8mm]$$
 </div>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-bottom: 10mm;">and one loop</div>
-<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm;" href=https://www.sciencedirect.com/science/article/pii/055032139190567H?ref=pdf_download&fr=RR-2&rr=7c4937405f2d3b51>Z.Bern, D.A.Kosower ('91)</a>
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 10mm;">and one loop</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: 5mm; margin-bottom: 5mm;" href=https://www.sciencedirect.com/science/article/pii/055032139190567H?ref=pdf_download&fr=RR-2&rr=7c4937405f2d3b51>Z.Bern, D.A.Kosower ('91)</a>
 
 <div style="font-size: x-large; margin-top: 10mm;">
-$$\mathcal{A}^{1-loop}_{n}({p_i, λ_i, a_i}) = \; g^{n} ∑_{σ\in S_n/Z_n} \color{green}{N_{c}\text{Tr}(T^{a_σ(1)}\dots T^{a_σ(n)})} \; \color{red}{A^1_{n;1}(σ(1^{λ_1}),\dots ,σ(n^{λ_n}))}$$
-$$ + ∑_{c = 2}^{\lfloor n/2 \rfloor + 1}∑_{σ\in S_n/Z_{n;c}} \color{green}{\text{Tr}(T^{a_σ(1)}\dots T^{a_σ(c-1)})\text{Tr}(T^{a_σ( c)}\dots T^{a_σ(n)})} \;  \color{red}{A^1_{n;c}(σ(1^{λ_1}),\dots ,σ(n^{λ_n}))}$$
+$$\displaystyle\mathcal{A}^{1-loop}_{n}({p_i, λ_i, a_i}) = \; g^{n} \sum_{σ\in S_n/Z_n} \color{green}{N_{c}\text{Tr}(T^{a_σ(1)}\dots T^{a_σ(n)})} \; \color{red}{A^1_{n;1}(σ(p_1^{λ_1}),\dots ,σ(p_n^{λ_n}))} \\
+\displaystyle + \sum_{c = 2}^{\lfloor n/2 \rfloor + 1}\sum_{σ\in S_n/Z_{n;c}} \color{green}{\text{Tr}(T^{a_σ(1)}\dots T^{a_σ(c-1)})\text{Tr}(T^{a_σ( c)}\dots T^{a_σ(n)})} \;  \color{red}{A^1_{n;c}(σ(p_1^{λ_1}),\dots ,σ(p_n^{λ_n}))}$$
 </div>
 
 <div style="text-align: center; font-size: x-large; margin-top: 10mm;">We will focus on <span style="background-color: #FFFF007F"><i>color-ordered</i> amplitudes</span> $A^\ell_n$</div>
@@ -188,7 +194,9 @@ $$A^{1-\text{loop}}_{n} = \sum_i \color{orange}{d_i} \color{red}{I^i_{Box}} + \s
        <img src="one-loop-decomposition-transparent.png"; style="max-width:750px;float:center;border:none;margin-top:-5px;">
   </div>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-bottom: 10mm;">In general, in $D= 4- 2 \epsilon$, for a suitable choice of master integrals</div>
+<div style="text-align: left; font-size: x-large; float: left; margin-bottom: 10mm;">
+     In general, in $D= 4- 2 \epsilon$, for a suitable choice of master integrals
+</div>
 
 <div style="font-size: x-large; margin-top: 10mm; margin-bottom:10mm">
 $$A^{\ell-loop}_n = \sum_{i \in \text{masters}} \frac{\color{orange}{c_i}(\vec p, \vec \lambda, \epsilon) \, \color{red}{I_i}(\vec p, \epsilon)}{\prod_j (\epsilon - a_{ij})}\;, \quad \text{with} \quad a_{ij} \in \mathbb{Q}$$
@@ -206,22 +214,36 @@ $$A^{\ell-loop}_n = \sum_{i \in \text{masters}} \frac{\color{orange}{c_i}(\vec p
 
 ---
 
-<b style="font-size: xx-large"> The Feynman diagram by Feynman diagram approach  </b>
+{{< slide background-image="Five_gluons_mess-transparent-background.png" >}}
+
+<b style="font-size: xx-large"> Feynman diagram by Feynman diagram </b>
 <br>
 
-Even at tree level, brute force calculations are a mess:
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">     
+     $\circ\,$ Analytic computations get very complicated very quickly, even at tree level. <br>
+     $\phantom{\circ}\,$ But this doesn't mean final results can't be compact. <br><br>
 
-<img src="Five_gluons_mess-transparent.png"; style="max-width:500px;float:center;border:none;margin-top:-5px;">
+     $\circ\,$ Each term in the expression in the background reads something like:
+</div>
 
-Results are often much easier <br>
-<font size=4> [S.J.Parke, T.R.Taylor](https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.56.2459),
-[F.A.Berends, W.T.Giele](https://reader.elsevier.com/reader/sd/pii/0550321388904427?token=EFDF378B5E170FFAF0B1BECE184A1EB6304F7798C481CF3C0E7D93DF6D367AE0E093D4D4942C932C66E8BEB75DAB41FE) </font size>
+<br><br><br><br>
 
+<div style="text-align: center; font-size: x-large; float: center; margin-top: 5mm; margin-bottom: 5mm;">     
+     $(k_1 \cdot k_4) (\varepsilon_2 \cdot k_2) (\varepsilon_1 \cdot \varepsilon_3) (\varepsilon_4 \cdot \varepsilon_5)$
+</div>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 5mm;">
+     $\phantom{\circ}\,$ with $k_i$ 4-momenta, and $\varepsilon_i$ polarization tensors. <br><br>
+     $\circ\,$ This is for a tree-level 5-gluon amplitude, which can be simplified to
+</div>
+
+<div style="text-align: center; font-size: 22pt; margin-top: 0mm; margin-bottom: 5mm;">
+$A^{tree}(1^{+}_{g}2^{+}_{g}3^{+}_{g}4^{-}_{g}5^{-}_{g}) = \frac{i\,⟨45⟩^{4}}{⟨12⟩⟨23⟩⟨34⟩⟨45⟩⟨51⟩}$
+</div>
 
 <font size=5>
-
-$A^{tree}(1^{+}\_{g}2^{+}\_{g}3^{+}\_{g}4^{-}\_{g}5^{-}\_{g}) = \frac{i\,⟨45⟩^{4}}{⟨12⟩⟨23⟩⟨34⟩⟨45⟩⟨51⟩}$
-
+      [S.J.Parke, T.R.Taylor](https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.56.2459);
+      [F.A.Berends, W.T.Giele](https://www.sciencedirect.com/science/article/pii/0550321388904427)
 </font size>
 
 </section>
@@ -236,51 +258,179 @@ $A^{tree}(1^{+}\_{g}2^{+}\_{g}3^{+}\_{g}4^{-}\_{g}5^{-}\_{g}) = \frac{i\,⟨45�
 
 ---
 
-<b> Recursion Relations </b>
 
-- Off-Shell (Berends-Giele)
+<b style="font-size: xx-large"> Recursion Relations for Trees </b>
 
 
-- On-Shell (BCFW)
+<div style="font-size: x-large; float: left;">
+$\circ$ Off-mass-shell recursion for tree (Berends-Giele)
+</div>
+
+<div style="font-size: x-large; float: left;">
+$\circ$ On-mass-shell recursion for tree (Britto-Chacazo-Feng-Witten)
+</div>
 
 ---
 
-<b> Loops from Trees </b>
+<b style="font-size: xx-large"> Multi-Loop Amplitudes from Trees </b>
 
-- Generalized Unitarity
+<div style="font-size: x-large; float: left; margin-bottom: 0mm;">
+$\circ$ Generalized unitarity relates products of tree amplitudes to loop amplitudes
+</div>
+
+<div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 5mm;">
+	<div style="font-size: x-large; width:50%; float: left; text-align: center; display: inline-block; margin-top: 0mm;">
+	     $$
+	     \displaystyle \prod_{\text{trees}} A^{\text{tree}}(\vec k, \vec\ell) = \sum_{\substack{\text{topologies}\, \Gamma, \\ i \in M_\Gamma \cup S_\Gamma}} c_{i,\Gamma}(\vec k) \frac{m_{i,\Gamma}(\vec k, \vec\ell)}{\prod_{\text{prop}\,j} \rho_{j}(\vec k, \vec\ell)}
+	     $$
+	     $$
+	     \left. \begin{aligned}
+	     \text{Master integrals:} \; & \int d^{D}\vec \ell \; m_{i\in M_\Gamma} \neq 0 \\
+	     \text{Surface terms:} \; & \int d^{D}\vec \ell \; m_{i\in S_\Gamma} = 0 \\
+	     \end{aligned} \right\} \; \begin{aligned} & \text{Complex} \\ & \text{problem!} \end{aligned}
+	     $$
+	</div>
+	<div style="width:50%; float: right; display: inline-block;">
+	     <img src="CaravelLogo.png"; style="max-width:150px; float:center; border:none; margin-top: 12mm; margin-bottom: 0mm;">
+	     <br>
+	     <a style="font-size: large; text-align: center; float: center; margin-top: 0mm; margin-bottom: 5mm;"
+	     	href=https://www.sciencedirect.com/science/article/pii/0550321387906043?ref=pdf_download&fr=RR-2&rr=7c49373aad8e3b51>
+		H. Ita (PSI) et al. ('20)
+	     </a>
+	</div>
+</div>
+
+<br><br><br><br><br><br><br><br>
+
+<div style="display:block; width:100%; margin-top: 5mm; margin-bottom: 0mm;">
+	<div style="font-size: x-large; width:50%; float: left; text-align: left; display: inline-block; margin-top: 10mm;">
+	     $\circ$ The image on the right shows an example for a one-loop box coefficient. <br><br>
+     	     $\circ$ In general, need to solve linear systems for the coefficients $c_{i,\Gamma}$. <br>
+	</div>
+	<div style="width:50%; float: right; display: inline-block;">
+	     <img src="BoxCoefficient.png"; style="max-width:400px; float:center; border:none; margin-top: 0mm; margin-left: 0mm; margin-bottom: 0mm;">
+	</div>
+</div>
 
 ---
 
-<b> Reduction to Master-Integrals </b>
+<b style="font-size: xx-large"> Choosing a Number Field </b>
 
-Integration-by-parts identities
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">     
+     $\circ\,$ Ideally, fast and stable double-precision floating-point evaluations ($\mathbb{R}$ or $\mathbb{C}$). <br>
+     $\phantom{\circ}\,$ But at two loops the computation is so complex that all precision is lost, <br>
+     $\phantom{\circ}\,$ and arbitrary precision evaluations are <b> very </b> slow. <br><br>
 
-- Laporta algorithm ($\longrightarrow$ *very* large, sparse systems)
+     $\circ\,$ Could try rational inputs ($\mathbb{Q}$), but integers grow way too large at intermediate stages. <br><br>
 
-- Master-Surface decomposition ($\longrightarrow$ moderate size, dense systems)
+     $\circ\,$ Finite fields ($\mathbb{F}_p$) come to the rescue. These are integers modulo a prime number $p$: <br>
+     <div style="text-align: center; float: center; margin-top: 5mm;">
+     	  $\phantom{\circ}\,$ $\mathbb{F}_p = \{0, 1, 2, \dots, p-1, p\} \cup \{+, -, \times, \div \}$
+     </div>
+     <br>
+     $\phantom{\circ}\,$ The prime $p$ needs to be large, to avoid accidental <tt> DivisionByZero </tt>. <br><br>
+     
+     $\circ\,$ But we can't do phenomenology with $\mathbb{F}_p$ ! <br><br>
+
+</div>
 
 </section>
 ---
 ---
 
 <section>
-# Black-Box Interpolation
+
+{{< slide background-image="matrix.png" >}}
+
+# Analytic Reconstruction
 
 ---
 
-<b> Why not just do everyting numeric? </b>
+<b style="font-size: xx-large"> The Ansatz </b>
+<br>
 
-Finite fields
+<div style="text-align: left; font-size: x-large">
+Enumerating all possible monomials
+
+</div>
+
+<div style="text-align: left; font-size: x-large">
+Solving linear systems with CUDA
+
+</div>
 
 ---
 
-Algebraic Geomtry
+<b style="font-size: xx-large"> The Technical Tools </b>
+<br>
+
+<div style="text-align: left; font-size: x-large">
+$\circ\,$ Enumerating all possible spinor monomials
+</div>
+
+<div style="display:block; width:100%; margin-top: 5mm;">
+	<div style="width:50%; font-size: x-large; float: left; display: inline-block;">
+	     Gröbner bases computations
+	     <img src="SingularLogo.png"; style="max-width:350px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;"> <br>
+	     <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
+	     href=https://www.singular.uni-kl.de/index.php.html>
+		Decker, Greuel, Pfister, Schönemann
+	     </a>	    
+	</div>
+	<div style="width:50%; font-size: x-large; float: right; display: inline-block;">
+	     Integer programming problems <br>
+	     <img src="GoogleORToolsLogo.png"; style="max-width:350px; float:center; border:none; margin-top: 7mm; margin-bottom: 0mm;"> <br>
+	     <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
+	     href=https://www.singular.uni-kl.de/index.php.html>
+		Perron and Furnon (Google optimization team)
+	     </a>
+	</div>
+</div>
+
+<br><br><br><br><br>
+
+<div style="text-align: left; font-size: x-large; margin-top: 1mm;">
+$\circ\,$ Solving linear systems with CUDA
+</div>
+
+<div style="display:block; width:100%; margin-top: 5mm;">
+	<div style="width:50%; font-size: x-large; float: left; display: inline-block;">
+	     Currently private code <br><br>
+	     <table>
+	     <tr>
+	     <th style="text-align:center">System Size</th>
+	     <th style="text-align:center">Timing</th>
+	     </tr>
+	     <tr>
+	     <td style="text-align:center">8192</td>
+	     <td style="text-align:center">8 s</td>
+	     </tr>
+	     <tr>
+	     <td style="text-align:center">16384</td>
+	     <td style="text-align:center">51 s</td>
+	     </tr>
+	     <tr>
+	     <td style="text-align:center">32768</td>
+	     <td style="text-align:center">6m 30s</td>
+	     </tr>
+	     </table>
+	</div>
+	<div style="width:50%; font-size: x-large; float: right; display: inline-block;">
+	     RTX 2080ti on the gMerlin cluster <br>
+	     <img src="2080ti.png"; style="max-width:200px; float:center; border:none; margin-top: 7mm; margin-bottom: 0mm;">
+	</div>
+</div>
+
 
 ---
 
-OR-Tools
+<b style="font-size: xx-large"> Complexity Scaling </b>
+<br>
 
-CUDA
+<div style="text-align: left; font-size: x-large">
+Enumerating all possible monomials
+
+</div>
 
 </section>
 ---
@@ -288,13 +438,30 @@ CUDA
 ---
 <section>
 
-# Outlook
+{{< slide background-image="varieties-no-background.png" >}}
+
+# The Geometry of Phase Space
 
 ---
 
-$\circ $ test
+<div style="text-align: left; font-size: x-large">
+Singular surfaces
+</div>
+
+<div style="display:block; width:100%; margin-top: 5mm;">
+	<div style="width:50%; float: left; display: inline-block;">
+	     <img src="V1.png"; style="max-width:250px; float:center; border:none; margin-top: 5px;">
+	</div>
+	<div style="width:50%; float: right; display: inline-block;">
+	     <img src="GoogleORToolsLogo.png"; style="max-width:350px; float:center; border:none; margin-top: 5px;">
+	</div>
+</div>
+
+</section>
+---
 
 ---
+<section>
 
 <font size=10>
 <b> Thank you! </b>
