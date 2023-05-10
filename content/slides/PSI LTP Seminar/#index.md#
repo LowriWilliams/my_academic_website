@@ -1,10 +1,10 @@
 ---
-title: Modern Methods for the Computation of Scattering Amplitudes
+title: Analytical Amplitudes from Numerical Exploration
 summary: 
 authors: ["Giuseppe De Laurentis"]
-tags: [QCD, Scattering Amplitudes]
+tags: [QCD, Scattering Amplitudes, CHY]
 categories: []
-date: "2023-05-15T30:00:00Z"
+date: "2019-11-08T00:00:00Z"
 markup: blackfriday
 slides:
   # Choose a theme from https://github.com/hakimel/reveal.js#theming
@@ -12,6 +12,9 @@ slides:
   # Choose a code highlighting style (if highlighting enabled in `params.toml`)
   #   Light style: github. Dark style: dracula (default).
   highlight_style: dracula
+  controls: false
+  slide_number: true
+  show_SlideNumber: all
 ---
 <html>
 	<head>
