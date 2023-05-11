@@ -19,10 +19,10 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
   title = "Post-Doc"
-  company = "Physikalisches Institut - Albert-Ludwigs-Universität Freiburg"
-  company_url = "https://www.physik.uni-freiburg.de/startdynamic-en?set_language=en"
-  location = "Freiburg, Germany"
-  date_start = "2020-10-01"
+  company = "Paul Scherrer Institut (PSI)"
+  company_url = "https://www.psi.ch/de"
+  location = "Villigen, Switzerland"
+  date_start = "2022-10-01"
   date_end = ""
   description = """
   Research topics:
@@ -31,6 +31,22 @@ date_format = "Jan 2006"
   * Multi-Loop Scattering Amplitudes
   * Physical applications of algebraic-geometry
   """
+
+[[experience]]
+  title = "Post-Doc"
+  company = "Physikalisches Institut - Albert-Ludwigs-Universität Freiburg"
+  company_url = "https://www.physik.uni-freiburg.de/startdynamic-en?set_language=en"
+  location = "Freiburg, Germany"
+  date_start = "2020-10-01"
+  date_end = "2022-09-30"
+  description = """
+  Research topics:
+  
+  * Quantum Chromo Dynamics
+  * Multi-Loop Scattering Amplitudes
+  * Physical applications of algebraic-geometry
+  """
+
 [[experience]]
   title = "PhD"
   company = "Institue for Particle Physics Phenomenology - Durham University"
