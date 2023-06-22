@@ -56,6 +56,29 @@ LoopFest XXI
 
 ---
 
+<b style="font-variant: small-caps; font-size: xxx-large;"> State-of-the-Art of</b>
+<b style="font-size: 30pt; "> $\boldsymbol{\mathcal{A}^{(2-\textbf{loop})}_{\,n}}$</b>
+<br>
+
+<div style="text-align: left; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;">
+     Five-point massless amplitudes in full color: <br>
+     $\circ\,$ $pp\rightarrow \gamma jj$ <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 30mm; " href=https://arxiv.org/abs/2304.06682> Badger, Czakon, Hartanto, Moodie, Peraro, Poncelet, Zoia ('23) </a>  <br>
+     $\circ\,$ $pp\rightarrow \gamma\gamma j$ <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 2mm; color: green; " href=https://indico.cern.ch/event/1227237/contributions/5397411/> Next talk by Federico </a> <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 30mm; " href=https://arxiv.org/abs/2105.04585> Agarwal, Buccioni, von Manteuffel, Tancredi ('21);&nbsp </a> <br>
+     $\circ\,$ $pp\rightarrow \gamma\gamma\gamma$ <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 2mm; color: green; " href=https://indico.cern.ch/event/1227237/contributions/5397410/> This talk! </a> <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 30mm; " href=https://arxiv.org/abs/2305.17056> Abreu, GDL, Ita, Klinkert, Page, Sotnikov ('23);&nbsp </a> <br><br>
+     Five-point one-mass amplitudes at leading color: <br>
+     $\circ\,$ $pp\rightarrow Wb\bar b$ <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 30mm; " href=https://arxiv.org/abs/2102.02516> Badger, Hartanto, Zoia ('21) </a> <br>
+     $\circ\,$ $pp\rightarrow Hb\bar b$ <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 30mm; " href=https://arxiv.org/abs/2107.14733> Badger, Hartanto, Kryś, Zoia ('21) </a> <br>
+     $\circ\,$ $pp\rightarrow Wjj$ <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 2mm; color: green; " href=/slides/loopfestxxi_june2023/#/5> A bit about this towards the end of this talk! </a> <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 10mm; " href=https://arxiv.org/abs/2110.07541> Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov ('21);&nbsp; </a> <br>
+     $\circ\,$ $pp\rightarrow W\gamma j$ <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 30mm; " href=https://arxiv.org/abs/2201.04075> Badger, Hartanto, Kryś, Zoia ('22)
+</a>
+</div>
+
+<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 10mm;">
+    Two-loop five-point amplitudes remain a challenge, but are now very much feasible.
+</div>
+
+---
+
 <b style="font-variant: small-caps; font-size: xxx-large"> Sizable NNLO Corrections to </b> <b style="font-size: xxx-large"> $\boldsymbol{q\bar q \rightarrow \gamma\gamma\gamma}$ </b>
 
 
@@ -130,23 +153,6 @@ $$\require{color} \displaystyle
   </tr>
 </table>
 
----
-
-<b style="font-variant: small-caps; font-size: xxx-large;"> State-of-the-Art of</b>
-<b style="font-size: 30pt; "> $\boldsymbol{\mathcal{A}^{(2-\textbf{loop})}_{\,n}}$</b>
-<br>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     Five-point massless amplitudes in full color: <br>
-     $\circ\,$ $pp\rightarrow \gamma jj$ <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 2mm; " href=https://indico.cern.ch/event/1227237/contributions/5366576/> Previous talk by Federica </a> <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 30mm; " href=https://arxiv.org/abs/2304.06682> Badger, Czakon, Hartanto, Moodie, Peraro, Poncelet, Zoia ('23);&nbsp </a>  <br>
-     $\circ\,$ $pp\rightarrow \gamma\gamma j$ <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 2mm; " href=https://indico.cern.ch/event/1227237/contributions/5397411/> Next t alk by Federico </a> <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 30mm; " href=https://arxiv.org/abs/2105.04585> Agarwal, Buccioni, von Manteuffel, Tancredi ('21);&nbsp </a> <br>
-     $\circ\,$ $pp\rightarrow \gamma\gamma\gamma$ <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 2mm; " href=https://indico.cern.ch/event/1227237/contributions/5397410/> This talk! </a> <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 30mm; " href=https://arxiv.org/abs/2305.17056> Abreu, GDL, Ita, Klinkert, Page, Sotnikov ('23);&nbsp </a> <br><br>
-     Five-point one-mass amplitudes at leading color: <br>
-     $\circ\,$ $pp\rightarrow Wb\bar b$ <br>
-     $\circ\,$ $pp\rightarrow Wjj$
-</div>
-
-
 </section>
 ---
 
@@ -163,42 +169,50 @@ $$\require{color} \displaystyle
 
 <div style="font-size: x-large; float: left; margin-bottom: 0mm;">
 $\circ$ Loop integrands can be written as
-</div>
-<div style="font-size: x-large; float: left; text-align: center; display: inline-block; margin-top: 1mm;">
+</div><br>
+<div style="font-size: x-large; text-align: center; display: inline-block; margin-top: -5mm; margin-bottom: 2mm;">
 $$
 \require{color}
-\displaystyle A(\ell) = \sum_{\Gamma} \, \sum_{i \in M_\Gamma \cup S_\Gamma} \, c_{\Gamma,i} \, \frac{m_{\Gamma,i}(\ell)}{\textstyle \prod_{j} \rho_{\Gamma,j}(\ell)}
+\displaystyle A(\lambda, \tilde\lambda, \ell) = \sum_{\Gamma} \, \sum_{i \in M_\Gamma \cup S_\Gamma} \, c_{\,\Gamma,i}(\lambda, \tilde\lambda) \, \frac{m_{\Gamma,i}(\lambda\tilde\lambda, \ell)}{\textstyle \prod_{j} \rho_{\,\Gamma,j}(\lambda\tilde\lambda, \ell)}
 $$
 </div>
 
-<div style="font-size: x-large; float: left; margin-bottom: 0mm;">
+<div style="font-size: x-large; float: left; margin-bottom: 0mm; margin-top: 2mm;">
 $\circ$ Generalized unitarity relates cuts of loop amplitudes to products of trees
 </div>
 
-<div style="display:block; width:100%; margin-top: 0mm; margin-bottom: -5mm; margin-left: 5mm;">
-	<div style="font-size: x-large; width:60%; float: left; text-align: center; display: inline-block; margin-top: 0mm;">
+<div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;">
+	<div style="font-size: x-large; width:75%; float: left; text-align: center; display: inline-block; margin-top: 0mm;">
 	     $$
 	     \require{color}
-	     \displaystyle \prod_{\text{trees}} A^{\text{tree}}(\vec k, \vec\ell|_{\text{cut}}) = \sum_{\substack{\text{topologies}\, \Gamma, \\ i \in M_\Gamma \cup S_\Gamma}} \colorbox{yellow}{$c_{i,\Gamma}(\vec k)$} \left( \frac{m_{i,\Gamma}(\vec k, \vec\ell|_{\text{cut}})}{\displaystyle \prod_{\text{props}\,j} \rho_{j}(\vec k, \vec\ell|_{\text{cut}})} \right)
-	     $$
-	     $$
-	     \left. \begin{aligned}
-	     \underline{\text{Master integrals}}: \; & \int d^{D}\vec \ell \; \frac{m_{i\in M_\Gamma}}{\small \prod_j \rho_j} \neq 0 \\
-	     \underline{\text{Surface terms}}: \; & \int d^{D}\vec \ell \; \frac{m_{i\in S_\Gamma}}{\small \prod_j \rho_j} = 0 \\
-	     \end{aligned} \right\} \; \begin{aligned} & \text{Complex} \\ & \text{problem!} \end{aligned}
+	     \displaystyle \sum_{\text{states}} \, \prod_{\text{trees}} A^{\text{tree}}(\lambda, \tilde\lambda, \ell|_{\text{cut}}) = \sum_{\substack{\Gamma' \ge \Gamma, \\ i \in M_\Gamma' \cup S_\Gamma'}} \kern-2mm c_{\,\Gamma',i}(\lambda, \tilde\lambda) \, \frac{m_{\Gamma',i}(\lambda\tilde\lambda, \ell|_{\text{cut}})}{\displaystyle \prod_{j\in P_{\Gamma'} / P_{\Gamma}} \rho_{j}(\lambda\tilde\lambda, \ell|_{\text{cut}})}
 	     $$
 	</div>
-	<div style="width:40%; float: right; display: inline-block;">
-	     <div style="font-size: x-large; width:50%; float: center; text-align: center; display: inline-block; margin-top: 5mm;">
+	<div style="width:25%; float: right; display: inline-block; margin-top: -15mm;">
+	     <div style="font-size: x-large; width:50%; float: center; text-align: center;  display: inline-block; margin-top: 0mm;">
 	     	  <tt> C++ code </tt>
 	     </div><br>
-	     <img src="CaravelLogo.png"; style="max-width:150px; float:center; border:none; margin-top: 0mm; margin-bottom: -5mm;">
+	     <img src="CaravelLogo.png"; style="max-width:150px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm;">
 	     <br>
 	     <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
 	     	href=https://arxiv.org/abs/2009.11957>
-		<div style="margin-top:5mm"> Abreu, Dormans, Febres Cordero, Ita </div>
-		<div> Kraus, Page, Pascual, Ruf, Sotnikov ('20) </div>
+		<div style="margin-top:0mm"> Abreu, Dormans, </div>
+		<div> Febres Cordero, Ita  </div>
+		<div> Kraus, Page, Pascual, </div>
+		<div> Ruf, Sotnikov ('20) </div>
 	     </a>
+	</div>
+     <div style="font-size: x-large; width:75%; float: left; text-align: center; display: inline-block; margin-top: 0mm;">
+	     $$
+	     \left. \begin{aligned}
+	     \underline{\text{Master integrands}}: \; & \int d^{D}\vec \ell \; \frac{m_{i\in M_\Gamma}}{\small \prod_j \rho_j} \neq 0 \\
+	     \underline{\text{Surface terms}}: \; & \int d^{D}\vec \ell \; \frac{m_{i\in S_\Gamma}}{\small \prod_j \rho_j} = 0 \\
+	     \end{aligned} \right\} \; \begin{aligned} & \text{Equivalent to} \\ & \text{IBP reduction} \end{aligned}
+	     $$
+          <a style="font-size: large; text-align: right; float: right; margin-right: 38mm; margin-top: -15mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1510.05626>
+               Ita ('15)
+          </a>
+          
 	</div>
 </div>
 
@@ -207,17 +221,38 @@ $\circ$ Generalized unitarity relates cuts of loop amplitudes to products of tre
 <b style="font-variant: small-caps; font-size: xxx-large"> Updates to Caravel </b>
 
 <div style="font-size: x-large; float: left; margin-bottom: 0mm;">
-     $\circ$ <span style="font-variant: small-caps; "> Major: </span> Master-surface decomposition for non-planar topologies
+     $\circ$ <b style="font-variant: small-caps; ">Main change</b>: new surface terms for non-planar topologies
+</div>
+<div style="font-size: x-large; text-align: center; display: inline-block; margin-top: 1mm; margin-bottom: 2mm;">
+$$
+\require{color}
+\begin{align}
+\kern-25mm \text{IBP-generating vectors: } & \quad \displaystyle \int d^D \vec\ell \frac{\partial }{\partial \ell^\mu_a} \frac{v^\mu_a(\ell)}{\rho_1 \dots \rho_N} = 0 \quad (\text{in dim. reg.}) \\[2mm]
+\kern-25mm \text{No propagator doubling: } & \quad \displaystyle \sum_{a, \mu} v^\mu_a(\ell) \frac{\partial \rho_i}{\partial \ell^\mu_a} - f_i(\ell)\rho_i = 0
+\end{align}
+$$
+</div>
+<div style="font-size: x-large; float: left; margin-bottom: 0mm;">
+     $(v^\mu_a, f_i)$ form a <i>syzygy module</i>, solved for in <i>embedding space</i> using <code>Singular</code> + linear algebra.
 </div>
 
+<br>
+
 <div style="font-size: x-large; float: left; margin-bottom: 0mm;">
-     $\circ$ <span style="font-variant: small-caps; "> Minor: </span> updated phase-space to retain little group information
+     $\circ$ <b style="font-variant: small-caps; "> Additional changes </b>: 
+</div>
+<br>
+<div style="font-size: x-large; text-align: left; float: center; display: inline-block; margin-bottom: 0mm;">
+     <div style="margin-bottom: 3mm;"> $\star$ semi-numerical $m_{i\in S_\Gamma}(\ell \leftarrow \text{analytical}, k \leftarrow \text{numerical})$ from sparse systems; </div>
+     <div style="margin-bottom: 3mm;"> $\star$ optimizations for Gaussian elimination of sparse systems; </div>
+     $\star$ $c_{\Gamma,i}(\lambda, \tilde\lambda)$ instead of $c_{\Gamma,i}(k = \lambda\tilde\lambda)$ + conventions for the polarizations.
 </div>
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 20mm;"> <span style="color: orange">Rational</span> and <span style="color: red">Transcendental</span> </b>
+<b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 20mm;"> Finite remainders \& the <br> <span style="color: orange">Rational</span> / <span style="color: red">Transcendental</span> split </b>
 
+<!---
 <div style="text-align: left; font-size: x-large; float: left; margin-bottom: 10mm; margin-top: 10mm">Decomposition in terms of <b> master integrals </b> </div>
 <a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 10mm" href=https://arxiv.org/abs/0712.1851>Ellis, Zanderighi</a>
 <a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 10mm" href=https://arxiv.org/abs/hep-ph/9212308>Bern, Dixon, Kosower;&nbsp</a>
@@ -230,16 +265,49 @@ $$A^{1-\text{loop},D=4}_{n} = \sum_i \color{orange}{d_i} \color{red}{I^i_{Box}} 
 <div style="width:90%; float: center; display: inline-block;">
        <img src="one-loop-decomposition-transparent.png"; style="max-width:750px;float:center;border:none;margin-top:-5px;">
 </div>
+--->
 
-<div style="text-align: left; font-size: x-large; float: left; margin-bottom: 10mm;">
-     In general, in $D= 4- 2 \epsilon$, for a suitable choice of master integrals
+<div style="text-align: left; font-size: x-large; margin-bottom: 5mm;">
+     $\circ$ In general, in $D= 4- 2 \epsilon$, with <i>pure</i> master integrals $I_{\Gamma, i}$ we have
 </div>
 
-<div style="font-size: x-large; margin-top: 10mm; margin-bottom:10mm">
-$$ A^{\ell-loop}_n = \sum_{i \in \text{masters}} \frac{\color{orange}{c_i}(\vec p, \vec \lambda, \epsilon) \, \color{red}{I_i}(\vec p, \epsilon)}{\prod_j (\epsilon - a_{ij})}\;, \quad \text{with} \quad a_{ij} \in \mathbb{Q}$$
+<div style="font-size: x-large; margin-top: 5mm; margin-bottom:5mm">
+$$ A^{\ell-loop}_n(\lambda, \tilde\lambda) = \sum_\Gamma \sum_{i \in M_\Gamma} \frac{\color{orange}{c_{\,\Gamma, i}}(\lambda, \tilde\lambda, \epsilon) \, \color{red}{I_{\Gamma, i}}(\lambda\tilde\lambda, \epsilon)}{\prod_j (\epsilon - a_{ij})}\;, \quad \text{with} \quad a_{ij} \in \mathbb{Q}$$
 </div>
 
-</font size>
+<div style="text-align: left; font-size: x-large; margin-bottom: 5mm;">
+     $\circ$ For NNLO applications, we are interested in the <i>finite remainder</i>
+</div>
+
+<div style="font-size: x-large; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+\mathcal{A}^{(2)}_R = \underbrace{\mathcal{R}}_{\text{finite remainder}} + \underbrace{I^{(1)}\mathcal{A}^{(1)}_R \quad + \quad I^{(2)}\mathcal{A}^{(0)}_R}_{\text{divergent + convention-dependent finite part}} + \mathcal{O}(\epsilon)
+$$
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-bottom: 5mm;">
+     $\circ$ Finite remainder as a weighted sum of <i>pentagon functions</i> <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 4mm; " href=https://arxiv.org/abs/2009.07803> Chicherin, Sotnikov ('20);&nbsp; </a>
+</div>
+
+<div style="font-size: x-large; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+\textstyle \mathcal{R}(\lambda, \tilde\lambda) = \sum_i \color{orange}{r_{i}(\lambda,\tilde\lambda)} \, \color{red}{h_i(\lambda\tilde\lambda)}
+$$
+</div>
+<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 0mm;">
+    Reconstruct $\color{orange}{r_{i}(\lambda,\tilde\lambda)}$ from $\mathbb{F}_p$ samples
+</div>
+
+<a style="font-size: large; text-align: right; float: right; margin-top: -14mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1608.01902>
+Peraro ('16)
+</a>
+
+<a style="font-size: large; text-align: right; float: right; margin-top: -20mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1406.4513>
+     von Manteuffel, Schabinger ('14)
+</a>
+
+
+<!---
 
 ---
 
@@ -286,6 +354,7 @@ $$ A^{\ell-loop}_n = \sum_{i \in \text{masters}} \frac{\color{orange}{c_i}(\vec 
 <div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block;">
     Solution: sample $c_{i,\Gamma}$ in $\mathbb{F}_p$ $\;\Rightarrow\;$ reconstruct analytic expression for $c_{i,\Gamma}$
 </div>
+--->
 
 </section>
 ---
@@ -299,7 +368,7 @@ $$ A^{\ell-loop}_n = \sum_{i \in \text{masters}} \frac{\color{orange}{c_i}(\vec 
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Common-Denominator Ansatz </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> The Least Common Denominator </b>
 <br>
 
 <!---
@@ -308,51 +377,67 @@ $\circ\,$ In least-common-denominator (LCD) form, we have
 </div>
 --->
 
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">
+     $\circ\,$ The $r_i(\lambda,\tilde\lambda)$ belong to the field of fractions over a poly. quotient ring $FF(R_5)$
+</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: 4mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/2203.17170>
+   Campbell, GDL, <br> Ellis ('22)
+</a>
 <div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block;">
-    $\displaystyle c_{i,\Gamma}(\vec x) = \frac{\text{Num. poly}(\vec x)}{\text{Denom. poly}(\vec x)} = \frac{\text{Num. poly}(\vec x)}{\prod_j W_j(\vec x)}$
+    $\displaystyle r_i(\lambda,\tilde\lambda) = \frac{\text{Num. poly}(\lambda,\tilde\lambda)}{\text{Denom. poly}(\lambda,\tilde\lambda)} = \frac{\text{Num. poly}(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ij}}(\lambda,\tilde\lambda)}$
 </div>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
-     $\circ\,$ Interpolation in one variable (continued fraction)
+     $\circ\,$ The denominator factors $W_j$ are conjectured to be restricted to the letters of the symbol alphabet
 </div>
-<a style="font-size: large; text-align: right; float: right; margin-top: 5mm; margin-bottom: 0mm;" href=https://en.wikipedia.org/wiki/Thiele%27s_interpolation_formula>
-   Thiele (1909)
+<a style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1812.04586>
+   Abreu, Dormans, Febres Cordero, Ita, Page ('18)
 </a>
+
 <br><br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: 3mm; margin-bottom: 5mm;">
-$c_{i,\Gamma}(t) = c_{i,\Gamma}(t_0) + \frac{t-t_0}{\frac{t_0 - t_1}{c_{i,\Gamma}(t_0)-c_{i,\Gamma}(t_1)}+\frac{t-t_2}{\dots + \frac{t-t_3}{\dots}}} = \frac{\text{Num. poly}(t)}{\text{Denom. poly}(t)}$
-</div>
-<div style="text-align: left; font-size: x-large; margin-bottom: 5mm;">
-$\phantom{\circ}\,$ Match denominator factors of $c_{i,\Gamma}(t)$ to $W_j(t)$ $\Rightarrow$ obtain the denominator (this is the easy part).
+
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -3mm; margin-bottom: 5mm;">
+     $\displaystyle \{W_j\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_5)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1] \big\} {\quad\color{green}\text{Identical to 1-loop!}}$
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 0mm; ">
-$\circ\,$ The numerator is <b> much </b> more complicated, in general
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 2mm;">
+     $\circ\,$ Why bother with spinor variables:
 </div>
-<a style="font-size: large; text-align: right; float: right; margin-top: -6mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1904.04067>
-   For spinors: GDL, Maître (2019)
-</a>
-<br>
-<div style="text-align: center; font-size: x-large; margin-bottom: 5mm; margin-top: -5mm;">
-$\displaystyle \text{Num. poly}(\vec x) = \sum_{\vec \alpha} c_{\vec\alpha} \; x_1^{\alpha_1} \dots x_{m}^{\alpha_{m}}$
-</div>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ\,$ To solve the system must sample as many times as there are undertermined $c_{\vec\alpha}$'s.
+<br><br>
+<div style="font-size: x-large; text-align: left; float: center; display: inline-block; margin-top: -10mm; margin-bottom: 2mm;">
+     <div style="margin-bottom: 3mm;"> $\star$ the LCD is <b>not</b> little group invariant: the degree is lower in spinors;  </div>
+     <div style="margin-bottom: 3mm;"> $\star$ no (arbitrary) split into parity even and odd: half sampling requirement; </div>
+     $\star$ in LCD form we need 29`059 evaluations instead of 117`810 (with $s_{ij}$) for $\mathcal{A}^{(2)}_{2q3\gamma}$ .
 </div>
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Constructing and Fitting the Ansatz </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> The Numerator Ansatz </b>
+<br>
+
+<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm; ">
+$\circ\,$ The numerator Ansatz takes the form
+</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -6mm; margin-bottom: 5mm;" href=https://arxiv.org/abs/1904.04067>
+   GDL, Maître ('19)
+</a>
+<div style="text-align: center; font-size: x-large; margin-bottom: 5mm; margin-top: 0mm;">
+$\displaystyle \text{Num. poly}(\lambda, \tilde\lambda) = \sum_{\vec \alpha, \vec \beta} c_{(\vec\alpha,\vec\beta)} \prod_{j=1}^n\prod_{i=1}^{j-1} \langle ij\rangle^{\alpha_{ij}} [ij]^{\beta_{ij}}$
+</div>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     $\phantom{\circ}$ subject to constraints on $\vec\alpha,\vec\beta$ due to: 1) mass dimension; 2) little group.
+</div>
+
 <br>
 
 <div style="text-align: left; font-size: x-large">
-$\circ\,$ In practice, using spinors $m = n(n-1)$ and there are constraints on $\vec \alpha$
+$\circ\,$ Efficient implementation of the algorithm from Section 2.2 of <a href=https://arxiv.org/abs/2203.04269>Page, GDL ('22)</a> using
 </div>
 
 <div style="display:block; width:100%; margin-top: 5mm;">
 	<div style="width:50%; font-size: x-large; float: left; display: inline-block;">
-	     Gröbner bases $\rightarrow$ constrain $\vec\alpha$
+	     Gröbner bases $\rightarrow$ constrain $\vec\alpha,\vec\beta$
 	     <img src="SingularLogo.png"; style="max-width:350px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;"> <br>
 	     <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
 	     href=https://www.singular.uni-kl.de/index.php.html>
@@ -360,7 +445,7 @@ $\circ\,$ In practice, using spinors $m = n(n-1)$ and there are constraints on $
 	     </a>	    
 	</div>
 	<div style="width:50%; font-size: x-large; float: right; display: inline-block; ">
-	     Integer programming $\rightarrow$ enumerate sols. $\vec\alpha$ <br>
+	     Integer programming $\rightarrow$ enumerate sols. $\vec\alpha,\vec\beta$ <br>
 	     <img src="GoogleORToolsLogo.png"; style="max-width:350px; float:center; border:none; margin-top: 7mm; margin-bottom: 0mm;"> <br>
 	     <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
 	     href=https://www.singular.uni-kl.de/index.php.html>
@@ -371,51 +456,20 @@ $\circ\,$ In practice, using spinors $m = n(n-1)$ and there are constraints on $
 
 <br><br><br><br><br>
 
-<div style="text-align: left; font-size: x-large; margin-top: 1mm;">
-$\circ\,$ Solving linear systems with CUDA in $\mathbb{C}$ or $\mathbb{F}_{p\leq 2^{31}-1}$ (currently private code)
+<div style="text-align: left; font-size: x-large; margin-top: -2mm;">
+$\circ\,$ All linear systems solved with CUDA over $\mathbb{F}_{p\leq 2^{31}-1}$ on a laptop ($t_{\text{solving}} \ll t_{\text{sampling}}$)
 </div>
-
-<div style="display:block; width:100%; margin-top: 5mm;">
-	<div style="width:50%; font-size: x-large; float: left; display: inline-block;">
-	     <table>
-	     <tr>
-	     <th style="text-align:center">System Size</th>
-	     <th style="text-align:center">Timing</th>
-	     </tr>
-	     <tr>
-	     <td style="text-align:center">8192</td>
-	     <td style="text-align:center">8 s</td>
-	     </tr>
-	     <tr>
-	     <td style="text-align:center">16384</td>
-	     <td style="text-align:center">51 s</td>
-	     </tr>
-	     <tr>
-	     <td style="text-align:center">32768</td>
-	     <td style="text-align:center">6m 30s</td>
-	     </tr>
-	     </table>
-	</div>
-	<div style="width:50%; font-size: x-large; float: right; display: inline-block;">
-	     <div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 8mm; margin-bottom: 5mm;">
-		with RTX 2080ti 11GB  <br>
-		the absolute maximum is 52440 unknowns
-	     </div>
-	     <br>
-	     (thanks gpu-Merlin!)
-	     <!--- <img src="2080ti.png"; style="max-width:200px; float:center; border:none; margin-top: 7mm; margin-bottom: 0mm;"> --->
-	</div>
-</div>
-
 
 ---
 
 <b style="font-variant: small-caps; font-size: xxx-large"> Taming the Algebraic Complexity </b>
 <br>
 
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block;">
-    Problem: the least-common-denominator form is overly complex. <br>
-    Its numerator can easily exceed <u>1 million</u> monomials (e.g. 5-point 1-mass processes).
+<div style="text-align: left; font-size: x-large; margin-bottom: 4mm; margin-top: 9mm;">
+$\circ\,$ In common denominator, we are massively over-parametrizing the coefficients. Instead, write:
+</div>
+<div style="font-size: x-large; padding: 10px; display: inline-block;">
+    $\displaystyle r_i(\lambda,\tilde\lambda) = \frac{\mathcal{N}(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ij}}(\lambda,\tilde\lambda)} = \sum_k \frac{\mathcal{N}_k(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ijk}}(\lambda,\tilde\lambda)} \quad \text{with} \quad q_{ijk} < q_{ij}$
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 4mm; margin-top: 9mm;">
@@ -449,15 +503,28 @@ $\displaystyle c_{i,\Gamma}(x_1, \dots, x_5) = \frac{\text{15 monomials of degre
 ---
 
 <b style="font-variant: small-caps; font-size: xxx-large"> 
-     Correction sizes to the Hard Functions
+     SLC Corrections to the Hard Functions
 </b>
 
-<br>
-
-<div style="width:90%; float: center; display: inline-block;">
-       <img src="correction_sizes_catani.png"; style="max-width:750px;float:center;border:none;margin-top:-5px;">
+<div style="text-align: center; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
+$\displaystyle \mathcal{H}^{(2)} = \sum_h |\mathcal{R}_h|^2 \Big/ \sum_h  |\mathcal{A}^{(0)}_h|$
 </div>
 
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 4mm;">
+     $\circ\,$ The exact magnitude of the correction depends on the subtraction scheme
+</div>
+<div style="display:block; width:100%;">
+  <div style="width:50%; float: left; display: inline-block;">
+       <img src="correction_sizes_catani.png"; style="max-width:473px;float:center;border:none;margin-top: 7mm; margin-bottom:-5mm;">
+  </div>
+  <div style="width:50%; float: center; display: inline-block;">
+       <img src="correction_sizes_qt_MSbar.png"; style="max-width:450px;float:center;border:none;margin-top:0px;margin-bottom:-5mm;">
+  </div>
+</div>
+
+<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 10mm;">
+    About $25\%-35\%$ correction to $\mathcal{H}^{(2)}_{\text{l.c.}}$. The correction to $\sigma^{\text{NNLO}}_{q\bar q \rightarrow \gamma\gamma\gamma}$ will be much smaller.
+</div>
 
 </section>
 ---
@@ -615,7 +682,7 @@ $$\small \kern-30mm \sqrt{\big\langle ⟨3|1+4|2], Δ_{23|14|56} \big\rangle} = 
 </div>
 
 <font size=3>
-     These slides are powered by:<br>
+     Tired of beamer? These slides are powered by:<br>
      <a href="https://en.wikipedia.org/wiki/Markdown">markdown</a>, 
      <a href="https://en.wikipedia.org/wiki/HTML">html</a>, 
      <a href="https://revealjs.com/">revealjs</a>, 
