@@ -243,9 +243,9 @@ $$
 </div>
 <br>
 <div style="font-size: x-large; text-align: left; float: center; display: inline-block; margin-bottom: 0mm;">
-     <div style="margin-bottom: 3mm;"> $\star$ semi-numerical $m_{i\in S_\Gamma}(\ell \leftarrow \text{analytical}, k \leftarrow \text{numerical})$ from sparse systems; </div>
+     <div style="margin-bottom: 3mm;"> $\star$ semi-numerical $m_{i\in S_\Gamma}(\ell \leftarrow \text{analytical}, \lambda\tilde\lambda \leftarrow \text{numerical})$ from sparse systems; </div>
      <div style="margin-bottom: 3mm;"> $\star$ optimizations for Gaussian elimination of sparse systems; </div>
-     $\star$ $c_{\Gamma,i}(\lambda, \tilde\lambda)$ instead of $c_{\Gamma,i}(k = \lambda\tilde\lambda)$ + conventions for the polarizations.
+     $\star$ $c_{\Gamma,i}(\lambda, \tilde\lambda)$ instead of $c_{\Gamma,i}(\lambda\tilde\lambda)$ + conventions for the polarizations.
 </div>
 
 ---
@@ -378,10 +378,13 @@ $\circ\,$ In least-common-denominator (LCD) form, we have
 --->
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">
-     $\circ\,$ The $r_i(\lambda,\tilde\lambda)$ belong to the field of fractions over a poly. quotient ring $FF(R_5)$
+     $\circ\,$ The $r_i(\lambda,\tilde\lambda)$ belong to the field of fractions over a poly. quotient ring, $FF(R_5)$
 </div>
-<a style="font-size: large; text-align: right; float: right; margin-top: 4mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/2203.17170>
-   Campbell, GDL, <br> Ellis ('22)
+<a style="font-size: large; text-align: right; float: right; margin-top: 10mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/2203.04269>
+   GDL, Page ('22);&nbsp
+</a> 
+<a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/2203.17170>
+   Campbell, GDL, Ellis ('22)$\phantom{;\,}$
 </a>
 <div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block;">
     $\displaystyle r_i(\lambda,\tilde\lambda) = \frac{\text{Num. poly}(\lambda,\tilde\lambda)}{\text{Denom. poly}(\lambda,\tilde\lambda)} = \frac{\text{Num. poly}(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ij}}(\lambda,\tilde\lambda)}$
@@ -407,7 +410,7 @@ $\circ\,$ In least-common-denominator (LCD) form, we have
 <div style="font-size: x-large; text-align: left; float: center; display: inline-block; margin-top: -10mm; margin-bottom: 2mm;">
      <div style="margin-bottom: 3mm;"> $\star$ the LCD is <b>not</b> little group invariant: the degree is lower in spinors;  </div>
      <div style="margin-bottom: 3mm;"> $\star$ no (arbitrary) split into parity even and odd: half sampling requirement; </div>
-     $\star$ in LCD form we need 29`059 evaluations instead of 117`810 (with $s_{ij}$) for $\mathcal{A}^{(2)}_{2q3\gamma}$ .
+     $\star$ in LCD form we need 29`059 evaluations instead of 117`810 (with $s_{ij}$) for $\mathcal{R}^{(2)}_{2q3\gamma}$ .
 </div>
 
 ---
@@ -465,29 +468,36 @@ $\circ\,$ All linear systems solved with CUDA over $\mathbb{F}_{p\leq 2^{31}-1}$
 <b style="font-variant: small-caps; font-size: xxx-large"> Taming the Algebraic Complexity </b>
 <br>
 
-<div style="text-align: left; font-size: x-large; margin-bottom: 4mm; margin-top: 9mm;">
-$\circ\,$ In common denominator, we are massively over-parametrizing the coefficients. Instead, write:
+<div style="text-align: left; font-size: x-large; margin-bottom: 4mm; margin-top: 5mm;">
+$\circ\,$ In common denominator, we are massively over-parametrizing the coefficients. Thus, write:
 </div>
 <div style="font-size: x-large; padding: 10px; display: inline-block;">
-    $\displaystyle r_i(\lambda,\tilde\lambda) = \frac{\mathcal{N}(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ij}}(\lambda,\tilde\lambda)} = \sum_k \frac{\mathcal{N}_k(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ijk}}(\lambda,\tilde\lambda)} \quad \text{with} \quad q_{ijk} < q_{ij}$
+    $\displaystyle r_i(\lambda,\tilde\lambda) = \frac{\mathcal{N}(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ij}}(\lambda,\tilde\lambda)} = \sum_k \frac{\mathcal{N}_k(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ijk}}(\lambda,\tilde\lambda)} = \sum_k r_{ik} \quad \text{with} \quad q_{ijk} \le q_{ij}$
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-bottom: 4mm; margin-top: 9mm;">
-$\circ\,$ For example, taking homogeneous expressions in 5 variables
-</div>
-<div style="text-align: center; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
-$\displaystyle c_{i,\Gamma}(x_1, \dots, x_5) = \frac{\text{126 monomials of degree 5}}{x_1x_2x_3x_4x_5}$ <br>
-</div>
 <div style="text-align: left; font-size: x-large; margin-bottom: 4mm; margin-top: 5mm;">
-$\phantom{\circ\,}$ but say we knew that $x_1x_2$ don't appear in the same denominator as the others, then
+$\circ\,$ Instead of probing $\mathcal{N}$ on $V(\big\langle W_x, W_y \big\rangle)$, use insights from physics, e.g.:
 </div>
-<div style="text-align: center; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
-$\displaystyle c_{i,\Gamma}(x_1, \dots, x_5) = \frac{\text{15 monomials of degree 2}}{x_1x_2}+\frac{\text{35 monomials of degree 3}}{x_3x_4x_5}$
+<div style="border: 2px solid black; text-align: center; float:center; display: inline-block; font-size: x-large; margin-bottom: 2mm; margin-top: 2mm;">
+No denominator in $\mathcal{R}^{(2)}_{2q3\gamma}$ contains pairs of $\langle i |j + k | i]$
 </div>
 
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 5mm;">
-    Goal: use partial-fraction decompositions, <br>
-    but how to achieve this without an analytic expression?
+<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
+$\circ\,$ As by now standard, we pick a set of independent $r_i$ to reconstruct: $r_i \not\in \text{span}(r_{j\neq i})$. <br>
+$\phantom{\circ\,}$ However, generally $r_{ik} \in \text{span}(r_{j\neq i})$ for some, but not all, $k$.
+</div>
+<div style="font-size: x-large; padding: 10px; display: inline-block;">
+    $\displaystyle $
+</div>
+<div style="border: 2px solid black; text-align: center; float:center; display: inline-block; font-size: x-large; margin-bottom: 4mm; margin-top: 2mm;">
+Write an Ansatz of the form: $r_i = \sum_{j\neq i} r_j + \sum_{k' \subset \{k\}} r_{ik'}$
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 2mm;">
+$\phantom{\circ}$ For example, given the most complicated $r_i$, we only needed
+</div>
+<div style="font-size: large; padding: 10px; display: inline-block;">
+    $\displaystyle \sum_{k' \subset \{k\}} r_{ik'} = \frac{⟨13⟩[14]^2⟨24⟩⟨34⟩[45]}{⟨45⟩⟨4|1+3|4]^3}-\frac{[14]⟨25⟩⟨34⟩^2[45]}{⟨45⟩^2⟨4|1+3|4]^2}-\frac{[14]⟨24⟩⟨34⟩⟨35⟩}{⟨45⟩^3⟨4|1+3|4]}$
 </div>
 
 </section>
@@ -506,19 +516,22 @@ $\displaystyle c_{i,\Gamma}(x_1, \dots, x_5) = \frac{\text{15 monomials of degre
      SLC Corrections to the Hard Functions
 </b>
 
-<div style="text-align: center; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
-$\displaystyle \mathcal{H}^{(2)} = \sum_h |\mathcal{R}_h|^2 \Big/ \sum_h  |\mathcal{A}^{(0)}_h|$
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 4mm;">
+     $\circ\,$ Full-color 2-loop remainders & 1-loop amplitudes implemented in an open-source <a href=https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp> <code> C++ Program</code> </a>
 </div>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 4mm;">
-     $\circ\,$ The exact magnitude of the correction depends on the subtraction scheme
+     $\circ\,$ To estimate the impact of the subleading-color contributions, consider the <i> 2-loop hard functions </i>
+</div>
+<div style="text-align: center; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
+$\displaystyle \small \mathcal{H}^{(2)} = \sum_h |\mathcal{R}_h|^2 \Big/ \sum_h  |\mathcal{A}^{(0)}_h|$
 </div>
 <div style="display:block; width:100%;">
   <div style="width:50%; float: left; display: inline-block;">
-       <img src="correction_sizes_catani.png"; style="max-width:473px;float:center;border:none;margin-top: 7mm; margin-bottom:-5mm;">
+       <img src="correction_sizes_catani.png"; style="max-width:440px;float:center;border:none;margin-top: 7mm; margin-bottom:-5mm;">
   </div>
   <div style="width:50%; float: center; display: inline-block;">
-       <img src="correction_sizes_qt_MSbar.png"; style="max-width:450px;float:center;border:none;margin-top:0px;margin-bottom:-5mm;">
+       <img src="correction_sizes_qt_MSbar.png"; style="max-width:420px;float:center;border:none;margin-top:0px;margin-bottom:-5mm;">
   </div>
 </div>
 
@@ -553,42 +566,60 @@ in collaboration with: <br>
 at NNLO
 </b>
 
-<br>
+<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 7mm;">
+     $\;\circ\,$ No pheno study yet, despite the amplitudes have been available for almost 2 years!
+</div>
 
-<div style="text-align: left; font-size: x-large">
+<div style="display:block; width:100%; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
+     <div style="width:50%; float: left; display: inline-block;">
+          $\circ$ The algebraic complexity$-$think Ansatz size$-$grows quickly with multiplicity (m) <br> and mass dimension (d): <br><br>
+          $\displaystyle \left(\mkern -9mu \begin{pmatrix}\, n(n-3)/2 \, \\ \, d/2 \, \end{pmatrix} \mkern -9mu \right)$ <br><br>
+          is a lower bound. <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: -28mm; margin-top: 1mm; margin-bottom: 5mm;" href=https://arxiv.org/abs/2010.14525>
+               GDL, Maître ('20)
+          </a>
+     </div>
+     <div style="width:50%; float: center; display: inline-block;">
+          <img src="AnsatzSizes.png"; style="max-width:420px;float:center;border:none;margin-top:0px;margin-bottom: 5mm;">
+     </div>
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-top: 5mm;">
 $\circ\,$ The anlytic expressions of <a href="https://arxiv.org/abs/2110.07541">Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov ('21) </a> are 1.2GB.
 </div>
 
-
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 5mm;">
-    Nearly 2 years later no pheno has been done <br>
-    despite the availability of the required amplitudes.
+<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 5mm; margin-bottom: 5mm;">
+    Understanding the analytic structure starts to become important!
 </div>
 
 ---
 
 <b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 5mm;">
-   Ansatz sizes
+   Simplification strategy
 </b>
 
-<div style="text-align: left; font-size: x-large; margin-bottom: 5mm;">
-$\circ\,$ Ansatze grow factorially
+<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
+$1.\,$ Script to split up the expressions, and compile them ($\sim 20$GB of <code>C++</code>) for evaluation over $\mathbb{F}_p$;
 </div>
 
-<div style="width:90%; float: center; display: inline-block;">
-       <img src="AnsatzSizes.png"; style="max-width:750px;float:center;border:none;margin-top:-5px;">
+<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
+$2.\,$ Recombine the 3 projections $p_V \parallel p_1, p_V \parallel p_2, p_V \parallel p_3$ and reintroduce the little group factors <br> 
+to build 6-point spinor-helicity amplitudes (subject to degree bounds on $|5\rangle,[5|,|6\rangle,[6|$); <br>
 </div>
 
----
-
-<b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 5mm;">
-   Preview of upcoming $pp\rightarrow Wjj$
-</b>
-
-
-<div style="text-align: left; font-size: x-large">
-$\circ\,$ First two-loop computation in full color ($N_c$ dependence) for $q\bar q \rightarrow \gamma \gamma \gamma$ <br>
+<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
+$3.\,$ Change basis in the space of rational functions (more about this when we write up!);
 </div>
+
+<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 0mm;">
+$4.\,$ Perform a partial fraction decomposition based on expected structures and fit the Ansatze;
+</div>
+
+<br>
+
+<div style="text-align: center; float:center; font-size: x-large; margin-top: -10mm; margin-bottom: 5mm;">
+Comparison of $q\bar q \rightarrow \gamma \gamma \gamma$ (in full color) to $pp \rightarrow Wjj$ (at leading color):  <br>
+</div>
+
 <table width=110% border="1" cellspacing="0" cellpadding="0" style="margin-left: -12mm; margin-bottom: 8mm; margin-top: 8mm; font-size: x-large;">
   <tr>
     <td><b>Kinematics</b></td>
@@ -602,13 +633,10 @@ $\circ\,$ First two-loop computation in full color ($N_c$ dependence) for $q\bar
     <td style="text-align: center;">30</td>
     <td style="text-align: center;">29k</td>
     <td style="text-align: center;">4k</td>
-    <td style="text-align: center;">$\sim$200 KB</td>
+    <td style="text-align: center;">$\sim$300 KB</td>
   </tr>
 </table>
 
-<div style="text-align: left; font-size: x-large; margin-top: 5mm;">
-$\circ\,$ Updated two-loop leading-color amplitudes for $pp \rightarrow Wjj$, now in spinor helicity
-</div>
 <table width=100% border="1" cellspacing="0" cellpadding="0" style="margin-bottom: 8mm; margin-top: 8mm; font-size: x-large;">
   <tr>
     <td><b>Kinematics</b></td>
@@ -622,28 +650,22 @@ $\circ\,$ Updated two-loop leading-color amplitudes for $pp \rightarrow Wjj$, no
     <td style="text-align: center;">>200</td>
     <td style="text-align: center;">>5M</td>
     <td style="text-align: center;">$\sim$40k</td>
-    <td style="text-align: center;">$\sim$25 MB</td>
+    <td style="text-align: center; background-color: yellow;">$\sim$25 MB</td>
   </tr>
 </table>
-<div style="text-align: left; font-size: x-large; margin-top: 5mm;">
-$\phantom{\circ\,}$ First computed in
-<a  href=https://arxiv.org/abs/2110.07541>
-Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov
-</a> (1.2 GB)
-</div>
 
 ---
 
 <b style="font-variant: small-caps; font-size: xx-large; margin-bottom: 10mm;">
-   Analytic Structures of 5-point 1-mass 2-loop Amplitudes
+   Analytic Structures of 2-loop 5-point 1-mass Amplitudes
 </b>
 
 <div style="text-align: left; font-size: x-large; margin-top: 6mm; margin-bottom: 2mm;">
-$\circ\,$ The new 2-loops singularity, $⟨k|j|p\mkern-7.5mu/_V|l|k]-⟨j|i|p\mkern-7.5mu/_V|l|j]$, generally has very clean residues, e.g.:
+$\circ\,$ Compact residues for the new 2-loops (spurious?) pole, $⟨k|j|p\mkern-7.5mu/_V|l|k]-⟨j|i|p\mkern-7.5mu/_V|l|j]$, e.g.:
 $$r^{(5 \text{ of } 54)}_{\bar{u}^+g^+g^+d^-(V\rightarrow \ell^+ \ell^-)} = \frac{[12][23]⟨24⟩⟨46⟩^2⟨1|2+3|4]⟨2|1+3|4]}{⟨12⟩⟨23⟩⟨56⟩(⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2])^2}$$
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-top: 6mm;">
+<div style="text-align: left; font-size: x-large; margin-top: 8mm;">
 $\circ\,$ The three mass Grams, $\Delta_{12|34|p\mkern-7.5mu/_V}, \Delta_{14|23|p\mkern-7.5mu/_V}$, behave analogously to one-loop amplitudes, e.g.:
 </div>
 <div style="text-align: left; font-size: large; margin-top: 2mm; margin-bottom: 1mm;">
@@ -654,10 +676,9 @@ $$ r^{(73 \text{ of } 120)}_{\bar{u}^+g^-g^+d^-(V\rightarrow \ell^+ \ell^-)} = \
 $\phantom{\circ\,}$ but the pole orders have been (roughly) doubled.
 </div>
 
-
-<div style="text-align: left; font-size: x-large; margin-top: 6mm;">
-$\circ\,$ Recall the primary decomposition for the ideal generated by $\small ⟨3|1+4|2]$ and $\small Δ_{23|14|56}$:
-$$\small \kern-30mm \sqrt{\big\langle ⟨3|1+4|2], Δ_{23|14|56} \big\rangle} = \big\langle ⟨3|1+4|2], s_{124}-s_{134} \big\rangle $$ 
+<div style="text-align: left; font-size: x-large; margin-top: 8mm;">
+$\circ\,$ Recall the primary decomposition for the non-radical ideal generated by $\small ⟨3|1+4|2]$ and $\small Δ_{23|14|56}$:
+$$\small \kern-30mm \sqrt{\big\langle ⟨3|1+4|2], Δ_{23|14|56} \big\rangle_{R_6}} = \big\langle ⟨3|1+4|2], s_{124}-s_{134} \big\rangle_{R_6} $$ 
      <div style="font-size: large; text-align: right; float: right; margin-top: -21mm; margin-bottom: 0mm;">
           <a href=https://arxiv.org/abs/2203.04269>
                GDL, Page ('22);&nbsp
@@ -666,7 +687,7 @@ $$\small \kern-30mm \sqrt{\big\langle ⟨3|1+4|2], Δ_{23|14|56} \big\rangle} = 
                Campbell, GDL, Ellis ('22)$\phantom{;}$
           </a> 
      </div>
-</div> 
+</div>
 
 
 </section>
