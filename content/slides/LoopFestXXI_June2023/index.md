@@ -1,5 +1,5 @@
 ---
-title: Modern Methods for the Computation of Scattering Amplitudes
+title: Non-planar two-loop QCD corrections to qq->yyy, finite remainders in the spinor-helicity formalism
 summary: 
 authors: ["Giuseppe De Laurentis"]
 tags: [QCD, Scattering Amplitudes]
@@ -573,7 +573,7 @@ at NNLO
 <div style="display:block; width:100%; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
      <div style="width:50%; float: left; display: inline-block;">
           $\circ$ The algebraic complexity$-$think Ansatz size$-$grows quickly with multiplicity (m) <br> and mass dimension (d): <br><br>
-          $\displaystyle \left(\mkern -9mu \begin{pmatrix}\, n(n-3)/2 \, \\ \, d/2 \, \end{pmatrix} \mkern -9mu \right)$ <br><br>
+          $\displaystyle \left(\mkern -9mu \begin{pmatrix}\, m(m-3)/2 \, \\ \, d/2 \, \end{pmatrix} \mkern -9mu \right)$ <br><br>
           is a lower bound. <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: -28mm; margin-top: 1mm; margin-bottom: 5mm;" href=https://arxiv.org/abs/2010.14525>
                GDL, Maître ('20)
           </a>
@@ -611,7 +611,7 @@ $3.\,$ Change basis in the space of rational functions (more about this when we 
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 0mm;">
-$4.\,$ Perform a partial fraction decomposition based on expected structures and fit the Ansatze;
+$4.\,$ Perform a partial fraction decomposition based on expected structures and fit the Ansatze.
 </div>
 
 <br>
@@ -661,7 +661,7 @@ Comparison of $q\bar q \rightarrow \gamma \gamma \gamma$ (in full color) to $pp 
 </b>
 
 <div style="text-align: left; font-size: x-large; margin-top: 6mm; margin-bottom: 2mm;">
-$\circ\,$ Compact residues for the new 2-loops (spurious?) pole, $⟨k|j|p\mkern-7.5mu/_V|l|k]-⟨j|i|p\mkern-7.5mu/_V|l|j]$, e.g.:
+$\circ\,$ Compact residues for the new 2-loop (spurious?) pole, $⟨k|j|p\mkern-7.5mu/_V|l|k]-⟨j|i|p\mkern-7.5mu/_V|l|j]$, e.g.:
 $$r^{(5 \text{ of } 54)}_{\bar{u}^+g^+g^+d^-(V\rightarrow \ell^+ \ell^-)} = \frac{[12][23]⟨24⟩⟨46⟩^2⟨1|2+3|4]⟨2|1+3|4]}{⟨12⟩⟨23⟩⟨56⟩(⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2])^2}$$
 </div>
 
