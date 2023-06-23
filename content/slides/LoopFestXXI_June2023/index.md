@@ -588,7 +588,7 @@ $\circ\,$ The anlytic expressions of <a href="https://arxiv.org/abs/2110.07541">
 </div>
 
 <div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 5mm; margin-bottom: 5mm;">
-    Understanding the analytic structure starts to become important!
+    Having more control on the analytic structure starts to become important!
 </div>
 
 ---
