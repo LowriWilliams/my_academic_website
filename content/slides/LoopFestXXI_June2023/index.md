@@ -697,7 +697,7 @@ $$\small \kern-30mm \sqrt{\big\langle ⟨3|1+4|2], Δ_{23|14|56} \big\rangle_{R_
 <section data-visibility="uncounted">
 
 <div style="margin-top: 50mm; margin-bottom: 30mm;">
-<b style="font-variant: small-caps; font-size: xxx-large;"> Thank you <br> for you attention! </b>
+<b style="font-variant: small-caps; font-size: xxx-large;"> Thank you <br> for your attention! </b>
 <br><br>
 <b style="font-variant: small-caps; font-size: xx-large;"> Questions? </b>
 </div>
