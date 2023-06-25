@@ -228,10 +228,10 @@ $\circ$ Generalized unitarity relates cuts of loop amplitudes to products of tre
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Updates to Caravel </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> New Features of the Reduction</b>
 
 <div style="font-size: x-large; float: left; margin-bottom: 0mm;">
-     $\circ$ <b style="font-variant: small-caps; ">Main change</b>: new surface terms for non-planar topologies
+     $\circ$ Master / surface decomposition for non-planar topologies
 </div>
 <div style="font-size: x-large; text-align: center; display: inline-block; margin-top: 1mm; margin-bottom: 2mm;">
 $$
@@ -249,13 +249,17 @@ $$
 <br>
 
 <div style="font-size: x-large; float: left; margin-bottom: 0mm;">
-     $\circ$ <b style="font-variant: small-caps; "> Additional changes </b>: 
+     $\circ$ Semi-numerical surface terms: $\quad m_{i\in S_\Gamma}(\ell \leftarrow \text{analytical}, \lambda\tilde\lambda \leftarrow \text{numerical})$
+</div>
+<div style="font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">
+     $\kern20mm\star$ dependance on external kinematics ($\lambda\tilde\lambda$) obtained from sparse linear systems
 </div>
 <br>
-<div style="font-size: x-large; text-align: left; float: center; display: inline-block; margin-bottom: 0mm;">
-     <div style="margin-bottom: 3mm;"> $\star$ semi-numerical $m_{i\in S_\Gamma}(\ell \leftarrow \text{analytical}, \lambda\tilde\lambda \leftarrow \text{numerical})$ from sparse systems; </div>
-     <div style="margin-bottom: 3mm;"> $\star$ optimizations for Gaussian elimination of sparse systems; </div>
-     $\star$ $c_{\Gamma,i}(\lambda, \tilde\lambda)$ instead of $c_{\Gamma,i}(\lambda\tilde\lambda)$ + conventions for the polarizations.
+<div style="font-size: x-large; float: left; margin-top: 5mm;">
+     $\circ$ Little group information retained throughout the computation
+</div>
+<div style="font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">
+     $\kern20mm\star$ genuine $c_{\Gamma,i}(\lambda, \tilde\lambda)$ instead of $c_{\Gamma,i}(\lambda\tilde\lambda)$ + conventions for the polarization states.
 </div>
 
 ---
@@ -420,7 +424,7 @@ $\circ\,$ In least-common-denominator (LCD) form, we have
 <div style="font-size: x-large; text-align: left; float: center; display: inline-block; margin-top: -10mm; margin-bottom: 2mm;">
      <div style="margin-bottom: 3mm;"> $\star$ the LCD is <b>not</b> little group invariant: the degree is lower in spinors;  </div>
      <div style="margin-bottom: 3mm;"> $\star$ no (arbitrary) split into parity even and odd: half sampling requirement; </div>
-     $\star$ in <u>LCD form</u> we need $\color{green}29\,059$ evaluations instead of $\color{red}117\,810$ (with $s_{ij}$) for $\mathcal{R}^{(2)}_{2q3\gamma}$ .
+     $\star$ in <u>LCD form</u> we would need $\color{green}29\,059$ evaluations instead of $\color{red}117\,810$ (with $s_{ij}$) for $\mathcal{R}^{(2)}_{2q3\gamma}$ .
 </div>
 
 ---
@@ -445,8 +449,22 @@ $\displaystyle \text{Num. poly}(\lambda, \tilde\lambda) = \sum_{\vec \alpha, \ve
 <br>
 
 <div style="text-align: left; font-size: x-large">
-$\circ\,$ Efficient implementation of the algorithm from Section 2.2 of <a href=https://arxiv.org/abs/2203.04269>Page, GDL ('22)</a> using
+$\circ\,$ Efficient implementation of the algorithm from Section 2.2 of <a href=https://arxiv.org/abs/2203.04269>Page, GDL ('22)</a>:
 </div>
+<div style="text-align: center; display: inline-block; font-size: x-large; border: 2px solid black;">
+Linear independence = irreducibility by the Gröbner basis of a specific ideal.
+</div>
+
+<!---
+<div style="text-align: center; font-size: x-large; margin-bottom: 5mm; margin-top: 5mm;">
+$
+\begin{align}
+	\textstyle \sum_{j=1}^n\sum_{i=1}^{j-1} (\alpha_{ij} + \beta_{ij}) & = d \quad \text{: mass dimension} \\[2mm]
+	\textstyle \sum_{j=1}^n\sum_{i=1}^{j-1} \alpha_{ij}\underbrace{\{\langle ij \rangle\}_k}_{\delta_{ik}+\delta_{jk}} + \beta_{ij}\underbrace{\{[ij]\}_k}_{-\delta_{ik}-\delta_{jk}} & = \phi_k \quad \text{: k}^{th}\text{ little group weight}
+\end{align}
+$
+</div>
+--->
 
 <div style="display:block; width:100%; margin-top: 5mm;">
 	<div style="width:50%; font-size: x-large; float: left; display: inline-block;">
@@ -478,18 +496,22 @@ $\circ\,$ All linear systems solved with CUDA over $\mathbb{F}_{p\leq 2^{31}-1}$
 <b style="font-variant: small-caps; font-size: xxx-large"> Taming the Algebraic Complexity </b>
 <br>
 
-<div style="text-align: left; font-size: x-large; margin-bottom: 4mm; margin-top: 5mm;">
-$\circ\,$ In common denominator, we are massively over-parametrizing the coefficients. Thus, write:
+<div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
+$\circ\,$ Instead of the common denominator form, perform a partial fraction decomposition
 </div>
 <div style="font-size: x-large; padding: 10px; display: inline-block;">
     $\displaystyle r_i(\lambda,\tilde\lambda) = \frac{\mathcal{N}(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ij}}(\lambda,\tilde\lambda)} = \sum_k \frac{\mathcal{N}_k(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ijk}}(\lambda,\tilde\lambda)} = \sum_k r_{ik} \quad \text{with} \quad q_{ijk} \le q_{ij}$
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-bottom: 4mm; margin-top: 5mm;">
-$\circ\,$ Instead of probing $\mathcal{N}$ on $V(\big\langle W_x, W_y \big\rangle)$, use insights from physics, e.g.:
+<div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
+$\circ\,$ Use insights from physics, e.g. no denominator in $\mathcal{R}^{(2)}_{2q3\gamma}$ contains more than a single $\langle i |j + k | i]$
 </div>
 <div style="border: 2px solid black; text-align: center; float:center; display: inline-block; font-size: x-large; margin-bottom: 2mm; margin-top: 2mm;">
-No denominator in $\mathcal{R}^{(2)}_{2q3\gamma}$ contains pairs of $\langle i |j + k | i]$
+No denominator in $\mathcal{R}^{(2)}_{2q3\gamma}$ contains more than a single $\langle i |j + k | i]$
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
+$\circ\,$ Sampling requirement reduced from $\color{red}29\,059$ to $\color{green}4\,003$. 
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
