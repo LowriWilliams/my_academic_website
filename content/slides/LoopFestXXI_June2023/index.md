@@ -418,7 +418,7 @@ $\circ\,$ In least-common-denominator (LCD) form, we have
 </div>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 2mm;">
-     $\circ\,$ Why bother with spinor variables:
+     $\circ\,$ Why bother with (redundant) spinor variables:
 </div>
 <br><br>
 <div style="font-size: x-large; text-align: left; float: center; display: inline-block; margin-top: -10mm; margin-bottom: 2mm;">
@@ -430,26 +430,24 @@ $\circ\,$ In least-common-denominator (LCD) form, we have
 ---
 
 <b style="font-variant: small-caps; font-size: xxx-large"> The Numerator Ansatz </b>
-<br>
 
-<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm; ">
+<div style="text-align: left; font-size: x-large; margin-top: 1mm; margin-bottom: 2mm; ">
 $\circ\,$ The numerator Ansatz takes the form
 </div>
-<a style="font-size: large; text-align: right; float: right; margin-top: -6mm; margin-bottom: 5mm;" href=https://arxiv.org/abs/1904.04067>
+<a style="font-size: large; text-align: right; float: right; margin-top: -6mm; margin-bottom: 4mm;" href=https://arxiv.org/abs/1904.04067>
    GDL, Maître ('19)
 </a>
-<div style="text-align: center; font-size: x-large; margin-bottom: 5mm; margin-top: 0mm;">
+<div style="text-align: center; font-size: x-large; margin-bottom: 5mm; margin-top: 1mm;">
 $\displaystyle \text{Num. poly}(\lambda, \tilde\lambda) = \sum_{\vec \alpha, \vec \beta} c_{(\vec\alpha,\vec\beta)} \prod_{j=1}^n\prod_{i=1}^{j-1} \langle ij\rangle^{\alpha_{ij}} [ij]^{\beta_{ij}}$
 </div>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+<div style="text-align: left; font-size: x-large; float: left; margin-top: -2mm; margin-bottom: 0mm;">
      $\phantom{\circ}$ subject to constraints on $\vec\alpha,\vec\beta$ due to: 1) mass dimension; 2) little group; 3) linear independence.
 </div>
 
 <br>
 
-<div style="text-align: left; font-size: x-large">
-$\circ\,$ Efficient implementation of the algorithm from Section 2.2 of <a href=https://arxiv.org/abs/2203.04269>Page, GDL ('22)</a>:
+<div style="text-align: left; font-size: x-large; ">
+$\circ\,$ Construct the Ansatz via the algorithm from Section 2.2 of <a href=https://arxiv.org/abs/2203.04269>Page, GDL ('22)</a>
 </div>
 <div style="text-align: center; display: inline-block; font-size: x-large; border: 2px solid black;">
 Linear independence = irreducibility by the Gröbner basis of a specific ideal.
@@ -466,18 +464,29 @@ $
 </div>
 --->
 
-<div style="display:block; width:100%; margin-top: 5mm;">
-	<div style="width:50%; font-size: x-large; float: left; display: inline-block;">
-	     Gröbner bases $\rightarrow$ constrain $\vec\alpha,\vec\beta$
-	     <img src="SingularLogo.png"; style="max-width:350px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;"> <br>
+<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 0mm;">
+$\circ\,$ Efficient implementation using open-source software only
+</div>
+<div style="display:block; width:105%; margin-left: -10mm; margin-top: 0mm;">
+	<div style="width:15%; font-size: x-large; float: left; display: inline-block;">
+	     <div style="margin-top: 10mm; margin-bottom: 6mm;"> <code> Lips </code> </div>
+	     <div style="margin-top: 0mm; margin-bottom: 0mm;"> Spinor ideal </div>
+	     <a style="font-size: large; text-align: center; float: center; margin-top: 0mm; margin-bottom: 5mm;"
+	     href=https://arxiv.org/abs/2305.14075>
+		GDL ('23)
+	     </a>	    
+	</div>
+	<div style="width:40%; font-size: x-large; float: left; display: inline-block;">
+	     <img src="SingularLogo.png"; style="max-width:300px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;"> <br>
+	     Gröbner bases $\rightarrow$ constrain $\vec\alpha,\vec\beta$ <br>
 	     <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
 	     href=https://www.singular.uni-kl.de/index.php.html>
 		Decker, Greuel, Pfister, Schönemann
 	     </a>	    
 	</div>
-	<div style="width:50%; font-size: x-large; float: right; display: inline-block; ">
+	<div style="width:45%; font-size: x-large; float: right; display: inline-block; ">
+	     <img src="GoogleORToolsLogo.png"; style="max-width:300px; float:center; border:none; margin-top: 7mm; margin-bottom: 2mm;"> <br>
 	     Integer programming $\rightarrow$ enumerate sols. $\vec\alpha,\vec\beta$ <br>
-	     <img src="GoogleORToolsLogo.png"; style="max-width:350px; float:center; border:none; margin-top: 7mm; margin-bottom: 0mm;"> <br>
 	     <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
 	     href=https://www.singular.uni-kl.de/index.php.html>
 		Perron and Furnon (Google optimization team)
@@ -485,7 +494,7 @@ $
 	</div>
 </div>
 
-<br><br><br><br><br>
+<br><br><br><br>
 
 <div style="text-align: left; font-size: x-large; margin-top: -2mm;">
 $\circ\,$ All linear systems solved with CUDA over $\mathbb{F}_{p\leq 2^{31}-1}$ on a laptop ($t_{\text{solving}} \ll t_{\text{sampling}}$)
@@ -506,27 +515,25 @@ $\circ\,$ Instead of the common denominator form, perform a partial fraction dec
 <div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
 $\circ\,$ Use insights from physics, e.g. no denominator in $\mathcal{R}^{(2)}_{2q3\gamma}$ contains more than a single $\langle i |j + k | i]$
 </div>
-<div style="border: 2px solid black; text-align: center; float:center; display: inline-block; font-size: x-large; margin-bottom: 2mm; margin-top: 2mm;">
-No denominator in $\mathcal{R}^{(2)}_{2q3\gamma}$ contains more than a single $\langle i |j + k | i]$
-</div>
-
-<div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
-$\circ\,$ Sampling requirement reduced from $\color{red}29\,059$ to $\color{green}4\,003$. 
-</div>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
 $\circ\,$ As by now standard, we pick a set of independent $r_i$ to reconstruct: $r_i \not\in \text{span}(r_{j\neq i})$. <br>
-$\phantom{\circ\,}$ However, generally $r_{ik} \in \text{span}(r_{j\neq i})$ for some, but not all, $k$.
+$\phantom{\circ\,}$ However, generally $r_{ik} \in \text{span}(r_{j\neq i})$ for some, but not all, $k$. Thus, write:
 </div>
 <div style="font-size: x-large; padding: 10px; display: inline-block;">
     $\displaystyle $
 </div>
-<div style="border: 2px solid black; text-align: center; float:center; display: inline-block; font-size: x-large; margin-bottom: 4mm; margin-top: 2mm;">
-Write an Ansatz of the form: $r_i = \sum_{j\neq i} r_j + \sum_{k' \subset \{k\}} r_{ik'}$
+<div style="text-align: center; float:center; display: inline-block; font-size: x-large; margin-bottom: 2mm; margin-top: 2mm;">
+$r_i = \sum_{j\neq i} r_j + \sum_{k' \subset \{k\}} r_{ik'}$
+</div>
+<br>
+
+<div style="border: 2px solid black; text-align: center; float:center; display: inline-block; font-size: x-large; margin-bottom: 2mm; margin-top: 2mm;">
+Sampling requirement reduced from $\color{red}29\,059$ to $\color{green}4\,003$.
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 2mm;">
-$\phantom{\circ}$ For example, given the most complicated $r_i$, we only needed
+$\circ$ For example, a posteriori, we find that for the most complicated $r_i$, we only needed
 </div>
 <div style="font-size: large; padding: 10px; display: inline-block;">
     $\displaystyle \sum_{k' \subset \{k\}} r_{ik'} = \frac{⟨13⟩[14]^2⟨24⟩⟨34⟩[45]}{⟨45⟩⟨4|1+3|4]^3}-\frac{[14]⟨25⟩⟨34⟩^2[45]}{⟨45⟩^2⟨4|1+3|4]^2}-\frac{[14]⟨24⟩⟨34⟩⟨35⟩}{⟨45⟩^3⟨4|1+3|4]}$
@@ -639,7 +646,7 @@ to build 6-point spinor-helicity amplitudes (subject to degree bounds on $|5\ran
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 0mm;">
-$3.\,$ Perform a partial fraction decomposition based on expected structures and fit the Ansatze.
+$3.\,$ Perform partial fraction decompositions$^{*}$ based on expected structures and fit the Ansatze.
 </div>
 
 <br>
@@ -672,6 +679,12 @@ Comparison of $q\bar q \rightarrow \gamma \gamma \gamma$ (in full color) to $pp 
   </tr>
 </table>
 
+<br><br>
+
+<div style="text-align: center; float:center; font-size: x-large; margin-top: -10mm; margin-bottom: 5mm;">
+$\phantom{x}^{*}$ sometimes it's actually a bit more than a partial fraction decomposition, see next slide.
+</div>
+
 ---
 
 <b style="font-variant: small-caps; font-size: xx-large; margin-bottom: 10mm;">
@@ -687,8 +700,8 @@ $$r^{(5 \text{ of } 54)}_{\bar{u}^+g^+g^+d^-(V\rightarrow \ell^+ \ell^-)} = \fra
 $\circ\,$ The three mass Grams, $\Delta_{12|34|p\mkern-7.5mu/_V}, \Delta_{14|23|p\mkern-7.5mu/_V}$, behave analogously to one-loop amplitudes, e.g.:
 </div>
 <div style="text-align: left; font-size: large; margin-top: 2mm; margin-bottom: 1mm;">
-$$ r^{(73 \text{ of } 120)}_{\bar{u}^+g^-g^+d^-(V\rightarrow \ell^+ \ell^-)} = \frac{105}{128}\frac{⟨2|1+4|3]⟨4|2+3|1]⟨6|1+4|5]s_{14}s_{23}s_{56}(s_{124}-s_{134})(s_{123}-s_{234})(s_{25}+s_{26}+s_{35}+s_{36})}{⟨3|1+4|2]Δ_{23|14|56}^4} + \\
-\Bigg[-6\frac{[12]^2⟨13⟩[25]⟨34⟩⟨36⟩⟨56⟩[56](s_{124}-s_{134})}{⟨3|1+4|2]^5}\Bigg] + \Bigg[ \; \Bigg]_{1234\rightarrow \overline{4321}}+ \mathcal{O}\left(\frac{1}{⟨3|1+4|2]^{4}Δ_{23|14|56}^{3}}\right)$$
+$$ r^{(73 \text{ of } 120)}_{\bar{u}^+g^-g^+d^-(V\rightarrow \ell^+ \ell^-)} = \frac{105}{128}\frac{⟨2|1+4|3]⟨4|2+3|1]⟨6|1+4|5]s_{14}s_{23}s_{56}{\color{green}(s_{124}-s_{134})}(s_{123}-s_{234})(s_{25}+s_{26}+s_{35}+s_{36})}{{\color{orange}⟨3|1+4|2]}{\color{red}Δ_{23|14|56}^4}} + \\
+\Bigg[-6\frac{[12]^2⟨13⟩[25]⟨34⟩⟨36⟩⟨56⟩[56]{\color{green}(s_{124}-s_{134})}}{{\color{orange}⟨3|1+4|2]^5}}\Bigg] + \Bigg[ \; \Bigg]_{1234\rightarrow \overline{4321}}+ \mathcal{O}\left(\frac{1}{⟨3|1+4|2]^{4}Δ_{23|14|56}^{3}}\right)$$
 </div>
 <div style="text-align: left; font-size: x-large; margin-bottom: 2mm;">
 $\phantom{\circ\,}$ but the pole orders have been (roughly) doubled.
@@ -696,7 +709,7 @@ $\phantom{\circ\,}$ but the pole orders have been (roughly) doubled.
 
 <div style="text-align: left; font-size: x-large; margin-top: 8mm;">
 $\circ\,$ Recall the primary decomposition for the non-radical ideal generated by $\small ⟨3|1+4|2]$ and $\small Δ_{23|14|56}$:
-$$\small \kern-30mm \sqrt{\big\langle ⟨3|1+4|2], Δ_{23|14|56} \big\rangle_{R_6}} = \big\langle ⟨3|1+4|2], s_{124}-s_{134} \big\rangle_{R_6} $$ 
+$$\small \kern-30mm \sqrt{\big\langle {\color{orange}⟨3|1+4|2]}, {\color{red}Δ_{23|14|56}} \big\rangle_{R_6}} = \big\langle {\color{orange}⟨3|1+4|2]}, {\color{green}s_{124}-s_{134}} \big\rangle_{R_6} $$ 
      <div style="font-size: large; text-align: right; float: right; margin-top: -21mm; margin-bottom: 0mm;">
           <a href=https://arxiv.org/abs/2203.04269>
                GDL, Page ('22);&nbsp
