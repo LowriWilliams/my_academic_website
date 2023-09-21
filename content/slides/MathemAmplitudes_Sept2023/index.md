@@ -211,8 +211,8 @@ $ \langle 12\rangle [12] = \langle 34\rangle [34]$
      $\circ$ Let us consider a very simple example
 </div>
 <br>
-<div style="font-size: 20pt; float: center; margin-top: 2mm; margin-bottom: 0mm;">
-     $iA_{g^-g^-g^+g^+}^{\text{tree}} = \frac{\langle 12 \rangle^3}{\langle 23 \rangle \langle 34 \rangle \langle 41 \rangle} = \frac{[34]^3}{[12][23][41]} $
+<div style="font-size: x-large; float: center; margin-top: 2mm; margin-bottom: 0mm;">
+     $\displaystyle iA_{g^-g^-g^+g^+}^{\text{tree}} = \frac{\langle 12 \rangle^3}{\langle 23 \rangle \langle 34 \rangle \langle 41 \rangle} = \frac{[34]^3}{[12][23][41]} $
 </div>
 <br>
 <div style="font-size: x-large; float: left; margin-top: -8mm; margin-bottom: 0mm;">
@@ -229,13 +229,15 @@ $ \langle 12\rangle [12] = \langle 34\rangle [34]$
      $\phantom{\circ}$ Compute $\color{green}\text{primary decompositions}$, such as
 </div>
 <br>
-<div style="font-size: 20pt; float: center; margin-top: -13mm; margin-bottom: 0mm;">
-     $ \big\langle \langle 23\rangle \big\rangle_{R_4} = \big\langle \langle 23\rangle, [14] \big\rangle_{R_4} \cap \big\langle \langle 12\rangle, \langle 13 \rangle, \langle 14\rangle, \langle 23\rangle, \langle 24 \rangle, \langle 34 \rangle \big\rangle_{R_4} $
+<div style="font-size: x-large; float: center; margin-top: -15mm; margin-bottom: 0mm;">
+     $\displaystyle \big\langle \langle 23\rangle \big\rangle_{R_4} = {\color{maroon} \big\langle \langle 23\rangle, [14] \big\rangle_{R_4}} \cap {\color{olive} \big\langle \langle 12\rangle, \langle 13 \rangle, \langle 14\rangle, \langle 23\rangle, \langle 24 \rangle, \langle 34 \rangle \big\rangle_{R_4}} $
+</div>
+<br>
+<div style="font-size: x-large; float: left; margin-top: -8mm; margin-bottom: 0mm;">
+     $\phantom{\circ}$ On the <b style="color: maroon"> first branch </b> there is a simple pole, on the <b style="color: olive"> latter branch </b> the amplitude is regular.
 </div>
 
-<br>
-
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 3mm;">
+<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 5mm;">
     Poles & Zeros $\;\Leftrightarrow\;$ Irreducible Varieties $\;\Leftrightarrow\;$ Prime Ideals <br>
     <i style="font-size: 12pt; border-top: -8mm; border-bottom: -2mm;"> Physics $\kern38mm$ Geometry $\kern38mm$ Algebra </i>
 </div>
