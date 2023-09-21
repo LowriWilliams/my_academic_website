@@ -60,23 +60,29 @@ MathemAmplitudes 2023 - Padova
 
 
 <div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
-     $\circ$ Amplitude integrands can be written as
+     $\circ$ Amplitude (integrands) can be written as
 </div>
 <br>
-<div style="font-size: x-large; margin-top: -5mm; margin-bottom: 0mm">
+<div style="font-size: x-large; margin-top: -5mm;  margin-bottom: 0mm">
 $$
      \require{color}
-     \displaystyle A(\lambda, \tilde\lambda, \ell) = \sum_{\Gamma} \, \sum_{i \in M_\Gamma \cup S_\Gamma} \, c_{\,\Gamma,i}(\lambda, \tilde\lambda, \epsilon) \,		\frac{m_{\Gamma,i}(\lambda\tilde\lambda, \ell)}{\textstyle \prod_{j} \rho_{\,\Gamma,j}(\lambda\tilde\lambda, \ell)}
+     \require{amsmath}
+     \displaystyle A(\lambda, \tilde\lambda, \ell) =
+\sum_{\substack{\Gamma,\\ i \in M_\Gamma \cup S_\Gamma}} \, c_{\,\Gamma,i}(\lambda, \tilde\lambda, \epsilon) \,		\frac{m_{\Gamma,i}(\lambda\tilde\lambda, \ell)}{\textstyle \prod_{j} \rho_{\,\Gamma,j}(\lambda\tilde\lambda, \ell)} \;\; \xrightarrow[]{\int d^D\ell} \;\; \sum_{\substack{\Gamma,\\ i \in M_\Gamma}} {\color{red}c_{\,\Gamma, i}}(\lambda, \tilde\lambda, \epsilon) \, {\color{orange}I_{\Gamma, i}}(\lambda\tilde\lambda, \epsilon)
      $$
 </div>
 
 <br>
 
 <div style="font-size: x-large; float: left; margin-top: -15mm; margin-bottom: 0mm;">
-     $\circ$ After integration, amplitudes take the form
+     $\circ$ Focus on the rational coefficients $c_{\Gamma, i}$. For a suitable choice of integrands, we get:
 </div>
-<div style="font-size: x-large; margin-top: -5mm; margin-bottom: 0mm">
-$$ A^{\ell-loop}_n(\lambda, \tilde\lambda) = \int d^D\ell \; A(\lambda, \tilde\lambda, \ell) = \sum_\Gamma \sum_{i \in M_\Gamma} \frac{\color{orange}{c_{\,\Gamma, i}}(\lambda, \tilde\lambda, \epsilon) \, \color{red}{I_{\Gamma, i}}(\lambda\tilde\lambda, \epsilon)}{\prod_j (\epsilon - a_{ij})}\;$$
+<br>
+<div style="font-size: x-large; margin-top: -20mm; margin-bottom: 0mm">
+     $$
+     \displaystyle
+     {\color{red}c_{\Gamma, i}}(\lambda, \tilde\lambda, \epsilon) = \frac{ \sum_{k=0}^{\text{finite}} \, {\color{red}c^{(k)}_{\,\Gamma, i}}(\lambda, \tilde\lambda) \, \epsilon^k}{\prod_j (\epsilon - a_{ij})} \;, \;\;\text{with} \quad a_{ij} \in \mathbb{Q}
+     $$
 </div>
 
 <br>
@@ -86,7 +92,7 @@ $$ A^{\ell-loop}_n(\lambda, \tilde\lambda) = \int d^D\ell \; A(\lambda, \tilde\l
 </div>
 <br>
 <div style="font-size: x-large; float: center; margin-bottom: 0mm; margin-top: -10mm;">
-     $\circ$  $\Gamma$: topologies $\quad\circ$ $M_\Gamma$: masters $\quad\circ$ $S_\Gamma$: surface terms $\quad\circ$ $a_{ij} \in \mathbb{Q}$ $\quad\circ$ $D= 4 - 2 \epsilon$
+     $\circ$  $\Gamma$: topologies $\quad\circ$ $M_\Gamma$: masters $\quad\circ$ $S_\Gamma$: surface terms
 </div>
 <div style="font-size: x-large; float: center; margin-bottom: 0mm; margin-top: 2mm;">
      $\circ$ Spinors: $\lambda_i = |i\rangle, \tilde\lambda_i =[i|$
@@ -216,12 +222,18 @@ $ \langle 12\rangle [12] = \langle 34\rangle [34]$
 <br>
 
 <div style="font-size: x-large; float: left; margin-top: -10mm; margin-bottom: 0mm;">
-     $\circ$ The question is ill posed! $\langle 23 \rangle$ does not identify an irreducible variety
+     $\circ$ The question is ill posed! $\langle 23 \rangle$ does not identify an irreducible variety in $R_4$.
 </div>
 <br>
-<div style="font-size: 20pt; float: center; margin-top: -10mm; margin-bottom: 0mm;">
+<div style="font-size: x-large; float: left; margin-top: -15mm; margin-bottom: 0mm;">
+     $\phantom{\circ}$ Compute $\color{green}\text{primary decompositions}$, such as
+</div>
+<br>
+<div style="font-size: 20pt; float: center; margin-top: -13mm; margin-bottom: 0mm;">
      $ \big\langle \langle 23\rangle \big\rangle_{R_4} = \big\langle \langle 23\rangle, [14] \big\rangle_{R_4} \cap \big\langle \langle 12\rangle, \langle 13 \rangle, \langle 14\rangle, \langle 23\rangle, \langle 24 \rangle, \langle 34 \rangle \big\rangle_{R_4} $
 </div>
+
+<br>
 
 <div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 3mm;">
     Poles & Zeros $\;\Leftrightarrow\;$ Irreducible Varieties $\;\Leftrightarrow\;$ Prime Ideals <br>
@@ -232,12 +244,53 @@ $ \langle 12\rangle [12] = \langle 34\rangle [34]$
 
 <b style="font-variant: small-caps; font-size: xxx-large"> Constraints from Poles </b>
 
+<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 5mm;">
+     $\circ$ The degree of divergence / vanishing on various surfaces imposes strong constraints, e.g.
+</div>
 
+<div style="font-size: 20pt; float: center; margin-top: 5mm; margin-bottom: 0mm;">
+     $ A^{\text{tree}}_{q^+g^+g^+\bar q^-g^-g^-} = \frac{\mathcal{N(\text{m.d.} = 6\,,\; \text{p.w.} = [-1, 0, 0, 1, 0, 0])}}{\langle 12\rangle\langle 23\rangle\langle 34\rangle [45][56][61]s_{345}}$
+</div>
+
+<div style="font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">
+     $\circ$ The co-dimension 2 prime ideals that do not involve pairs of invariants are
+</div>
+
+<div style="font-size: 20pt; float: center; margin-top: 5mm; margin-bottom: 0mm;">
+     $ \big\langle \langle 12\rangle, \langle 23\rangle, \langle 13\rangle \big\rangle, \; \big\langle |1\rangle \big\rangle, \; \big\langle \langle 12\rangle, |1+2|3]\big\rangle$
+</div>
+
+<div style="font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">
+     $\circ$ $\mathcal{N(\text{m.d.} = 6\,,\; \text{p.w.} = [-1, 0, 0, 1, 0, 0])}$ has 143 free parameters.  2207.10125
+</div>
+
+<div style="font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">
+     $\circ$ For $A^{\text{tree}}_{g^+g^+g^+ g^-g^-g^-}$ that's $1326 \rightarrow 1$.
+</div>
+
+<br><br><br><br>
+
+<div style="font-size: x-large; float: center; margin-top: 0mm; margin-bottom: 0mm;">
+     <i> Effectively we can <b> compute </b> trees, just from their poles orders. <br> Compared to BCFW there is no information about residues. </i>
+</div>
 
 ---
 
 <b style="font-variant: small-caps; font-size: xxx-large"> Partial Fraction Decompositions </b>
 
+<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 5mm;">
+     $\circ$ <b> Some </b> of these constraints can be formulated as partial fraction decompositions, but not all.
+</div>
+
+<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 5mm;">
+     $\circ$ 	       
+</div>
+
+<br>
+
+<div style="font-size: x-large; float: center; margin-top: 5mm; margin-bottom: 5mm;">
+     <i> This answer can be obtained from numerical samples, analytics is not required. </i>
+</div>
 
 ---
 
@@ -359,7 +412,7 @@ Peraro ('16)
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> The Least Common Denominator </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> Five-Point Massless Remainders </b>
 <br>
 
 <!---
@@ -516,45 +569,6 @@ $\circ$ For example, a posteriori, we find that for the most complicated $r_i$, 
 </div>
 <div style="font-size: large; padding: 10px; display: inline-block;">
     $\displaystyle \sum_{k' \subset \{k\}} r_{ik'} = \frac{⟨13⟩[14]^2⟨24⟩⟨34⟩[45]}{⟨45⟩⟨4|1+3|4]^3}-\frac{[14]⟨25⟩⟨34⟩^2[45]}{⟨45⟩^2⟨4|1+3|4]^2}-\frac{[14]⟨24⟩⟨34⟩⟨35⟩}{⟨45⟩^3⟨4|1+3|4]}$
-</div>
-
-</section>
----
-
----
-<section>
-
-{{< slide background-image="ATLAS2022.png" >}}
-
-# Towards <br> Phenomenology
-
----
-
-<b style="font-variant: small-caps; font-size: xxx-large"> 
-     SLC Corrections to the Hard Functions
-</b>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 4mm;">
-     $\circ\,$ Full-color 2-loop remainders & 1-loop amplitudes implemented in an open-source <a href=https://gitlab.com/five-point-amplitudes/FivePointAmplitudes-cpp> <code> C++ Program</code> </a>
-</div>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 4mm;">
-     $\circ\,$ To estimate the impact of the subleading-color contributions, consider the <i> 2-loop hard functions </i>
-</div>
-<div style="text-align: center; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
-$\displaystyle \small \mathcal{H}^{(2)} = \sum_h |\mathcal{R}_h|^2 \Big/ \sum_h  |\mathcal{A}^{(0)}_h|$
-</div>
-<div style="display:block; width:100%;">
-  <div style="width:50%; float: left; display: inline-block;">
-       <img src="correction_sizes_catani.png"; style="max-width:440px;float:center;border:none;margin-top: 7mm; margin-bottom:-5mm;">
-  </div>
-  <div style="width:50%; float: center; display: inline-block;">
-       <img src="correction_sizes_qt_MSbar.png"; style="max-width:420px;float:center;border:none;margin-top:0px;margin-bottom:-5mm;">
-  </div>
-</div>
-
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 10mm;">
-    About $25\%-35\%$ correction to $\mathcal{H}^{(2)}_{\text{l.c.}}$. The correction to $\sigma^{\text{NNLO}}_{q\bar q \rightarrow \gamma\gamma\gamma}$ will be much smaller.
 </div>
 
 </section>
