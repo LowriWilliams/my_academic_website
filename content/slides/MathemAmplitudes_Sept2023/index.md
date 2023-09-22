@@ -108,10 +108,22 @@ $$
      Disclaimer: I will talk only about $c_{\,\Gamma, i}(\lambda, \tilde\lambda, \epsilon)$, <br> nevertheless some concepts can be extended to whole amplitudes.
 </div>
 
+<div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
+     <b> Theoretical questions </b>
+</div>
+
+<br>
+
 <div style="font-size: x-large; float: center; margin-top: 4mm; margin-bottom: 0mm;">
      $\circ$ Where are the poles? $\quad \circ$ What is their order? $\quad \circ$ Which ones are spurious? <br>
      $\circ$ Can we spot correlations between the alphabet letters?
 </div>
+
+<div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
+     <b> Practical Problems </b>
+</div>
+
+<br>
 
 <div style="font-size: x-large; float: center; margin-top: 4mm; margin-bottom: 0mm;">
      $\circ$ How do we efficiently compute the rational coefficients? <br>
@@ -212,24 +224,36 @@ $ \langle 12\rangle [12] = \langle 34\rangle [34]$
 </div>
 <br>
 <div style="font-size: x-large; float: center; margin-top: 2mm; margin-bottom: 0mm;">
-     $\displaystyle iA_{g^-g^-g^+g^+}^{\text{tree}} = \frac{\langle 12 \rangle^3}{\langle 23 \rangle \langle 34 \rangle \langle 41 \rangle} = \frac{[34]^3}{[12][23][41]} $
+     $\displaystyle \kern-50mm iA_{g^-g^-g^+g^+}^{\text{tree}} = \frac{\langle 12 \rangle^3}{\langle 23 \rangle \langle 34 \rangle \langle 41 \rangle} = \frac{[34]^3}{[12][23][41]} $
 </div>
 <br>
 <div style="font-size: x-large; float: left; margin-top: -8mm; margin-bottom: 0mm;">
      $\phantom{\circ}$ is, say, $\langle 23 \rangle$ a pole of this amplitude?
 </div>
 
+<div style="width:40%; float: right; display: inline-block; margin-top: -43mm;">
+     <img src="ReducibleVariety-no-background.png"; style="max-width:250px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm; margin-left: 22mm;">
+     <br>
+     <div style="font-size: large; width:80%; float: center; text-align: center;  display: inline-block; margin-top: 0mm; margin-left: 22mm;">
+     	  Artist's Impression of $V(\big\langle \langle 23 \rangle\big\rangle_{R_4})$
+     </div>
+</div>
+
 <br>
 
-<div style="font-size: x-large; float: left; margin-top: -10mm; margin-bottom: 0mm;">
-     $\circ$ The question is ill posed! $\langle 23 \rangle$ does not identify an irreducible variety in $R_4$.
+<div style="font-size: x-large; float: left; margin-top: -12mm; margin-bottom: 0mm;">
+     $\circ$ The question is ill posed!
 </div>
 <br>
-<div style="font-size: x-large; float: left; margin-top: -15mm; margin-bottom: 0mm;">
+<div style="font-size: x-large; float: left; margin-top: -17mm; margin-bottom: 0mm;">
+     $\phantom{\circ} \langle 23 \rangle$ does not identify an irreducible variety in $R_4$.
+</div>
+<br>
+<div style="font-size: x-large; float: left; margin-top: -22mm; margin-bottom: 0mm;">
      $\phantom{\circ}$ Compute $\color{green}\text{primary decompositions}$, such as
 </div>
 <br>
-<div style="font-size: x-large; float: center; margin-top: -15mm; margin-bottom: 0mm;">
+<div style="font-size: x-large; float: center; margin-top: -23.5mm; margin-bottom: 0mm;">
      $\displaystyle \big\langle \langle 23\rangle \big\rangle_{R_4} = {\color{maroon} \big\langle \langle 23\rangle, [14] \big\rangle_{R_4}} \cap {\color{olive} \big\langle \langle 12\rangle, \langle 13 \rangle, \langle 14\rangle, \langle 23\rangle, \langle 24 \rangle, \langle 34 \rangle \big\rangle_{R_4}} $
 </div>
 <br>
@@ -246,39 +270,63 @@ $ \langle 12\rangle [12] = \langle 34\rangle [34]$
 
 <b style="font-variant: small-caps; font-size: xxx-large"> Constraints from Poles </b>
 
-<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 5mm;">
+<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 8mm;">
      $\circ$ The degree of divergence / vanishing on various surfaces imposes strong constraints, e.g.
 </div>
 
-<div style="font-size: 20pt; float: center; margin-top: 5mm; margin-bottom: 0mm;">
+<div style="font-size: 20pt; float: center; margin-top: 5mm; margin-bottom: 5mm;">
      $ A^{\text{tree}}_{q^+g^+g^+\bar q^-g^-g^-} = \frac{\mathcal{N(\text{m.d.} = 6\,,\; \text{p.w.} = [-1, 0, 0, 1, 0, 0])}}{\langle 12\rangle\langle 23\rangle\langle 34\rangle [45][56][61]s_{345}}$
 </div>
 
 <div style="font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">
-     $\circ$ The co-dimension 2 prime ideals that do not involve pairs of invariants are
+     $\circ$ Pretend $\mathcal{N}$ is un unknown integral coefficient, $c_{\Gamma, i}$, it has 143 free parameters.
 </div>
 
-<div style="font-size: 20pt; float: center; margin-top: 5mm; margin-bottom: 0mm;">
-     $ \big\langle \langle 12\rangle, \langle 23\rangle, \langle 13\rangle \big\rangle, \; \big\langle |1\rangle \big\rangle, \; \big\langle \langle 12\rangle, |1+2|3]\big\rangle$
+<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 5mm;">
+     $\circ$ List the various prime ideal, such as
+</div>
+
+<br><br><br>
+
+<div style="font-size: 20pt; float: center; margin-top: -2mm; margin-bottom: 0mm;">
+     $ \big\langle \langle 12\rangle, \langle 23\rangle, \langle 13\rangle \big\rangle, \; \big\langle |1\rangle \big\rangle, \; \big\langle \langle 12\rangle, |1+2|3]\big\rangle, \dots$
 </div>
 
 <div style="font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">
-     $\circ$ $\mathcal{N(\text{m.d.} = 6\,,\; \text{p.w.} = [-1, 0, 0, 1, 0, 0])}$ has 143 free parameters.  2207.10125
+     $\phantom{\circ}$ and impose that $\mathcal{N}$ vanishes to the correct order. We determine it up to an overall constant.
 </div>
 
 <div style="font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">
-     $\circ$ For $A^{\text{tree}}_{g^+g^+g^+ g^-g^-g^-}$ that's $1326 \rightarrow 1$.
+     $\circ$ Likewise, for $A^{\text{tree}}_{g^+g^+g^+ g^-g^-g^-}$ that's $1326 \rightarrow 1$, etc..
 </div>
 
-<br><br><br><br>
+<br><br><br>
 
 <div style="font-size: x-large; float: center; margin-top: 0mm; margin-bottom: 0mm;">
-     <i> Effectively we can <b> compute </b> trees, just from their poles orders. <br> Compared to BCFW there is no information about residues. </i>
+     <i> Effectively we can <b> compute </b> trees, just from their <u>poles orders</u>. <br> Note: compared to BCFW there is <u>no</u> information about <u>residues</u>. </i>
 </div>
 
 ---
 
 <b style="font-variant: small-caps; font-size: xxx-large"> Partial Fraction Decompositions </b>
+
+<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 5mm;">
+     $\circ$ For integral coefficients, it's not trivial to obtain pole orders.
+</div>
+
+<div style="font-size: x-large; float: left; margin-top: -5mm; margin-bottom: 5mm;">
+     $\phantom{\circ}$ Mostly because of the choice of $\mathbb{F}$, as $\mathbb{F}_p$ - due to nuemerical stability requirements.
+</div>
+
+<a style="font-size: large; text-align: right; float: right; margin-top: -2mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1608.01902>
+Peraro ('16)
+</a>
+
+<a style="font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1406.4513>
+     von Manteuffel, Schabinger ('14)
+</a>
+
+<br>
 
 <div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 5mm;">
      $\circ$ <b> Some </b> of these constraints can be formulated as partial fraction decompositions, but not all.
