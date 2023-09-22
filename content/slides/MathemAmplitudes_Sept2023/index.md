@@ -102,32 +102,17 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Questions \& Problems</b>
+<b style="font-variant: small-caps; font-size: xxx-large"> Talk Outline</b>
 
-<div style="font-size: x-large; float: center; margin-top: 4mm; margin-bottom: 0mm;">
-     Disclaimer: I will talk only about $c_{\,\Gamma, i}(\lambda, \tilde\lambda, \epsilon)$, <br> nevertheless some concepts can be extended to whole amplitudes.
+<div style="font-size: x-large; float: center; margin-top: -2mm; margin-bottom: 0mm;">
+     Disclaimer: I will talk only about the $c_{\,\Gamma, i}^{(k)}(\lambda, \tilde\lambda)$, <br> nevertheless some concepts can be extended to whole amplitudes.
 </div>
 
-<div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
-     <b> Theoretical questions </b>
+<div style="font-size: x-large; float: left; margin-top: 10mm; margin-bottom: 0mm;">
+     $\circ$ Where are the poles? What is their order? Which ones are spurious?
 </div>
-
-<br>
-
-<div style="font-size: x-large; float: center; margin-top: 4mm; margin-bottom: 0mm;">
-     $\circ$ Where are the poles? $\quad \circ$ What is their order? $\quad \circ$ Which ones are spurious? <br>
-     $\circ$ Can we spot correlations between the alphabet letters?
-</div>
-
-<div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
-     <b> Practical Problems </b>
-</div>
-
-<br>
-
-<div style="font-size: x-large; float: center; margin-top: 4mm; margin-bottom: 0mm;">
-     $\circ$ How do we efficiently compute the rational coefficients? <br>
-     $\circ$ How do we make them stable and fast to evaluate?
+<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ$ How do we constrain analytic structure from the pole structure?
 </div>
 
 ---
@@ -249,16 +234,16 @@ $ \langle 12\rangle [12] = \langle 34\rangle [34]$
      $\phantom{\circ} \langle 23 \rangle$ does not identify an irreducible variety in $R_4$.
 </div>
 <br>
-<div style="font-size: x-large; float: left; margin-top: -22mm; margin-bottom: 0mm;">
+<div style="font-size: x-large; float: left; margin-top: -22mm; margin-bottom: 1mm;">
      $\phantom{\circ}$ Compute $\color{green}\text{primary decompositions}$, such as
 </div>
 <br>
 <div style="font-size: x-large; float: center; margin-top: -23.5mm; margin-bottom: 0mm;">
-     $\displaystyle \big\langle \langle 23\rangle \big\rangle_{R_4} = {\color{maroon} \big\langle \langle 23\rangle, [14] \big\rangle_{R_4}} \cap {\color{olive} \big\langle \langle 12\rangle, \langle 13 \rangle, \langle 14\rangle, \langle 23\rangle, \langle 24 \rangle, \langle 34 \rangle \big\rangle_{R_4}} $
+     $\displaystyle \big\langle \langle 23\rangle \big\rangle_{R_4} = {\color{orange} \big\langle \langle 23\rangle, [14] \big\rangle_{R_4}} \cap {\color{blue} \big\langle \langle 12\rangle, \langle 13 \rangle, \langle 14\rangle, \langle 23\rangle, \langle 24 \rangle, \langle 34 \rangle \big\rangle_{R_4}} $
 </div>
 <br>
 <div style="font-size: x-large; float: left; margin-top: -8mm; margin-bottom: 0mm;">
-     $\phantom{\circ}$ On the <b style="color: maroon"> first branch </b> there is a simple pole, on the <b style="color: olive"> latter branch </b> the amplitude is regular.
+     $\phantom{\circ}$ On the <b style="color: orange"> first branch </b> there is a simple pole, on the <b style="color: blue"> latter branch </b> the amplitude is regular.
 </div>
 
 <div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 5mm;">
@@ -279,7 +264,7 @@ $ \langle 12\rangle [12] = \langle 34\rangle [34]$
 </div>
 
 <div style="font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">
-     $\circ$ Pretend $\mathcal{N}$ is un unknown integral coefficient, $c_{\Gamma, i}$, it has 143 free parameters.
+     $\circ$ Pretend this is un unknown integral coefficient, $\mathcal{N}$ has 143 free parameters.
 </div>
 
 <div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 5mm;">
@@ -292,9 +277,12 @@ $ \langle 12\rangle [12] = \langle 34\rangle [34]$
      $ \big\langle \langle 12\rangle, \langle 23\rangle, \langle 13\rangle \big\rangle, \; \big\langle |1\rangle \big\rangle, \; \big\langle \langle 12\rangle, |1+2|3]\big\rangle, \dots$
 </div>
 
-<div style="font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">
+<div style="font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 2mm;">
      $\phantom{\circ}$ and impose that $\mathcal{N}$ vanishes to the correct order. We determine it up to an overall constant.
 </div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -2mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/.>
+     GDL, Page ('22)
+</a>
 
 <div style="font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">
      $\circ$ Likewise, for $A^{\text{tree}}_{g^+g^+g^+ g^-g^-g^-}$ that's $1326 \rightarrow 1$, etc..
@@ -310,96 +298,47 @@ $ \langle 12\rangle [12] = \langle 34\rangle [34]$
 
 <b style="font-variant: small-caps; font-size: xxx-large"> Partial Fraction Decompositions </b>
 
-<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 5mm;">
-     $\circ$ For integral coefficients, it's not trivial to obtain pole orders.
+<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     $\circ$ Partial fraction decompositions (PFDs) are a popular method to tame algebraic complexity.
 </div>
 
-<div style="font-size: x-large; float: left; margin-top: -5mm; margin-bottom: 5mm;">
-     $\phantom{\circ}$ Mostly because of the choice of $\mathbb{F}$, as $\mathbb{F}_p$ - due to nuemerical stability requirements.
+<div style="font-size: x-large; float: left; margin-top: 3mm; margin-bottom: 0mm;">
+     $\circ$ In my opinion, an a PFD algorithm needs
+</div>
+<br><br>
+<div style="font-size: x-large; float: center; margin-top: -3mm; margin-bottom: 5mm;">
+     $1.$ to say if two poles $W_a$ and $W_b$ are separable into different fractions; <br>
+     $2.$ to answer $(1.)$ without having access to an analytic expression. 
 </div>
 
+<div style="font-size: x-large; float: left; margin-top: 1mm; margin-bottom: 0mm;">
+     $\circ$ Hilbert's nullstellensatz: if $\mathcal{N}$ vanishes on all branches of $\langle W_a, W_b \rangle$, then the PFD is possible$\kern-3mm\phantom{x}^\dagger$.
+</div>
+<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ$ Generalizing to powers $>\kern-1mm 1$ is possible, but non-trivial (symbolic powers, Zariski-Nagata)
+</div>
 <a style="font-size: large; text-align: right; float: right; margin-top: -2mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1608.01902>
-Peraro ('16)
+   GDL, Page ('22)
+</a>
+<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ$ Generalizations to non-radical ideals (ring extensions)
+</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: 5mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1608.01902>
+   Campbell, GDL, Ellis ('22)
 </a>
 
-<a style="font-size: large; text-align: right; float: right; margin-top: -4mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1406.4513>
-     von Manteuffel, Schabinger ('14)
-</a>
-
-<br>
-
-<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 5mm;">
-     $\circ$ <b> Some </b> of these constraints can be formulated as partial fraction decompositions, but not all.
+<div style="font-size: x-large; float: left; margin-top: 10mm; margin-bottom: 0mm;">
+     <b> Issue: </b>evaluations on singular surfaces are expensive.
+</div>
+<div style="font-size: x-large; float: left; margin-top: 1mm; margin-bottom: 0mm;">
+     <b> Opportunity: </b>we get more than partial fraction decompositions.
 </div>
 
-<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 5mm;">
-     $\circ$ 	       
+<br><br><br><br><br>
+
+<div style="font-size: large; float: center; margin-top: 5mm; margin-bottom: 5mm;">
+     $\kern-4mm\phantom{x}^\dagger$ $\langle W_a, W_b\rangle$ needs to be radical.
 </div>
-
-<br>
-
-<div style="font-size: x-large; float: center; margin-top: 5mm; margin-bottom: 5mm;">
-     <i> This answer can be obtained from numerical samples, analytics is not required. </i>
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 20mm;"> Finite remainders \& the <br> <span style="color: orange">Rational</span> / <span style="color: red">Transcendental</span> split </b>
-
-<!---
-<div style="text-align: left; font-size: x-large; float: left; margin-bottom: 10mm; margin-top: 10mm">Decomposition in terms of <b> master integrals </b> </div>
-<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 10mm" href=https://arxiv.org/abs/0712.1851>Ellis, Zanderighi</a>
-<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 10mm" href=https://arxiv.org/abs/hep-ph/9212308>Bern, Dixon, Kosower;&nbsp</a>
-<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 10mm" href=https://www.sciencedirect.com/science/article/pii/0550321379906059?ref=pdf_download&fr=RR-2&rr=7c4afcac1f343b58>'t Hooft, Veltman;&nbsp</a>
-
-<div style="font-size: x-large; margin-top: 10mm;">
-$$A^{1-\text{loop},D=4}_{n} = \sum_i \color{orange}{d_i} \color{red}{I^i_{Box}} + \sum_i \color{orange}{c_i} \color{red}{I^i_{Triangle}} + \sum_i \color{orange}{b_i} \color{red}{I^i_{Bubble}} + \sum_i \color{orange}{a_i} \color{red}{I^i_{Tadpoles}} + \color{orange}{R}$$
-</div>
-
-<div style="width:90%; float: center; display: inline-block;">
-       <img src="one-loop-decomposition-transparent.png"; style="max-width:750px;float:center;border:none;margin-top:-5px;">
-</div>
---->
-
-<div style="text-align: left; font-size: x-large; margin-bottom: 5mm;">
-     $\circ$ In general, in $D= 4- 2 \epsilon$, with <i>pure</i> master integrals $I_{\Gamma, i}$ we have
-</div>
-
-<div style="font-size: x-large; margin-top: 5mm; margin-bottom:5mm">
-$$ A^{\ell-loop}_n(\lambda, \tilde\lambda) = \sum_\Gamma \sum_{i \in M_\Gamma} \frac{\color{orange}{c_{\,\Gamma, i}}(\lambda, \tilde\lambda, \epsilon) \, \color{red}{I_{\Gamma, i}}(\lambda\tilde\lambda, \epsilon)}{\prod_j (\epsilon - a_{ij})}\;, \quad \text{with} \quad a_{ij} \in \mathbb{Q}$$
-</div>
-
-<div style="text-align: left; font-size: x-large; margin-bottom: 5mm;">
-     $\circ$ For NNLO applications, we are interested in the <i>finite remainder</i>
-</div>
-
-<div style="font-size: x-large; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\mathcal{A}^{(2)}_R = \underbrace{\mathcal{R}}_{\text{finite remainder}} + \underbrace{I^{(1)}\mathcal{A}^{(1)}_R \quad + \quad I^{(2)}\mathcal{A}^{(0)}_R}_{\text{divergent + convention-dependent finite part}} + \mathcal{O}(\epsilon)
-$$
-</div>
-
-<div style="text-align: left; font-size: x-large; margin-bottom: 5mm;">
-     $\circ$ Finite remainder as a weighted sum of <i>pentagon functions</i> <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 4mm; " href=https://arxiv.org/abs/2009.07803> Chicherin, Sotnikov ('20);&nbsp; </a>
-</div>
-
-<div style="font-size: x-large; margin-top: 5mm; margin-bottom: 5mm">
-$$ 
-\textstyle \mathcal{R}(\lambda, \tilde\lambda) = \sum_i \color{orange}{r_{i}(\lambda,\tilde\lambda)} \, \color{red}{h_i(\lambda\tilde\lambda)}
-$$
-</div>
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 0mm;">
-    Reconstruct $\color{orange}{r_{i}(\lambda,\tilde\lambda)}$ from $\mathbb{F}_p$ samples
-</div>
-
-<a style="font-size: large; text-align: right; float: right; margin-top: -14mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1608.01902>
-Peraro ('16)
-</a>
-
-<a style="font-size: large; text-align: right; float: right; margin-top: -20mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1406.4513>
-     von Manteuffel, Schabinger ('14)
-</a>
-
 
 <!---
 
@@ -505,81 +444,6 @@ $\circ\,$ In least-common-denominator (LCD) form, we have
      <div style="margin-bottom: 3mm;"> $\star$ the LCD is <b>not</b> little group invariant: the degree is lower in spinors;  </div>
      <div style="margin-bottom: 3mm;"> $\star$ no (arbitrary) split into parity even and odd: half sampling requirement; </div>
      $\star$ in <u>LCD form</u> we would need $\color{green}29\,059$ evaluations instead of $\color{red}117\,810$ (with $s_{ij}$) for $\mathcal{R}^{(2)}_{2q3\gamma}$ .
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: xxx-large"> The Numerator Ansatz </b>
-
-<div style="text-align: left; font-size: x-large; margin-top: 1mm; margin-bottom: 2mm; ">
-$\circ\,$ The numerator Ansatz takes the form
-</div>
-<a style="font-size: large; text-align: right; float: right; margin-top: -6mm; margin-bottom: 4mm;" href=https://arxiv.org/abs/1904.04067>
-   GDL, Maître ('19)
-</a>
-<div style="text-align: center; font-size: x-large; margin-bottom: 5mm; margin-top: 1mm;">
-$\displaystyle \text{Num. poly}(\lambda, \tilde\lambda) = \sum_{\vec \alpha, \vec \beta} c_{(\vec\alpha,\vec\beta)} \prod_{j=1}^n\prod_{i=1}^{j-1} \langle ij\rangle^{\alpha_{ij}} [ij]^{\beta_{ij}}$
-</div>
-<div style="text-align: left; font-size: x-large; float: left; margin-top: -2mm; margin-bottom: 0mm;">
-     $\phantom{\circ}$ subject to constraints on $\vec\alpha,\vec\beta$ due to: 1) mass dimension; 2) little group; 3) linear independence.
-</div>
-
-<br>
-
-<div style="text-align: left; font-size: x-large; ">
-$\circ\,$ Construct the Ansatz via the algorithm from Section 2.2 of <a href=https://arxiv.org/abs/2203.04269>GDL, Page ('22)</a>
-</div>
-<div style="text-align: center; display: inline-block; font-size: x-large;">
-Linear independence = irreducibility by the Gröbner basis of a specific ideal.
-</div>
-
-<!---
-<div style="text-align: center; font-size: x-large; margin-bottom: 5mm; margin-top: 5mm;">
-$
-\begin{align}
-	\textstyle \sum_{j=1}^n\sum_{i=1}^{j-1} (\alpha_{ij} + \beta_{ij}) & = d \quad \text{: mass dimension} \\[2mm]
-	\textstyle \sum_{j=1}^n\sum_{i=1}^{j-1} \alpha_{ij}\underbrace{\{\langle ij \rangle\}_k}_{\delta_{ik}+\delta_{jk}} + \beta_{ij}\underbrace{\{[ij]\}_k}_{-\delta_{ik}-\delta_{jk}} & = \phi_k \quad \text{: k}^{th}\text{ little group weight}
-\end{align}
-$
-</div>
---->
-
-<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 0mm;">
-$\circ\,$ Efficient implementation using open-source software only
-</div>
-<div style="display:block; width:100%; margin-left: -10mm; margin-top: 0mm;">
-     <!---
-	<div style="width:15%; font-size: x-large; float: left; display: inline-block;">
-	     <div style="margin-top: 10mm; margin-bottom: 6mm;"> <code> Lips </code> </div>
-	     <div style="margin-top: 0mm; margin-bottom: 0mm;"> Spinor ideal </div>
-	     <a style="font-size: large; text-align: center; float: center; margin-top: 0mm; margin-bottom: 5mm;"
-	     href=https://arxiv.org/abs/2305.14075>
-		GDL ('23)
-	     </a>	    
-	</div>
-    --->
-	<div style="width:50%; font-size: x-large; float: left; display: inline-block;">
-	     <img src="SingularLogo.png"; style="max-width:300px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;"> <br>
-	     Gröbner bases $\rightarrow$ constrain $\vec\alpha,\vec\beta$ <br>
-	     <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
-	     href=https://www.singular.uni-kl.de/index.php.html>
-		Decker, Greuel, Pfister, Schönemann
-	     </a>	    
-	</div>
-	<div style="width:50%; font-size: x-large; float: right; display: inline-block; ">
-	     <img src="GoogleORToolsLogo.png"; style="max-width:300px; float:center; border:none; margin-top: 7mm; margin-bottom: 2mm;"> <br>
-	     Integer programming $\rightarrow$ enumerate sols. $\vec\alpha,\vec\beta$ <br>
-	     <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
-	     href=https://www.singular.uni-kl.de/index.php.html>
-		Perron and Furnon (Google optimization team)
-	     </a>
-	</div>
-</div>
-
-<br><br><br><br>
-
-<div style="text-align: left; font-size: x-large; margin-top: -2mm;">
-$\circ\,$ All linear systems solved with CUDA over $\mathbb{F}_{p\leq 2^{31}-1}$ on a laptop ($t_{\text{solving}} \ll t_{\text{sampling}}$)
 </div>
 
 ---
@@ -826,3 +690,141 @@ $$\small \kern-30mm \sqrt{\big\langle {\color{orange}⟨3|1+4|2]}, {\color{red}�
 
 </section>
 ---
+
+---
+<section>
+
+# Backup Slides
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 20mm;"> Finite remainders \& the <br> <span style="color: orange">Rational</span> / <span style="color: red">Transcendental</span> split </b>
+
+<!---
+<div style="text-align: left; font-size: x-large; float: left; margin-bottom: 10mm; margin-top: 10mm">Decomposition in terms of <b> master integrals </b> </div>
+<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 10mm" href=https://arxiv.org/abs/0712.1851>Ellis, Zanderighi</a>
+<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 10mm" href=https://arxiv.org/abs/hep-ph/9212308>Bern, Dixon, Kosower;&nbsp</a>
+<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 10mm" href=https://www.sciencedirect.com/science/article/pii/0550321379906059?ref=pdf_download&fr=RR-2&rr=7c4afcac1f343b58>'t Hooft, Veltman;&nbsp</a>
+
+<div style="font-size: x-large; margin-top: 10mm;">
+$$A^{1-\text{loop},D=4}_{n} = \sum_i \color{orange}{d_i} \color{red}{I^i_{Box}} + \sum_i \color{orange}{c_i} \color{red}{I^i_{Triangle}} + \sum_i \color{orange}{b_i} \color{red}{I^i_{Bubble}} + \sum_i \color{orange}{a_i} \color{red}{I^i_{Tadpoles}} + \color{orange}{R}$$
+</div>
+
+<div style="width:90%; float: center; display: inline-block;">
+       <img src="one-loop-decomposition-transparent.png"; style="max-width:750px;float:center;border:none;margin-top:-5px;">
+</div>
+--->
+
+<div style="text-align: left; font-size: x-large; margin-bottom: 5mm;">
+     $\circ$ In general, in $D= 4- 2 \epsilon$, with <i>pure</i> master integrals $I_{\Gamma, i}$ we have
+</div>
+
+<div style="font-size: x-large; margin-top: 5mm; margin-bottom:5mm">
+$$ A^{\ell-loop}_n(\lambda, \tilde\lambda) = \sum_\Gamma \sum_{i \in M_\Gamma} \frac{\color{orange}{c_{\,\Gamma, i}}(\lambda, \tilde\lambda, \epsilon) \, \color{red}{I_{\Gamma, i}}(\lambda\tilde\lambda, \epsilon)}{\prod_j (\epsilon - a_{ij})}\;, \quad \text{with} \quad a_{ij} \in \mathbb{Q}$$
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-bottom: 5mm;">
+     $\circ$ For NNLO applications, we are interested in the <i>finite remainder</i>
+</div>
+
+<div style="font-size: x-large; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+\mathcal{A}^{(2)}_R = \underbrace{\mathcal{R}}_{\text{finite remainder}} + \underbrace{I^{(1)}\mathcal{A}^{(1)}_R \quad + \quad I^{(2)}\mathcal{A}^{(0)}_R}_{\text{divergent + convention-dependent finite part}} + \mathcal{O}(\epsilon)
+$$
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-bottom: 5mm;">
+     $\circ$ Finite remainder as a weighted sum of <i>pentagon functions</i> <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-top: 2mm; margin-left: 4mm; " href=https://arxiv.org/abs/2009.07803> Chicherin, Sotnikov ('20);&nbsp; </a>
+</div>
+
+<div style="font-size: x-large; margin-top: 5mm; margin-bottom: 5mm">
+$$ 
+\textstyle \mathcal{R}(\lambda, \tilde\lambda) = \sum_i \color{orange}{r_{i}(\lambda,\tilde\lambda)} \, \color{red}{h_i(\lambda\tilde\lambda)}
+$$
+</div>
+<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 0mm;">
+    Reconstruct $\color{orange}{r_{i}(\lambda,\tilde\lambda)}$ from $\mathbb{F}_p$ samples
+</div>
+
+<a style="font-size: large; text-align: right; float: right; margin-top: -14mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1608.01902>
+Peraro ('16)
+</a>
+
+<a style="font-size: large; text-align: right; float: right; margin-top: -20mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1406.4513>
+     von Manteuffel, Schabinger ('14)
+</a>
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> The Numerator Ansatz </b>
+
+<div style="text-align: left; font-size: x-large; margin-top: 1mm; margin-bottom: 2mm; ">
+$\circ\,$ The numerator Ansatz takes the form
+</div>
+<a style="font-size: large; text-align: right; float: right; margin-top: -6mm; margin-bottom: 4mm;" href=https://arxiv.org/abs/1904.04067>
+   GDL, Maître ('19)
+</a>
+<div style="text-align: center; font-size: x-large; margin-bottom: 5mm; margin-top: 1mm;">
+$\displaystyle \text{Num. poly}(\lambda, \tilde\lambda) = \sum_{\vec \alpha, \vec \beta} c_{(\vec\alpha,\vec\beta)} \prod_{j=1}^n\prod_{i=1}^{j-1} \langle ij\rangle^{\alpha_{ij}} [ij]^{\beta_{ij}}$
+</div>
+<div style="text-align: left; font-size: x-large; float: left; margin-top: -2mm; margin-bottom: 0mm;">
+     $\phantom{\circ}$ subject to constraints on $\vec\alpha,\vec\beta$ due to: 1) mass dimension; 2) little group; 3) linear independence.
+</div>
+
+<br>
+
+<div style="text-align: left; font-size: x-large; ">
+$\circ\,$ Construct the Ansatz via the algorithm from Section 2.2 of <a href=https://arxiv.org/abs/2203.04269>GDL, Page ('22)</a>
+</div>
+<div style="text-align: center; display: inline-block; font-size: x-large;">
+Linear independence = irreducibility by the Gröbner basis of a specific ideal.
+</div>
+
+<!---
+<div style="text-align: center; font-size: x-large; margin-bottom: 5mm; margin-top: 5mm;">
+$
+\begin{align}
+	\textstyle \sum_{j=1}^n\sum_{i=1}^{j-1} (\alpha_{ij} + \beta_{ij}) & = d \quad \text{: mass dimension} \\[2mm]
+	\textstyle \sum_{j=1}^n\sum_{i=1}^{j-1} \alpha_{ij}\underbrace{\{\langle ij \rangle\}_k}_{\delta_{ik}+\delta_{jk}} + \beta_{ij}\underbrace{\{[ij]\}_k}_{-\delta_{ik}-\delta_{jk}} & = \phi_k \quad \text{: k}^{th}\text{ little group weight}
+\end{align}
+$
+</div>
+--->
+
+<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 0mm;">
+$\circ\,$ Efficient implementation using open-source software only
+</div>
+<div style="display:block; width:100%; margin-left: -10mm; margin-top: 0mm;">
+     <!---
+	<div style="width:15%; font-size: x-large; float: left; display: inline-block;">
+	     <div style="margin-top: 10mm; margin-bottom: 6mm;"> <code> Lips </code> </div>
+	     <div style="margin-top: 0mm; margin-bottom: 0mm;"> Spinor ideal </div>
+	     <a style="font-size: large; text-align: center; float: center; margin-top: 0mm; margin-bottom: 5mm;"
+	     href=https://arxiv.org/abs/2305.14075>
+		GDL ('23)
+	     </a>	    
+	</div>
+    --->
+	<div style="width:50%; font-size: x-large; float: left; display: inline-block;">
+	     <img src="SingularLogo.png"; style="max-width:300px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;"> <br>
+	     Gröbner bases $\rightarrow$ constrain $\vec\alpha,\vec\beta$ <br>
+	     <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
+	     href=https://www.singular.uni-kl.de/index.php.html>
+		Decker, Greuel, Pfister, Schönemann
+	     </a>	    
+	</div>
+	<div style="width:50%; font-size: x-large; float: right; display: inline-block; ">
+	     <img src="GoogleORToolsLogo.png"; style="max-width:300px; float:center; border:none; margin-top: 7mm; margin-bottom: 2mm;"> <br>
+	     Integer programming $\rightarrow$ enumerate sols. $\vec\alpha,\vec\beta$ <br>
+	     <a style="font-size: large; text-align: center; float: center; margin-top: -10mm; margin-bottom: 5mm;"
+	     href=https://www.singular.uni-kl.de/index.php.html>
+		Perron and Furnon (Google optimization team)
+	     </a>
+	</div>
+</div>
+
+<br><br><br><br>
+
+<div style="text-align: left; font-size: x-large; margin-top: -2mm;">
+$\circ\,$ All linear systems solved with CUDA over $\mathbb{F}_{p\leq 2^{31}-1}$ on a laptop ($t_{\text{solving}} \ll t_{\text{sampling}}$)
+</div>
