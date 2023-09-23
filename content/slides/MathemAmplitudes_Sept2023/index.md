@@ -35,12 +35,14 @@ slides:
 
 <div style="font-size: x-large; margin-top:10mm;">
 Giuseppe De Laurentis
-<br><br>
+<br>
+<div style="font-size: large;"> Paul Scherrer Institut / University of Edinburgh </div>
+<br>
 <a href="https://arxiv.org/abs/2203.04269">arXiv:2203.04269</a> <div style="font-size: large; margin-bottom: 10pt;"> (GDL, B. Page) </div>
 <a href="https://arxiv.org/abs/2305.17056">arXiv:2305.17056</a> <div style="font-size: large;"> (S. Abreu, GDL, H. Ita, M. Klinkert, B. Page, V. Sotnikov) </div>
 
 MathemAmplitudes 2023 - Padova
-<br><br>
+<br>
 <p style="line-height: 0.05;"> <img src="paul-scherrer-institute-psi-logo-vector-transparent.png"; style="max-width:303px;float:center;border:none;">  <img src="UniPadovaLogo-transparent.png"; style="max-width:120px;float:center;border:none;">
 <br><br>
 <font size=3>Find these slides at  <a href="/slides/mathemamplitudes_sept2023/#/">gdelaurentis.github.io/slides/mathemamplitudes_sept2023</a> </font size>
@@ -134,15 +136,15 @@ $$
 
 <br>
 
-<div style="font-size: x-large; float: left; margin-top: -15mm; margin-bottom: 0mm;">
+<div style="font-size: x-large; float: left; margin-top: -16mm; margin-bottom: 0mm;">
      $\circ$ Define the momentum-conservation ideal as
 </div>
-<div style="font-size: x-large; width:75%; float: left; text-align: center; display: inline-block; margin-top: -4mm;">
+<div style="font-size: x-large; width:75%; float: left; text-align: center; display: inline-block; margin-top: -8mm;">
      $$
      \displaystyle J_{\Lambda_n} = \Big\langle \sum_i |i⟩[i| \Big\rangle_{S_n}
      $$
 </div>
-<div style="width:40%; float: right; display: inline-block; margin-top: -65mm;">
+<div style="width:40%; float: right; display: inline-block; margin-top: -80mm;">
      <img src="V2.png"; style="max-width:250px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm; margin-left: 22mm;">
      <br>
      <div style="font-size: large; width:80%; float: center; text-align: center;  display: inline-block; margin-top: 0mm; margin-left: 22mm;">
@@ -150,14 +152,20 @@ $$
      </div>
 </div>
 <br>
-<div style="font-size: x-large; float: left; margin-top: -5mm; margin-bottom: 2mm;">
+<div style="font-size: x-large; float: left; margin-top: -4mm; margin-bottom: 2mm;">
      $\phantom{\circ}$ physically, two polynomials $p$ and $q$ are equivalent if $p-q\in J_{\Lambda_n}$
 </div>
 
 <br>
 
-<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ This defines a polynomial <b>quotient</b> ring: $\;R_n = S_n / J_{\Lambda_n} $
+<div style="font-size: x-large; float: left; margin-top: -4mm; margin-bottom: 0mm;">
+     $\circ$ This defines the needed polynomial <b>quotient</b> ring: $\;R_n = S_n / J_{\Lambda_n} $
+</div>
+
+<br>
+
+<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 0mm;">
+    $c^{(k)}_{\Gamma,i}$ at $n$-point belong to the Field of Fractions of $R_n$
 </div>
 
 ---
@@ -285,7 +293,7 @@ $ \langle 12\rangle [12] = \langle 34\rangle [34]$
 </a>
 
 <div style="font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">
-     $\circ$ Likewise, for $A^{\text{tree}}_{g^+g^+g^+ g^-g^-g^-}$ that's $1326 \rightarrow 1$, etc..
+     $\circ$ Likewise, the ansatz for $A^{\text{tree}}_{g^+g^+g^+ g^-g^-g^-}$ shrinks $1326 \rightarrow 1$, etc..
 </div>
 
 <br><br><br>
@@ -299,13 +307,17 @@ $ \langle 12\rangle [12] = \langle 34\rangle [34]$
 <b style="font-variant: small-caps; font-size: xxx-large"> Partial Fraction Decompositions </b>
 
 <div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     $\circ$ For true integral coefficients, we can't rely on the Ansatz to shrinks to an overall constant.
+</div>
+
+<div style="font-size: x-large; float: left; margin-top: 3mm; margin-bottom: 0mm;">
      $\circ$ Partial fraction decompositions (PFDs) are a popular method to tame algebraic complexity.
 </div>
 
 <div style="font-size: x-large; float: left; margin-top: 3mm; margin-bottom: 0mm;">
-     $\circ$ In my opinion, an a PFD algorithm needs
+     $\circ$ In my opinion, a PFD algorithm needs
 </div>
-<br><br>
+<br><br><br>
 <div style="font-size: x-large; float: center; margin-top: -3mm; margin-bottom: 5mm;">
      $1.$ to say if two poles $W_a$ and $W_b$ are separable into different fractions; <br>
      $2.$ to answer $(1.)$ without having access to an analytic expression. 
@@ -317,77 +329,48 @@ $ \langle 12\rangle [12] = \langle 34\rangle [34]$
 <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
      $\circ$ Generalizing to powers $>\kern-1mm 1$ is possible, but non-trivial (symbolic powers, Zariski-Nagata)
 </div>
-<a style="font-size: large; text-align: right; float: right; margin-top: -2mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1608.01902>
+<a style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/.>
    GDL, Page ('22)
 </a>
 <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ Generalizations to non-radical ideals (ring extensions)
+     $\circ$ Similarly, generalizing to non-radical ideals requires ring extensions
 </div>
-<a style="font-size: large; text-align: right; float: right; margin-top: 5mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1608.01902>
+<a style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm; margin-right: 33mm;" href=https://arxiv.org/abs/.>
    Campbell, GDL, Ellis ('22)
 </a>
 
-<div style="font-size: x-large; float: left; margin-top: 10mm; margin-bottom: 0mm;">
+<div style="font-size: x-large; float: left; margin-top: 7mm; margin-bottom: 0mm;">
      <b> Issue: </b>evaluations on singular surfaces are expensive.
 </div>
 <div style="font-size: x-large; float: left; margin-top: 1mm; margin-bottom: 0mm;">
      <b> Opportunity: </b>we get more than partial fraction decompositions.
 </div>
 
-<br><br><br><br><br>
+<br><br><br><br><br><br>
 
 <div style="font-size: large; float: center; margin-top: 5mm; margin-bottom: 5mm;">
      $\kern-4mm\phantom{x}^\dagger$ $\langle W_a, W_b\rangle$ needs to be radical.
 </div>
 
-<!---
-
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Analytics from Numerics </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> Beyond Partial Fractions </b>
 
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block;">
-    Problem: direct analytic computation of the $c_{i,\Gamma}$ is not feasible.
-</div>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">     
-     $\circ\,$ Floating-point evaluations ($\mathbb{R}$ or $\mathbb{C}$) would be sufficient for phenomenology. <br>
-     $\phantom{\circ}\,$ But they are so unstable, even this won't work.
+<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     $\circ$ Case 0: the ideal does not involve denominator factors
 </div>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">    
-     $\circ\,$ Could try rational inputs ($\mathbb{Q}$), but integers grow way too large at intermediate stages.
+<br>
+
+<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     $\circ$ Case 1: the degree of vanishing is non-uniform
 </div>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
-     $\circ\,$ <span style="color: green"> Finite fields </span> ($\mathbb{F}_p$) come to the rescue. <br>
-</div>
-<a style="font-size: large; text-align: right; float: right; margin-top: 5mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1608.01902>
-   Peraro ('16)
-</a>
-<a style="font-size: large; text-align: right; float: right; margin-top: 5mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1406.4513>
-   von Manteuffel, Schabinger ('14),&nbsp
-</a>
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 4mm;">
-     $\phantom{\circ}\,$ These are integers modulo a prime number $p$ (no precision issue!): <br>
-</div>
+<br>
 
-<div style="font-size: x-large; text-align: center; float: center; margin-top: 10mm; margin-left: 5mm;">
- $\phantom{\circ}\,$ $\mathbb{F}_p = \{0, 1, 2, \dots, p-1\} \quad \text{with operations} \quad \{+, -, \times, \div \}$
+<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     $\circ$ Case 2: ideal is non-radical
 </div>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 3mm; margin-bottom: 0mm;">
-     $\phantom{\circ}\,$ The prime $p$ needs to be large, to avoid accidental <tt> DivisionByZero </tt>.
-</div>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 3mm; margin-bottom: 0mm;">
-     $\circ\,$ But we can't do phenomenology with $\mathbb{F}_p$ ! <br><br>
-</div>
-
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block;">
-    Solution: sample $c_{i,\Gamma}$ in $\mathbb{F}_p$ $\;\Rightarrow\;$ reconstruct analytic expression for $c_{i,\Gamma}$
-</div>
---->
 
 </section>
 ---
@@ -398,6 +381,28 @@ $ \langle 12\rangle [12] = \langle 34\rangle [34]$
 {{< slide background-image="spinor_coeffs.png" >}}
 
 # Analytic Reconstruction
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> numpy.vectorize(Reconstruc) </b>
+<br>
+
+<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
+$\circ\,$ As standard, we pick a set of independent $r_i$ to reconstruct: $r_i \not\in \text{span}(r_{j\neq i})$. <br>
+$\phantom{\circ\,}$ However, generally $r_{ik} \in \text{span}(r_{j\neq i})$ for some, but not all, $k$. Thus, write:
+</div>
+<div style="font-size: x-large; padding: 10px; display: inline-block;">
+    $\displaystyle $
+</div>
+<div style="text-align: center; float:center; display: inline-block; font-size: x-large; margin-bottom: 2mm; margin-top: 2mm;">
+$\displaystyle r_i = \sum_{j\neq i} c_j r_j + \sum_{k' \subset \{k\}} r_{ik'}$
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> Least Least-Common-Denominator </b>
+<br>
+
 
 ---
 
@@ -493,12 +498,7 @@ $\circ$ For example, a posteriori, we find that for the most complicated $r_i$, 
 
 {{< slide background-image="W_distribution_and_diagrams.png">}}
 
-# Preview: <br> $pp\rightarrow Wjj$ Revisited
-
-<div style="font-size: x-large; margin-top:10mm;">
-in collaboration with: <br>
- H. Ita, B. Page, V. Sotnikov
-</div>
+# Example <br> processes
 
 ---
 
