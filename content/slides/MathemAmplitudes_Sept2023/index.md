@@ -77,7 +77,7 @@ $$
 <br>
 
 <div style="font-size: x-large; float: left; margin-top: -15mm; margin-bottom: 0mm;">
-     $\circ$ Focus on the rational coefficients $c_{\Gamma, i}$. For a suitable choice of integrands, we get:
+     $\circ$ For a suitable choice of integrands, we get:
 </div>
 <br>
 <div style="font-size: x-large; margin-top: -20mm; margin-bottom: 0mm">
@@ -104,14 +104,19 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Talk Outline</b>
+<b style="font-variant: small-caps; font-size: xxx-large"> Outline</b>
 
 <div style="font-size: x-large; float: center; margin-top: -2mm; margin-bottom: 0mm;">
-     Disclaimer: I will talk only about the $c_{\,\Gamma, i}^{(k)}(\lambda, \tilde\lambda)$, <br> nevertheless some concepts can be extended to whole amplitudes.
+     Disclaimer: I will focus on the $c_{\,\Gamma, i}^{(k)}(\lambda, \tilde\lambda)$ $-$ call them $c_i(\lambda, \tilde\lambda)$ for short, <br>
+     nevertheless some concepts can be extended to whole amplitudes.
 </div>
 
 <div style="font-size: x-large; float: left; margin-top: 10mm; margin-bottom: 0mm;">
-     $1.$ Where are the poles? What is their order? Which ones are spurious?
+     <b> We will discuss: </b>
+</div>
+<br><br>
+<div style="font-size: x-large; float: left; margin-top: -2mm; margin-bottom: 0mm;">
+     $1.$ Where are the poles? What is their order?	 
 </div>
 <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
      $2.$ Relation between pole structure, and analytic constriants (e.g. partial fraction decomposition)
@@ -123,10 +128,15 @@ $$
      $4.$ Example process @ 2-loop: $pp \rightarrow \gamma\gamma\gamma$, $pp \rightarrow Wjj$ (preliminary)
 </div>
 
-<br><br><br><br><br>
+<br><br><br><br>
 
-<div style="font-size: x-large; float: center; margin-top: 2mm; margin-bottom: 0mm;">
-     Take away:
+<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     <b> Key take away: </b>
+</div>
+<br>
+<div style="font-size: x-large; float: center; margin-top: 0mm; margin-bottom: 0mm;">
+     What is important is not the number of variables, <br>
+     but the size of the parametrization (a.k.a. Ansatz), and our ability to constrain it.	 
 </div>
 
 ---
@@ -171,43 +181,18 @@ $$
 <br>
 
 <div style="font-size: x-large; float: left; margin-top: -4mm; margin-bottom: 0mm;">
-     $\circ$ This defines the needed polynomial <b>quotient</b> ring: $\;R_n = S_n / J_{\Lambda_n} $
+     $\circ$ This defines the needed polynomial <b>quotient</b> ring$\kern-4mm\phantom{x}^{\star}$: $\;R_n = S_n / J_{\Lambda_n} $
 </div>
 
 <br>
 
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 0mm;">
-    $c^{(k)}_{\Gamma,i}$ at $n$-point belong to the Field of Fractions of $R_n$
+<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: -4mm;">
+    $c^{(k)}_{\Gamma,i}$ at $n$-point belong to the Field of Fractions$\kern-4mm\phantom{x}^{\dagger}$ of $R_n$
 </div>
 
----
-
-<b style="font-variant: small-caps; font-size: xxx-large;"> What about changing variables?  </b>
-
-<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ Can we get rid of equivalence relations (redundancies) by changing variables? <br>
-     $\phantom{\circ}$ In other words, can we solve the redundancies and turn the quotient ring in a ring?
-</div>
-<br>
-
-
-<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     With four-point massless kinematics, you cannot. In $R_4$ we have
-</div>
-
-<br>
-
-$ \langle 12\rangle [12] = \langle 34\rangle [34]$
-
-<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     this means that $R_4$ is <u>not</u> a unique factorization domain (UFD). <br>
-     All polynomial rings are UFDs, so $R_4$ cannot be isomorphic to one.
-</div>
-
-<br>
-
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 3mm;">
-    $c_{\Gamma,i}(\lambda,\tilde\lambda) \in \text{Field of Fractions}(R_n)$
+<div style="font-size: large; float: center; margin-top: 5mm; margin-bottom: 5mm;">
+     $\kern-4mm\phantom{x}^\star R_4$ is "weird", but it proves that polynomial rings are not sufficient;
+     $\quad\kern-4mm\phantom{x}^\dagger$ The field of fractions of $R_3$ does not exist.
 </div>
 
 </section>
@@ -273,7 +258,7 @@ $ \langle 12\rangle [12] = \langle 34\rangle [34]$
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Constraints from Poles </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> Bootstrapping Trees (?) </b>
 
 <div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 8mm;">
      $\circ$ The degree of divergence / vanishing on various surfaces imposes strong constraints, e.g.
@@ -396,23 +381,33 @@ $ \langle 12\rangle [12] = \langle 34\rangle [34]$
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> numpy.vectorize(Reconstruc) </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> Choosing Independent Functions </b>
 <br>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-$\circ\,$ As standard, we pick a set of independent $r_i$ to reconstruct: $r_i \not\in \text{span}(r_{j\neq i})$. <br>
-$\phantom{\circ\,}$ However, generally $r_{ik} \in \text{span}(r_{j\neq i})$ for some, but not all, $k$. Thus, write:
+     $\circ$ The set $c_{\Gamma,i}$ can be very large, so pick a set of independent ones, and write:
+</div>
+<div style="text-align: center; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
+     $\displaystyle c_{\Gamma,i} = \tilde{c}_{\Gamma,j} M_{ji} \quad \text{with} \quad M_{ji} \in \mathbb{Q}$ 
+</div>
+<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
+     $\phantom{\circ}$ with $\tilde{c}^{(k)}_{\Gamma,j}$ an independent subset of $c^{(k)}_{\Gamma,i}$. <br>
+     $\phantom{\circ}\Rightarrow$ $M_{ji}$ is, up to a permutation of columns, in row reduced echelon form.
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
+     $\circ$ We might as well use a set $\tilde{c}^{(k)}_{\Gamma,j}$ which is not a subset of $c^{(k)}_{\Gamma,i}$, <br>
+     $\phantom{\circ}$ at the trivial cost of having a different $M_{ji}$.
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
+     $\circ$ Consider a PFD of one of the $\tilde{c}^{(k)}_{\Gamma,i}$ - call it $c_i$ for short
 </div>
 <div style="font-size: x-large; padding: 10px; display: inline-block;">
-    $\displaystyle $
+    $\displaystyle c_i(\lambda,\tilde\lambda) = \frac{\mathcal{N}_i(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ij}}(\lambda,\tilde\lambda)} = \sum_k \frac{\mathcal{N}_{ik}(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ijk}}(\lambda,\tilde\lambda)} = \sum_k c_{ik}(\lambda,\tilde\lambda)$
 </div>
-<div style="text-align: center; float:center; display: inline-block; font-size: x-large; margin-bottom: 2mm; margin-top: 2mm;">
-$\displaystyle r_i = \sum_{j\neq i} c_j r_j + \sum_{k' \subset \{k\}} r_{ik'}$
-</div>
-
-
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 0mm;">
-    Reconstructing a set of $c^{(k)}_{\Gamma,i}$ is not as bad as reconstructing the most complex function in the set.
+<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
+     $\phantom{\circ}$ We cannot have $c_i \in \text{span}(c_{j\neq i})$, but we can have $c_{ik} \in \text{span}(c_{j\neq i})$, for some, but not all, $k$.
 </div>
 
 ---
@@ -421,29 +416,28 @@ $\displaystyle r_i = \sum_{j\neq i} c_j r_j + \sum_{k' \subset \{k\}} r_{ik'}$
 <br>
 
 
+<div style="text-align: center; float:center; display: inline-block; font-size: x-large; margin-bottom: 2mm; margin-top: 2mm;">
+$\displaystyle \tilde{c}_i = \sum_{j\neq i} q_j \tilde{c}_j + c'_{i}$
+</div>
+
+
+<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 0mm;">
+    Reconstructing a set of $c^{(k)}_{\Gamma,i}$ is not as bad as reconstructing the most complex function in the set.
+</div>
+
+</section>
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Five-Point Massless Remainders </b>
+---
+<section>
+
+{{< slide background-image="W_distribution_and_diagrams.png">}}
+
+# Example <br> processes
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> Three-photon production at two loops </b>
 <br>
-
-<!---
-<div style="text-align: left; font-size: x-large; margin-bottom: 4mm;">
-$\circ\,$ In least-common-denominator (LCD) form, we have
-</div>
---->
-
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">
-     $\circ\,$ The $r_i(\lambda,\tilde\lambda)$ belong to the field of fractions over a poly. quotient ring, $FF(R_5)$
-</div>
-<a style="font-size: large; text-align: right; float: right; margin-top: 10mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/2203.04269>
-   GDL, Page ('22);&nbsp
-</a> 
-<a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/2203.17170>
-   Campbell, GDL, Ellis ('22)$\phantom{;\,}$
-</a>
-<div style="font-size: x-large; padding: 10px; display: inline-block;">
-    $\displaystyle r_i(\lambda,\tilde\lambda) = \frac{\text{Num. poly}(\lambda,\tilde\lambda)}{\text{Denom. poly}(\lambda,\tilde\lambda)} = \frac{\text{Num. poly}(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ij}}(\lambda,\tilde\lambda)}$
-</div>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
      $\circ\,$ The denominator factors $W_j$ are conjectured to be restricted to the letters of the symbol alphabet
@@ -459,7 +453,7 @@ $\circ\,$ In least-common-denominator (LCD) form, we have
 </div>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 2mm;">
-     $\circ\,$ Why bother with (redundant) spinor variables:
+     $\circ\,$ Advantages of spinor variables:
 </div>
 <br><br>
 <div style="font-size: x-large; text-align: left; float: center; display: inline-block; margin-top: -10mm; margin-bottom: 2mm;">
@@ -507,16 +501,6 @@ $\circ$ For example, a posteriori, we find that for the most complicated $r_i$, 
     $\displaystyle \sum_{k' \subset \{k\}} r_{ik'} = \frac{⟨13⟩[14]^2⟨24⟩⟨34⟩[45]}{⟨45⟩⟨4|1+3|4]^3}-\frac{[14]⟨25⟩⟨34⟩^2[45]}{⟨45⟩^2⟨4|1+3|4]^2}-\frac{[14]⟨24⟩⟨34⟩⟨35⟩}{⟨45⟩^3⟨4|1+3|4]}$
 </div>
 
-</section>
----
-
----
-<section>
-
-{{< slide background-image="W_distribution_and_diagrams.png">}}
-
-# Example <br> processes
-
 ---
 
 <b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 5mm;">
@@ -557,7 +541,7 @@ $\circ\,$ The anlytic expressions of <a href="https://arxiv.org/abs/2110.07541">
 ---
 
 <b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 5mm;">
-   Simplification strategy
+   Simplification strategy for $pp\rightarrow Wjj$
 </b>
 
 <div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
@@ -844,4 +828,65 @@ $\circ\,$ Efficient implementation using open-source software only
 
 <div style="text-align: left; font-size: x-large; margin-top: -2mm;">
 $\circ\,$ All linear systems solved with CUDA over $\mathbb{F}_{p\leq 2^{31}-1}$ on a laptop ($t_{\text{solving}} \ll t_{\text{sampling}}$)
+</div>
+
+
+---
+
+<b style="font-variant: small-caps; font-size: xx-large;"> Polynomial Quotient Rings <br> vs. <br> Polynomial Rings  </b>
+
+<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ$ Can we get rid of equivalence relations (redundancies) by changing variables? <br>
+     $\phantom{\circ}$ In other words, can we solve the redundancies and turn the quotient ring in a ring?
+</div>
+<br>
+
+
+<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+     With four-point massless kinematics, you cannot. In $R_4$ we have
+</div>
+
+<br>
+
+$ \langle 12\rangle [12] = \langle 34\rangle [34]$
+
+<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+     this means that $R_4$ is <u>not</u> a unique factorization domain (UFD). <br>
+     All polynomial rings are UFDs, so $R_4$ cannot be isomorphic to one.
+</div>
+
+<br>
+
+<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 3mm;">
+    $c_{\Gamma,i}(\lambda,\tilde\lambda) \in \text{Field of Fractions}(R_n)$
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large;"> The Field of Fractions of $R_3$ does not exists  </b>
+
+<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+     $\circ$ Can we get rid of equivalence relations (redundancies) by changing variables? <br>
+     $\phantom{\circ}$ In other words, can we solve the redundancies and turn the quotient ring in a ring?
+</div>
+<br>
+
+
+<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+     With four-point massless kinematics, you cannot. In $R_4$ we have
+</div>
+
+<br>
+
+$ \langle 12\rangle [12] = \langle 34\rangle [34]$
+
+<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+     this means that $R_4$ is <u>not</u> a unique factorization domain (UFD). <br>
+     All polynomial rings are UFDs, so $R_4$ cannot be isomorphic to one.
+</div>
+
+<br>
+
+<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 3mm;">
+    $c_{\Gamma,i}(\lambda,\tilde\lambda) \in \text{Field of Fractions}(R_n)$
 </div>
