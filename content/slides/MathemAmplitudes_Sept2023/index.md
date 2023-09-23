@@ -111,10 +111,22 @@ $$
 </div>
 
 <div style="font-size: x-large; float: left; margin-top: 10mm; margin-bottom: 0mm;">
-     $\circ$ Where are the poles? What is their order? Which ones are spurious?
+     $1.$ Where are the poles? What is their order? Which ones are spurious?
 </div>
 <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ How do we constrain analytic structure from the pole structure?
+     $2.$ Relation between pole structure, and analytic constriants (e.g. partial fraction decomposition)
+</div>
+<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+     $3.$ Reconstructing sets of functions: Why is it easier than reconstructing individual ones?
+</div>
+<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+     $4.$ Example process @ 2-loop: $pp \rightarrow \gamma\gamma\gamma$, $pp \rightarrow Wjj$ (preliminary)
+</div>
+
+<br><br><br><br><br>
+
+<div style="font-size: x-large; float: center; margin-top: 2mm; margin-bottom: 0mm;">
+     Take away:
 </div>
 
 ---
@@ -396,6 +408,11 @@ $\phantom{\circ\,}$ However, generally $r_{ik} \in \text{span}(r_{j\neq i})$ for
 </div>
 <div style="text-align: center; float:center; display: inline-block; font-size: x-large; margin-bottom: 2mm; margin-top: 2mm;">
 $\displaystyle r_i = \sum_{j\neq i} c_j r_j + \sum_{k' \subset \{k\}} r_{ik'}$
+</div>
+
+
+<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 0mm;">
+    Reconstructing a set of $c^{(k)}_{\Gamma,i}$ is not as bad as reconstructing the most complex function in the set.
 </div>
 
 ---
