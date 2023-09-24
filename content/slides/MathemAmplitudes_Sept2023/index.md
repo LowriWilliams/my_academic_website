@@ -136,13 +136,12 @@ $$
 <br>
 <div style="font-size: x-large; float: center; margin-top: 0mm; margin-bottom: 0mm;">
      What is important is not the number of variables, <br>
-     but the size of the parametrization (a.k.a. Ansatz), and our ability to constrain it.	 
+     but the size of the parametrization (a.k.a. ansatz), and our ability to constrain it.	 
 </div>
 
 ---
 
 <b style="font-variant: small-caps; font-size: xxx-large;"> Polynomial Quotient Rings  </b>
-
 
 <div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
      $\circ$ Let us start from the polynomial ring of spinor components
@@ -174,25 +173,22 @@ $$
      </div>
 </div>
 <br>
-<div style="font-size: x-large; float: left; margin-top: -4mm; margin-bottom: 2mm;">
+<div style="font-size: x-large; float: left; margin-top: -4mm; margin-bottom: 9mm;">
      $\phantom{\circ}$ physically, two polynomials $p$ and $q$ are equivalent if $p-q\in J_{\Lambda_n}$
 </div>
 
 <br>
 
-<div style="font-size: x-large; float: left; margin-top: -4mm; margin-bottom: 0mm;">
+<div style="font-size: x-large; float: left; margin-top: -4mm; margin-bottom: 1mm;">
      $\circ$ This defines the needed polynomial <b>quotient</b> ring$\kern-4mm\phantom{x}^{\star}$: $\;R_n = S_n / J_{\Lambda_n} $
 </div>
-
-<br>
-
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: -4mm;">
-    $c^{(k)}_{\Gamma,i}$ at $n$-point belong to the Field of Fractions$\kern-4mm\phantom{x}^{\dagger}$ of $R_n$
+<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 4mm;">
+    $c_i(\lambda, \tilde\lambda)$ at $n$-point belong to the Field of Fractions$\kern-4mm\phantom{x}^{\dagger}$ of $R_n$
 </div>
 
 <div style="font-size: large; float: center; margin-top: 5mm; margin-bottom: 5mm;">
-     $\kern-4mm\phantom{x}^\star R_4$ is "weird", but it proves that polynomial rings are not sufficient;
-     $\quad\kern-4mm\phantom{x}^\dagger$ The field of fractions of $R_3$ does not exist.
+     $\kern-4mm\phantom{x}^\star R_4$ is "weird" (not a UFD), but it proves that polynomial rings are insufficient;
+     $\;\kern-4mm\phantom{x}^\dagger$ The field of fractions of $R_3$ does not exist.
 </div>
 
 </section>
@@ -225,25 +221,23 @@ $$
      <img src="ReducibleVariety-no-background.png"; style="max-width:250px; float:center; border:none; margin-top: 0mm; margin-bottom: 0mm; margin-left: 22mm;">
      <br>
      <div style="font-size: large; width:80%; float: center; text-align: center;  display: inline-block; margin-top: 0mm; margin-left: 22mm;">
-     	  Artist's Impression of $V(\big\langle \langle 23 \rangle\big\rangle_{R_4})$
+     	  Artist's Impression of $V(\big\langle \langle 23 \rangle\big\rangle_{R_4})$ <br>
+	  as the union of two irreducibles
      </div>
 </div>
 
 <br>
 
-<div style="font-size: x-large; float: left; margin-top: -12mm; margin-bottom: 0mm;">
+<div style="font-size: x-large; float: left; margin-top: -14mm; margin-bottom: 1mm;">
      $\circ$ The question is ill posed!
 </div>
-<br>
-<div style="font-size: x-large; float: left; margin-top: -17mm; margin-bottom: 0mm;">
+<div style="font-size: x-large; float: left; margin-top: -5mm; margin-bottom: 1mm;">
      $\phantom{\circ} \langle 23 \rangle$ does not identify an irreducible variety in $R_4$.
 </div>
-<br>
-<div style="font-size: x-large; float: left; margin-top: -22mm; margin-bottom: 1mm;">
+<div style="font-size: x-large; float: left; margin-top: -1mm; margin-bottom: 1mm;">
      $\phantom{\circ}$ Compute $\color{green}\text{primary decompositions}$, such as
 </div>
-<br>
-<div style="font-size: x-large; float: center; margin-top: -23.5mm; margin-bottom: 0mm;">
+<div style="font-size: x-large; float: center; margin-top: 22mm; margin-bottom: 0mm;">
      $\displaystyle \big\langle \langle 23\rangle \big\rangle_{R_4} = {\color{orange} \big\langle \langle 23\rangle, [14] \big\rangle_{R_4}} \cap {\color{blue} \big\langle \langle 12\rangle, \langle 13 \rangle, \langle 14\rangle, \langle 23\rangle, \langle 24 \rangle, \langle 34 \rangle \big\rangle_{R_4}} $
 </div>
 <br>
@@ -258,7 +252,9 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Bootstrapping Trees (?) </b>
+<b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: -5mm;"> Constraints from Poles </b>
+<br>
+<b style="font-variant: small-caps; font-size: x-large; margin-top: -16mm;"> Bootstrapping trees (?) </b>
 
 <div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 8mm;">
      $\circ$ The degree of divergence / vanishing on various surfaces imposes strong constraints, e.g.
@@ -295,8 +291,8 @@ $$
 
 <br><br><br>
 
-<div style="font-size: x-large; float: center; margin-top: 0mm; margin-bottom: 0mm;">
-     <i> Effectively we can <b> compute </b> trees, just from their <u>poles orders</u>. <br> Note: compared to BCFW there is <u>no</u> information about <u>residues</u>. </i>
+<div style="font-size: x-large; float: center; margin-top: -2mm; margin-bottom: 0mm;">
+     <i> Effectively, we can <b> compute </b> trees, just from their <u>poles orders</u>. <br> Note: compared to BCFW there is <u>no</u> information about <u>residues</u>. </i>
 </div>
 
 ---
@@ -317,27 +313,27 @@ $$
 <br><br><br>
 <div style="font-size: x-large; float: center; margin-top: -3mm; margin-bottom: 5mm;">
      $1.$ to say if two poles $W_a$ and $W_b$ are separable into different fractions; <br>
-     $2.$ to answer $(1.)$ without having access to an analytic expression. 
+     $2.$ ideally, to answer $(1.)$ without having access to an analytic expression. 
 </div>
 
 <div style="font-size: x-large; float: left; margin-top: 1mm; margin-bottom: 0mm;">
      $\circ$ Hilbert's nullstellensatz: if $\mathcal{N}$ vanishes on all branches of $\langle W_a, W_b \rangle$, then the PFD is possible$\kern-3mm\phantom{x}^\dagger$.
 </div>
 <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ Generalizing to powers $>\kern-1mm 1$ is possible, but non-trivial (symbolic powers, Zariski-Nagata)
+     $\circ$ Generalizing to powers $>\kern-1mm 1$ can be done via symbolic powers and the Zariski-Nagata Theorem.
 </div>
 <a style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/.>
    GDL, Page ('22)
 </a>
 <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ Similarly, generalizing to non-radical ideals requires ring extensions
+     $\circ$ Similarly, generalizing to non-radical ideals requires ring extensions.
 </div>
 <a style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm; margin-right: 33mm;" href=https://arxiv.org/abs/.>
    Campbell, GDL, Ellis ('22)
 </a>
 
 <div style="font-size: x-large; float: left; margin-top: 7mm; margin-bottom: 0mm;">
-     <b> Issue: </b>evaluations on singular surfaces are expensive.
+     <b> Issue: </b>evaluations on singular surfaces are expensive, but are not always needed!
 </div>
 <div style="font-size: x-large; float: left; margin-top: 1mm; margin-bottom: 0mm;">
      <b> Opportunity: </b>we get more than partial fraction decompositions.
@@ -360,7 +356,7 @@ $$
 <br>
 
 <div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ$ Case 1: the degree of vanishing is non-uniform
+     $\circ$ Case 1: the degree of vanishing is non-uniform across branches
 </div>
 
 <br>
@@ -385,29 +381,28 @@ $$
 <br>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ The set $c_{\Gamma,i}$ can be very large, so pick a set of independent ones, and write:
+     $\circ$ The set $c_i$ can be very large, so pick a set of independent ones, and write:
 </div>
 <div style="text-align: center; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\displaystyle c_{\Gamma,i} = \tilde{c}_{\Gamma,j} M_{ji} \quad \text{with} \quad M_{ji} \in \mathbb{Q}$ 
+     $\displaystyle c_i = \tilde{c}_j M_{ji} \quad \text{with} \quad M_{ji} \in \mathbb{Q}$ 
 </div>
 <div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\phantom{\circ}$ with $\tilde{c}^{(k)}_{\Gamma,j}$ an independent subset of $c^{(k)}_{\Gamma,i}$. <br>
-     $\phantom{\circ}\Rightarrow$ $M_{ji}$ is, up to a permutation of columns, in row reduced echelon form.
-</div>
-
-<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ We might as well use a set $\tilde{c}^{(k)}_{\Gamma,j}$ which is not a subset of $c^{(k)}_{\Gamma,i}$, <br>
-     $\phantom{\circ}$ at the trivial cost of having a different $M_{ji}$.
+     $\phantom{\circ}$ with $\tilde{c}$ an independent subset of $c$. <br>
+     $\phantom{\circ}\Longrightarrow$ $M_{ji}$ is, up to a permutation of columns, in row reduced echelon form.
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ Consider a PFD of one of the $\tilde{c}^{(k)}_{\Gamma,i}$ - call it $c_i$ for short
+     $\circ$ We might as well use a set $\tilde{c}$ which is not a subset of $c$, at the trivial cost of changing $M_{ji}$.
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
+     $\circ$ Consider a PFD of one of the $\tilde{c}$'s:
 </div>
 <div style="font-size: x-large; padding: 10px; display: inline-block;">
-    $\displaystyle c_i(\lambda,\tilde\lambda) = \frac{\mathcal{N}_i(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ij}}(\lambda,\tilde\lambda)} = \sum_k \frac{\mathcal{N}_{ik}(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ijk}}(\lambda,\tilde\lambda)} = \sum_k c_{ik}(\lambda,\tilde\lambda)$
+    $\displaystyle \tilde{c}_i(\lambda,\tilde\lambda) = \frac{\mathcal{N}_i(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ij}}(\lambda,\tilde\lambda)} = \sum_k \frac{\mathcal{N}_{ik}(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ijk}}(\lambda,\tilde\lambda)} = \sum_k \tilde{c}_{ik}(\lambda,\tilde\lambda)$
 </div>
 <div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\phantom{\circ}$ We cannot have $c_i \in \text{span}(c_{j\neq i})$, but we can have $c_{ik} \in \text{span}(c_{j\neq i})$, for some, but not all, $k$.
+     We $\color{red}\text{cannot have } \tilde{c}_i \in \text{span}(\tilde{c}_{j\neq i})$, but we $\color{green} \text{can have }\tilde{c}_{ik} \in \text{span}(\tilde{c}_{j\neq i})$, for some, but not all, $k$.
 </div>
 
 ---
@@ -415,14 +410,30 @@ $$
 <b style="font-variant: small-caps; font-size: xxx-large"> Least Least-Common-Denominator </b>
 <br>
 
-
+<div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
+     $\circ$ In other words, the $\tilde{c}$ span a vector space, and we should $\color{green}\text{consider one modulo the others}$
+</div>
 <div style="text-align: center; float:center; display: inline-block; font-size: x-large; margin-bottom: 2mm; margin-top: 2mm;">
-$\displaystyle \tilde{c}_i = \sum_{j\neq i} q_j \tilde{c}_j + c'_{i}$
+$\displaystyle \tilde{c}_i = \sum_{j\neq i} q_j \tilde{c}_j + \tilde{c}'_{i}$
+</div>
+<div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 1mm;">
+     $\phantom{\circ}$ the basis function $\tilde{c}_i$ can be replaced by $\tilde{c}'_i$ without changing the vector space.
 </div>
 
+<div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
+     $\circ$ In particular, $\tilde{c}'_i$ needs not have all the poles of $\tilde{c}_i$, thus it can be much simpler.
+     <br> $\phantom{\circ}$ In other words, $\color{red}\text{the LCD of }\tilde{c}'_i\text{ can be smaller than that of }\tilde{c}_i$.
+</div>
+<div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
+     $\circ$ Brute-force search works well when an analytic expressions is available.
+</div>
 
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 0mm;">
-    Reconstructing a set of $c^{(k)}_{\Gamma,i}$ is not as bad as reconstructing the most complex function in the set.
+<div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
+     $\circ$ In a future publication we will provide an algorithm based on finite field evaluations.
+</div>
+
+<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 10mm;">
+    Reconstructing a set of $c_i$ is not as bad as reconstructing the most complex function in the set.
 </div>
 
 </section>
@@ -445,21 +456,23 @@ $\displaystyle \tilde{c}_i = \sum_{j\neq i} q_j \tilde{c}_j + c'_{i}$
 <a style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1812.04586>
    Abreu, Dormans, Febres Cordero, Ita, Page ('18)
 </a>
-
-<br><br>
-
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -3mm; margin-bottom: 5mm;">
+<div style="text-align: center; float: center; font-size: x-large; margin-top: 3mm; margin-bottom: 5mm;">
      $\displaystyle \{W_j\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_5)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1] \big\} {\quad\color{green}\text{Identical to 1-loop!}}$
 </div>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 2mm;">
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 2mm;">
      $\circ\,$ Advantages of spinor variables:
 </div>
-<br><br>
-<div style="font-size: x-large; text-align: left; float: center; display: inline-block; margin-top: -10mm; margin-bottom: 2mm;">
+<br>
+<div style="font-size: x-large; text-align: left; float: center; display: inline-block; margin-top: 0mm; margin-bottom: 2mm;">
      <div style="margin-bottom: 3mm;"> $\star$ the LCD is <b>not</b> little group invariant: the degree is lower in spinors;  </div>
      <div style="margin-bottom: 3mm;"> $\star$ no (arbitrary) split into parity even and odd: half sampling requirement; </div>
      $\star$ in <u>LCD form</u> we would need $\color{green}29\,059$ evaluations instead of $\color{red}117\,810$ (with $s_{ij}$) for $\mathcal{R}^{(2)}_{2q3\gamma}$ .
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
+     $\circ\,$ To$\color{green}\text{ avoid evaluations on singular surfaces}$, use insights from physics (locality).<br>
+     $\phantom{\circ}\,$ E.g. conjecture that no denominator in $\mathcal{R}^{(2)}_{2q3\gamma}$ has pairs of $\langle i |j + k | i]$, like at 1 loop.
 </div>
 
 ---
@@ -866,27 +879,11 @@ $ \langle 12\rangle [12] = \langle 34\rangle [34]$
 <b style="font-variant: small-caps; font-size: xxx-large;"> The Field of Fractions of $R_3$ does not exists  </b>
 
 <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ Can we get rid of equivalence relations (redundancies) by changing variables? <br>
-     $\phantom{\circ}$ In other words, can we solve the redundancies and turn the quotient ring in a ring?
+     $\circ$ $R_3$ is not an integral domain, i.e. there exists products of non-zero elements which are zero.
 </div>
-<br>
 
+<br>
 
 <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     With four-point massless kinematics, you cannot. In $R_4$ we have
-</div>
-
-<br>
-
-$ \langle 12\rangle [12] = \langle 34\rangle [34]$
-
-<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     this means that $R_4$ is <u>not</u> a unique factorization domain (UFD). <br>
-     All polynomial rings are UFDs, so $R_4$ cannot be isomorphic to one.
-</div>
-
-<br>
-
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 3mm;">
-    $c_{\Gamma,i}(\lambda,\tilde\lambda) \in \text{Field of Fractions}(R_n)$
+     Hence, one cannot define a field of fractions, as this would not be closed under multiplication.
 </div>
