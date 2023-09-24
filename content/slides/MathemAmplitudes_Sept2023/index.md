@@ -461,13 +461,12 @@ $\displaystyle \tilde{c}_i = \sum_{j\neq i} q_j \tilde{c}_j + \tilde{c}'_{i}$
 </div>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 2mm;">
-     $\circ\,$ Advantages of spinor variables:
+     $\circ\,$ Advantage of spinor variables due to:
 </div>
 <br>
-<div style="font-size: x-large; text-align: left; float: center; display: inline-block; margin-top: 0mm; margin-bottom: 2mm;">
-     <div style="margin-bottom: 3mm;"> $\star$ the LCD is <b>not</b> little group invariant: the degree is lower in spinors;  </div>
-     <div style="margin-bottom: 3mm;"> $\star$ no (arbitrary) split into parity even and odd: half sampling requirement; </div>
-     $\star$ in <u>LCD form</u> we would need $\color{green}29\,059$ evaluations instead of $\color{red}117\,810$ (with $s_{ij}$) for $\mathcal{R}^{(2)}_{2q3\gamma}$ .
+<div style="font-size: x-large; text-align: center; float: center; display: inline-block; margin-top: 0mm; margin-bottom: 2mm;">
+     $1.$ little group co-variant LCD; $\qquad2.$ avoiding parity even/odd split; <br>
+     $\Rightarrow\;$ in <u>LCD form</u> we would need $\color{green}29\,059$ evaluations instead of $\color{red}117\,810$ (with $s_{ij}$) for $\mathcal{R}^{(2)}_{2q3\gamma}$ .
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
@@ -475,43 +474,15 @@ $\displaystyle \tilde{c}_i = \sum_{j\neq i} q_j \tilde{c}_j + \tilde{c}'_{i}$
      $\phantom{\circ}\,$ E.g. conjecture that no denominator in $\mathcal{R}^{(2)}_{2q3\gamma}$ has pairs of $\langle i |j + k | i]$, like at 1 loop.
 </div>
 
----
-
-<b style="font-variant: small-caps; font-size: xxx-large"> Taming the Algebraic Complexity </b>
-<br>
-
 <div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
-$\circ\,$ Instead of the common denominator form, perform a partial fraction decomposition
-</div>
-<div style="font-size: x-large; padding: 10px; display: inline-block;">
-    $\displaystyle r_i(\lambda,\tilde\lambda) = \frac{\mathcal{N}(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ij}}(\lambda,\tilde\lambda)} = \sum_k \frac{\mathcal{N}_k(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ijk}}(\lambda,\tilde\lambda)} = \sum_k r_{ik} \quad \text{with} \quad q_{ijk} \le q_{ij}$
-</div>
-
-<div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
-$\circ\,$ Use insights from physics, e.g. no denominator in $\mathcal{R}^{(2)}_{2q3\gamma}$ contains more than a single $\langle i |j + k | i]$
-</div>
-
-<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-$\circ\,$ As by now standard, we pick a set of independent $r_i$ to reconstruct: $r_i \not\in \text{span}(r_{j\neq i})$. <br>
-$\phantom{\circ\,}$ However, generally $r_{ik} \in \text{span}(r_{j\neq i})$ for some, but not all, $k$. Thus, write:
-</div>
-<div style="font-size: x-large; padding: 10px; display: inline-block;">
-    $\displaystyle $
-</div>
-<div style="text-align: center; float:center; display: inline-block; font-size: x-large; margin-bottom: 2mm; margin-top: 2mm;">
-$r_i = \sum_{j\neq i} c_j r_j + \sum_{k' \subset \{k\}} r_{ik'}$
-</div>
-<br>
-
-<div style="border: 2px solid black; text-align: center; float:center; display: inline-block; font-size: x-large; margin-bottom: 2mm; margin-top: 2mm;">
-Sampling requirement reduced from $\color{red}29\,059$ to $\color{green}4\,003$ points.
+     $\circ$ Remove some overlap with other $\tilde{c}$'s, obtain the $\tilde{c}_i$ with higher degree LCD with $\color{green}4\,003$ points.
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 2mm;">
-$\circ$ For example, a posteriori, we find that for the most complicated $r_i$, we only needed
+$\circ$ A posteriori, we find that for the $c_i$ with highest degree LCD the following would have sufficied
 </div>
 <div style="font-size: large; padding: 10px; display: inline-block;">
-    $\displaystyle \sum_{k' \subset \{k\}} r_{ik'} = \frac{⟨13⟩[14]^2⟨24⟩⟨34⟩[45]}{⟨45⟩⟨4|1+3|4]^3}-\frac{[14]⟨25⟩⟨34⟩^2[45]}{⟨45⟩^2⟨4|1+3|4]^2}-\frac{[14]⟨24⟩⟨34⟩⟨35⟩}{⟨45⟩^3⟨4|1+3|4]}$
+    $\displaystyle \tilde{c}_i = \frac{⟨13⟩[14]^2⟨24⟩⟨34⟩[45]}{⟨45⟩⟨4|1+3|4]^3}-\frac{[14]⟨25⟩⟨34⟩^2[45]}{⟨45⟩^2⟨4|1+3|4]^2}-\frac{[14]⟨24⟩⟨34⟩⟨35⟩}{⟨45⟩^3⟨4|1+3|4]}$
 </div>
 
 ---
