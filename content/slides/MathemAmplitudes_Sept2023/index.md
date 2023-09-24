@@ -125,7 +125,7 @@ $$
      $3.$ Reconstructing sets of functions: Why is it easier than reconstructing individual ones?
 </div>
 <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $4.$ Example process @ 2-loop: $pp \rightarrow \gamma\gamma\gamma$, $pp \rightarrow Wjj$ (preliminary)
+     $4.$ Example process @ 2-loop: $\;\;pp \rightarrow \gamma\gamma\gamma\;\;$ and $\;\;pp \rightarrow Wjj\;\;$ (preliminary)
 </div>
 
 <br><br><br><br>
@@ -350,19 +350,40 @@ $$
 <b style="font-variant: small-caps; font-size: xxx-large"> Beyond Partial Fractions </b>
 
 <div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ$ Case 0: the ideal does not involve denominator factors
+     $\circ$ Case 0: the ideal does not involve denominator factors.
+</div>
+<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+     E.g. a 6-point function $c_i$ has a pole at $⟨1|2+3|4]$ but not at $⟨4|2+3|1]$,
+</div>
+<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     yet it is regular on the irreducible surface $V(\big\langle ⟨1|2+3|4], ⟨4|2+3|1] \big\rangle)$. Then
+</div>
+<br><br>
+<div style="font-size: x-large; float: center; margin-top: 5mm; margin-bottom: 0mm;">
+     $\displaystyle c_i \sim \frac{⟨4|2+3|1]}{⟨1|2+3|4]} + \mathcal{O}(⟨1|2+3|4]^0) \; \text{ instead of } \; c_i \sim \frac{1}{⟨1|2+3|4]}  + \mathcal{O}(⟨1|2+3|4]^0)$
 </div>
 
+<div style="font-size: x-large; float: left; margin-top: 8mm; margin-bottom: 0mm;">
+     $\circ$ Case 1: the degree of vanishing is non-uniform across branches, for example:
+</div>
 <br>
-
-<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ$ Case 1: the degree of vanishing is non-uniform across branches
+<div style="font-size: x-large; float: center; margin-top: 0mm; margin-bottom: 0mm;">
+     $\displaystyle \frac{s_{14}-s_{23}}{⟨1|3+4|2]⟨3|1+2|4]}$
+</div>
+<div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
+     has a double pole on the first branch, and a simple pole on the second branch of
+</div>
+<br>
+<div style="font-size: x-large; float: center; margin-top: 3mm; margin-bottom: 0mm;">
+     $\big\langle⟨1|3+4|2], ⟨3|1+2|4]\big\rangle_{R_6} = \big\langle ⟨13⟩, [24] \big\rangle_{R_6} \cap \big\langle ⟨1|3+4|2], ⟨3|1+2|4], (s_{14}-s_{23})\big\rangle_{R_6}$
 </div>
 
-<br>
-
-<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ$ Case 2: ideal is non-radical
+<div style="font-size: x-large; float: left; margin-top: 10mm; margin-bottom: 0mm;">
+     $\circ$ Case 2: ideal is non-radical (example on last slide)
+</div>
+<br><br>
+<div style="font-size: x-large; float: center; margin-top: -3mm; margin-bottom: 0mm;">
+     $\displaystyle \small \kern-30mm \sqrt{\big\langle {\color{black}⟨3|1+4|2]}, {\color{black}Δ_{23|14|56}} \big\rangle_{R_6}} = \big\langle {\color{black}⟨3|1+4|2]}, {\color{black}s_{124}-s_{134}} \big\rangle_{R_6} $
 </div>
 
 </section>
@@ -417,7 +438,7 @@ $$
 $\displaystyle \tilde{c}_i = \sum_{j\neq i} q_j \tilde{c}_j + \tilde{c}'_{i}$
 </div>
 <div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 1mm;">
-     $\phantom{\circ}$ the basis function $\tilde{c}_i$ can be replaced by $\tilde{c}'_i$ without changing the vector space.
+     $\phantom{\circ}$ the basis function $\tilde{c}_i$ can be replaced by $\tilde{c}'_i$ <u>without changing the vector space</u>.
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
@@ -442,15 +463,14 @@ $\displaystyle \tilde{c}_i = \sum_{j\neq i} q_j \tilde{c}_j + \tilde{c}'_{i}$
 ---
 <section>
 
-{{< slide background-image="W_distribution_and_diagrams.png">}}
+{{< slide background-image="3y_and_Wjj_diagrams.png">}}
 
 # Example <br> processes
 ---
 
 <b style="font-variant: small-caps; font-size: xxx-large"> Three-photon production at two loops </b>
-<br>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
      $\circ\,$ The denominator factors $W_j$ are conjectured to be restricted to the letters of the symbol alphabet
 </div>
 <a style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1812.04586>
@@ -465,13 +485,13 @@ $\displaystyle \tilde{c}_i = \sum_{j\neq i} q_j \tilde{c}_j + \tilde{c}'_{i}$
 </div>
 <br>
 <div style="font-size: x-large; text-align: center; float: center; display: inline-block; margin-top: 0mm; margin-bottom: 2mm;">
-     $1.$ little group co-variant LCD; $\qquad2.$ avoiding parity even/odd split; <br>
+     $1.$ little group covariant LCD; $\qquad2.$ avoiding parity even/odd split; <br>
      $\Rightarrow\;$ in <u>LCD form</u> we would need $\color{green}29\,059$ evaluations instead of $\color{red}117\,810$ (with $s_{ij}$) for $\mathcal{R}^{(2)}_{2q3\gamma}$ .
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
      $\circ\,$ To$\color{green}\text{ avoid evaluations on singular surfaces}$, use insights from physics (locality).<br>
-     $\phantom{\circ}\,$ E.g. conjecture that no denominator in $\mathcal{R}^{(2)}_{2q3\gamma}$ has pairs of $\langle i |j + k | i]$, like at 1 loop.
+     $\phantom{\circ}\,$ E.g. conjecture that no 5-point denominator has pairs of $\langle i |j + k | i]$, like at 1 loop.
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
@@ -481,55 +501,22 @@ $\displaystyle \tilde{c}_i = \sum_{j\neq i} q_j \tilde{c}_j + \tilde{c}'_{i}$
 <div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 2mm;">
 $\circ$ A posteriori, we find that for the $c_i$ with highest degree LCD the following would have sufficied
 </div>
-<div style="font-size: large; padding: 10px; display: inline-block;">
+<div style="font-size: x-large; padding: 10px; display: inline-block;">
     $\displaystyle \tilde{c}_i = \frac{⟨13⟩[14]^2⟨24⟩⟨34⟩[45]}{⟨45⟩⟨4|1+3|4]^3}-\frac{[14]⟨25⟩⟨34⟩^2[45]}{⟨45⟩^2⟨4|1+3|4]^2}-\frac{[14]⟨24⟩⟨34⟩⟨35⟩}{⟨45⟩^3⟨4|1+3|4]}$
 </div>
 
 ---
 
 <b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 5mm;">
-   Bottlneck for 
+  W+2-jets: simplification strategy
 </b>
-<b style="font-size: xxx-large; margin-bottom: 5mm;"> 
- $pp\rightarrow Wjj$ 
-</b>
-<b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 5mm;"> 
-at NNLO
-</b>
-
-<div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 7mm;">
-     $\;\circ\,$ No pheno study yet, despite the amplitudes have been available for almost 2 years!
-</div>
-
-<div style="display:block; width:100%; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
-     <div style="width:50%; float: left; display: inline-block;">
-          $\circ$ The algebraic complexity$-$think Ansatz size$-$grows quickly with multiplicity (m) <br> and mass dimension (d): <br><br>
-          $\displaystyle \left(\mkern -9mu \begin{pmatrix}\, m(m-3)/2 \, \\ \, d/2 \, \end{pmatrix} \mkern -9mu \right)$ <br><br>
-          is a lower bound. <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: -28mm; margin-top: 1mm; margin-bottom: 5mm;" href=https://arxiv.org/abs/2010.14525>
-               GDL, Maître ('20)
-          </a>
-     </div>
-     <div style="width:50%; float: center; display: inline-block;">
-          <img src="AnsatzSizes.png"; style="max-width:420px;float:center;border:none;margin-top:0px;margin-bottom: 5mm;">
-     </div>
-</div>
 
 <div style="text-align: left; font-size: x-large; margin-top: 5mm;">
-$\circ\,$ The anlytic expressions of <a href="https://arxiv.org/abs/2110.07541">Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov ('21) </a> are 1.2GB.
+     $0.\,$ Start from analytics of <a style="font-size: large"; href="https://arxiv.org/abs/2110.07541">Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov ('21) </a> - 1.2GB of sorce code.
 </div>
-
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 5mm; margin-bottom: 5mm;">
-    Having more control on the analytic structure starts to become important!
-</div>
-
----
-
-<b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 5mm;">
-   Simplification strategy for $pp\rightarrow Wjj$
-</b>
 
 <div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
-$1.\,$ Script to split up the expressions, and compile them ($\sim 20$GB of <code>C++</code>) for evaluation over $\mathbb{F}_p$;
+     $1.\,$ Script to split up the expressions, and compile them ($\sim 20$GB of <code>C++</code>) for evaluation over $\mathbb{F}_p$;
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
@@ -538,12 +525,12 @@ to build 6-point spinor-helicity amplitudes (subject to degree bounds on $|5\ran
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-top: 5mm; margin-bottom: 0mm;">
-$3.\,$ Perform partial fraction decompositions$^{*}$ based on expected structures and fit the Ansatze.
+$3.\,$ Perform (rough) PFDs based on expected structures and fit the Ansatze.
 </div>
 
 <br>
 
-<div style="text-align: center; float:center; font-size: x-large; margin-top: -10mm; margin-bottom: 5mm;">
+<div style="text-align: center; float:center; font-size: x-large; margin-top: -12mm; margin-bottom: 5mm;">
 Comparison of $q\bar q \rightarrow \gamma \gamma \gamma$ (in full color) to $pp \rightarrow Wjj$ (at leading color):  <br>
 </div>
 
@@ -575,18 +562,26 @@ Comparison of $q\bar q \rightarrow \gamma \gamma \gamma$ (in full color) to $pp 
      $\displaystyle \kern-10mm \{W_j\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_6)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1], \langle 1|2+3|4], s_{123}, \Delta_{12|34|56}, ⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2] \big\} $
 </div>
 
-<br>
-<div style="text-align: center; float:center; font-size: x-large; margin-top: -10mm; margin-bottom: 5mm;">
-$\phantom{x}^{*}$ sometimes it's actually a bit more than a partial fraction decomposition, see next slide.
-</div>
-
 ---
 
 <b style="font-variant: small-caps; font-size: xx-large; margin-bottom: 10mm;">
    Analytic Structures of 2-loop 5-point 1-mass Amplitudes
 </b>
 
-<div style="text-align: left; font-size: x-large; margin-top: 6mm; margin-bottom: 2mm;">
+<div style="display:block; width:100%; font-size: 16pt; margin-top: 5mm; margin-bottom: 5mm;">
+     <div style="width:50%; float: left; display: inline-block; font-size: x-large;">
+          $\circ$ The  Ansatz size grows quickly with <br> multiplicity (m) and mass dimension (d): <br><br>
+          $\displaystyle \small \left(\mkern -9mu \begin{pmatrix}\, m(m-3)/2 \, \\ \, d/2 \, \end{pmatrix} \mkern -9mu \right)$ <br><br>
+          is a lower bound. <a style="font-size: large; display: inline-block; text-align: right; float: right; margin-left: -28mm; margin-top: 1mm; margin-bottom: 5mm;" href=https://arxiv.org/abs/2010.14525>
+               GDL, Maître ('20)
+          </a>
+     </div>
+     <div style="width:50%; float: center; display: inline-block;">
+          <img src="AnsatzSizes.png"; style="max-width:320px;float:center;border:none;margin-top:0px;margin-bottom: 5mm;">
+     </div>
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-top: 3mm; margin-bottom: 2mm;">
 $\circ\,$ Compact residues for the new 2-loop (spurious?) pole, $⟨k|j|p\mkern-7.5mu/_V|l|k]-⟨j|i|p\mkern-7.5mu/_V|l|j]$, e.g.:
 $$r^{(5 \text{ of } 54)}_{\bar{u}^+g^+g^+d^-(V\rightarrow \ell^+ \ell^-)} = \frac{[12][23]⟨24⟩⟨46⟩^2⟨1|2+3|4]⟨2|1+3|4]}{⟨12⟩⟨23⟩⟨56⟩(⟨3|2|5+6|4|3]-⟨2|1|5+6|4|2])^2}$$
 </div>
@@ -597,22 +592,6 @@ $\circ\,$ The three mass Grams, $\Delta_{12|34|p_V}, \Delta_{14|23|p_V}$, behave
 <div style="text-align: left; font-size: large; margin-top: 2mm; margin-bottom: 1mm;">
 $$ r^{(73 \text{ of } 120)}_{\bar{u}^+g^-g^+d^-(V\rightarrow \ell^+ \ell^-)} = \frac{105}{128}\frac{⟨2|1+4|3]⟨4|2+3|1]⟨6|1+4|5]s_{14}s_{23}s_{56}{\color{green}(s_{124}-s_{134})}(s_{123}-s_{234})(s_{25}+s_{26}+s_{35}+s_{36})}{{\color{orange}⟨3|1+4|2]}{\color{red}Δ_{23|14|56}^4}} + \\
 \Bigg[-6\frac{[12]^2⟨13⟩[25]⟨34⟩⟨36⟩⟨56⟩[56]{\color{green}(s_{124}-s_{134})}}{{\color{orange}⟨3|1+4|2]^5}}\Bigg] + \Bigg[ \; \Bigg]_{1234\rightarrow \overline{4321}}+ \mathcal{O}\left(\frac{1}{⟨3|1+4|2]^{4}Δ_{23|14|56}^{3}}\right)$$
-</div>
-<div style="text-align: left; font-size: x-large; margin-bottom: 2mm;">
-$\phantom{\circ\,}$ but the pole orders have been doubled, see <a href=https://arxiv.org/abs/hep-ph/9708239> Bern, Dixon, Kosower ('97) </a> 
-</div>
-
-<div style="text-align: left; font-size: x-large; margin-top: 8mm;">
-$\circ\,$ $\small Δ_{23|14|56}$ behaves as a perfect square on the surface where $\small ⟨3|1+4|2]$ vanishes:
-$$\small \kern-30mm \sqrt{\big\langle {\color{orange}⟨3|1+4|2]}, {\color{red}Δ_{23|14|56}} \big\rangle_{R_6}} = \big\langle {\color{orange}⟨3|1+4|2]}, {\color{green}s_{124}-s_{134}} \big\rangle_{R_6} $$
-     <div style="font-size: large; text-align: right; float: right; margin-top: -19mm; margin-bottom: 0mm;">
-          <a href=https://arxiv.org/abs/2203.04269>
-               GDL, Page ('22);&nbsp
-          </a> <br>
-          <a href=https://arxiv.org/abs/2203.17170>
-               Campbell, GDL, Ellis ('22)$\phantom{;}$
-          </a> 
-     </div>
 </div>
 
 </section>
