@@ -15,37 +15,12 @@ slides:
 
 ---
 
-<!-- Explicitly Select MathJax2 for the rendering -->
-
-<!-- Include MathJax library -->
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-<!-- Include Reveal.js and the Math plugin -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.2/reveal.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.2/plugin/math/math.js"></script>
-
-<!-- Initialize Reveal.js with the MathJax plugin -->
-<script>
-  Reveal.initialize({
-    plugins: [ RevealMath ],
-    math: {
-      mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
-      config: 'TeX-MML-AM_CHTML',
-      CommonHTML: {
-        scale: 150, // Adjust the font size as needed
-      },
-    },
-  });
-</script>
-
 {{< slide background-image="EdiCastle.jpg" >}}
 
 <h3 style="margin-top:5mm; margin-left: -10mm; margin-right: -10mm;">
-	<b style="margin-top:15mm; ">
-	   <font size=6> Non-Planar Two-Loop Amplitudes </font size> <br>
-	   <font size=6> for Five-Parton Scattering </font size>
+	<b style="margin-top:15mm; font-size: 24pt;">
+	   Non-Planar Two-Loop Amplitudes <br>
+	   for Five-Parton Scattering
 	</b>
 </h3>
 
@@ -61,7 +36,7 @@ Amplitudes Meeting
 <br>
 <p style="line-height: 0.05;"> <img src="UniEdinburghLogo-transparent.png"; style="max-width:303px;float:center;border:none;">
 <br><br>
-<font size=3>Find these slides at  <a href="/slides/amplitudesmeeting_sept2023/#/">gdelaurentis.github.io/slides/mathemamplitudes_sept2023</a> </font size>
+<span style="font-size: 11pt">Find these slides at  <a href="/slides/amplitudesmeeting_dec2023/#/">gdelaurentis.github.io/slides/mathemamplitudes_dec2023</a> </span>
 </div>
 
 ---
@@ -72,9 +47,86 @@ Amplitudes Meeting
 
 # Introduction
 
---- 
+---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Scattering Amplitudes </b>
+<b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 20mm;"> Cross Sections </b>
+
+
+<div style="width:40%; float: left; display: inline-block;">
+     <div style="font-size: xx-large; font-variant: small-caps; center: left; margin-top: -5mm; margin-bottom: 5mm; margin-left: 0mm;">
+          Motivations
+     </div>
+     <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+          $\circ$ tri-jet @ $\text{NNLO}$;
+     </div>
+     <br>
+     <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+          <span style="font-size: 18pt">$\circ$</span> di-jet @ $\text{N}^3\text{LO}$;
+     </div>
+     <br>
+     <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+          <span style="font-size: 18pt">$\circ$</span> $\alpha_s$ extraction;
+     </div>
+     <br>
+     <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+          <span style="font-size: 18pt">$\circ$</span> collinear factorization breaking (?);
+     </div>
+     <br>
+     <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+          <span style="font-size: 18pt">$\circ$</span> multi-Regge kinematic limit;
+     </div>
+     <br>
+     <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+          <span style="font-size: 18pt">$\circ \; \dots$</span> 
+     </div>
+</div>
+<br>
+
+<div style="width:60%; float: right; display: inline-block; margin-top: -15mm;">
+     <img src="ATLAS-XSections-transparent.png"; style="max-width:450px; float:center; border:none; margin-top: 0mm; margin-bottom: -6mm; margin-left: 0mm;">
+     <div style="font-size: large; width:80%; float: center; text-align: center;  display: inline-block; margin-top: -10mm; margin-left: 0mm;">
+     	  ATLAS Cross-Sections Summary
+     </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br>
+
+<div style="font-size: 17pt; float: center; margin-top: -10mm; margin-bottom: 0mm;">
+$$
+σ_{2 \rightarrow n - 2} = \sum_{a,b} \int dx_a dx_b f_{a/h_1}(x_a, \mu_F) \, f_{b/h_2}(x_b, \mu_F) \;\hat{\sigma}_{ab\rightarrow n-2}(x_a, x_b, \mu_F, \mu_R)
+$$
+</div>
+<div style="font-size: 17pt; float: center; margin-top: 0mm; margin-bottom: 0mm;">
+$$
+\hat{σ}_{n}=\frac{1}{2\hat{s}}\int d\text{LIPS}\;(2π)^4δ^4\big(\sum_{i=1}^n p_i\big)\;|\overline{\mathcal{A}(p_i,h_i,a_i,μ_F, μ_R)}|^2
+$$
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> Color Decompositions </b>
+
+<div style="font-size: 16pt; margin-top: 0mm;  margin-bottom: 0mm">
+\[
+\require{color}
+\require{amsmath}
+\begin{gather}\label{eq:partial_5g}
+  \mathcal{A}_{5g,\,\vec{a}} = \sum_{\sigma \in \mathcal{S}_5/\mathcal{Z}_5} \sigma\Big(\text{tr}(1,2,3,4,5) \; A_{1}(1,2,3,4,5)\Big) \; + \\\\
+  \qquad \sum_{\sigma\in \frac{\mathcal{S}_5}{\mathcal{Z}_2 \times \mathcal{S}_3}} \sigma\Big(\text{tr}(1,2) \text{tr}(3,4,5) \; A_{2}(1,2;3,4,5)\Big)
+\end{gather}
+\]
+</div>
+
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> $N_c$ and $N_f$ Expansion </b>
+
+Expansion in 
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> Partial Amplitudes </b>
  
 <div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
      $\circ$ Amplitude (integrands) can be written as
@@ -82,8 +134,6 @@ Amplitudes Meeting
 <br>
 <div style="font-size: 13pt; margin-top: -5mm;  margin-bottom: 0mm">
      $$
-     \require{color}
-     \require{amsmath}
      \displaystyle A(\lambda, \tilde\lambda, \ell) =
 \sum_{\substack{\Gamma,\\ i \in M_\Gamma \cup S_\Gamma}} \, c_{\,\Gamma,i}(\lambda, \tilde\lambda, \epsilon) \,		\frac{m_{\Gamma,i}(\lambda\tilde\lambda, \ell)}{\textstyle \prod_{j} \rho_{\,\Gamma,j}(\lambda\tilde\lambda, \ell)} \;\; \xrightarrow[]{\int d^D\ell} \;\; \sum_{\substack{\Gamma,\\ i \in M_\Gamma}} {\color{red}c_{\,\Gamma, i}}(\lambda, \tilde\lambda, \epsilon) \, {\color{orange}I_{\Gamma, i}}(\lambda\tilde\lambda, \epsilon)
 $$  
@@ -119,42 +169,24 @@ $$
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Outline</b>
-
-<div style="font-size: x-large; float: center; margin-top: -2mm; margin-bottom: 0mm;">
-     Disclaimer: I will focus on the $c_{\,\Gamma, i}^{(k)}(\lambda, \tilde\lambda)$ $-$ call them $c_i(\lambda, \tilde\lambda)$ for short, <br>
-     nevertheless some concepts can be extended to whole amplitudes.
-</div>
-
-<div style="font-size: x-large; float: left; margin-top: 10mm; margin-bottom: 0mm;">
-     <b> We will discuss: </b>
-</div>
-<br><br>
-<div style="font-size: x-large; float: left; margin-top: -2mm; margin-bottom: 0mm;">
-     $1.$ Where are the $\color{red}\text{poles}$? What is their order?	 
-</div>
-<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $2.$ Relation between pole structure, and $\color{red}\text{analytic constraints}$ (e.g. partial fraction decomposition)
-</div>
-<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $3.$ Reconstructing $\color{red}\text{sets of functions}$: Why is it easier than reconstructing individual ones?
-</div>
-<div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $4.$ Example process @ 2-loop: $\;\;pp \rightarrow \gamma\gamma\gamma\;\;$ and $\;\;pp \rightarrow Wjj\;\;$ (preliminary)
-</div>
-
-<br><br><br><br>
-
-<div style="font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     <b> Key take away: </b>
-</div>
-<br>
-<div style="font-size: x-large; float: center; margin-top: 0mm; margin-bottom: 0mm;">
-     What is important is not the number of variables, <br>
-     but the size of the parametrization (a.k.a. ansatz), and our ability to constrain it.	 
-</div>
+<b style="font-variant: small-caps; font-size: xxx-large"> Numerical Generalized Unitarity </b>
 
 ---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> Finite Remainders </b>
+
+</section>
+
+---
+
+<section>
+
+{{< slide background-image="Feynman-Diagrams-transparent.png" >}}
+
+<h1 style="margin-top: -2mm;"> The Analytic Structure </h1>
+
+---
+
 
 <b style="font-variant: small-caps; font-size: xxx-large;"> Polynomial Quotient Rings  </b>
 
@@ -206,15 +238,7 @@ $$
      $\;\kern-4mm\phantom{x}^\dagger$ The field of fractions of $R_3$ does not exist.
 </div>
 
-</section>
 
----
-
-<section>
-
-{{< slide background-image="Feynman-Diagrams-transparent.png" >}}
-
-<h1 style="margin-top: -2mm;"> The Pole Structure </h1>
 
 ---
 
@@ -267,6 +291,13 @@ $$
 
 ---
 
+<b style="font-variant: small-caps; font-size: xxx-large"> Correlation of Residues </b>
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> Breadth-First Search </b>
+
+---
 <b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: -5mm;"> Constraints from Poles </b>
 <br>
 <b style="font-variant: small-caps; font-size: x-large; margin-top: -16mm;"> Bootstrapping trees (?) </b>
@@ -851,3 +882,33 @@ $ \langle 12\rangle [12] = \langle 34\rangle [34]$
 <div style="font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
      Hence, one cannot define a field of fractions, as this would not be closed under multiplication.
 </div>
+
+
+<!-- REVEAL.JS CUSTOMIZATION -->
+
+<!-- Include MathJax library -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<!-- Include Reveal.js and the Math plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.2/reveal.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.2/plugin/math/math.js"></script>
+
+<!-- Initialize Reveal.js with the MathJax plugin -->
+<script>
+  Reveal.initialize({
+    history: true,
+    slideNumber: false,
+    plugins: [ RevealMath ],
+    math: {
+      inlineMath: [ ['\\(', '\\)'] ],
+      displayMath: [ ['\\[', '\\]'] ],
+      mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+      config: 'TeX-MML-AM_CHTML',
+      CommonHTML: {
+        scale: 100, // Adjust the font size as needed
+      },
+    }
+  });
+</script>
