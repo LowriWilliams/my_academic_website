@@ -1,6 +1,13 @@
  ---
 # Display name
-name: Giuseppe De Laurentis
+title: Giuseppe De‎⠀Laurentis
+
+# Name pronunciation (optional)
+name_pronunciation: 
+
+# Full name (for SEO)
+first_name: Giuseppe
+last_name: De Laurentis
 
 # Username (this should match the folder name)
 authors:
@@ -14,8 +21,10 @@ role: PostDoc
 
 # Organizations/Affiliations
 organizations:
-- name: Paul Scherrer Institut (PSI)
-  url: "https://www.psi.ch/en" 
+- name:   University of Edinburgh    Higgs Centre for Theoretical Physics
+  url: "https://higgs.ph.ed.ac.uk/" 
+# - name: Paul Scherrer Institut (PSI)
+#   url: "https://www.psi.ch/en" 
 # - name: Physikalisches Institut - Albert-Ludwigs-Universität Freiburg
 #   url:
 # - name: Institute for Particle Physics Phenomenology - Durham University
@@ -52,7 +61,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:giuseppe.de-laurentis@psi.ch'  # For a direct email link, use "mailto:test@example.org".
+  link: 'mailto:giuseppe.delaurentis@ed.ac.uk'  # For a direct email link, use "mailto:test@example.org".
 - icon: arxiv
   icon_pack: ai
   link: https://arxiv.org/search/hep-ph?searchtype=author&query=De+Laurentis%2C+G
@@ -62,6 +71,9 @@ social:
 - icon: orcid
   icon_pack: ai
   link: https://orcid.org/0000-0001-5252-455X
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/giuseppe-de-laurentis-a85bba104/
 - icon: github
   icon_pack: fab
   link: https://github.com/GDeLaurentis

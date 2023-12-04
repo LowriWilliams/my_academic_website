@@ -1,5 +1,5 @@
 ---
-tile: Mathematical and Physical Structures of Rational Functions in Scattering Amplitudes
+tile: Non-Planar Two-Loop Amplitudes for Five-Parton Scattering
 summary: 
 authors: ["Giuseppe De Laurentis"]
 tags: [QCD, Scattering Amplitudes]
@@ -12,6 +12,7 @@ slides:
   # Choose a code highlighting style (if highlighting enabled in `params.toml`)
   #   Light style: github. Dark style: dracula (default).
   highlight_style: dracula
+
 ---
 
 <!-- Explicitly Select MathJax2 for the rendering -->
@@ -39,32 +40,28 @@ slides:
   });
 </script>
 
-
-{{< slide background-image="PSI-aerialview.jpg" >}}
+{{< slide background-image="EdiCastle.jpg" >}}
 
 <h3 style="margin-top:5mm; margin-left: -10mm; margin-right: -10mm;">
 	<b style="margin-top:15mm; ">
-	   <font size=6> Mathematical and Physical Structures </font size> <br>
-	   <font size=6> of Rational Functions in Scattering Amplitudes </font size>
+	   <font size=6> Non-Planar Two-Loop Amplitudes </font size> <br>
+	   <font size=6> for Five-Parton Scattering </font size>
 	</b>
 </h3>
-
-<b style="font-size: 14pt; "> Title for Mathematicians: </b>
-<b style="font-size: 14pt; "> Vector Spaces over Fraction Fields of Polynomial Quotient Rings </b>
 
 <div style="font-size: x-large; margin-top:10mm;">
 Giuseppe De Laurentis
 <br>
-<div style="font-size: large;"> Paul Scherrer Institut / University of Edinburgh </div>
+<div style="font-size: large;"> University of Edinburgh </div>
 <br>
-<a href="https://arxiv.org/abs/2203.04269">arXiv:2203.04269</a> <div style="font-size: large; margin-bottom: 10pt;"> (GDL, B. Page) </div>
-<A href="https://arxiv.org/abs/2305.17056">arXiv:2305.17056</a> <div style="font-size: large;"> (S. Abreu, GDL, H. Ita, M. Klinkert, B. Page, V. Sotnikov) </div>
+<a href="https://arxiv.org/abs/2311.10086">arXiv:2311.10086</a> <div style="font-size: large; margin-bottom: 10pt;"> (GDL, H. Ita, M. Klinkert, V. Sotnikov) </div>
+<A href="https://arxiv.org/abs/2305.17056">arXiv:2311.18752</a> <div style="font-size: large;"> (GDL, H. Ita, V. Sotnikov) </div>
 
-MathemAmplitudes 2023 - Padova
+Amplitudes Meeting
 <br>
-<p style="line-height: 0.05;"> <img src="UniEdinburghLogo-transparent.png"; style="max-width:303px;float:center;border:none;"> <img src="paul-scherrer-institute-psi-logo-vector-transparent.png"; style="max-width:303px;float:center;border:none;">  <img src="UniPadovaLogo-transparent.png"; style="max-width:120px;float:center;border:none;">
+<p style="line-height: 0.05;"> <img src="UniEdinburghLogo-transparent.png"; style="max-width:303px;float:center;border:none;">
 <br><br>
-<font size=3>Find these slides at  <a href="/slides/mathemamplitudes_sept2023/#/">gdelaurentis.github.io/slides/mathemamplitudes_sept2023</a> </font size>
+<font size=3>Find these slides at  <a href="/slides/amplitudesmeeting_sept2023/#/">gdelaurentis.github.io/slides/mathemamplitudes_sept2023</a> </font size>
 </div>
 
 ---
@@ -78,8 +75,7 @@ MathemAmplitudes 2023 - Padova
 --- 
 
 <b style="font-variant: small-caps; font-size: xxx-large"> Scattering Amplitudes </b>
-
-
+ 
 <div style="font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
      $\circ$ Amplitude (integrands) can be written as
 </div>
@@ -99,7 +95,7 @@ $$
      $\circ$ For a suitable choice of integrands, we get:
 </div>
 <br>
-<div style="font-size: 14pt; margin-top: -18mm; margin-bottom: 0mm">
+<div style="font-size: 13pt; margin-top: -18mm; margin-bottom: 0mm">
      $$
      \displaystyle
      {\color{red}c_{\Gamma, i}}(\lambda, \tilde\lambda, \epsilon) = \frac{ \sum_{k=0}^{\text{finite}} \, {\color{red}c^{(k)}_{\,\Gamma, i}}(\lambda, \tilde\lambda) \, \epsilon^k}{\prod_j (\epsilon - a_{ij})} \;, \;\;\text{with} \quad a_{ij} \in \mathbb{Q}

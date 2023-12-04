@@ -13,12 +13,32 @@ slides:
   #   Light style: github. Dark style: dracula (default).
   highlight_style: dracula
 ---
-<html>
-	<head>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower">
-		<link rel="stylesheet" href="../reveal_custom.css">
-	</head>
-</html>
+
+<!-- Explicitly Select MathJax2 for the rendering -->
+
+<!-- Include MathJax library -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<!-- Include Reveal.js and the Math plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.2/reveal.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.2/plugin/math/math.js"></script>
+
+<!-- Initialize Reveal.js with the MathJax plugin -->
+<script>
+  Reveal.initialize({
+    plugins: [ RevealMath ],
+    math: {
+      mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+      config: 'TeX-MML-AM_CHTML',
+      CommonHTML: {
+        scale: 150, // Adjust the font size as needed
+      },
+    },
+  });
+</script>
+
 
 {{< slide background-image="PSI-aerialview.jpg" >}}
 
@@ -37,13 +57,15 @@ in collaboration with: <br>
 <br><br>
 based on: <a href="https://arxiv.org/abs/2305.17056">arXiv:2305.17056</a>
 
-<br><br>
+<br>
 
 LoopFest XXI
 <br><br>
 <p style="line-height: 0.05;"> <img src="paul-scherrer-institute-psi-logo-vector-transparent.png"; style="max-width:303px;float:center;border:none;">  <img src="SLAC_Logo.png"; style="max-width:280px;float:center;border:none;">
 <br><br>
-<font size=3>Find these slides at  <a href="/slides/loopfestxxi_june2023/#/">gdelaurentis.github.io/slides/loopfestxxi_june2023</a> </font size>
+<font size=3>
+Find these slides at  <a href="/slides/loopfestxxi_june2023/#/">gdelaurentis.github.io/slides/loopfestxxi_june2023</a> 
+</font size>
 </div>
 
 ---
@@ -164,9 +186,9 @@ $$\require{color} \displaystyle
 </table>
 
 </section>
----
 
 ---
+
 <section>
 
 {{< slide background-image="Feynman-Diagrams-transparent.png" >}}
@@ -192,13 +214,13 @@ $\circ$ Generalized unitarity relates cuts of loop amplitudes to products of tre
 </div>
 
 <div style="display:block; width:100%; margin-top: 0mm; margin-bottom: 0mm; margin-left: 0mm;">
-	<div style="font-size: x-large; width:75%; float: left; text-align: center; display: inline-block; margin-top: 0mm;">
+     <div style="font-size: x-large; width:75%; float: left; text-align: center; display: inline-block; margin-top: 0mm;">
 	     $$
 	     \require{color}
 	     \displaystyle \sum_{\text{states}} \, \prod_{\text{trees}} A^{\text{tree}}(\lambda, \tilde\lambda, \ell)\big|_{\text{cut}} = \sum_{\substack{\Gamma' \ge \Gamma, \\ i \in M_\Gamma' \cup S_\Gamma'}} \kern-2mm c_{\,\Gamma',i}(\lambda, \tilde\lambda) \, \frac{m_{\Gamma',i}(\lambda\tilde\lambda, \ell)}{\displaystyle \prod_{j\in P_{\Gamma'} / P_{\Gamma}} \rho_{j}(\lambda\tilde\lambda, \ell)}\Bigg|_{\text{cut}}
 	     $$
 	</div>
-	<div style="width:25%; float: right; display: inline-block; margin-top: -15mm;">
+     <div style="width:25%; float: right; display: inline-block; margin-top: -15mm;">
 	     <div style="font-size: x-large; width:50%; float: center; text-align: center;  display: inline-block; margin-top: 0mm;">
 	     	  <tt> C++ code </tt>
 	     </div><br>
@@ -222,7 +244,6 @@ $\circ$ Generalized unitarity relates cuts of loop amplitudes to products of tre
           <a style="font-size: large; text-align: right; float: right; margin-right: 38mm; margin-top: -15mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1510.05626>
                Ita ('15)
           </a>
-          
 	</div>
 </div>
 
@@ -322,9 +343,6 @@ Peraro ('16)
 
 
 <!---
-
----
-
 <b style="font-variant: small-caps; font-size: xxx-large"> Analytics from Numerics </b>
 
 <div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block;">
@@ -371,7 +389,7 @@ Peraro ('16)
 --->
 
 </section>
----
+
 ---
 
 <section>
@@ -542,9 +560,9 @@ $\circ$ For example, a posteriori, we find that for the most complicated $r_i$, 
 </div>
 
 </section>
----
 
 ---
+
 <section>
 
 {{< slide background-image="ATLAS2022.png" >}}
@@ -581,9 +599,9 @@ $\displaystyle \small \mathcal{H}^{(2)} = \sum_h |\mathcal{R}_h|^2 \Big/ \sum_h 
 </div>
 
 </section>
----
 
 ---
+
 <section>
 
 {{< slide background-image="W_distribution_and_diagrams.png">}}
@@ -726,9 +744,9 @@ $$\small \kern-30mm \sqrt{\big\langle {\color{orange}⟨3|1+4|2]}, {\color{red}�
 </div>
 
 </section>
----
 
 ---
+
 <section>
 
 <!---
@@ -784,17 +802,17 @@ $$\small \kern-30mm \sqrt{\big\langle {\color{orange}⟨3|1+4|2]}, {\color{red}�
 --->
 
 </section>
----
 
 ---
+
 <section data-visibility="uncounted">
 
 # Backup Slides
 
 </section>
----
 
 ---
+
 <section data-visibility="uncounted">
 
 # Absolute Values <br> on the Rationals
@@ -875,9 +893,9 @@ $$\small \kern-30mm \sqrt{\big\langle {\color{orange}⟨3|1+4|2]}, {\color{red}�
 </div>
 
 </section>
----
 
 ---
+
 <section data-visibility="uncounted">
 
 # Python Packages
@@ -924,10 +942,11 @@ $$\small \kern-30mm \sqrt{\big\langle {\color{orange}⟨3|1+4|2]}, {\color{red}�
 </div>
 
 </section>
----
 
 ---
+
 <section data-visibility="uncounted">
+
 # Spinor Helicity
 
 ---
@@ -939,15 +958,54 @@ $$\small \kern-30mm \sqrt{\big\langle {\color{orange}⟨3|1+4|2]}, {\color{red}�
 </font size> 
 
 <font size=5>
-
-| $\boldsymbol{(j\_{-},j\_{+})}$ | dim. | name | quantum field | kinematic variable |
-| :-------------: | :-------------: | :------------- | :-------------: | :-------------: |
-| (0,0) | 1 | scalar | $h$ | m |
-| (0,1/2) | 2 | right-handed Weyl spinor | $\chi_{R\,\alpha}$ | $\lambda_\alpha$ |
-| (1/2,0) | 2 | left-handed Weyl spinor | $\chi_L^{\,\dot\alpha}$ | $\bar{\lambda}^{\dot\alpha}$ |
-| (1/2,1/2) | 4 | rank-two spinor/four vector | $A^\mu/A^{\dot\alpha\alpha}$ | $P^\mu/P^{\dot\alpha\alpha}$ |
-| (1/2,0)$\oplus$(0,1/2) | 4 | bispinor (Dirac spinor) | $\Psi$ | $u, v$ |
-
+<table>
+  <thead>
+    <tr>
+      <th>$(j_{-},j_{+})$</th>
+      <th>dim.</th>
+      <th>name</th>
+      <th>quantum field</th>
+      <th>kinematic variable</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(0,0)</td>
+      <td>1</td>
+      <td>scalar</td>
+      <td>$h$</td>
+      <td>m</td>
+    </tr>
+    <tr>
+      <td>(0,1/2)</td>
+      <td>2</td>
+      <td>right-handed Weyl spinor</td>
+      <td>$\chi_{R\,\alpha}$</td>
+      <td>$\lambda_\alpha$</td>
+    </tr>
+    <tr>
+      <td>(1/2,0)</td>
+      <td>2</td>
+      <td>left-handed Weyl spinor</td>
+      <td>$\chi_L^{\,\dot\alpha}$</td>
+      <td>$\bar{\lambda}^{\dot\alpha}$</td>
+    </tr>
+    <tr>
+      <td>(1/2,1/2)</td>
+      <td>4</td>
+      <td>rank-two spinor/four vector</td>
+      <td>$A^\mu/A^{\dot\alpha\alpha}$</td>
+      <td>$P^\mu/P^{\dot\alpha\alpha}$</td>
+    </tr>
+    <tr>
+      <td>(1/2,0)$\oplus$(0,1/2)</td>
+      <td>4</td>
+      <td>bispinor (Dirac spinor)</td>
+      <td>$\Psi$</td>
+      <td>$u, v$</td>
+    </tr>
+  </tbody>
+</table>
 </font size>
 
 ---
@@ -957,22 +1015,31 @@ $$\small \kern-30mm \sqrt{\big\langle {\color{orange}⟨3|1+4|2]}, {\color{red}�
 
 Weyl spinors are sufficient for massless particles:
 
-<font size=5>$\text{det}(P^{\dot\alpha\alpha})=m^2 \rightarrow 0 \quad \Longrightarrow \quad P^{\dot\alpha\alpha} = \bar\lambda^{\dot\alpha}\lambda^\alpha$.</font size>
+<font size=5>
+$\text{det}(P^{\dot\alpha\alpha})=m^2 \rightarrow 0 \quad \Longrightarrow \quad P^{\dot\alpha\alpha} = \bar\lambda^{\dot\alpha}\lambda^\alpha$.
+</font size>
 
 <br>
+
 In terms of 4-momentum components we have:
 
-<font size=5>$$
+<font size=5>
+$$
 \lambda\_\alpha=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^0+p^3 \\\ p^1+ip^2\end{pmatrix} \, , \;\;\; \lambda^\alpha=\epsilon^{\alpha\beta} \lambda_\beta =\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^1+ip^2 \\\ -p^0+p^3\end{pmatrix}
-$$</font size>
+$$
+</font size>
 
-<font size=5>$\bar\lambda\_{\dot\alpha}=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^0+p^3 \\\ p^1-ip^2\end{pmatrix} \, , \;\;\; \bar\lambda^{\dot\alpha}=\epsilon^{\dot\alpha\dot\beta}\bar\lambda_{\dot\beta}=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^1-ip^2 \\\ \-p^0+p^3\end{pmatrix}$</font size>
+<font size=5>
+$\bar\lambda\_{\dot\alpha}=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^0+p^3 \\\ p^1-ip^2\end{pmatrix} \, , \;\;\; \bar\lambda^{\dot\alpha}=\epsilon^{\dot\alpha\dot\beta}\bar\lambda_{\dot\beta}=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^1-ip^2 \\\ \-p^0+p^3\end{pmatrix}$
+</font size>
 
 <br>
 
-<font size=5>$$
+<font size=5>
+$$
 \bar\lambda\_{\dot\alpha} = (\lambda\_\alpha)^* \quad if \quad p^i \in \mathbb{R}; \quad \quad \bar\lambda\_{\dot\alpha} \neq (\lambda\_\alpha)^* \quad if \quad p^i \in \mathbb{C}
-$$</font size>
+$$
+</font size>
 
 ---
 
@@ -983,34 +1050,25 @@ $$</font size>
 $$
 ⟨ij⟩ = λ_iλ_j = (λ_i)^α(λ_j)_α \quad \quad \quad [ij] = \barλ_i\barλ_j = (\barλ_i)\_\dotα(\barλ_j)^\dotα
 $$
-
-
 $$
 s_{ij} = ⟨ij⟩[ji]
 $$
-
-
 $$
 ⟨i\;|\;(j+k)\;|\;l] = (λ_i)^α (\not P_j + \not P_k )\_{α\dotα} \barλ_l^\dotα
 $$
-
-
 $$
 ⟨i\;|\;(j+k)\;|\;(l+m)\;|\;n⟩ = (λ_i)^α (\not P_j + \not P_k )\_{α \dot α} (\bar{\not P_l} + \bar{\not P_m} )^{\dot α α} (λ_n)_α
 $$
-
-
 $$
 tr_5(ijkl) = tr(\gamma^5 \not P_i \not P_j \not P_k \not P_l) =  [i\,|\,j\,|\,k\,|\,l\,|\,i⟩ - ⟨i\,|\,j\,|\,k\,|\,l\,|\,i]
 $$
-
 </font size>
 
 </section>
----
 
 ---
-<section>
+
+<section data-visibility="uncounted">
 
 {{< slide background-image="varieties-no-background.png" >}}
 
@@ -1101,4 +1159,3 @@ $\circ\,$ <i> Primary decompositions </i> of sets of polynomials (<i> ideals </i
 </div>
 
 </section>
----

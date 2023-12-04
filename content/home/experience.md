@@ -19,18 +19,33 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
   title = "Post-Doc"
+  company = "University of Edinburgh - Higgs Centre for Theoretical Physics"
+  company_url = "https://higgs.ph.ed.ac.uk/"
+  location = "Edinburgh, Scotland"
+  date_start = "2023-10-01"
+  date_end = ""
+#  description = """
+#  Research topics:
+#  
+#  * Quantum Chromo Dynamics
+#  * Multi-Loop Scattering Amplitudes
+#  * Physical applications of algebraic-geometry
+#  """
+
+[[experience]]
+  title = "Post-Doc"
   company = "Paul Scherrer Institut (PSI)"
   company_url = "https://www.psi.ch/de"
   location = "Villigen, Switzerland"
   date_start = "2022-10-01"
-  date_end = ""
-  description = """
-  Research topics:
-  
-  * Quantum Chromo Dynamics
-  * Multi-Loop Scattering Amplitudes
-  * Physical applications of algebraic-geometry
-  """
+  date_end = "2023-09-30"
+#  description = """
+#  Research topics:
+#  
+#  * Quantum Chromo Dynamics
+#  * Multi-Loop Scattering Amplitudes
+#  * Physical applications of algebraic-geometry
+#  """
 
 [[experience]]
   title = "Post-Doc"
@@ -39,13 +54,13 @@ date_format = "Jan 2006"
   location = "Freiburg, Germany"
   date_start = "2020-10-01"
   date_end = "2022-09-30"
-  description = """
-  Research topics:
-  
-  * Quantum Chromo Dynamics
-  * Multi-Loop Scattering Amplitudes
-  * Physical applications of algebraic-geometry
-  """
+#  description = """
+#  Research topics:
+#  
+#  * Quantum Chromo Dynamics
+#  * Multi-Loop Scattering Amplitudes
+#  * Physical applications of algebraic-geometry
+#  """
 
 [[experience]]
   title = "PhD"
@@ -54,22 +69,22 @@ date_format = "Jan 2006"
   location = "Durham, UK"
   date_start = "2016-10-01"
   date_end = "2020-07-15"
-  description = """
-  Research topics:
-  
-  * Quantum Chromo Dynamics
-  * One-Loop Scattering Amplitudes
-  * Relativistic Kinematics & Lorentz Phase Space
-  """
+#  description = """
+#  Research topics:
+#  
+#  * Quantum Chromo Dynamics
+#  * One-Loop Scattering Amplitudes
+#  * Relativistic Kinematics & Lorentz Phase Space
+#  """
 
 [[experience]]
-  title = "MPhys"
+  title = "MPhys⠀--⠀First-Class Honours"
   company = "University of Oxford"
   company_url = "http://www.ox.ac.uk/"
   location = "Oxford, UK"
   date_start = "2012-10-01"
   date_end = "2016-06-01"
-  description = """Bachelor with integrated Master of Physics (First-Class Honours)."""
+#   description = """Bachelor with integrated Master of Physics (First-Class Honours)."""
 
 [[experience]]
   title = "Summer Term"
@@ -78,7 +93,7 @@ date_format = "Jan 2006"
   location = "Harvard, Cambridge"
   date_start = "2011-06-01"
   date_end = "2011-08-01"
-  description = """Principles of Physics (A) """
+#  description = """Principles of Physics (A) """
 
 [[experience]]
   title = "Summer Term"
@@ -87,6 +102,6 @@ date_format = "Jan 2006"
   location = "Stanford, California"
   date_start = "2010-06-01"
   date_end = "2010-08-01"
-  description = """Calculus (A+) and Introduction to Statistics (A) """
+#  description = """Calculus (A+) and Introduction to Statistics (A) """
 
 +++
