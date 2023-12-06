@@ -4,7 +4,7 @@ event: AmplitudesMeeting
 event_url: 
 location: Higgs Centre, Edinburgh
 summary: 
-abstract: ""
+abstract: "I present the recent calculation of the two-loop amplitudes required to obtain next-to-next-to-leading order predictions for three-jet production at the Large Hadron Collider. This calculation is performed in full colour, that is including contributions from non-planar Feynman diagrams. I review the method of numerical generalized generalized and the integrand decomposition technique employed to generate finite-field samples of the amplitude. I will then focus on the analytic reconstruction of the coefficient functions from said numerical samples. A novel algorithm, based on the correlation of codimension-one residues, helps tame the complexity of the calculation. I touch upon various interdisciplinary aspects of the computation, including elements of number theory, computational algebraic geometry, constraint programming, memoization, and GPU acceleration."
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
