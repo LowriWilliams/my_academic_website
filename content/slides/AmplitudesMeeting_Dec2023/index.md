@@ -533,7 +533,7 @@ Peraro ('16)
 
 <div style="font-size: x-large; text-align: left; margin-top: 5mm;">
      $\circ$ Custom (for now private) interface to <code>Caravel</code> with: <br>
-     $\quad \star$ caching to SQLite database <a href=https://pypi.org/project/diskcache> diskcache </a> via Python decorators, <br>
+     $\quad \star$ caching to a SQLite database using <a href=https://pypi.org/project/diskcache> diskcache </a> via Python decorators, <br>
      $\quad \star$ and facilities for distributed computing into a slurm cluster.
 </div>
 
@@ -600,7 +600,7 @@ GDL, Ita, Page, Sotnikov (to appear)
      $\circ$ This defines the needed polynomial <b>quotient</b> ring$\kern-4mm\phantom{x}^{\star}$: $\;R_n = S_n / J_{\Lambda_n} $
 </div>
 <div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 4mm;">
-    $c_i(\lambda, \tilde\lambda)$ at $n$-point belong to the Field of Fractions$\kern-4mm\phantom{x}^{\dagger}$ of $R_n$
+    $r_i(\lambda, \tilde\lambda)$ at $n$-point belong to the Field of Fractions$\kern-4mm\phantom{x}^{\dagger}$ of $R_n$
 </div>
 
 <div style="font-size: large; float: center; margin-top: 5mm; margin-bottom: 5mm;">
@@ -615,7 +615,7 @@ GDL, Ita, Page, Sotnikov (to appear)
 <b style="font-variant: small-caps; font-size: xxx-large"> Prime Ideals \& Irreducible Varieties  </b>
 
 <div style="font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     $\circ$ Let us consider a very simple example
+     $\circ$ Let us consider a very simple example (at 4-point)
 </div>
 <br>
 <div style="font-size: x-large; float: center; margin-top: 2mm; margin-bottom: 0mm;">
@@ -664,68 +664,103 @@ GDL, Ita, Page, Sotnikov (to appear)
 <b style="font-variant: small-caps; font-size: xxx-large"> Five-Point Kinematics </b>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ\,$ The denominator factors $W_j$ are conjectured to be restricted to the letters of the symbol alphabet
+     $\circ\,$ The rational coefficients take the form
+</div>
+<br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
+     $$
+     \displaystyle r_i(|i\rangle,[i|) = \frac{\text{Num. poly}(|i\rangle,[i|)}{\text{Denom. poly}(|i\rangle,[i|)} = \frac{\mathcal{N}(|i\rangle,[i|)}{\prod_j D_j^{q_{ij}}(|i\rangle,[i|)}
+     $$
+</div>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     $\circ\,$ The denominator factors $\mathcal{D}_j$ are conjectured to be restricted to the letters of the symbol alphabet
 </div>
 <a style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;" href=https://arxiv.org/abs/1812.04586>
    Abreu, Dormans, Febres Cordero, Ita, Page ('18)
 </a>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: 3mm; margin-bottom: 5mm;">
-     $\displaystyle \{W_j\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_5)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1] \big\} {\quad\color{green}\text{Identical to 1-loop!}}$
+<br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -10mm; margin-bottom: 5mm;">
+     $$
+     \displaystyle \{\mathcal{D}_{\{1,\dots,35\}}\} = \bigcup_{\sigma \; \in \; \text{Aut}(R_5)} \sigma \circ \big\{ \langle 12 \rangle, \langle 1|2+3|1] \big\} \, , \qquad \text{Aut}(R_5) = \mathcal{P} \times \mathcal{S}_5
+     $$
+</div>
+<div style="text-align: center; font-size: x-large; float: center; margin-top: -10mm; margin-bottom: 0mm;">
+     $\qquad\color{green}\text{Identical to 1-loop!}$
+</div>
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+     $\phantom{\circ}$ Non-trivial statement (not proven!): all irreducible polynomials generate prime ideals, @ 5-pt.
 </div>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 2mm;">
-     $\circ\,$ Advantage of spinor variables due to:
+<br>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 2mm;">
+     $\circ\,$ Advantage of spinor variables:
 </div>
 <br>
 <div style="font-size: x-large; text-align: center; float: center; display: inline-block; margin-top: 0mm; margin-bottom: 2mm;">
-     $1.$ little group covariant LCD (no spurious poles); $\;\;2.$ avoiding parity even/odd split; <br>
-     $\Rightarrow\;$ in <u>LCD form</u> we would need $\color{green}29\,059$ evaluations instead of $\color{red}117\,810$ (with $s_{ij}$) for $\mathcal{R}^{(2)}_{2q3\gamma}$ .
+     $1.$ little group covariant LCD (no spurious poles); $\;\;2.$ avoiding parity even/odd split. <br>
+     $\Rightarrow\;$ fewer and simpler functions to reconstruct compared to Mandelstams or Twistors.
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
-     $\circ\,$ To$\color{green}\text{ avoid evaluations on singular surfaces}$, use insights from physics (locality).<br>
-     $\phantom{\circ}\,$ E.g. conjecture that no 5-point denominator has pairs of $\langle i |j + k | i]$, like at 1 loop.
+<div style="text-align: center; font-size: x-large; float: center; margin-bottom: 2mm; margin-top: 5mm;">
+     Next we obtain the denomiantor exponents $q_{ij}$.
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
-     $\circ$ Remove some overlap with other $\tilde{c}$'s, obtain the $\tilde{c}_i$ with higher degree LCD with $\color{green}4\,003$ points.
-</div>
-
-<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 2mm;">
-$\circ$ A posteriori, we find that for the $c_i$ with highest degree LCD the following would have sufficied
-</div>
-<div style="font-size: x-large; padding: 10px; display: inline-block;">
-    $\displaystyle \tilde{c}_i = \frac{⟨13⟩[14]^2⟨24⟩⟨34⟩[45]}{⟨45⟩⟨4|1+3|4]^3}-\frac{[14]⟨25⟩⟨34⟩^2[45]}{⟨45⟩^2⟨4|1+3|4]^2}-\frac{[14]⟨24⟩⟨34⟩⟨35⟩}{⟨45⟩^3⟨4|1+3|4]}$
-</div>
 
 ---
 
 <b style="font-variant: small-caps; font-size: xxx-large"> Least Common Denominator </b>
 
-(Anti-)Holomorphic Slices
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     $\circ\,$ The exponents $q_{ij}$ are given by
+</div>
+<br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
+     $$
+     \displaystyle \ln\left(\lim_{\mathcal{D}_j \rightarrow 0} r_i\right) = \underbrace{\ln(\mathcal{O}(1) \text{ const.})}_{|\dots |\ll | \ln \mathcal{D}_j |}- q_{ij} \ln \mathcal{D}_j
+     $$
+</div>
 
-Sorting the space and picking a basis
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     $\circ\,$ Issue: this can be done for $\mathbb{R}$, $\mathbb{C}$, $\mathbb{Q}_p$ but <u>not</u> $\mathbb{F}_p$ .
+</div>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 4mm; margin-bottom: 0mm;">
+     $\circ\,$ Solution: univariate Thiele rational interpolation on a line going through $V(\langle \mathcal{D}_j \rangle)$
+</div>
+<br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: 15mm; margin-bottom: 5mm;">
+     $$
+     \displaystyle |i\rangle \rightarrow |i\rangle (t)  |i\rangle + t c_i |\eta\rangle ,  \qquad |i] \rightarrow |i] \, , \qquad
+     \text{s.t.} \quad \sum_i c_i |i] = 0
+     $$
+</div>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     $\circ\,$ After interpolation on the (anti-)holomorphic slice, the rational functions read
+</div>
+<br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
+     $$
+     \displaystyle r_i(t) = \frac{\text{Poly. }(t)}{\prod_j (t-t_{\mathcal{D}_j})^{q_{ij}}}
+     $$
+</div>
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     where $t_{\mathcal{D}_j}$ is simply the solution to $D_j(t) = 0$. We read off the $q_{ij}$.
+</div>
 
 ---
 
 <b style="font-variant: small-caps; font-size: xxx-large"> Complexity of the Reconstruction </b>
 
-Number of functions and degrees
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     $\circ\,$ Sort the $r_i$ by mass dimension of $\mathcal{N}$ ($\approx$ Ansatz size), pick simplest subset forming a basis $r_{i \in \mathcal{B}}$
+</div>
 
----
-
-<b style="font-variant: small-caps; font-size: xxx-large"> Correlation of Residues </b>
-
-Formal Laurent series at each pole
-
-Null-Space of the residues
-
----
-
-<b style="font-variant: small-caps; font-size: xxx-large"> Breadth-First Search </b>
-
-Intersection of the null-spaces = linear combination that removes a singularity
-
+<div>
+<img src="ComplexityOfReconstruction-transparent.png"; style="max-width:650px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;">
+</div>
 
 </section>
 
@@ -736,6 +771,63 @@ Intersection of the null-spaces = linear combination that removes a singularity
 {{< slide background-image="spinor_coeffs.png" >}}
 
 # Analytic Reconstruction
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> Picking a Basis </b>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     $\circ\,$ We currently have:
+</div>
+<br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
+     $$
+     R = r_{i\in \mathcal{B}} M_{ij} h_j
+     $$
+</div>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
+     $\circ\,$ Basic idea: change basis from a subset of pentagon function coefficients, to linear combinations
+</div>
+<br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
+     $$
+     \tilde{r}_{i'} = O_{i'i} \, r_{i \in \mathcal{B}} \quad \text{s.t.} \quad \text{rank}(O_{i'i}) = \text{dim(span)}(r_{i})
+     $$
+</div>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
+     $\circ\,$ Key insight: 
+</div>
+<br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -4mm; margin-bottom: 5mm;">
+     $$
+     \text{dim(span)}\left(\lim_{\mathcal{D_j} \rightarrow  0 }r_{i}\right) \leq \text{dim(span)}(r_{i})
+     $$
+</div>
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
+     In other words, the <span style="color: red">pole residues are correlated</span>, so we can build linear combinations that ''remove the overlap''
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> Correlation of Residues </b>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     $\circ\,$ Collect several (anti-)holomorphic slices, build Laurent expansions around $t_{\mathcal{D}_k}$
+</div>
+<br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
+     $$
+     r_{i \in \mathcal{B}} = \sum_{m = 1}^{q_k} \frac{e^k_{im}}{(t-t_{\mathcal{D}_k})^m} + \mathcal{O}((t-t_{\mathcal{D}_k})^0)
+     $$
+</div>
+
+---
+
+<b style="font-variant: small-caps; font-size: xxx-large"> Breadth-First Search </b>
+
+Intersection of the null-spaces = linear combination that removes a singularity
 
 ---
 
@@ -848,6 +940,8 @@ $\circ\,$ All linear systems solved with CUDA over $\mathbb{F}_{p\leq 2^{31}-1}$
 <b style="font-variant: small-caps; font-size: xxx-large"> A Basis of the Vector Space </b>
 <br>
 
+https://arxiv.org/pdf/2311.10086.pdf#page=14
+
 <div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
      $\circ$ The set $c_i$ can be very large, so pick a set of independent ones, and write:
 </div>
@@ -922,7 +1016,7 @@ Comparison of $q\bar q \rightarrow \gamma \gamma \gamma$ (in full color) to $pp 
   </tr>
   <tr>
     <td style="text-align: center;">5-point massless</td>
-    <td style="text-align: center;">30</td>
+    <td style="text-align: center;">35</td>
     <td style="text-align: center;">29k</td>
     <td style="text-align: center;">4k</td>
     <td style="text-align: center;">$\sim$300 KB</td>
