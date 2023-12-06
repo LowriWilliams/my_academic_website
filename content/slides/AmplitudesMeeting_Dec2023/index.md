@@ -732,7 +732,7 @@ GDL, Ita, Page, Sotnikov (to appear)
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: 15mm; margin-bottom: 5mm;">
      $$
-     \displaystyle |i\rangle \rightarrow |i\rangle (t)  |i\rangle + t c_i |\eta\rangle ,  \qquad |i] \rightarrow |i] \, , \qquad
+     \displaystyle |i\rangle \rightarrow |i\rangle (t) = |i\rangle + t c_i |\eta\rangle ,  \qquad |i] \rightarrow |i] \, , \qquad
      \text{s.t.} \quad \sum_i c_i |i] = 0
      $$
 </div>
@@ -782,7 +782,7 @@ GDL, Ita, Page, Sotnikov (to appear)
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
      $$
-     R = r_{i\in \mathcal{B}} M_{ij} h_j
+     R = r_{i\in \mathcal{B}} M_{ij} h_j \, , \qquad M_{ij} \in \mathbb{Q}
      $$
 </div>
 
@@ -792,7 +792,7 @@ GDL, Ita, Page, Sotnikov (to appear)
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
      $$
-     \tilde{r}_{i'} = O_{i'i} \, r_{i \in \mathcal{B}} \quad \text{s.t.} \quad \text{rank}(O_{i'i}) = \text{dim(span)}(r_{i})
+     \tilde{r}_{i'} = O_{i'i} \, r_{i \in \mathcal{B}} \quad \text{s.t.} \quad \text{rank}(O_{i'i}) = \text{dim(span}_{R_5}(r_{i}))
      $$
 </div>
 
@@ -802,7 +802,7 @@ GDL, Ita, Page, Sotnikov (to appear)
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: -4mm; margin-bottom: 5mm;">
      $$
-     \text{dim(span)}\left(\lim_{\mathcal{D_j} \rightarrow  0 }r_{i}\right) \leq \text{dim(span)}(r_{i})
+     \text{dim(span}_{R_5}\left(\lim_{\mathcal{D_j} \rightarrow  0 }r_{i}\right)) \leq \text{dim(span}_{R_5}(r_{i}))
      $$
 </div>
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
@@ -814,20 +814,67 @@ GDL, Ita, Page, Sotnikov (to appear)
 <b style="font-variant: small-caps; font-size: xxx-large"> Correlation of Residues </b>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ\,$ Collect several (anti-)holomorphic slices, build Laurent expansions around $t_{\mathcal{D}_k}$
+     $\circ\,$ Build Laurent expansions around $t_{\mathcal{D}_k}$
 </div>
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
      $$
-     r_{i \in \mathcal{B}} = \sum_{m = 1}^{q_k} \frac{e^k_{im}}{(t-t_{\mathcal{D}_k})^m} + \mathcal{O}((t-t_{\mathcal{D}_k})^0)
+     r_{i \in \mathcal{B}} = \sum_{m = 1}^{q_k = \text{max}_i(q_{ik})} \frac{e^k_{im}}{(t-t_{\mathcal{D}_k})^m} + \mathcal{O}((t-t_{\mathcal{D}_k})^0)
      $$
+</div>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
+     $\circ\,$ Repeat for several (anti-)holomorphic slices, build vectors
+</div>
+<br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;">
+     $$
+     \vec{e}^k_{im} = (e^k_m)_{ij} = \{ e^k_{im}(\text{slice}_1), \dots, e^k_{im}(\text{slice}_n)  \}
+     $$
+</div>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
+     $\circ\,$ By Gaussian elimination on the matrix $(e^k_m)_{ij}$ we can partition the space:
+</div>
+<br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;">
+     $$
+     \text{span}_{\mathbb{Q}}(r_i) = \text{column}_{\mathbb{Q}}(\text{Res}(r_i, D_k^m)) \oplus \text{null}_{\mathbb{Q}}(\text{Res}(r_i, D_k^m))
+     $$
+</div>
+
+<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 4mm;">
+    Interpretation of $\text{null}_{\mathbb{Q}}(\text{Res}(r_i, D_k^m))$: functions that do <u>not</u> have a $D_k^m$ singularity
 </div>
 
 ---
 
 <b style="font-variant: small-caps; font-size: xxx-large"> Breadth-First Search </b>
 
-Intersection of the null-spaces = linear combination that removes a singularity
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
+     $\circ\,$ If a function $\tilde{r}$ does not have poles $D_{k_1}^{m_1}$ and $D_{k_2}^{m_2}$, then
+</div>
+<br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;">
+     $$
+     \tilde{r} \in \text{span}_{R_5}\Bigg[\Big(\text{null}_{\mathbb{Q}}(\text{Res}(r_i, D_{k_1}^{m_1})) \cap \text{null}_{\mathbb{Q}}(\text{Res}(r_i, D_{k_2}^{m_2}))\Big)_{i'i} \; r_{i\in \mathcal{B}}\Bigg]
+     $$
+</div>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
+     $\circ\,$ Build linear combination that remove as many singularities as possible, without dropping rank
+</div>
+<br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;">
+     $$
+     \displaystyle O_{i'i} = \cap_{k, m} \text{nulls} \qquad \text{(schematically)}
+     $$
+</div>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
+     $\circ\,$ This is done by searching a tree of possibilities of which pole gets dropped to which order, <br>
+     $\phantom{\circ}\,$ several optimizations required to search an otherwise proibitively large space
+</div>
 
 ---
 
@@ -835,29 +882,41 @@ Intersection of the null-spaces = linear combination that removes a singularity
 <br>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
-     $\circ$ In other words, the $\tilde{c}$ span a vector space, and we should $\color{green}\text{consider one modulo the others}$
+     $\circ$ In other words, we have reshuffled the $r_i$ by linear combinations of the others $r_{j\neq i}$
 </div>
 <div style="text-align: center; float:center; display: inline-block; font-size: x-large; margin-bottom: 2mm; margin-top: 2mm;">
-$\displaystyle \tilde{c}_i = \sum_{j\neq i} q_j \tilde{c}_j + \tilde{c}'_{i}$
-</div>
-<div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 1mm;">
-     $\phantom{\circ}$ the basis function $\tilde{c}_i$ can be replaced by $\tilde{c}'_i$ <u>without changing the vector space</u>.
+     $\displaystyle \tilde{r}_i = \sum_{j\neq i} o_{ij} r_j + r_i$
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
-     $\circ$ In particular, $\tilde{c}'_i$ needs not have all the poles of $\tilde{c}_i$, thus it can be much simpler.
-     <br> $\phantom{\circ}$ In other words, $\color{red}\text{the LCD of }\tilde{c}'_i\text{ can be smaller than that of }\tilde{c}_i$.
+<br>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
+     $\circ\,$ The rational functions now take the form
 </div>
-<div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
-     $\circ$ Brute-force search works well when an analytic expressions is available.
+<br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
+     $$
+     \displaystyle \tilde{r}_i(|i\rangle,[i|) = \frac{\tilde{\mathcal{N}}(|i\rangle,[i|)}{\prod_j D_j^{\tilde{q}_{ij}}(|i\rangle,[i|)}
+     $$
+</div>
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     $\phantom{\circ}\,$ where we have minimized $\sum_j \tilde{q}_{ij}$, compared to the $r_i$.
 </div>
 
-<div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
-     $\circ$ In a future publication we will provide an algorithm based on finite field evaluations.
+<br>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
+     $\circ\,$ This is the closest thing that I am aware of to a Gram–Schmidt procedure for vector spaces over fields that are not number fields, but in this case fields of fractions over polynomial quotient rings.
 </div>
 
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 10mm;">
-    Reconstructing a set of $c_i$ is not as bad as reconstructing the most complex function in the set.
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 2mm;">
+     $\circ\,$ Can we think of this as defining an inner product on the space of rational functions?
+</div>
+<br><br><br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -8mm; margin-bottom: 0mm;">
+     $$
+     o_{ij} \sim \langle r_i | r_j \rangle \qquad \text{very schematically}
+     $$
 </div>
 
 ---
@@ -932,39 +991,31 @@ $\circ\,$ Efficient implementation using open-source software only
 <br><br><br><br>
 
 <div style="text-align: left; font-size: x-large; margin-top: -2mm;">
-$\circ\,$ All linear systems solved with CUDA over $\mathbb{F}_{p\leq 2^{31}-1}$ on a laptop ($t_{\text{solving}} \ll t_{\text{sampling}}$)
+$\circ\,$ Linear systems solved w/ CUDA over $\mathbb{F}_{2^{31}-1}$ ($t_{\text{solving}} \ll t_{\text{sampling}}$) w/ <a href=https://github.com/GDeLaurentis/linac-dev> linac </a> <span style="text-align: left; font-size: small;"> (coming soon-ish) </span>
 </div>
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> A Basis of the Vector Space </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> Spinor-Helicity Results </b>
 <br>
+
+<div>
+<img src="VSSizeTable-transparent.png"; style="max-width:350px; float:center; border:none; margin-top: 5mm; margin-bottom: 0mm;">
+</div>
+
+<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
+     $\circ$ For the first time with an MHV two-loop five-point amplitude the results for the rational coefficients are compact enough to be present within a paper
+</div>
 
 https://arxiv.org/pdf/2311.10086.pdf#page=14
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ The set $c_i$ can be very large, so pick a set of independent ones, and write:
-</div>
-<div style="text-align: center; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\displaystyle c_i = \tilde{c}_j M_{ji} \quad \text{with} \quad M_{ji} \in \mathbb{Q}$ 
-</div>
-<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\phantom{\circ}$ with $\tilde{c}$ an independent subset of $c$. <br>
-     $\phantom{\circ}\Longrightarrow$ $M_{ji}$ is, up to a permutation of columns, in row reduced echelon form.
+     $\circ$ The simplification of the basis change is <u>independent</u> of that obtained from partial fraction decompositions, as the latter can still be performed after the former.
 </div>
 
 <div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     $\circ$ We might as well use a set $\tilde{c}$ which is not a subset of $c$, at the trivial cost of changing $M_{ji}$.
-</div>
-
-<div style="text-align: left; font-size: x-large; margin-bottom: 2mm; margin-top: 5mm;">
-     $\circ$ Consider a PFD of one of the $\tilde{c}$'s:
-</div>
-<div style="font-size: x-large; padding: 10px; display: inline-block;">
-    $\displaystyle \tilde{c}_i(\lambda,\tilde\lambda) = \frac{\mathcal{N}_i(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ij}}(\lambda,\tilde\lambda)} = \sum_k \frac{\mathcal{N}_{ik}(\lambda,\tilde\lambda)}{\prod_j W_j^{q_{ijk}}(\lambda,\tilde\lambda)} = \sum_k \tilde{c}_{ik}(\lambda,\tilde\lambda)$
-</div>
-<div style="text-align: left; font-size: x-large; margin-bottom: 1mm; margin-top: 5mm;">
-     We $\color{red}\text{cannot have } \tilde{c}_i \in \text{span}(\tilde{c}_{j\neq i})$, but we $\color{green} \text{can have }\tilde{c}_{ik} \in \text{span}(\tilde{c}_{j\neq i})$, for some, but not all, $k$.
+     $\circ$ Can now study propertities of the amplitude <br>
+     $\phantom{\circ}$ e.g. no function has a $\text{tr}_5$ singularity, nor a pair of $\langle i | j + k | i]$ in the same denominator.
 </div>
 
 </section>
