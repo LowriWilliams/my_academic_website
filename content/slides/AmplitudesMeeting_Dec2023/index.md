@@ -792,7 +792,7 @@ GDL, Ita, Page, Sotnikov (to appear)
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
      $$
-     \tilde{r}_{i'} = O_{i'i} \, r_{i \in \mathcal{B}} \quad \text{s.t.} \quad \text{rank}(O_{i'i}) = \text{dim(span}_{R_5}(r_{i}))
+     \tilde{r}_{i'} = O_{i'i} \, r_{i \in \mathcal{B}} \quad \text{s.t.} \quad \text{rank}(O_{i'i}) = \text{dim(span}_{FF(R_5), \mathbb{Q}}(r_{i}))
      $$
 </div>
 
@@ -802,7 +802,7 @@ GDL, Ita, Page, Sotnikov (to appear)
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: -4mm; margin-bottom: 5mm;">
      $$
-     \text{dim(span}_{R_5}\left(\lim_{\mathcal{D_j} \rightarrow  0 }r_{i}\right)) \leq \text{dim(span}_{R_5}(r_{i}))
+     \text{dim(span}_{FF(R_5), \mathbb{Q}}\left(\lim_{\mathcal{D_j} \rightarrow  0 }r_{i}\right)) \leq \text{dim(span}_{FF(R_5), \mathbb{Q}}(r_{i}))
      $$
 </div>
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
@@ -839,7 +839,7 @@ GDL, Ita, Page, Sotnikov (to appear)
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;">
      $$
-     \text{span}_{\mathbb{Q}}(r_i) = \text{column}_{\mathbb{Q}}(\text{Res}(r_i, D_k^m)) \oplus \text{null}_{\mathbb{Q}}(\text{Res}(r_i, D_k^m))
+     \text{span}_{\vec{\mathbb{Q}},\mathbb{Q}}(r_i) = \text{column}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_i, D_k^m)) \oplus \text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_i, D_k^m))
      $$
 </div>
 
@@ -857,7 +857,7 @@ GDL, Ita, Page, Sotnikov (to appear)
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;">
      $$
-     \tilde{r} \in \text{span}_{R_5}\Bigg[\Big(\text{null}_{\mathbb{Q}}(\text{Res}(r_i, D_{k_1}^{m_1})) \cap \text{null}_{\mathbb{Q}}(\text{Res}(r_i, D_{k_2}^{m_2}))\Big)_{i'i} \; r_{i\in \mathcal{B}}\Bigg]
+     \tilde{r} \in \text{span}_{FF(R_5),\mathbb{Q}}\Bigg[\Big(\text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_i, D_{k_1}^{m_1})) \cap \text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_i, D_{k_2}^{m_2}))\Big)_{i'i} \; \cdot \; r_{i\in \mathcal{B}}\Bigg]
      $$
 </div>
 
@@ -867,7 +867,7 @@ GDL, Ita, Page, Sotnikov (to appear)
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;">
      $$
-     \displaystyle O_{i'i} = \cap_{k, m} \text{nulls} \qquad \text{(schematically)}
+     \displaystyle O_{i'i} = \cap_{k, m} \text{nulls}_{\vec{\mathbb{Q}},\mathbb{Q}} \qquad \text{(schematically)}
      $$
 </div>
 

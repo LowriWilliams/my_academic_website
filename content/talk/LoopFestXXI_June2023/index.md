@@ -9,7 +9,7 @@ abstract: "I will present the computation of the NNLO double-virtual subleading-
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
 date: "2023-06-27T14:25:00Z"
-date_end: "2023-06-14T14:50:00Z"
+date_end: "2023-06-27T14:50:00Z"
 all_day: false
 
 # Schedule page publish date (NOT talk date).

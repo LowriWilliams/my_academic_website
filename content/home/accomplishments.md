@@ -18,6 +18,17 @@ date_format = "Jan 2006"
 #   Leave other parameters empty if not required.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
+
+[[item]]
+  organization = "Trinity College Dublin"
+  organization_url = "https://www.tcd.ie/"
+  title = "Government of Ireland Postdoctoral Fellowship (Declined)"
+  url = ""
+  certificate_url = ""
+  date_start = "2023-04-26"
+  date_end = ""
+  description = ""
+
 [[item]]
   organization = "Oxford Univeristy"
   organization_url = "http://www.ox.ac.uk/"

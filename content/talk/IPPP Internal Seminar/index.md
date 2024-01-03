@@ -44,7 +44,9 @@ url_video: ""
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: IPPP Internal Seminar
+# slides: IPPP Internal Seminar
+
+url_slides: "slides/IPPP Internal Seminar/index.html"
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.

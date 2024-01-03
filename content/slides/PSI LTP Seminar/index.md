@@ -12,11 +12,12 @@ slides:
   # Choose a code highlighting style (if highlighting enabled in `params.toml`)
   #   Light style: github. Dark style: dracula (default).
   highlight_style: dracula
+
 ---
+
 <html>
 	<head>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower">
-		<link rel="stylesheet" href="../reveal_custom.css">
 	</head>
 </html>
 
@@ -30,11 +31,15 @@ slides:
 
 Giuseppe De Laurentis
 
-LTP Seminar \
-\
-<p style="line-height: 0.05;"> <img src="paul-scherrer-institute-psi-logo-vector-transparent.png"; style="max-width:280px;float:center;border:none;">\
-\
-<font size=4> Find these slides at [gdelaurentis.github.io/slides/psi-ltp-seminar](/slides/psi-ltp-seminar/#/) </font size> </p>
+LTP Seminar
+
+<div style="margin-top: 20mm;"> 
+
+<img src="paul-scherrer-institute-psi-logo-vector-transparent.png" style="max-width:280px; float:center; border:none; margin-bottom: -5mm;">
+
+<span style="font-size: 14pt; margin-top: -5mm;"> Find these slides at [gdelaurentis.github.io/slides/psi-ltp-seminar](/slides/psi-ltp-seminar/#/) </span> 
+
+</div>
 
 {{< speaker_note >}}
 - Only speaker can read these.
@@ -73,9 +78,10 @@ In practice, we want <span style="background-color: #FFFF007F">fully-connected, 
 
 <div style="text-align: left; font-size: x-large">
 Amplitudes are a key element for computing cross sections. At hadron colliders, we have:
-
-$$\displaystyle σ_{2 \rightarrow n - 2} = \sum_{a,b} ∫ dx_a dx_b f_{a/h_1}(x_a, μ_F) \, f_{b/h_2}(x_b, μ_F) \;\hat{σ}_{ab→n-2}(x_a, x_b, μ_F, μ_R) \\[2mm]
-\displaystyle \hat{σ}_{n}=\frac{1}{2\hat{s}}\int d\text{LIPS}\;(2π)^4δ^4\big(\sum_{i=1}^n p_i\big)\;|\overline{\mathcal{A}(p_i,\lambda_i,a_i,μ_F, μ_R)}|^2$$
+$$
+\displaystyle σ_{2 \rightarrow n - 2} = \sum_{a,b} ∫ dx_a dx_b f_{a/h_1}(x_a, μ_F) \, f_{b/h_2}(x_b, μ_F) \;\hat{σ}_{ab→n-2}(x_a, x_b, μ_F, μ_R) \\[2mm]
+\displaystyle \hat{σ}_{n}=\frac{1}{2\hat{s}}\int d\text{LIPS}\;(2π)^4δ^4\big(\sum_{i=1}^n p_i\big)\;|\overline{\mathcal{A}(p_i,\lambda_i,a_i,μ_F, μ_R)}|^2
+$$
 </div>
 
 <div style="display:block; width:100%;">
@@ -141,7 +147,7 @@ Better predictions require both <span style="background-color: #FFFF007F">more l
 --->
 
 <div style="width:100%; float: center; display: inline-block; text-align: center; margin-top: 2mm;">
-     <img src="ModSquareAmplitude.png"; style="max-width:650px; float:center; border:none; margin-top: 1mm; margin-bottom: -5mm;">
+     <img src="ModSquareAmplitude.png" style="max-width:650px; float:center; border:none; margin-top: 1mm; margin-bottom: -5mm;">
 </div>
 
 
@@ -161,7 +167,9 @@ More loops $\rightarrow$ analytical complexity; &nbsp more legs $\rightarrow$ al
    State-of-the-Art
 </b>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 7mm;">
+<br>
+
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 7mm;">
      $\circ\,$ Focus on all-gluon scattering, as a representative example.
 </div>
 
@@ -282,9 +290,9 @@ More loops $\rightarrow$ analytical complexity; &nbsp more legs $\rightarrow$ al
 </div>
 
 </section>
----
 
 ---
+
 <section>
 
 {{< slide background-image="Feynman-Diagrams-transparent.png" >}}
@@ -319,26 +327,30 @@ $$\displaystyle\mathcal{A}^{1-loop}_{n}({p_i, λ_i, a_i}) = \; g^{n} \sum_{σ\in
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 20mm;"> <span style="color: orange">Rational</span> and <span style="color: red">Transcendental</span> </b>
+<div style="font-variant: small-caps; font-size: xxx-large; margin-bottom: 0mm; font-weight: bold;"> <span style="color: orange">Rational</span> and <span style="color: red">Transcendental</span> </div>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-bottom: 10mm; margin-top: 10mm">Decomposition in terms of <b> master integrals </b> </div>
-<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 10mm" href=https://arxiv.org/abs/0712.1851>Ellis, Zanderighi</a>
-<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 10mm" href=https://arxiv.org/abs/hep-ph/9212308>Bern, Dixon, Kosower;&nbsp</a>
-<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 10mm" href=https://www.sciencedirect.com/science/article/pii/0550321379906059?ref=pdf_download&fr=RR-2&rr=7c4afcac1f343b58>'t Hooft, Veltman;&nbsp</a>
+<div style="text-align: left; font-size: x-large; float: left; margin-bottom: 5mm; margin-top: 5mm">
+     Decomposition in terms of <b> master integrals </b> 
+</div>
+<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 5mm" href=https://arxiv.org/abs/0712.1851>Ellis, Zanderighi</a>
+<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 5mm" href=https://arxiv.org/abs/hep-ph/9212308>Bern, Dixon, Kosower;&nbsp</a>
+<a style="font-size: large; text-align: right; float: right; margin-bottom: 5mm; margin-top: 5mm" href=https://www.sciencedirect.com/science/article/pii/0550321379906059?ref=pdf_download&fr=RR-2&rr=7c4afcac1f343b58>'t Hooft, Veltman;&nbsp</a>
+
+<br>
 
 <div style="font-size: x-large; margin-top: 10mm;">
 $$A^{1-\text{loop},D=4}_{n} = \sum_i \color{orange}{d_i} \color{red}{I^i_{Box}} + \sum_i \color{orange}{c_i} \color{red}{I^i_{Triangle}} + \sum_i \color{orange}{b_i} \color{red}{I^i_{Bubble}} + \sum_i \color{orange}{a_i} \color{red}{I^i_{Tadpoles}} + \color{orange}{R}$$
 </div>
 
 <div style="width:90%; float: center; display: inline-block;">
-       <img src="one-loop-decomposition-transparent.png"; style="max-width:750px;float:center;border:none;margin-top:-5px;">
-  </div>
-
-<div style="text-align: left; font-size: x-large; float: left; margin-bottom: 10mm;">
-     In general, in $D= 4- 2 \epsilon$, for a suitable choice of master integrals
+       <img src="one-loop-decomposition-transparent.png" style="max-width:750px;float:center;border:none;margin-top:-5px;">
 </div>
 
-<div style="font-size: x-large; margin-top: 10mm; margin-bottom:10mm">
+<div style="text-align: left; font-size: x-large; float: left; margin-bottom: 5mm;">
+     In general, in $D= 4- 2 \epsilon$, for a suitable choice of master integrals 
+</div>
+<br><br>
+<div style="font-size: x-large; margin-top: 5mm; margin-bottom:10mm">
 $$ A^{\ell-loop}_n = \sum_{i \in \text{masters}} \frac{\color{orange}{c_i}(\vec p, \vec \lambda, \epsilon) \, \color{red}{I_i}(\vec p, \epsilon)}{\prod_j (\epsilon - a_{ij})}\;, \quad \text{with} \quad a_{ij} \in \mathbb{Q}$$
 </div>
 
@@ -350,19 +362,24 @@ $$ A^{\ell-loop}_n = \sum_{i \in \text{masters}} \frac{\color{orange}{c_i}(\vec 
 </div>
 --->
 
-</font size>
-
 ---
 
 
-<b style="font-variant: small-caps; font-size: xxx-large"> Feynman diagram by Feynman diagram </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> 
+Feynman diagram by Feynman diagram 
+</b>
+
 <br>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 5mm;">     
-     $\circ\,$ Analytic computations can get very complicated very quickly. For example, for $A^{\text{tree}}_{5-\text{gluons}}$: <br>
+     $\circ\,$ Analytic computations can get very complicated very quickly. For example, for $A^{\text{tree}}_{5-\text{gluons}}$:
 </div>
 
-<img src="Five_gluons_mess-transparent.png"; style="max-width:450px;float:center;border:none;margin-top:-5px;">
+<br>
+
+<img src="Five_gluons_mess-transparent.png" style="max-width: 450px; float: center; border: none; margin-top: -5px;">
+
+<br>
 
 <!---
 <div style="text-align: center; font-size: x-large; float: center; margin-top: 5mm; margin-bottom: 5mm;">     
@@ -378,10 +395,10 @@ $$ A^{\ell-loop}_n = \sum_{i \in \text{masters}} \frac{\color{orange}{c_i}(\vec 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: -3mm; margin-bottom: 0mm;">
      $\circ\,$This amplitude can be written as just
 </div>
-<a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: 0mm;" href=https://www.sciencedirect.com/science/article/pii/0550321388904427>
+<a style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;" href=https://www.sciencedirect.com/science/article/pii/0550321388904427>
    Berends, Giele ('88)
 </a>
-<a style="font-size: large; text-align: right; float: right; margin-top: -3mm; margin-bottom: 0mm;" href=https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.56.2459>
+<a style="font-size: large; text-align: right; float: right; margin-top: 0mm; margin-bottom: 0mm;" href=https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.56.2459>
    Parke, Taylor ('86),&nbsp
 </a>
 
@@ -422,9 +439,9 @@ $$
 --->
 
 </section>
----
 
 ---
+
 <section>
 
 {{< slide background-image="ComputingClusterImage.jpg" >}}
@@ -581,7 +598,7 @@ $\circ$ Generalized unitarity relates products of tree amplitudes to loop amplit
 </div>
 
 </section>
----
+
 ---
 
 <section>
@@ -730,9 +747,9 @@ $\displaystyle c_{i,\Gamma}(x_1, \dots, x_5) = \frac{\text{15 monomials of degre
 </div>
 
 </section>
----
 
 ---
+
 <section>
 
 {{< slide background-image="varieties-no-background.png" >}}
@@ -824,9 +841,9 @@ $\circ\,$ <i> Primary decompositions </i> of sets of polynomials (<i> ideals </i
 </div>
 
 </section>
----
 
 ---
+
 <section>
 
 
@@ -887,11 +904,11 @@ Abreu, Febres Cordero, Ita, Klinkert, Page, Sotnikov
 
 <b style="font-variant: small-caps; font-size: xxx-large"> Try it yourself </b>
 
-<code>
-pip install [lips](https://github.com/GDeLaurentis/lips) [pyadic](https://github.com/GDeLaurentis/pyadic)
+<code style="font-size: xx-large">
+pip install <a href="https://github.com/GDeLaurentis/lips">lips</a> <a href="https://github.com/GDeLaurentis/pyadic">pyadic</a>
 </code>
 
-<br>
+<br><br>
 
 <b style="font-variant: small-caps; font-size: xxx-large"> Thanks for your attention! </b>
 
@@ -900,24 +917,24 @@ pip install [lips](https://github.com/GDeLaurentis/lips) [pyadic](https://github
 <b> Questions? </b>
 
 </section>
----
 
 ---
+
 <section data-visibility="uncounted">
 
 # Backup Slides
 
 </section>
----
 
 ---
+
 <section data-visibility="uncounted">
 
 # Absolute Values <br> on the Rationals
 
 ---
 
-<b style="font-variant: small-caps; font-size: xxx-large"> $\boldsymbol p\,$-adic Numbers </b>
+<b style="font-variant: small-caps; font-size: xxx-large"> $\boldsymbol p\\,$-adic Numbers </b>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 1mm;">     
      $\circ\,$ We have again a problem <b> in a finite field </b> 1 is not smaller than 2. In fact:
@@ -950,9 +967,9 @@ pip install [lips](https://github.com/GDeLaurentis/lips) [pyadic](https://github
 </div>
 
 </section>
----
 
 ---
+
 <section data-visibility="uncounted">
 
 # Python Packages
@@ -999,10 +1016,11 @@ pip install [lips](https://github.com/GDeLaurentis/lips) [pyadic](https://github
 </div>
 
 </section>
----
 
 ---
+
 <section data-visibility="uncounted">
+
 # Spinor Helicity
 
 ---
@@ -1014,15 +1032,54 @@ pip install [lips](https://github.com/GDeLaurentis/lips) [pyadic](https://github
 </font size> 
 
 <font size=5>
-
-| $\boldsymbol{(j\_{-},j\_{+})}$ | dim. | name | quantum field | kinematic variable |
-| :-------------: | :-------------: | :------------- | :-------------: | :-------------: |
-| (0,0) | 1 | scalar | $h$ | m |
-| (0,1/2) | 2 | right-handed Weyl spinor | $\chi_{R\,\alpha}$ | $\lambda_\alpha$ |
-| (1/2,0) | 2 | left-handed Weyl spinor | $\chi_L^{\,\dot\alpha}$ | $\bar{\lambda}^{\dot\alpha}$ |
-| (1/2,1/2) | 4 | rank-two spinor/four vector | $A^\mu/A^{\dot\alpha\alpha}$ | $P^\mu/P^{\dot\alpha\alpha}$ |
-| (1/2,0)$\oplus$(0,1/2) | 4 | bispinor (Dirac spinor) | $\Psi$ | $u, v$ |
-
+<table>
+  <thead>
+    <tr>
+      <th>$(j_{-},j_{+})$</th>
+      <th>dim.</th>
+      <th>name</th>
+      <th>quantum field</th>
+      <th>kinematic variable</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(0,0)</td>
+      <td>1</td>
+      <td>scalar</td>
+      <td>$h$</td>
+      <td>m</td>
+    </tr>
+    <tr>
+      <td>(0,1/2)</td>
+      <td>2</td>
+      <td>right-handed Weyl spinor</td>
+      <td>$\chi_{R\,\alpha}$</td>
+      <td>$\lambda_\alpha$</td>
+    </tr>
+    <tr>
+      <td>(1/2,0)</td>
+      <td>2</td>
+      <td>left-handed Weyl spinor</td>
+      <td>$\chi_L^{\,\dot\alpha}$</td>
+      <td>$\bar{\lambda}^{\dot\alpha}$</td>
+    </tr>
+    <tr>
+      <td>(1/2,1/2)</td>
+      <td>4</td>
+      <td>rank-two spinor/four vector</td>
+      <td>$A^\mu/A^{\dot\alpha\alpha}$</td>
+      <td>$P^\mu/P^{\dot\alpha\alpha}$</td>
+    </tr>
+    <tr>
+      <td>(1/2,0)$\oplus$(0,1/2)</td>
+      <td>4</td>
+      <td>bispinor (Dirac spinor)</td>
+      <td>$\Psi$</td>
+      <td>$u, v$</td>
+    </tr>
+  </tbody>
+</table>
 </font size>
 
 ---
@@ -1032,24 +1089,34 @@ pip install [lips](https://github.com/GDeLaurentis/lips) [pyadic](https://github
 
 Weyl spinors are sufficient for massless particles:
 
-<font size=5>$\text{det}(P^{\dot\alpha\alpha})=m^2 \rightarrow 0 \quad \Longrightarrow \quad P^{\dot\alpha\alpha} = \bar\lambda^{\dot\alpha}\lambda^\alpha$.</font size>
+<font size=5>
+$\text{det}(P^{\dot\alpha\alpha})=m^2 \rightarrow 0 \quad \Longrightarrow \quad P^{\dot\alpha\alpha} = \bar\lambda^{\dot\alpha}\lambda^\alpha$.
+</font size>
 
 <br>
+
 In terms of 4-momentum components we have:
 
-<font size=5>$$
+<font size=5>
+$$
 \lambda\_\alpha=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^0+p^3 \\\ p^1+ip^2\end{pmatrix} \, , \;\;\; \lambda^\alpha=\epsilon^{\alpha\beta} \lambda_\beta =\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^1+ip^2 \\\ -p^0+p^3\end{pmatrix}
-$$</font size>
+$$
+</font size>
 
-<font size=5>$\bar\lambda\_{\dot\alpha}=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^0+p^3 \\\ p^1-ip^2\end{pmatrix} \, , \;\;\; \bar\lambda^{\dot\alpha}=\epsilon^{\dot\alpha\dot\beta}\bar\lambda_{\dot\beta}=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^1-ip^2 \\\ \-p^0+p^3\end{pmatrix}$</font size>
+<font size=5>
+$\bar\lambda\_{\dot\alpha}=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^0+p^3 \\\ p^1-ip^2\end{pmatrix} \, , \;\;\; \bar\lambda^{\dot\alpha}=\epsilon^{\dot\alpha\dot\beta}\bar\lambda_{\dot\beta}=\frac{1}{\sqrt{p^0+p^3}}\begin{pmatrix}p^1-ip^2 \\\ \-p^0+p^3\end{pmatrix}$
+</font size>
 
 <br>
 
-<font size=5>$$
+<font size=5>
+$$
 \bar\lambda\_{\dot\alpha} = (\lambda\_\alpha)^* \quad if \quad p^i \in \mathbb{R}; \quad \quad \bar\lambda\_{\dot\alpha} \neq (\lambda\_\alpha)^* \quad if \quad p^i \in \mathbb{C}
-$$</font size>
+$$
+</font size>
 
 ---
+
 
 <b style="font-variant: small-caps; font-size: xxx-large">  Spinor Invariants </b>
 <br>
@@ -1058,34 +1125,26 @@ $$</font size>
 $$
 ⟨ij⟩ = λ_iλ_j = (λ_i)^α(λ_j)_α \quad \quad \quad [ij] = \barλ_i\barλ_j = (\barλ_i)\_\dotα(\barλ_j)^\dotα
 $$
-
-
 $$
 s_{ij} = ⟨ij⟩[ji]
 $$
-
-
 $$
 ⟨i\;|\;(j+k)\;|\;l] = (λ_i)^α (\not P_j + \not P_k )\_{α\dotα} \barλ_l^\dotα
 $$
-
-
 $$
 ⟨i\;|\;(j+k)\;|\;(l+m)\;|\;n⟩ = (λ_i)^α (\not P_j + \not P_k )\_{α \dot α} (\bar{\not P_l} + \bar{\not P_m} )^{\dot α α} (λ_n)_α
 $$
-
-
 $$
 tr_5(ijkl) = tr(\gamma^5 \not P_i \not P_j \not P_k \not P_l) =  [i\,|\,j\,|\,k\,|\,l\,|\,i⟩ - ⟨i\,|\,j\,|\,k\,|\,l\,|\,i]
 $$
-
 </font size>
 
 </section>
----
 
 ---
+
 <section data-visibility="uncounted">
+
 # Five-Parton Two-Loop <br> Finite Remainders
 
 <br>
@@ -1096,9 +1155,11 @@ Example Simplifications
 
 <b> uubggg pmpmp Nf1 #3 </b>
 
-<img src="uubggg_pmpmp_nf1_nb3.png"; style="max-width:1024px;float:center;border:none;">
+<img src="uubggg_pmpmp_nf1_nb3.png" style="max-width:1024px;float:center;border:none;">
 
-<font size=5> is equal to </font size>
+<font size=5> 
+is equal to 
+</font size>
 
 <font size=5>
 $
@@ -1110,9 +1171,15 @@ $
 
 <b> ggggg mpmpp Nf1 # 9 </b>
 
-<img src="ggggg_mpmpp_nf1_9.png"; style="max-width:512px;float:center;border:none;">
+<img src="ggggg_mpmpp_nf1_9.png" style="max-width:512px;float:center;border:none;margin-bottom:0mm;">
 
-<font size=5> is equal to </font size>
+<br>
+
+<font size=5> 
+is equal to 
+</font size>
+
+<br>
 
 <font size=5>
 $-1\frac{[12]³[15][23]⟨25⟩³[35]³}{[13]⁴[25]⟨5|1+2|5]³}+\frac{97}{12}\frac{[12]⁴⟨25⟩[35]⁴}{[13]⁴[25]³⟨5|1+2|5]}$
@@ -1128,17 +1195,18 @@ $-\frac{2}{3}$
 </font size>
 
 </section>
----
 
 ---
+
 <section data-visibility="uncounted">
+
 # Higgs + 4-Parton Amplitude <br> (@ finite top-mass) 
 
 ---
 
 <b> Example of cut diagram </b>
 
-<img src="HiggsBox.png"; style="max-width:300px;float:center;border:none;">
+<img src="HiggsBox.png" style="max-width:300px;float:center;border:none;">
 
 Only singularity involving $m_{top}$ (from pentagon contributions)
 
@@ -1158,5 +1226,35 @@ The coefficients are Taylor expasions in $m_{top}$:
 $C^{(0)} + m^2_{top} C^{(2)}$.
 
 with $C^{(0)}$ and $C^{(2)}$ resabling the six-gluon coefficients.
+
 </section>
----
+
+
+<!-- REVEAL.JS CUSTOMIZATION -->
+
+<!-- Include MathJax library -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<!-- Include Reveal.js and the Math plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.2/reveal.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.2/plugin/math/math.js"></script>
+
+<!-- Initialize Reveal.js with the MathJax plugin -->
+<script>
+  Reveal.initialize({
+    history: true,
+    slideNumber: false,
+    plugins: [ RevealMath ],
+    math: {
+      inlineMath: [ ['\\(', '\\)'] ],
+      displayMath: [ ['\\[', '\\]'] ],
+      mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+      config: 'TeX-MML-AM_CHTML',
+      CommonHTML: {
+        scale: 100, // Adjust the font size as needed
+      },
+    }
+  });
+</script>

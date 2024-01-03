@@ -5,6 +5,7 @@ title: Recent & Upcoming Talks
 #   1 = List
 #   2 = Compact
 #   3 = Card
+# How to recover grouping by year?
 view: 2
 
 # Optional header image (relative to `static/img/` folder).
