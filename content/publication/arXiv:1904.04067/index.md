@@ -1,7 +1,7 @@
 ---
 title: "Extracting analytical one-loop amplitudes from numerical evaluations"
 authors:
-- admin
+- Giuseppe De Laurentis
 - Daniel Maitre
 date: "2019-04-08"
 doi: ""
@@ -16,7 +16,7 @@ publishDate: ""
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: '*JHEP*'
 publication_short: ""
 
 abstract: In this article we present a method to generate analytic expressions for the integral coefficients of loop amplitudes using numerical evaluations only. We use high-precision arithmetic to explore the singularity structure of the coefficients and decompose them into parts of manageable complexity. To illustrate the usability of our method we provide analytical expressions for all helicity configurations of the colour-ordered six-point gluon amplitudes at one loop with a gluon in the loop.

@@ -3,7 +3,7 @@ title: "The one-loop amplitudes for Higgs + 4 partons with full mass effects"
 authors:
 - Lucy Budge
 - John M. Campbell
-- admin
+- Giuseppe De Laurentis
 - R. Keith Ellis
 - Satyajit Seth
 date: "2020-02-27"
@@ -19,7 +19,7 @@ publishDate: ""
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: '*JHEP*'
 publication_short: ""
 
 abstract: "We present compact analytic formulae for the one-loop amplitudes for Higgs + 4 parton scattering, 0→ggggh, 0→qq&#773;ggh and 0→qq&#773;q'q&#773;'h, mediated by a loop of massive coloured quarks. We exploit the correspondence with a theory in which a massive coloured scalar circulates in the loop to avoid a proliferation in the number of terms in the result. In addition, we use momentum twistors and high precision numerical evaluations to simplify the expressions. The analytic results in this paper, in terms of spinor products, allow construction of an efficient numerical program to calculate the amplitude."

@@ -2,7 +2,7 @@
 title: "The pp→W(→lν)+γ process at next-to-next-to-leading order"
 authors:
 - John M. Campbell,
-- admin
+- Giuseppe De Laurentis
 - R. Keith Ellis
 - Satyajit Seth
 date: "2021-05-03"
@@ -18,7 +18,7 @@ publishDate: ""
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "*JHEP*"
 publication_short: ""
 
 abstract: "We present details of the calculation of the pp→W(→lν)γ process at next-to-next-to-leading order in QCD, calculated using the jettiness slicing method. The calculation is based entirely on analytic amplitudes. Because of the radiation zero, the NLO QCD contribution from the gq channel is as important as the contribution from the Born qq¯ process, disrupting the normal counting of leading and sub-leading contributions. We also assess the importance of electroweak (EW) corrections, including the EW corrections to both the six-parton channel 0→u¯dνe+γg and the five-parton channel 0→u¯dνe+γ. Previous experimental results have been shown to agree with theoretical predictions, taking into account the large experimental errors. With the advent of run II data from the LHC, the statistical errors on the data will decrease, and will be competitive with the error on theoretical predictions for the first time. We present numerical results for s√=7 and 13 TeV. Analytic results for the one-loop six-parton QCD amplitude and the tree-level seven-parton QCD amplitude are presented in appendices."

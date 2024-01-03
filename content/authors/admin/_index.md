@@ -93,5 +93,5 @@ user_groups:
 - Visitors
 ---
 
-Hello! I am a postdoctoral researcher at PSI, working on high energy
+Hello! I am a postdoctoral researcher at the Higgs Centre for Theoretical Physics at the University of Edinburgh, working on high energy
 physics theory and phenomenology.

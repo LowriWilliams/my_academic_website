@@ -1,7 +1,7 @@
 ---
 title: "Two-Loop Five-Parton Leading-Colour Finite Remainders in the Spinor-Helicity Formalism"
 authors:
-- admin
+- Giuseppe De Laurentis
 - Daniel Maitre
 date: "2020-10-27"
 doi: ""
@@ -16,7 +16,7 @@ publishDate: ""
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "*JHEP*"
 publication_short: ""
 
 abstract: "We present all two-loop five-parton leading-colour finite remainders in the spinor-helicity formalism by analysing numerical evaluations of their known expressions in terms of Mandelstam invariants. Recasting them in terms of spinor-helicity variables allows us to obtain expressions which are more compact, faster to evaluate, numerically more stable and manifestly free from poles of higher order than necessary. At the same time, due to the better scaling of our reconstruction strategy with the complexity of the input, we required one order of magnitude fewer numerical samples to complete the analytical reconstruction than were needed by the authors of Ref. [1], albeit using higher numerical working precision. This places our reconstruction technique as an alternative to the finite-field single-numerator reconstruction for future applications."
