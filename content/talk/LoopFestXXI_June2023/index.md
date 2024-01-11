@@ -4,7 +4,7 @@ event: LoopFestXXI
 event_url: 
 location: Kavli Auditorium (SLAC National Accelerator Laboratory)
 summary: Kavli Auditorium (SLAC National Accelerator Laboratory)
-abstract: "I will present the computation of the NNLO double-virtual subleading-color corrections to the production of three photons at hadron colliders. I will briefly review the numerical generalized unitarity computation over finite fields performed with the C++ code Caravel, including updates that made this computation possible. I will then formulate the rational reconstruction problem for the finite remainders in spinor variables and obtain compact analytic expressions. Finally, I will show the effect of the subleading-color corrections on the hard functions."
+abstract: 
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
@@ -51,3 +51,7 @@ slides: LoopFestXXI_June2023
 # Enable math on this page?
 math: true
 ---
+
+*Abstract*
+
+I will present the computation of the NNLO double-virtual subleading-color corrections to the production of three photons at hadron colliders. I will briefly review the numerical generalized unitarity computation over finite fields performed with the C++ code Caravel, including updates that made this computation possible. I will then formulate the rational reconstruction problem for the finite remainders in spinor variables and obtain compact analytic expressions. Finally, I will show the effect of the subleading-color corrections on the hard functions.

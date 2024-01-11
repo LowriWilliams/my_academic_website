@@ -3,8 +3,8 @@ title: "Mathematical and Physical Structures of Rational Functions in Scattering
 event: MathemAmplitudes
 event_url: 
 location: Palazzo del Monte di Pieta', Padova
-summary: 
-abstract: ""
+summary: Palazzo del Monte di Pieta', Padova
+abstract: 
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.

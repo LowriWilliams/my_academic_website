@@ -15,7 +15,8 @@ slides:
 
 ---
 
-{{< slide background-image="EdiCastle.jpg" >}}
+{{< slide background-image="FSU-photo.png" >}}
+<!--- {{< slide background-image="EdiCastle.jpg" >}} --->
 
 <h3 style="margin-top:5mm; margin-left: -10mm; margin-right: -10mm;">
 	<b style="margin-top:15mm; font-size: 24pt;">
@@ -32,11 +33,12 @@ Giuseppe De Laurentis
 <a href="https://arxiv.org/abs/2311.10086">arXiv:2311.10086</a> <div style="font-size: large; margin-bottom: 10pt;"> (GDL, H. Ita, M. Klinkert, V. Sotnikov) </div>
 <A href="https://arxiv.org/abs/2305.17056">arXiv:2311.18752</a> <div style="font-size: large;"> (GDL, H. Ita, V. Sotnikov) </div>
 
-Amplitudes Meeting
+<!--- Amplitudes Meeting --->
+FSU HEP Seminar
 <br>
-<p style="line-height: 0.05;"> <img src="UniEdinburghLogo-transparent.png"; style="max-width:303px;float:center;border:none;">
+<p style="line-height: 0.05;"> <img src="UniEdinburghLogo-transparent.png"; style="max-width:120px;float:center;border:none;"> <img src="FSU Seal.png"; style="max-width:120px;float:center;border:none;margin-left:20mm;">
 <br><br>
-<span style="font-size: 11pt">Find these slides at  <a href="/slides/amplitudesmeeting_dec2023/#/">gdelaurentis.github.io/slides/mathemamplitudes_dec2023</a> </span>
+<span style="font-size: 11pt">Find these slides at  <a href="/slides/fivepartons_dec2023/#/">gdelaurentis.github.io/slides/fivepartons_dec2023</a> </span>
 </div>
 
 ---
@@ -113,24 +115,24 @@ $$
           \require{amsmath}
           \hspace{-5mm}
           \begin{align}
-               \mathcal{A}_{\vec{a}}(1_g,2_g,3_g,4_g,5_g) & = \sum_{\sigma \in \mathcal{S}_5/\mathcal{Z}_5} \sigma\Big(\text{tr}(1,2,3,4,5) \; A_{1}(1,2,3,4,5)\Big) \; + \\[2mm]
-               & \quad \sum_{\sigma\in \frac{\mathcal{S}_5}{\mathcal{Z}_2 \times \mathcal{S}_3}} \sigma\Big(\text{tr}(1,2) \text{tr}(3,4,5) \; A_{2}(1,2;3,4,5)\Big) + , \\[8mm]
+               \mathcal{A}_{\vec{a}}(1_g,2_g,3_g,4_g,5_g) & = \sum_{\sigma \in \mathcal{S}_5/\mathcal{Z}_5} \sigma\Big(\text{tr}(T^{a_1}T^{a_2}T^{a_3}T^{a_4}T^{a_5}) \; A_{1}(1,2,3,4,5)\Big) \; + \\[2mm]
+               & \quad \sum_{\sigma\in \frac{\mathcal{S}_5}{\mathcal{Z}_2 \times \mathcal{S}_3}} \sigma\Big(\text{tr}(T^{a_1}T^{a_2}) \text{tr}(T^{a_3}T^{a_4}T^{a_5}) \; A_{2}(1,2,3,4,5)\Big) + , \\[8mm]
                \mathcal{A}_{\vec{a}}(1_u,2_{\bar u},3_g,4_g,5_g) & =
                \sum_{\sigma \in \mathcal{S}_3(3,4,5)} \sigma\Big(
                (T^{a_3}T^{a_4}T^{a_5})^{\,\bar i_2}_{i_1} \; 
                A_{3}(1,2,3,4,5)\Big) \; + \\[2mm]
                & \quad \sum_{\sigma \in \frac{\mathcal{S}_3(3,4,5)}{\mathcal{Z}_2(3,4)}} 
-               \sigma\Big(\text{tr}(3,4) (T^{a_5})^{\,\bar i_2}_{i_1} 
+               \sigma\Big(\text{tr}(T^{a_3}T^{a_4}) (T^{a_5})^{\,\bar i_2}_{i_1} 
                \; A_{4}(1,2,3,4,5)\Big) \; + \\[2mm]
                & \quad \sum_{\sigma \in \frac{\mathcal{S}_3(3,4,5)}{\mathcal{Z}_{3}(3,4,5)}} 
-               \sigma\Big(\text{tr}(3,4,5) \delta^{\bar i_2}_{i_1}
+               \sigma\Big(\text{tr}(T^{a_3}T^{a_4}T^{a_5}) \delta^{\bar i_2}_{i_1}
                A_{5}(1,2,3,4,5)\Big) \; , \\[8mm]
                \mathcal{A}_{\vec{a}}(1_u,2_{\bar u},3_d,4_{\bar d},5_g) &= 
                \sum_{\sigma \in \mathcal{Z}_2(\{1,2\},\{3,4\})} \sigma\Big(
-               \delta^{\bar i_4}_{i_1} (T^{a_6})^{\,\bar i_2}_{i_3} 
+               \delta^{\bar i_4}_{i_1} (T^{a_5})^{\,\bar i_2}_{i_3} 
                \; A_{6}(1,2,3,4,5)\Big) \; + \\[2mm]
                & \quad \sum_{\sigma \in \mathcal{Z}_2(\{1,2\},\{3,4\})} \kern-2mm \sigma\Big(
-               \delta^{\bar i_2}_{i_1} (T^{a_7})^{\,\bar i_4}_{i_3} 
+               \delta^{\bar i_2}_{i_1} (T^{a_5})^{\,\bar i_4}_{i_3} 
                \; A_{7}(1,2,3,4,5)\Big)\,,\kern-1mm
           \end{align}
           \]
@@ -155,7 +157,7 @@ Each $A_{i}$ has an expansion in powers of $\alpha_s$. We consider the $\alpha_s
 <b style="font-variant: small-caps; font-size: xxx-large">Color Decompositions:</b> <b style="font-size: xxx-large"> $N_c^{n_c}N_f^{n_f}$ </b>  <b style="font-variant: small-caps; font-size: xxx-large">Expansion</b>
 </div>
 
-<span style="color: red;">Red</span> = New; Notation = $A_{\scriptscriptstyle \\#}^{(L),(n_c, n_f)}$
+Notation = $A_{\scriptscriptstyle \\#}^{(L),(n_c, n_f)}$; $\quad$ <span style="color: red;">Red</span> = New;  $\quad$ leading color: $n_c + n_f = L$
 
 <div style="font-size: 14pt; margin-top: 0mm; margin-bottom: 0mm">
      \[
@@ -165,7 +167,7 @@ Each $A_{i}$ has an expansion in powers of $\alpha_s$. We consider the $\alpha_s
      \]
 </div>
 
-<div style="font-size: 14pt; margin-top: 0mm; margin-bottom: 0mm">
+<div style="font-size: 14pt; margin-top: 0mm; margin-bottom: 0mm; ">
      \[
      \begin{gather}
           A_1^{(0)} = A^{(0),(0,0)} \, , \quad A_2^{(0)} = 0 \, , \qquad
@@ -325,11 +327,11 @@ $$
 </div>
 <br>
 <div style="font-size: x-large; float: center; margin-bottom: 0mm; margin-top: -10mm;">
-     $\circ$  $\Gamma$: topologies $\quad\circ$ $M_\Gamma$: masters $\quad\circ$ $S_\Gamma$: surface terms
+     $\circ$  $\Gamma$: topologies $\quad\circ$ $M_\Gamma$: master integrands $\quad\circ$ $S_\Gamma$: surface terms $\quad\circ$ $D = 4 - 2 \epsilon$
 </div>
 <div style="font-size: x-large; float: center; margin-bottom: 0mm; margin-top: 2mm;">
      $\circ$ Spinors: $\lambda_i = |i\rangle, \tilde\lambda_i =[i|$
-     $\quad\circ$ 4-momenta: $\lambda\tilde\lambda=p\kern-3mm/$
+     $\quad\circ$ External 4-momenta: $\lambda\tilde\lambda=p\kern-3mm/$
      $\quad\circ$ Loop $D$-momenta: $\ell $
 </div>
 
@@ -513,6 +515,39 @@ Peraro ('16)
 
 ---
 
+<b style="font-variant: small-caps; font-size: xxx-large;"> Technical Interlude: Python Wrapper </b>
+
+<div style="font-size: x-large; text-align: left; margin-top: 3mm;">
+     $\circ$ <u> Reason 1 </u>:  The rational reconstruction, $\mathbb{F}_p \rightarrow \text{Rational Function}$, is much cheaper than numerical evaluations. I want to use <tt><a href="https://jupyter.org/">Jupyter</a></tt> for interactive analysis and development.
+</div>
+
+<div style="font-size: x-large; text-align: left; margin-top: 3mm;">
+     $\circ$ <u> Reason 2 </u>: Evaluations cost up to 1-2 hours, per phase-space point, per partial amplitude! I need up to ~35k points per partial. (Less for the quark channels, see later.)
+</div>
+
+<div style="font-size: x-large; text-align: center; margin-top: 3mm;">
+     <i> We better have some caching! </i>
+</div>
+
+<div style="font-size: x-large; text-align: left; margin-top: 5mm;">
+     $\circ$ Pseudo-random squences of phase-space points over $\mathbb{F}_p$ or $\mathbb{Q}_p$ generated using <tt><a href=https://github.com/GDeLaurentis/lips>lips</a></tt> & <tt><a href=https://github.com/GDeLaurentis/lips>pyadic</a></tt>
+</div>
+<div>
+<img src="Lips.png"; style="max-width:450px; float:center; border:none; margin-top: 2mm; margin-bottom: 0mm;"> <img src="Pyadic.png"; style="max-width:450px; float:center; border:none; margin-top: 2mm; margin-bottom: 0mm;">
+</div>
+
+<div style="font-size: x-large; text-align: left; margin-top: 5mm;">
+     $\circ$ Custom (for now private) interface to <code>Caravel</code>, key features: <span style="font-size: large; margin-top: 0mm; margin-bottom: 0mm;"> $\phantom{\circ}\;$ (for Caravel developers see <tt><a href=https://gitlab.com/caravel-private/pynta>pynta</a></tt>) </span> <br>
+     $\quad \star$ seamless caching to a SQLite database using <a href=https://pypi.org/project/diskcache> diskcache </a> via Python decorators; <br>
+     $\quad \star$ and facilities for distributed computing into a slurm cluster; <br>
+     $\quad \star$ functions for IR/UV subtraction, CaravelGraph, and PentagonFunctions parsing.
+</div>
+
+</section>
+
+<!---
+---
+
 <b style="font-variant: small-caps; font-size: xxx-large;"> Memoization </b>
 
 <div>
@@ -538,6 +573,8 @@ Peraro ('16)
 </div>
 
 </section>
+
+--->
 
 ---
 
@@ -780,17 +817,20 @@ GDL, Ita, Page, Sotnikov (to appear)
      $\circ\,$ We currently have:
 </div>
 <br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 0mm;">
      $$
      R = r_{i\in \mathcal{B}} M_{ij} h_j \, , \qquad M_{ij} \in \mathbb{Q}
      $$
+</div>
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     $\phantom{\circ}\,$ with $r_{i\in \mathcal{B}} \subset r_i$, i.e. $M_{ij}$ is in reduced row echelon form, up to a permutation of columns.
 </div>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
      $\circ\,$ Basic idea: change basis from a subset of pentagon function coefficients, to linear combinations
 </div>
-<br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: 5mm; margin-bottom: 5mm;">
+<br><br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -2mm; margin-bottom: 5mm;">
      $$
      \tilde{r}_{i'} = O_{i'i} \, r_{i \in \mathcal{B}} \quad \text{s.t.} \quad \text{rank}(O_{i'i}) = \text{dim(span}_{FF(R_5), \mathbb{Q}}(r_{i}))
      $$
@@ -806,7 +846,7 @@ GDL, Ita, Page, Sotnikov (to appear)
      $$
 </div>
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 2mm; margin-bottom: 0mm;">
-     In other words, the <span style="color: red">pole residues are correlated</span>, so we can build linear combinations that ''remove the overlap''
+     $\phantom{\circ}\,$ I.e., the <span style="color: red">pole residues are correlated</span>, build linear combinations that <i> ''remove the overlap'' </i>
 </div>
 
 ---
@@ -814,7 +854,7 @@ GDL, Ita, Page, Sotnikov (to appear)
 <b style="font-variant: small-caps; font-size: xxx-large"> Correlation of Residues </b>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
-     $\circ\,$ Build Laurent expansions around $t_{\mathcal{D}_k}$
+     $\circ\,$ Build Laurent expansions around $t_{\mathcal{D}_k}$ <span style="font-size: 12pt"> (use same kind of slice <a href="slides/fivepartons_dec2023/#/3/4">as before</a>)</span>
 </div>
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
@@ -822,12 +862,15 @@ GDL, Ita, Page, Sotnikov (to appear)
      r_{i \in \mathcal{B}} = \sum_{m = 1}^{q_k = \text{max}_i(q_{ik})} \frac{e^k_{im}}{(t-t_{\mathcal{D}_k})^m} + \mathcal{O}((t-t_{\mathcal{D}_k})^0)
      $$
 </div>
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 0mm; margin-bottom: 0mm;">
+     $\phantom{\circ}\,$ strictly formal over $\mathbb{F}_p$, but convergent over $\mathbb{Q}_p$ for $(t-t_{\mathcal{D}_k}) \propto p$
+</div>
 
-<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
+<div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: -5mm;">
      $\circ\,$ Repeat for several (anti-)holomorphic slices, build vectors
 </div>
-<br>
-<div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;">
+<br><br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 0mm;">
      $$
      \vec{e}^k_{im} = (e^k_m)_{ij} = \{ e^k_{im}(\text{slice}_1), \dots, e^k_{im}(\text{slice}_n)  \}
      $$
@@ -839,12 +882,12 @@ GDL, Ita, Page, Sotnikov (to appear)
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;">
      $$
-     \text{span}_{\vec{\mathbb{Q}},\mathbb{Q}}(r_i) = \text{column}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_i, D_k^m)) \oplus \text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_i, D_k^m))
+     \text{span}_{\vec{\mathbb{Q}},\mathbb{Q}}(r_{i \in \mathcal{B}}) = \text{column}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, D_k^m)) \oplus \text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, D_k^m))
      $$
 </div>
 
-<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 4mm;">
-    Interpretation of $\text{null}_{\mathbb{Q}}(\text{Res}(r_i, D_k^m))$: functions that do <u>not</u> have a $D_k^m$ singularity
+<div style="border: 2px solid black; font-size: x-large; padding: 10px; display: inline-block; margin-top: 0mm;">
+    Interpretation of $\text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, D_k^m)) \cdot r_{i \in \mathcal{B}}$: functions that do <u>not</u> have a $D_k^m$ singularity
 </div>
 
 ---
@@ -857,7 +900,7 @@ GDL, Ita, Page, Sotnikov (to appear)
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;">
      $$
-     \tilde{r} \in \text{span}_{FF(R_5),\mathbb{Q}}\Bigg[\Big(\text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_i, D_{k_1}^{m_1})) \cap \text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_i, D_{k_2}^{m_2}))\Big)_{i'i} \; \cdot \; r_{i\in \mathcal{B}}\Bigg]
+     \tilde{r} \in \text{span}_{FF(R_5),\mathbb{Q}}\Bigg[\Big(\text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, D_{k_1}^{m_1})) \cap \text{null}_{\vec{\mathbb{Q}},\mathbb{Q}}(\text{Res}(r_{i \in \mathcal{B}}, D_{k_2}^{m_2}))\Big)_{i'i} \; \cdot \; r_{i\in \mathcal{B}}\Bigg]
      $$
 </div>
 
@@ -867,13 +910,19 @@ GDL, Ita, Page, Sotnikov (to appear)
 <br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: 0mm; margin-bottom: 5mm;">
      $$
-     \displaystyle O_{i'i} = \cap_{k, m} \text{nulls}_{\vec{\mathbb{Q}},\mathbb{Q}} \qquad \text{(schematically)}
+     \displaystyle O_{i'i} = \cap_{k, m} \, \text{nulls}_{\vec{\mathbb{Q}},\mathbb{Q}} \qquad \text{(schematically)}
      $$
 </div>
 
 <div style="text-align: left; font-size: x-large; float: left; margin-top: 5mm; margin-bottom: 0mm;">
-     $\circ\,$ This is done by searching a tree of possibilities of which pole gets dropped to which order, <br>
-     $\phantom{\circ}\,$ several optimizations required to search an otherwise proibitively large space
+     $\circ\,$ This is done by searching a tree of possibilities of which pole gets dropped to which order. <br>
+     $\phantom{\circ}\,$ Several optimizations required to search an otherwise proibitively large space, naively of size
+</div>
+<br><br>
+<div style="text-align: center; float: center; font-size: x-large; margin-top: -5mm; margin-bottom: 5mm;">
+     $$
+     \prod_k (m_k + 1) \quad \text{with } \; k \;\text{ enumerating } \; D_k^{m_k}
+     $$
 </div>
 
 ---
@@ -885,7 +934,7 @@ GDL, Ita, Page, Sotnikov (to appear)
      $\circ$ In other words, we have reshuffled the $r_i$ by linear combinations of the others $r_{j\neq i}$
 </div>
 <div style="text-align: center; float:center; display: inline-block; font-size: x-large; margin-bottom: 2mm; margin-top: 2mm;">
-     $\displaystyle \tilde{r}_i = \sum_{j\neq i} o_{ij} r_j + r_i$
+     $\displaystyle \tilde{r}_i = \sum_{j\neq i} O_{ij} r_j + r_i$
 </div>
 
 <br>
@@ -915,7 +964,7 @@ GDL, Ita, Page, Sotnikov (to appear)
 <br><br><br>
 <div style="text-align: center; float: center; font-size: x-large; margin-top: -8mm; margin-bottom: 0mm;">
      $$
-     o_{ij} \sim \langle r_i | r_j \rangle \qquad \text{very schematically}
+     O_{ij} \sim \langle r_i | r_j \rangle \qquad \text{(very schematically)}
      $$
 </div>
 
@@ -1070,7 +1119,7 @@ Comparison of $q\bar q \rightarrow \gamma \gamma \gamma$ (in full color) to $pp 
     <td style="text-align: center;">35</td>
     <td style="text-align: center;">29k</td>
     <td style="text-align: center;">4k</td>
-    <td style="text-align: center;">$\sim$300 KB</td>
+    <td style="text-align: center;">$\sim$100 KB</td>
   </tr>
   <tr>
     <td style="text-align: center;">5-point 1-mass</td>

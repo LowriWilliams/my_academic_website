@@ -3,8 +3,8 @@ title: "Non-Planar Two-Loop Amplitudes for Five-Parton Scattering"
 event: AmplitudesMeeting
 event_url: 
 location: Higgs Centre, Edinburgh
-summary: 
-abstract: "I present the recent calculation of the two-loop amplitudes required to obtain next-to-next-to-leading order predictions for three-jet production at the Large Hadron Collider. This calculation is performed in full colour, that is including contributions from non-planar Feynman diagrams. I review the method of numerical generalized generalized and the integrand decomposition technique employed to generate finite-field samples of the amplitude. I will then focus on the analytic reconstruction of the coefficient functions from said numerical samples. A novel algorithm, based on the correlation of codimension-one residues, helps tame the complexity of the calculation. I touch upon various interdisciplinary aspects of the computation, including elements of number theory, computational algebraic geometry, constraint programming, memoization, and GPU acceleration."
+summary: FSU HEP Seminar - January 12, 2024 <br> Higgs Centre Amplitudes Seminar - December 7, 2023
+abstract: 
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
@@ -26,6 +26,14 @@ featured: false
 #   focal_point: Right
 
 links:
+- icon: arxiv
+  icon_pack: ai
+  name: arXiv:2311.10086
+  url: https://arxiv.org/abs/2311.10086
+- icon: arxiv
+  icon_pack: ai
+  name: arXiv:2311.18752
+  url: https://arxiv.org/abs/2311.18752
 url_code: ""
 url_pdf: ""
 url_slides: ""
@@ -36,7 +44,7 @@ url_video: ""
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: AmplitudesMeeting_Dec2023
+slides: FivePartons_Dec2023
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.
@@ -47,3 +55,7 @@ slides: AmplitudesMeeting_Dec2023
 # Enable math on this page?
 math: true
 ---
+
+*Abstract*
+
+I present the recent calculation of the two-loop amplitudes required to obtain next-to-next-to-leading order predictions for three-jet production at the Large Hadron Collider. This calculation is performed in full colour, that is including contributions from non-planar Feynman diagrams. I review the method of numerical generalized generalized and the integrand decomposition technique employed to generate finite-field samples of the amplitude. I will then focus on the analytic reconstruction of the coefficient functions from said numerical samples. A novel algorithm, based on the correlation of codimension-one residues, helps tame the complexity of the calculation. I touch upon various interdisciplinary aspects of the computation, including elements of number theory, computational algebraic geometry, constraint programming, memoization, and GPU acceleration.

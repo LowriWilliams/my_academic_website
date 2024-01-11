@@ -4,7 +4,7 @@ event: QCD@LHC
 event_url: https://indico.fnal.gov/event/19380/
 location: Buffalo, NY
 summary: QCD@LHC 2019
-abstract: "I will present a new method (https://arxiv.org/abs/1904.04067) to generate analytic expressions for the integral coefficients of loop amplitudes using numerical evaluations only. We use high precision arithmetic to explore the singularity structure of the coefficients and decompose them into parts of manageable complexity. Each part is isolated by choosing an appropriate region of phase space, and reconstructed by solving a system of linear equations for the coefficients of a generic ansatz. To illustrate the usability of our method I will present sample computations for six-gluon one-loop integral coefficients and rational parts."
+abstract: 
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
@@ -53,3 +53,7 @@ url_slides: "slides/QCD@LHC/index.html"
 # Enable math on this page?
 math: true
 ---
+
+*Abstract*
+
+I will present a new method (https://arxiv.org/abs/1904.04067) to generate analytic expressions for the integral coefficients of loop amplitudes using numerical evaluations only. We use high precision arithmetic to explore the singularity structure of the coefficients and decompose them into parts of manageable complexity. Each part is isolated by choosing an appropriate region of phase space, and reconstructed by solving a system of linear equations for the coefficients of a generic ansatz. To illustrate the usability of our method I will present sample computations for six-gluon one-loop integral coefficients and rational parts.

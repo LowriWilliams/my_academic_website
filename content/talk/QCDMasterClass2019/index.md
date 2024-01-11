@@ -1,69 +1,59 @@
-+++
-title = "From numerical to analytical amplitudes"
+---
+title: From numerical to analytical amplitudes
+event: QCD Master Class 2019
+event_url: https://indico.cern.ch/event/739086/overview
+location: Saint-Jacut-de-la-Mer, France
+summary: Saint-Jacut-de-la-Mer, France
+abstract: 
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date = 2019-06-13T21:00:00+01:00
-date_end = 2019-06-13T21:30:00+01:00
-all_day = false
+date: "2019-07-14T13:00:00Z"
+date_end: "2019-07-19T15:00:00Z"
+all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate = 2019-06-07T17:55:54+01:00
+publishDate: "2017-01-01T00:00:00Z"
 
-# Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Giuseppe De Laurentis"]
-
-# Location of event.
-location = "Saint-Jacut-de-la-Mer, France"
-
-# Name of event and optional event URL.
-event = "QCD Master Class 2019"
-event_url = "https://indico.cern.ch/event/739086/overview"
-
-# Abstract. What's your talk about?
-abstract = "Generalised unitarity and on-shell recursion relations have led to the automation of numerical computations for high multiplicity NLO matrix elements, whereas analytical expression are often still too complicated to be determined. I will present a new method (arXiv:1904.04067) to generate such analytic expressions using numerical evaluations only. We use high precision arithmetic to explore the singularity structure of the coefficients and decompose them into parts of manageable complexity. Each part is isolated by choosing an appropriate region of phase space, and reconstructed by solving a system of linear equations for the coefficients of a generic ansatz. To illustrate the usability of our method I will present sample computations for six-gluon one-loop integral coefficients and rational parts."
-
-# Summary. An optional shortened abstract.
-summary = "QCD Master Class 2019"
+authors: ["Giuseppe De Laurentis"]
+tags: []
 
 # Is this a featured talk? (true/false)
-featured = false
+featured: false
 
-# Tags (optional).
-#   Set `tags = []` for no tags, or use the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
-tags = []
+# image:
+#   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
+#   focal_point: Right
+
+links:
+- icon: arxiv
+  icon_pack: ai
+  name: arXiv:1904.04067
+  url: https://arxiv.org/abs/1904.04067
+url_code: ""
+url_pdf: ""
+url_slides: ""
+url_video: ""
 
 # Markdown Slides (optional).
-#   Associate this page with Markdown slides.
+#   Associate this talk with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references 
-#   `content/slides/example-slides.md`.
+#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides = ""
+# slides: QCD@LHC
 
-# Optional filename of your slides within your talk folder or a URL.
-url_slides = "qcdmasterclassslides.pdf"
+url_slides: "qcdmasterclassslides.pdf"
 
 # Projects (optional).
-#   Associate this talk with one or more of your projects.
+#   Associate this post with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["deep-learning"]` references 
-#   `content/project/deep-learning/index.md`.
+#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects = []
 
-# Links (optional).
-url_pdf = ""
-url_video = ""
-url_code = ""
+# Enable math on this page?
+math: true
+---
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
-[image]
-  # Caption (optional)
-  caption = ""
+*Abstract*
 
-  # Focal point (optional)
-  # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-  focal_point = ""
-+++
+Generalised unitarity and on-shell recursion relations have led to the automation of numerical computations for high multiplicity NLO matrix elements, whereas analytical expression are often still too complicated to be determined. I will present a new method (arXiv:1904.04067) to generate such analytic expressions using numerical evaluations only. We use high precision arithmetic to explore the singularity structure of the coefficients and decompose them into parts of manageable complexity. Each part is isolated by choosing an appropriate region of phase space, and reconstructed by solving a system of linear equations for the coefficients of a generic ansatz. To illustrate the usability of our method I will present sample computations for six-gluon one-loop integral coefficients and rational parts.
