@@ -58,9 +58,6 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/LowriWilliams
-<!-- - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
-  icon_pack: fas
-  link: https://scholar.google.com/citations?user=yCk02XcAAAAJ&hl=en&oi=ao -->
 
 
 
@@ -69,9 +66,9 @@ email: ""
   
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
-<!-- user_groups: -->
-<!-- - Researchers
+user_groups:
+- Researchers
 - Visitors
---- -->
+---
 
 I am a Research Data Scientist at the School of Computer Science and Informatics at Cardiff University. My work focuses on the development of novel approaches to automated cyber defence. Currently, my interest is on how to capture user attitudes towards cyber technologies using text mining and machine learning techniques.
