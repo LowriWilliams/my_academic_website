@@ -1,13 +1,13 @@
  ---
 # Display name
-title: Giuseppe De‎⠀Laurentis
+title: Lowri Williams
 
 # Name pronunciation (optional)
 name_pronunciation: 
 
 # Full name (for SEO)
-first_name: Giuseppe
-last_name: De Laurentis
+first_name: Lowri
+last_name: Williams
 
 # Username (this should match the folder name)
 authors:
@@ -17,12 +17,12 @@ authors:
 superuser: true
 
 # Role/position
-role: PostDoc
+role: Research Data Scientist
 
 # Organizations/Affiliations
 organizations:
-- name:   University of Edinburgh    Higgs Centre for Theoretical Physics
-  url: "https://higgs.ph.ed.ac.uk/" 
+- name:   Cardiff University 
+  url: "" 
 # - name: Paul Scherrer Institut (PSI)
 #   url: "https://www.psi.ch/en" 
 # - name: Physikalisches Institut - Albert-Ludwigs-Universität Freiburg
@@ -31,28 +31,23 @@ organizations:
 #   url: "https://www.ippp.dur.ac.uk/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Counting quarks and gluons
 
+
+# Interests to show in About widget
 interests:
-- Scattering Amplitudes
-- Quantum Field Theories
-- Scientific Computing
-- Algebraic Geometry
+  - Natural Language Processing/Text Mining/Information Retrieval
+  - Machine Learning/Adversarial Machine Learning
+  - Intrusion Detection
 
+# Education to show in About widget
 education:
   courses:
-  - course: PhD in High Energy Physics
-    institution: Durham University
-    year: 2016 - 2020
-  - course: First Class MPhys
-    institution: University of Oxford
-    year: 2012 - 2016
-  - course: Summer Term
-    institution: Harvard University
-    year: 2011
-  - course: Summer Term
-    institution: Stanford University
-    year: 2010
+    - course: PhD in Computer Science
+      institution: Cardiff University
+      year: 2017
+    - course: BSc Information Systems
+      institution: Cardiff University
+      year: 2013
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
