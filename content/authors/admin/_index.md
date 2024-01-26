@@ -73,4 +73,3 @@ user_groups:
 
 I am a Research Data Scientist at the School of Computer Science and Informatics at Cardiff University. My work focuses on the development of novel approaches to automated cyber defence. Currently, my interest is on how to capture user attitudes towards cyber technologies using text mining and machine learning techniques.
 
-{style="text-align: justify;"}
