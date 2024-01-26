@@ -3,8 +3,8 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: Giuseppe De Laurentis  # Website name
-baseURL: 'https://gdelaurentis.github.io/' # Website URL
+title: Lowri Williams # Website name
+baseURL: 'https://github.com/LowriWilliams' # Website URL
 
 ############################
 ## LANGUAGE
