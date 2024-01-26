@@ -48,21 +48,27 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: ''  
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/LowriWilliams
+  link: 'mailto:giuseppe.delaurentis@ed.ac.uk'  # For a direct email link, use "mailto:test@example.org".
+- icon: arxiv
+  icon_pack: ai
+  link: https://arxiv.org/search/hep-ph?searchtype=author&query=De+Laurentis%2C+G
+- icon: inspire
+  icon_pack: ai
+  link: http://inspirehep.net/author/profile/G.De.Laurentis.1
+- icon: orcid
+  icon_pack: ai
+  link: https://orcid.org/0000-0001-5252-455X
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/in/lowriwilliams/
-<!-- - icon: github
+  link: https://www.linkedin.com/in/giuseppe-de-laurentis-a85bba104/
+- icon: github
   icon_pack: fab
-  link: https://github.com/LowriWilliams
-  - icon: envelope
-  icon_pack: fas
-  link: 'mailto:giuseppe.delaurentis@ed.ac.uk'  # For a direct email link, use "mailto:test@example.org". -->
-
-
+  link: https://github.com/GDeLaurentis
+# Link to a PDF of your resume/CV from the About widget.
+# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
+- icon: cv
+  icon_pack: ai
+  link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
@@ -74,4 +80,5 @@ user_groups:
 - Visitors
 ---
 
-I am a Research Data Scientist at the School of Computer Science and Informatics at Cardiff University. My work focuses on the development of novel approaches to automated cyber defence. Currently, my interest is on how to capture user attitudes towards cyber technologies using text mining and machine learning techniques.
+Hello! I am a postdoctoral researcher at the Higgs Centre for Theoretical Physics at the University of Edinburgh, working on high energy
+physics theory and phenomenology.
