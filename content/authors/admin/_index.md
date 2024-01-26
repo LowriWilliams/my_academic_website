@@ -80,5 +80,7 @@ user_groups:
 - Visitors
 ---
 
-Hello! I am a postdoctoral researcher at the Higgs Centre for Theoretical Physics at the University of Edinburgh, working on high energy
-physics theory and phenomenology.
+I am a Research Data Scientist at the School of Computer Science and Informatics at Cardiff University. My work focuses on the development of novel approaches to automated cyber defence. Currently, my interest is on how to capture user attitudes towards cyber technologies using text mining and machine learning techniques.
+
+
+{style="text-align: justify;"}
