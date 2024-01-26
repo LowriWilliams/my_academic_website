@@ -52,9 +52,9 @@ social:
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/lowriwilliams/
-- icon: github
+<!-- - icon: github
   icon_pack: fab
-  link: https://github.com/LowriWilliams
+  link: https://github.com/LowriWilliams -->
   <!-- - icon: envelope
   icon_pack: fas
   link: 'mailto:giuseppe.delaurentis@ed.ac.uk'  # For a direct email link, use "mailto:test@example.org". -->
@@ -67,8 +67,8 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
-- Researchers
-- Visitors
+<!-- - Researchers
+- Visitors -->
 ---
 
 I am a Research Data Scientist at the School of Computer Science and Informatics at Cardiff University. My work focuses on the development of novel approaches to automated cyber defence. Currently, my interest is on how to capture user attitudes towards cyber technologies using text mining and machine learning techniques.
