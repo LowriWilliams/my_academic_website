@@ -54,8 +54,8 @@ social:
   link: https://www.linkedin.com/in/lowriwilliams/
 <!-- - icon: github
   icon_pack: fab
-  link: https://github.com/LowriWilliams -->
-  <!-- - icon: envelope
+  link: https://github.com/LowriWilliams
+  - icon: envelope
   icon_pack: fas
   link: 'mailto:giuseppe.delaurentis@ed.ac.uk'  # For a direct email link, use "mailto:test@example.org". -->
 
@@ -72,4 +72,3 @@ user_groups:
 ---
 
 I am a Research Data Scientist at the School of Computer Science and Informatics at Cardiff University. My work focuses on the development of novel approaches to automated cyber defence. Currently, my interest is on how to capture user attitudes towards cyber technologies using text mining and machine learning techniques.
-
