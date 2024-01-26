@@ -46,9 +46,9 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
-- icon: envelope
+<!-- - icon: envelope
   icon_pack: fas
-  link: 'mailto:giuseppe.delaurentis@ed.ac.uk'  # For a direct email link, use "mailto:test@example.org".
+  link: 'mailto:giuseppe.delaurentis@ed.ac.uk'  # For a direct email link, use "mailto:test@example.org". -->
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/LowriWilliams
@@ -58,10 +58,13 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/LowriWilliams
+- icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
+  icon_pack: fas
+  link: https://scholar.google.com/citations?user=yCk02XcAAAAJ&hl=en&oi=ao
 
 
 
-# Enter email to display Gravatar (if Gravatar enabled in Config)
+<!-- # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
   
 # Organizational groups that you belong to (for People widget)
@@ -69,7 +72,6 @@ email: ""
 user_groups:
 - Researchers
 - Visitors
----
+--- -->
 
-Hello! I am a postdoctoral researcher at the Higgs Centre for Theoretical Physics at the University of Edinburgh, working on high energy
-physics theory and phenomenology.
+I am a Research Data Scientist at the School of Computer Science and Informatics at Cardiff University. My work focuses on the development of novel approaches to automated cyber defence. Currently, my interest is on how to capture user attitudes towards cyber technologies using text mining and machine learning techniques.
