@@ -17,7 +17,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Research Data Scientist
+role: Lecturer
 
 # Organizations/Affiliations
 organizations:
@@ -67,7 +67,7 @@ user_groups:
 - Visitors
 ---
 
-I am a Research Data Scientist at the School of Computer Science and Informatics at Cardiff University. My work focuses on the development of novel approaches to automated cyber defence. Currently, my interest is on how to capture user attitudes towards cyber technologies using text mining and machine learning techniques.
+I am a Lecturer at the School of Computer Science and Informatics at Cardiff University. My work focuses on the development of novel approaches to automated cyber defence. Currently, my interest is on how to apply text mining in cyber defense methodologies.
 
 
 {style="text-align: justify;"}
