@@ -1,61 +1,52 @@
----
-title: "Non-Planar Two-Loop Amplitudes for Five-Parton Scattering"
-event: AmplitudesMeeting
-event_url: 
-location: Higgs Centre, Edinburgh
-summary: FSU HEP Seminar - January 12, 2024 <br> Higgs Centre Amplitudes Seminar - December 7, 2023
-abstract: 
++++
+# Accomplishments widget.
+widget = "accomplishments"  # See https://sourcethemes.com/academic/docs/page-builder/
+headless = true  # This file represents a page section.
+active = true  # Activate this widget? true/false
+weight = 50  # Order that this section will appear.
 
-# Talk start and end times.
-#   End time can optionally be hidden by prefixing the line with `#`.
-date: "2023-12-07T11:00:00Z"
-date_end: "2023-12-07T12:00:00Z"
-all_day: false
+title = "Awards"
+subtitle = ""
 
-# Schedule page publish date (NOT talk date).
-publishDate: "2017-01-01T00:00:00Z"
+# Date format
+#   Refer to https://sourcethemes.com/academic/docs/customization/#date-format
+date_format = "Jan 2006"
 
-authors: ["Giuseppe De Laurentis"]
-tags: []
+# Accomplishments.
+#   Add/remove as many `[[item]]` blocks below as you like.
+#   `title`, `organization` and `date_start` are the required parameters.
+#   Leave other parameters empty if not required.
+#   Begin/end multi-line descriptions with 3 quotes `"""`.
 
-# Is this a featured talk? (true/false)
-featured: false
 
-# image:
-#   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
-#   focal_point: Right
+[[item]]
+  organization = "Trinity College Dublin"
+  organization_url = "https://www.tcd.ie/"
+  title = "Government of Ireland Postdoctoral Fellowship (Declined)"
+  url = ""
+  certificate_url = ""
+  date_start = "2023-04-26"
+  date_end = ""
+  description = ""
 
-links:
-- icon: arxiv
-  icon_pack: ai
-  name: arXiv:2311.10086
-  url: https://arxiv.org/abs/2311.10086
-- icon: arxiv
-  icon_pack: ai
-  name: arXiv:2311.18752
-  url: https://arxiv.org/abs/2311.18752
-url_code: ""
-url_pdf: ""
-url_slides: ""
-url_video: ""
+[[item]]
+  organization = "Oxford Univeristy"
+  organization_url = "http://www.ox.ac.uk/"
+  title = "Winton Capital Prize for the best MPhys Research Project"
+  url = ""
+  certificate_url = ""
+  date_start = "2016-06-01"
+  date_end = ""
+  description = ""
 
-# Markdown Slides (optional).
-#   Associate this talk with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-slides: FivePartons_Dec2023
+[[item]]
+  organization = "Oxford Univeristy"
+  organization_url = "http://www.ox.ac.uk/"
+  title = "Scholar at St Hugh's College"
+  url = ""
+  certificate_url = ""
+  date_start = "2013-10-01"
+  date_end = "2016-06-01"
+  description = ""
 
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-
-# Enable math on this page?
-math: true
----
-
-*Abstract*
-
-I present the recent calculation of the two-loop amplitudes required to obtain next-to-next-to-leading order predictions for three-jet production at the Large Hadron Collider. This calculation is performed in full colour, that is including contributions from non-planar Feynman diagrams. I review the method of numerical generalized generalized and the integrand decomposition technique employed to generate finite-field samples of the amplitude. I will then focus on the analytic reconstruction of the coefficient functions from said numerical samples. A novel algorithm, based on the correlation of codimension-one residues, helps tame the complexity of the calculation. I touch upon various interdisciplinary aspects of the computation, including elements of number theory, computational algebraic geometry, constraint programming, memoization, and GPU acceleration.
++++
